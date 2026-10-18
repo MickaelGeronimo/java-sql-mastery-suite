@@ -1,0 +1,3 @@
+﻿Java 17 LTS Enterprise Mastery
+Relational Database Architecture and Distributed Systems
+ACID Transactions, Optimistic Locking, and In-Memory Query Optimization
