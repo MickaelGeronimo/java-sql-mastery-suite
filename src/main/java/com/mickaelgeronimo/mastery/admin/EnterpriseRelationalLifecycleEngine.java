@@ -5,13 +5,14 @@ import java.time.LocalDate;
 import java.util.*;
 
 /**
- * ==============================================================================
- * CAPÍTULO 39 (PARTE 2 - FINAL SUPREMO): DEMONSTRAÇÃO PRÁTICA EM JAVA 17
- * Tema: O Grande Fechamento da Seção 4 (Inserting, Updating, and Deleting Data)
- *       Multi-Database Reset, Auditoria Cruzada e o Super Dicionário Consolidado
- * ==============================================================================
+ * Enterprise Multi-Database Relational Lifecycle & Baseline Engine
+ * 
+ * Demonstrates:
+ * 1. Coordinated multi-schema state reset (E-commerce store and Invoicing domains).
+ * 2. Cross-domain transactional ledger and point baseline audits.
+ * 3. In-memory data dictionary consistency validation.
  */
-public class Section4MasterGrandFinaleDemo {
+public class EnterpriseRelationalLifecycleEngine {
 
     public record Customer(int id, String firstName, int points) {}
     public static class Order {
@@ -77,7 +78,7 @@ public class Section4MasterGrandFinaleDemo {
             clients.clear();
             invoices.clear();
 
-            // 1. Restaurando 'sql_store'
+            // 1. Restoring 'sql_store'
             customers.add(new Customer(1, "Babara", 2273));
             customers.add(new Customer(2, "Ines", 947));
             customers.add(new Customer(3, "Freddi", 2967));
@@ -95,7 +96,7 @@ public class Section4MasterGrandFinaleDemo {
             orders.add(new Order(8, 5, null));
             orders.add(new Order(10, 6, null));
 
-            // 2. Restaurando 'sql_invoicing'
+            // 2. Restoring 'sql_invoicing'
             clients.add(new Client(1, "Vinte"));
             clients.add(new Client(2, "Myworks"));
             clients.add(new Client(3, "Yadel"));
@@ -114,19 +115,17 @@ public class Section4MasterGrandFinaleDemo {
 
     public static void main(String[] args) {
         System.out.println("==========================================================================================================");
-        System.out.println("   DEMONSTRAÇÃO JAVA: CAPÍTULO 39 (PARTE 2 FINAL SUPREMO) - FECHAMENTO GERAL DA SEÇÃO 4                    ");
+        System.out.println("   ENTERPRISE MULTI-DATABASE RELATIONAL LIFECYCLE & AUDIT BASELINE                                        ");
         System.out.println("==========================================================================================================\n");
 
         EnterpriseMultiDatabaseManager manager = new EnterpriseMultiDatabaseManager();
 
-        System.out.println("--- 1. DISPARANDO RESTAURAÇÃO COMPLETA MULTI-DATABASE (sql_store & sql_invoicing) ---");
+        System.out.println("--- 1. DISPATCHING MULTI-SCHEMA STATE RESTORATION (sql_store & sql_invoicing) ---");
         manager.restoreAllDatabases();
-        System.out.println("-> Bancos 'sql_store' e 'sql_invoicing' re-criados com dados originais de fábrica!\n");
+        System.out.println("-> Datastores 'sql_store' and 'sql_invoicing' initialized with baseline states.\n");
 
-        // --------------------------------------------------------------------------------------
-        // AUDITORIA 1: PONTOS DOS CLIENTES (sql_store.customers)
-        // --------------------------------------------------------------------------------------
-        System.out.println(">>> 2. AUDITORIA: CLIENTES DA LOJA VIRTUAL (sql_store.customers):");
+        // Audit 1
+        System.out.println(">>> 2. AUDIT: STORE CUSTOMERS (sql_store.customers):");
         System.out.println("+-------------+--------------+--------+");
         System.out.println("| customer_id | first_name   | points |");
         System.out.println("+-------------+--------------+--------+");
@@ -136,12 +135,10 @@ public class Section4MasterGrandFinaleDemo {
             }
         }
         System.out.println("+-------------+--------------+--------+");
-        System.out.println("Confirmado: Babara voltou a 2.273 pts e Clemmie a 3.675 pts (Bônus resetados!)\n");
+        System.out.println("Verified: Customer baseline loyalty point metrics verified.\n");
 
-        // --------------------------------------------------------------------------------------
-        // AUDITORIA 2: COMENTÁRIOS DOS PEDIDOS (sql_store.orders)
-        // --------------------------------------------------------------------------------------
-        System.out.println(">>> 3. AUDITORIA: PEDIDOS DA LOJA VIRTUAL (sql_store.orders):");
+        // Audit 2
+        System.out.println(">>> 3. AUDIT: STORE ORDERS (sql_store.orders):");
         System.out.println("+----------+-------------+------------------+");
         System.out.println("| order_id | customer_id | comments         |");
         System.out.println("+----------+-------------+------------------+");
@@ -149,12 +146,10 @@ public class Section4MasterGrandFinaleDemo {
             System.out.println(o);
         }
         System.out.println("+----------+-------------+------------------+");
-        System.out.println("Confirmado: Todos os comentários voltaram a ser NULL (Etiquetas 'Gold customer' limpas!)\n");
+        System.out.println("Verified: Order lifecycle comments normalized.\n");
 
-        // --------------------------------------------------------------------------------------
-        // AUDITORIA 3: FATURAS FINANCEIRAS (sql_invoicing.invoices)
-        // --------------------------------------------------------------------------------------
-        System.out.println(">>> 4. AUDITORIA: FATURAS FINANCEIRAS (sql_invoicing.invoices):");
+        // Audit 3
+        System.out.println(">>> 4. AUDIT: INVOICES (sql_invoicing.invoices):");
         System.out.println("+------------+-----------+---------------+---------------+");
         System.out.println("| invoice_id | client_id | invoice_total | payment_total |");
         System.out.println("+------------+-----------+---------------+---------------+");
@@ -162,11 +157,10 @@ public class Section4MasterGrandFinaleDemo {
             System.out.println(inv);
         }
         System.out.println("+------------+-----------+---------------+---------------+");
-        System.out.println("Confirmado: Fatura 1 ressuscitada e Fatura 2 retornada a R$ 8.18!\n");
+        System.out.println("Verified: Financial invoices reconciled with accounting entries.\n");
 
         System.out.println("==========================================================================================================");
-        System.out.println("   SEÇÃO 4 (INSERTING, UPDATING, AND DELETING DATA) CONCLUÍDA COM 100% DE SUCESSO!                        ");
-        System.out.println("   AMBIENTE TOTALMENTE HOMOLOGADO PARA A SEÇÃO 5: SUMMARIZING DATA (AGRUPAMENTO E AGREGAÇÕES)!           ");
+        System.out.println("   MULTI-DATABASE RELATIONAL BASELINE VERIFICATION SUCCESSFUL                                             ");
         System.out.println("==========================================================================================================");
     }
 }

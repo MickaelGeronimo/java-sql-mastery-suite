@@ -3,16 +3,17 @@ package com.mickaelgeronimo.mastery.joins.outer;
 import java.util.*;
 
 /**
- * ==============================================================================
- * CAPÍTULO 23 (PARTE 5 - FINAL): DEMONSTRAÇÃO PRÁTICA EM JAVA
- * Tema: O Desafio Supremo de 6 Tabelas com Cascading Outer Joins,
- *       Projeções com Java Records e Auditoria de Índices B-Tree
- * ==============================================================================
+ * Enterprise Multi-Table Outer Join & Null-Safe Projection Architecture
+ * 
+ * Demonstrates:
+ * 1. Cascading multi-level outer joins preserving unmatched root entities (Customers -> Orders -> Items -> Shippers).
+ * 2. Immutable Java Record DTO projection.
+ * 3. Execution plan asymmetry: Non-commutativity in outer joins and B-Tree indexing constraints on foreign keys.
  */
-public class OuterJoinsMasterSupremeDemo {
+public class ComprehensiveOuterJoinAnalysis {
 
-    // Record para Projeção DTO Imutável (Java 16+)
-    record GlobalReportDTO(
+    // Immutable projection DTO
+    public record GlobalReportDTO(
         int customerId,
         String customerName,
         String phone,
@@ -61,10 +62,10 @@ public class OuterJoinsMasterSupremeDemo {
 
     public static void main(String[] args) {
         System.out.println("=========================================================================================");
-        System.out.println("   DEMONSTRAÇÃO JAVA: GRAND FINALE CAPÍTULO 23 - RELATÓRIO 360° COM 6 TABELAS");
+        System.out.println("   ENTERPRISE MULTI-TABLE OUTER JOIN & NULL-SAFE PROJECTION ANALYSIS                     ");
         System.out.println("=========================================================================================\n");
 
-        // 1. CARREGAMENTO DAS BASES RELACIONAIS
+        // 1. Relational data loading
         List<Customer> customers = Arrays.asList(
             new Customer(1, "Babara MacCaffrey", "781-932-9754"),
             new Customer(2, "Ines Brushfield", "804-427-9456"),
@@ -122,12 +123,10 @@ public class OuterJoinsMasterSupremeDemo {
             new OrderItem(10, 1, 10, 9.40)
         );
 
-        // --------------------------------------------------------------------------------------
-        // SIMULAÇÃO DO RELATÓRIO 360° COM CASCADING OUTER JOINS
-        // --------------------------------------------------------------------------------------
-        System.out.println("--- 1. PROJEÇÃO DO RELATÓRIO CORPORATIVO 360° (PRIMEIROS REGISTROS) ---");
+        // 1. Cascading multi-tier outer join resolution
+        System.out.println("--- 1. CASCADING OUTER JOIN PROJECTION (REPRESENTATIVE SAMPLE) ---");
         System.out.println("+----+----------------------+----------+------------+-------------+----------------------+------+-----------+---------------------+");
-        System.out.println("| ID | Cliente              | Pedido   | Data       | Status      | Produto Vendido      | Qtd  | Preço     | Transportadora      |");
+        System.out.println("| ID | Customer             | Order    | Date       | Status      | Sold Product         | Qty  | Price     | Carrier             |");
         System.out.println("+----+----------------------+----------+------------+-------------+----------------------+------+-----------+---------------------+");
 
         List<GlobalReportDTO> report = new ArrayList<>();
@@ -143,7 +142,7 @@ public class OuterJoinsMasterSupremeDemo {
                             hasItems = true;
                             Product p = products.get(oi.productId);
                             String shipperName = (o.shipperId != null && shippers.containsKey(o.shipperId))
-                                    ? shippers.get(o.shipperId) : "Sem Despacho";
+                                    ? shippers.get(o.shipperId) : "Unassigned";
 
                             report.add(new GlobalReportDTO(
                                 c.id, c.name, c.phone, String.valueOf(o.orderId), o.date,
@@ -153,23 +152,22 @@ public class OuterJoinsMasterSupremeDemo {
                         }
                     }
                     if (!hasItems) {
-                        String shipperName = (o.shipperId != null) ? shippers.get(o.shipperId) : "Sem Despacho";
+                        String shipperName = (o.shipperId != null) ? shippers.get(o.shipperId) : "Unassigned";
                         report.add(new GlobalReportDTO(
                             c.id, c.name, c.phone, String.valueOf(o.orderId), o.date,
-                            statuses.get(o.statusId), "Nenhum Item", "-", "-", shipperName
+                            statuses.get(o.statusId), "No Items", "-", "-", shipperName
                         ));
                     }
                 }
             }
             if (!hasOrder) {
-                // Cliente inativo preservado pelo LEFT JOIN!
+                // Inactive customers preserved via LEFT OUTER JOIN semantics
                 report.add(new GlobalReportDTO(
-                    c.id, c.name, c.phone, "NULL", "NULL", "Sem Histórico", "Nenhum Item", "-", "-", "Aguardando Compra"
+                    c.id, c.name, c.phone, "NULL", "NULL", "No History", "No Items", "-", "-", "Pending Order"
                 ));
             }
         }
 
-        // Imprime as primeiras 8 linhas da projeção
         for (int i = 0; i < Math.min(8, report.size()); i++) {
             GlobalReportDTO r = report.get(i);
             System.out.printf("| %-2d | %-20s | %-8s | %-10s | %-11s | %-20s | %-4s | %-9s | %-19s |\n",
@@ -178,22 +176,16 @@ public class OuterJoinsMasterSupremeDemo {
                     r.quantity, r.unitPrice, r.shipper);
         }
         System.out.println("+----+----------------------+----------+------------+-------------+----------------------+------+-----------+---------------------+");
-        System.out.println("Total de registros gerados no relatório 360°: " + report.size() + " linhas.");
-        System.out.println("✨ Todos os 10 clientes, 10 pedidos, itens e transportadoras combinados com segurança total!\n");
+        System.out.printf("Total outer join rows materialized: %d rows.%n%n", report.size());
 
-        // --------------------------------------------------------------------------------------
-        // DEMONSTRAÇÃO DE ÍNDICES NO LEFT JOIN (POR QUE NÃO HÁ COMUTATIVIDADE?)
-        // --------------------------------------------------------------------------------------
-        System.out.println("--- 2. A REGRA DE PERFORMANCE DO LEFT JOIN ---");
-        System.out.println("• No INNER JOIN: A ordem das tabelas NÃO IMPORTA (A JOIN B é igual a B JOIN A).");
-        System.out.println("  O otimizador escolhe a tabela menor para iniciar e a maior para indexar.");
-        System.out.println("• No LEFT JOIN: A ordem é RÍGIDA E FIXA! (A LEFT JOIN B NUNCA É IGUAL A B LEFT JOIN A)!");
-        System.out.println("  A tabela da ESQUERDA (A) SEMPRE é lida primeiro via Full Scan.");
-        System.out.println("  A tabela da DIREITA (B) DEVE OBRIGATORIAMENTE possuir índice B-Tree na chave estrangeira,");
-        System.out.println("  senão o banco fará buscas lentas para cada linha da tabela mestra!");
+        // 2. Performance & index considerations
+        System.out.println("--- 2. OUTER JOIN PERFORMANCE & INDEX ASYMMETRY ---");
+        System.out.println("• In INNER JOIN, table ordering is commutative (optimizer reorders based on selectivity).");
+        System.out.println("• In LEFT JOIN, table ordering is strictly asymmetric (A LEFT JOIN B != B LEFT JOIN A).");
+        System.out.println("• Table A drives the scan; Table B requires index coverage on join predicates to avoid N x M scans.");
 
         System.out.println("\n=========================================================================================");
-        System.out.println("   FIM DO CAPÍTULO 23! VOCÊ AGORA DOMINA 100% DAS JUNÇÕES EXTERNAS EM SQL E JAVA!");
+        System.out.println("   OUTER JOIN PERFORMANCE ARCHITECTURE VERIFIED                                          ");
         System.out.println("=========================================================================================");
     }
 }

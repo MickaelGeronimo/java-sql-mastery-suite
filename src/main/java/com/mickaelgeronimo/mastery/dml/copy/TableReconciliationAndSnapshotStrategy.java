@@ -7,13 +7,14 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * ==============================================================================
- * CAPÍTULO 34 (PARTE 6 - FINAL SUPREMO): DEMONSTRAÇÃO PRÁTICA EM JAVA 17
- * Tema: Disaster Recovery e Auto-Cura de Dados usando Tabelas Cópias,
- *       Algoritmo de Reconciliação (WHERE NOT EXISTS) e Snapshots Dinâmicos
- * ==============================================================================
+ * Enterprise Disaster Recovery & Reconciled Snapshot Strategy
+ * 
+ * Demonstrates:
+ * 1. Consistent snapshot isolation using staging copy tables.
+ * 2. Uncorrupted state reconciliation via NOT EXISTS anti-join logic.
+ * 3. Dynamic temporal point-in-time recovery procedure simulation.
  */
-public class CreatingCopyOfTablePart6FinalClimaxDemo {
+public class TableReconciliationAndSnapshotStrategy {
 
     private static final DateTimeFormatter SNAP_FORMATTER = DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss");
 
@@ -26,10 +27,10 @@ public class CreatingCopyOfTablePart6FinalClimaxDemo {
 
     public static void main(String[] args) {
         System.out.println("=========================================================================================");
-        System.out.println("   DEMONSTRAÇÃO JAVA: CAPÍTULO 34 (PARTE 6 FINAL) - DISASTER RECOVERY & AUTO-CURA        ");
+        System.out.println("   ENTERPRISE RECONCILIATION & DISASTER RECOVERY VIA COPY TABLES                         ");
         System.out.println("=========================================================================================\n");
 
-        // 1. Tabela Original de Produção com 10 Pedidos
+        // 1. Production baseline with 10 orders
         Map<Integer, Order> productionOrders = new LinkedHashMap<>();
         productionOrders.put(1, new Order(1, 6, LocalDate.of(2019, 1, 30), (byte) 1));
         productionOrders.put(2, new Order(2, 7, LocalDate.of(2018, 8, 2), (byte) 2));
@@ -42,63 +43,52 @@ public class CreatingCopyOfTablePart6FinalClimaxDemo {
         productionOrders.put(9, new Order(9, 10, LocalDate.of(2017, 7, 5), (byte) 2));
         productionOrders.put(10, new Order(10, 6, LocalDate.of(2018, 4, 22), (byte) 2));
 
-        // --------------------------------------------------------------------------------------
-        // PASSO 1: CRIAÇÃO DO SNAPSHOT DE SEGURANÇA
-        // --------------------------------------------------------------------------------------
-        System.out.println("--- 1. TIRANDO SNAPSHOT DE SEGURANÇA (orders_snapshot_master) ---");
+        // 1. Snapshot creation
+        System.out.println("--- 1. CREATING CONSISTENT BACKUP SNAPSHOT (orders_snapshot_master) ---");
         Map<Integer, Order> snapshotBackup = new LinkedHashMap<>(productionOrders);
-        System.out.printf("Snapshot criado com sucesso com %d registros preservados intactos.%n%n", snapshotBackup.size());
+        System.out.printf("Snapshot created successfully with %d records intact.%n%n", snapshotBackup.size());
 
-        // --------------------------------------------------------------------------------------
-        // PASSO 2: O DESASTRE CORPORATIVO (EXCLUSÃO ACIDENTAL)
-        // --------------------------------------------------------------------------------------
-        System.out.println("--- 2. SIMULAÇÃO DO DESASTRE: DELETE ACIDENTAL EM PRODUÇÃO ---");
-        System.out.println("Comando Acidental: DELETE FROM orders WHERE order_date < '2018-01-01';");
+        // 2. Incident simulation
+        System.out.println("--- 2. SIMULATING UNBOUNDED DELETION INCIDENT ---");
+        System.out.println("Command: DELETE FROM orders WHERE order_date < '2018-01-01';");
 
-        // Remove pedidos anteriores a 2018 (IDs 3, 4, 5 e 9)
         LocalDate cutoff = LocalDate.of(2018, 1, 1);
         productionOrders.entrySet().removeIf(entry -> entry.getValue().orderDate().isBefore(cutoff));
 
-        System.out.printf("-> Total de linhas restantes em produção após o incidente: %d registros!%n", productionOrders.size());
-        System.out.println("-> ALERTA VERMELHO: 4 pedidos críticos desapareceram do sistema!\n");
+        System.out.printf("-> Remaining production records: %d records.%n", productionOrders.size());
+        System.out.println("-> Degraded production state detected.\n");
 
-        System.out.println(">>> TABELA orders EM ESTADO DEGRADADO (APENAS 6 REGISTROS):");
+        System.out.println(">>> PRODUCTION TABLE (DEGRADED STATE):");
         printTable(productionOrders.values());
 
-        // --------------------------------------------------------------------------------------
-        // PASSO 3: O ALGORITMO DE AUTO-CURA (DISASTER RECOVERY COM WHERE NOT EXISTS)
-        // --------------------------------------------------------------------------------------
-        System.out.println("\n--- 3. EXECUTANDO A AUTO-CURA (DISASTER RECOVERY) ---");
+        // 3. Automated reconciliation via NOT EXISTS
+        System.out.println("\n--- 3. EXECUTING POINT-IN-TIME RECONCILIATION ---");
         System.out.println("SQL: INSERT INTO orders");
         System.out.println("     SELECT * FROM orders_snapshot_master b");
         System.out.println("     WHERE NOT EXISTS (SELECT 1 FROM orders o WHERE o.order_id = b.order_id);");
 
-        // Identificando registros que estão no backup mas sumiram da produção
         List<Order> missingOrders = snapshotBackup.values().stream()
             .filter(b -> !productionOrders.containsKey(b.orderId()))
             .sorted(Comparator.comparingInt(Order::orderId))
             .collect(Collectors.toList());
 
-        System.out.printf("-> Registros órfãos identificados para restauração imediata: %d pedidos.%n", missingOrders.size());
+        System.out.printf("-> Missing records identified for reconciliation: %d records.%n", missingOrders.size());
         for (Order o : missingOrders) {
             productionOrders.put(o.orderId(), o);
         }
 
-        System.out.println("-> Restauração concluída com sucesso! Tabela orders voltou a ter 10 registros!\n");
+        System.out.println("-> Reconciliation completed. Production table restored to 10 records!\n");
 
-        System.out.println(">>> TABELA orders 100% RECUPERADA E CURADA:");
+        System.out.println(">>> PRODUCTION TABLE FULLY RECONCILED:");
         printTable(productionOrders.values().stream().sorted(Comparator.comparingInt(Order::orderId)).collect(Collectors.toList()));
 
-        // --------------------------------------------------------------------------------------
-        // PASSO 4: SIMULAÇÃO DA PROCEDURE DE SNAPSHOT DINÂMICO
-        // --------------------------------------------------------------------------------------
-        System.out.println("\n--- 4. AUTOMAÇÃO DE SNAPSHOT DINÂMICO COM DATA/HORA ---");
+        // 4. Dynamic temporal snapshotting
+        System.out.println("\n--- 4. DYNAMIC TEMPORAL SNAPSHOTTING ---");
         String dynamicTableName = "shippers_snap_" + LocalDateTime.now().format(SNAP_FORMATTER);
-        System.out.println("Chamada da Procedure: CALL sp_create_quick_snapshot('shippers');");
-        System.out.println("-> Tabela física gerada: " + dynamicTableName);
-        System.out.println("-> Resposta: 'Snapshot criado com sucesso: " + dynamicTableName + "'");
+        System.out.println("Executing Procedure: CALL sp_create_quick_snapshot('shippers');");
+        System.out.println("-> Snapshot table materialized: " + dynamicTableName);
 
-        System.out.println("\nDemostração de encerramento absoluto do Capítulo 34 concluída com 100% de sucesso!");
+        System.out.println("\nReconciliation verification successful.");
         System.out.println("=========================================================================================\n");
     }
 
