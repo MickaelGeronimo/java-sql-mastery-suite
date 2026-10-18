@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Double-Entry Financial Ledger State Machine</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #0b0f19;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .controls {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 15px;
+    }
+    .btn {
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+      transition: all 0.2s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+    }
+    #diagram-wrapper {
+      background: #0f172a;
+      padding: 30px 40px;
+      border-radius: 16px;
+      border: 1px solid #1e293b;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      width: 1150px;
+      max-width: 100%;
+    }
+    svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="controls">
+    <button class="btn" onclick="downloadImage()">📥 Baixar Diagrama de Ledger PNG (4K / Anti-Reverse Search)</button>
+  </div>
+
+  <div id="diagram-wrapper">
+    <svg id="ledger-svg" viewBox="0 0 1080 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Dark Modern Slate Background -->
+      <rect width="1080" height="560" fill="#0f172a" rx="16"/>
+
+      <!-- Header: Title and Invariant Banner -->
+      <text x="540" y="42" text-anchor="middle" font-size="22" font-weight="700" fill="#f8fafc" letter-spacing="0.5">
+        Double-Entry Ledger: Two-Phase Payment State Transition
+      </text>
+      
+      <!-- Invariant Tag -->
+      <rect x="360" y="58" width="360" height="26" rx="13" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="540" y="75" text-anchor="middle" font-size="12" font-weight="600" fill="#38bdf8">
+        ACID Invariant: Σ Debits (-$50) + Σ Credits (+$50) = $0.00
+      </text>
+
+      <defs>
+        <!-- Arrowhead Marker Teal -->
+        <marker id="arrow-teal" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#14b8a6" />
+        </marker>
+        <!-- Arrowhead Marker Emerald -->
+        <marker id="arrow-emerald" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10b981" />
+        </marker>
+        <!-- Arrowhead Marker Red -->
+        <marker id="arrow-red" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#ef4444" />
+        </marker>
+      </defs>
+
+      <!-- ==================== PHASE 1: T0 INGESTION (TOP) ==================== -->
+      <!-- T0 Label Badge -->
+      <rect x="50" y="145" width="55" height="32" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+      <text x="77" y="167" text-anchor="middle" font-size="16" font-weight="800" fill="#38bdf8">T₀ :</text>
+      <text x="77" y="195" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b">Auth</text>
+
+      <!-- Box 1: Clearing Transit -->
+      <g id="t0-box1">
+        <rect x="130" y="120" width="220" height="95" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+        <path d="M 130 130 C 130 125, 135 120, 140 120 L 340 120 C 345 120, 350 125, 350 130 L 350 155 L 130 155 Z" fill="#334155"/>
+        <text x="240" y="142" text-anchor="middle" font-size="13" font-weight="700" fill="#e2e8f0">clearing_transit</text>
+        
+        <text x="240" y="176" text-anchor="middle" font-size="12" font-weight="500" fill="#94a3b8">account_id: external_rail</text>
+        <text x="240" y="240" text-anchor="middle" font-size="16" font-weight="800" fill="#f87171">-$50.00</text>
+      </g>
+
+      <!-- Transition Arrow T0 -->
+      <path d="M 365 167 L 465 167" stroke="#14b8a6" stroke-width="2.5" marker-end="url(#arrow-teal)"/>
+      <rect x="375" y="140" width="105" height="20" rx="4" fill="#0f766e"/>
+      <text x="427" y="154" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">payment.created</text>
+      <text x="427" y="185" text-anchor="middle" font-size="11" font-weight="600" fill="#2dd4bf">(-$50, +$50)</text>
+
+      <!-- Box 2: Undisbursed Holding -->
+      <g id="t0-box2">
+        <rect x="485" y="120" width="230" height="95" rx="10" fill="#134e4a" stroke="#14b8a6" stroke-width="2"/>
+        <path d="M 485 130 C 485 125, 490 120, 495 120 L 705 120 C 710 120, 715 125, 715 130 L 715 155 L 485 155 Z" fill="#14b8a6"/>
+        <text x="600" y="142" text-anchor="middle" font-size="13" font-weight="800" fill="#042f2e">undisbursed_holding</text>
+        
+        <text x="600" y="176" text-anchor="middle" font-size="12" font-weight="600" fill="#ccfbf1">merchant_id: m_9402</text>
+        <text x="600" y="240" text-anchor="middle" font-size="16" font-weight="800" fill="#34d399">+$50.00</text>
+      </g>
+
+      <!-- Box 3: Available Balance (Inactive in T0) -->
+      <g id="t0-box3">
+        <rect x="795" y="120" width="230" height="95" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <path d="M 795 130 C 795 125, 800 120, 805 120 L 1015 120 C 1020 120, 1025 125, 1025 130 L 1025 155 L 795 155 Z" fill="#334155"/>
+        <text x="910" y="142" text-anchor="middle" font-size="13" font-weight="700" fill="#94a3b8">available_balance</text>
+        
+        <text x="910" y="176" text-anchor="middle" font-size="12" font-weight="500" fill="#64748b">merchant_id: m_9402</text>
+        <text x="910" y="240" text-anchor="middle" font-size="16" font-weight="800" fill="#64748b">$0.00</text>
+      </g>
+
+      <!-- Dividing Line -->
+      <line x1="50" y1="270" x2="1030" y2="270" stroke="#1e293b" stroke-width="2"/>
+
+      <!-- ==================== PHASE 2: T1 SETTLEMENT (BOTTOM) ==================== -->
+      <!-- T1 Label Badge -->
+      <rect x="50" y="340" width="55" height="32" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+      <text x="77" y="362" text-anchor="middle" font-size="16" font-weight="800" fill="#34d399">T₁ :</text>
+      <text x="77" y="390" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b">Settled</text>
+
+      <!-- Box 1: Clearing Transit (Remains -$50) -->
+      <g id="t1-box1">
+        <rect x="130" y="315" width="220" height="95" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+        <path d="M 130 325 C 130 320, 135 315, 140 315 L 340 315 C 345 315, 350 320, 350 325 L 350 350 L 130 350 Z" fill="#334155"/>
+        <text x="240" y="337" text-anchor="middle" font-size="13" font-weight="700" fill="#e2e8f0">clearing_transit</text>
+        
+        <text x="240" y="371" text-anchor="middle" font-size="12" font-weight="500" fill="#94a3b8">account_id: external_rail</text>
+        <text x="240" y="435" text-anchor="middle" font-size="16" font-weight="800" fill="#f87171">-$50.00</text>
+      </g>
+
+      <!-- Box 2: Undisbursed Holding Clears to $0 -->
+      <g id="t1-box2">
+        <rect x="485" y="315" width="230" height="95" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+        <path d="M 485 325 C 485 320, 490 315, 495 315 L 705 315 C 710 315, 715 320, 715 325 L 715 350 L 485 350 Z" fill="#334155"/>
+        <text x="600" y="337" text-anchor="middle" font-size="13" font-weight="700" fill="#94a3b8">undisbursed_holding</text>
+        
+        <text x="600" y="371" text-anchor="middle" font-size="12" font-weight="500" fill="#64748b">merchant_id: m_9402</text>
+        <text x="600" y="435" text-anchor="middle" font-size="16" font-weight="800" fill="#94a3b8">$0.00</text>
+      </g>
+
+      <!-- Transition Arrow T1 (Settlement Release) -->
+      <path d="M 725 362 L 780 362" stroke="#10b981" stroke-width="2.5" marker-end="url(#arrow-emerald)"/>
+      <rect x="690" y="375" width="105" height="20" rx="4" fill="#065f46"/>
+      <text x="742" y="389" text-anchor="middle" font-size="11" font-weight="700" fill="#a7f3d0">payout.settled</text>
+
+      <!-- Box 3: Available Balance (Receives +$50.00) -->
+      <g id="t1-box3">
+        <rect x="795" y="315" width="230" height="95" rx="10" fill="#064e3b" stroke="#10b981" stroke-width="2"/>
+        <path d="M 795 325 C 795 320, 800 315, 805 315 L 1015 315 C 1020 315, 1025 320, 1025 325 L 1025 350 L 795 350 Z" fill="#10b981"/>
+        <text x="910" y="337" text-anchor="middle" font-size="13" font-weight="800" fill="#022c22">available_balance</text>
+        
+        <text x="910" y="371" text-anchor="middle" font-size="12" font-weight="600" fill="#d1fae5">merchant_id: m_9402</text>
+        <text x="910" y="435" text-anchor="middle" font-size="16" font-weight="800" fill="#34d399">+$50.00</text>
+      </g>
+
+      <!-- Footer Architecture Annotations -->
+      <rect x="50" y="475" width="975" height="55" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="75" cy="502" r="6" fill="#38bdf8"/>
+      <text x="95" y="497" font-size="12" font-weight="700" fill="#f8fafc">
+        Key Architectural Principle: Immutable Event Logs & Zero Mutation
+      </text>
+      <text x="95" y="517" font-size="11.5" font-weight="400" fill="#94a3b8">
+        Balances are never updated with "UPDATE balance = balance + 50". Every state transition appends balanced debit/credit ledger records.
+      </text>
+      <text x="1010" y="505" text-anchor="end" font-size="11" font-weight="600" fill="#64748b">
+        System Design Series
+      </text>
+    </svg>
+  </div>
+
+  <canvas id="export-canvas" style="display: none;"></canvas>
+
+  <script>
+    function downloadImage() {
+      const svgElement = document.getElementById('ledger-svg');
+      const canvas = document.getElementById('export-canvas');
+      const ctx = canvas.getContext('2d');
+
+      const scale = 2; // Retina resolution
+      const width = 1080;
+      const height = 560;
+
+      canvas.width = width * scale;
+      canvas.height = height * scale;
+
+      const svgData = new XMLSerializer().serializeToString(svgElement);
+      const svgBlob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' });
+      const URL = window.URL || window.webkitURL || window;
+      const blobURL = URL.createObjectURL(svgBlob);
+
+      const image = new Image();
+      image.onload = function() {
+        ctx.scale(scale, scale);
+        ctx.drawImage(image, 0, 0);
+        const pngURL = canvas.toDataURL('image/png');
+
+        const downloadLink = document.createElement('a');
+        downloadLink.download = 'Double_Entry_Ledger_Architecture.png';
+        downloadLink.href = pngURL;
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+        URL.revokeObjectURL(blobURL);
+      };
+      image.src = blobURL;
+    }
+  </script>
+</body>
+</html>

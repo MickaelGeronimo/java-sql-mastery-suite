@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Kafka Multi-Datacenter Architecture - LinkedIn Post</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #0f172a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .controls {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 15px;
+    }
+    .btn {
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+      transition: all 0.2s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+    }
+    /* Canvas Container */
+    #diagram-wrapper {
+      background: #ffffff;
+      padding: 40px 50px;
+      border-radius: 16px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      width: 1200px;
+      max-width: 100%;
+    }
+    svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="controls">
+    <button class="btn" onclick="downloadImage()">📥 Baixar Imagem PNG para o LinkedIn (Alta Resolução)</button>
+  </div>
+
+  <div id="diagram-wrapper">
+    <svg id="architecture-svg" viewBox="0 0 1100 580" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Background Clean White -->
+      <rect width="1100" height="580" fill="#ffffff" rx="12"/>
+
+      <!-- Header Title inside diagram -->
+      <text x="550" y="45" text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a" letter-spacing="0.5">
+        Multi-Datacenter Kafka Architecture: Local Writes & Async Mirroring
+      </text>
+      <text x="550" y="72" text-anchor="middle" font-size="14" font-weight="500" fill="#64748b">
+        Sub-millisecond Local Ingestion with Cross-Region Fault Isolation
+      </text>
+
+      <!-- DEFINITIONS: Gradients & Markers -->
+      <defs>
+        <!-- Arrowhead Marker Blue -->
+        <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2563eb" />
+        </marker>
+        <!-- Arrowhead Marker Purple (Mirroring) -->
+        <marker id="arrow-purple" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#7c3aed" />
+        </marker>
+        <marker id="arrow-purple-rev" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M 8 1.5 L 0 5 L 8 8.5 z" fill="#7c3aed" />
+        </marker>
+
+        <!-- Gradients -->
+        <linearGradient id="dc-bg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#f8fafc"/>
+          <stop offset="100%" stop-color="#f1f5f9"/>
+        </linearGradient>
+        <linearGradient id="client-bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#3b82f6"/>
+          <stop offset="100%" stop-color="#1d4ed8"/>
+        </linearGradient>
+        <linearGradient id="kafka-bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="100%" stop-color="#f8fafc"/>
+        </linearGradient>
+      </defs>
+
+      <!-- ==================== DATACENTER 1 ==================== -->
+      <g id="dc1">
+        <!-- DC Box -->
+        <rect x="50" y="100" width="290" height="370" rx="16" fill="url(#dc-bg)" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 6"/>
+        <!-- DC Header Badge -->
+        <rect x="110" y="86" width="170" height="28" rx="14" fill="#0f172a"/>
+        <text x="195" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff" letter-spacing="0.5">DATACENTER 1</text>
+
+        <!-- Client Apps Box -->
+        <g id="client1">
+          <rect x="75" y="140" width="240" height="90" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+          <!-- Stack Effect Tabs -->
+          <rect x="85" y="128" width="220" height="12" rx="4" fill="#bfdbfe"/>
+          <text x="195" y="175" text-anchor="middle" font-size="16" font-weight="700" fill="#1e3a8a">Client Applications</text>
+          <text x="195" y="198" text-anchor="middle" font-size="12" font-weight="500" fill="#3b82f6">Payment APIs & Workers</text>
+        </g>
+
+        <!-- Downward Arrow to Kafka -->
+        <path d="M 195 235 L 195 285" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+        <rect x="145" y="248" width="100" height="20" rx="4" fill="#dbeafe"/>
+        <text x="195" y="262" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1d4ed8">Local Write (&lt; 2ms)</text>
+
+        <!-- Kafka Cluster Box -->
+        <g id="kafka1">
+          <rect x="75" y="295" width="240" height="145" rx="12" fill="url(#kafka-bg)" stroke="#0f172a" stroke-width="2"/>
+          <!-- Kafka Icon / Visual -->
+          <circle cx="115" cy="335" r="14" fill="#0f172a"/>
+          <circle cx="140" cy="325" r="8" fill="#0f172a"/>
+          <circle cx="140" cy="345" r="8" fill="#0f172a"/>
+          <line x1="115" y1="335" x2="140" y2="325" stroke="#0f172a" stroke-width="3"/>
+          <line x1="115" y1="335" x2="140" y2="345" stroke="#0f172a" stroke-width="3"/>
+
+          <text x="160" y="342" font-size="20" font-weight="800" fill="#0f172a">Apache Kafka</text>
+          <line x1="95" y1="365" x2="295" y2="365" stroke="#e2e8f0" stroke-width="1"/>
+          <text x="195" y="390" text-anchor="middle" font-size="12" font-weight="600" fill="#475569">Local Broker Cluster</text>
+          <text x="195" y="412" text-anchor="middle" font-size="11" font-weight="500" fill="#059669">✓ Ingestion Source of Truth</text>
+        </g>
+      </g>
+
+      <!-- ==================== DATACENTER 2 ==================== -->
+      <g id="dc2">
+        <!-- DC Box -->
+        <rect x="405" y="100" width="290" height="370" rx="16" fill="url(#dc-bg)" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 6"/>
+        <!-- DC Header Badge -->
+        <rect x="465" y="86" width="170" height="28" rx="14" fill="#0f172a"/>
+        <text x="550" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff" letter-spacing="0.5">DATACENTER 2</text>
+
+        <!-- Client Apps Box -->
+        <g id="client2">
+          <rect x="430" y="140" width="240" height="90" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+          <rect x="440" y="128" width="220" height="12" rx="4" fill="#bfdbfe"/>
+          <text x="550" y="175" text-anchor="middle" font-size="16" font-weight="700" fill="#1e3a8a">Client Applications</text>
+          <text x="550" y="198" text-anchor="middle" font-size="12" font-weight="500" fill="#3b82f6">Payment APIs & Workers</text>
+        </g>
+
+        <!-- Downward Arrow to Kafka -->
+        <path d="M 550 235 L 550 285" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+        <rect x="500" y="248" width="100" height="20" rx="4" fill="#dbeafe"/>
+        <text x="550" y="262" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1d4ed8">Local Write (&lt; 2ms)</text>
+
+        <!-- Kafka Cluster Box -->
+        <g id="kafka2">
+          <rect x="430" y="295" width="240" height="145" rx="12" fill="url(#kafka-bg)" stroke="#0f172a" stroke-width="2"/>
+          <circle cx="470" cy="335" r="14" fill="#0f172a"/>
+          <circle cx="495" cy="325" r="8" fill="#0f172a"/>
+          <circle cx="495" cy="345" r="8" fill="#0f172a"/>
+          <line x1="470" y1="335" x2="495" y2="325" stroke="#0f172a" stroke-width="3"/>
+          <line x1="470" y1="335" x2="495" y2="345" stroke="#0f172a" stroke-width="3"/>
+
+          <text x="515" y="342" font-size="20" font-weight="800" fill="#0f172a">Apache Kafka</text>
+          <line x1="450" y1="365" x2="650" y2="365" stroke="#e2e8f0" stroke-width="1"/>
+          <text x="550" y="390" text-anchor="middle" font-size="12" font-weight="600" fill="#475569">Local Broker Cluster</text>
+          <text x="550" y="412" text-anchor="middle" font-size="11" font-weight="500" fill="#059669">✓ Ingestion Source of Truth</text>
+        </g>
+      </g>
+
+      <!-- ==================== DATACENTER 3 ==================== -->
+      <g id="dc3">
+        <!-- DC Box -->
+        <rect x="760" y="100" width="290" height="370" rx="16" fill="url(#dc-bg)" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 6"/>
+        <!-- DC Header Badge -->
+        <rect x="820" y="86" width="170" height="28" rx="14" fill="#0f172a"/>
+        <text x="905" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff" letter-spacing="0.5">DATACENTER 3</text>
+
+        <!-- Client Apps Box -->
+        <g id="client3">
+          <rect x="785" y="140" width="240" height="90" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+          <rect x="795" y="128" width="220" height="12" rx="4" fill="#bfdbfe"/>
+          <text x="905" y="175" text-anchor="middle" font-size="16" font-weight="700" fill="#1e3a8a">Client Applications</text>
+          <text x="905" y="198" text-anchor="middle" font-size="12" font-weight="500" fill="#3b82f6">Payment APIs & Workers</text>
+        </g>
+
+        <!-- Downward Arrow to Kafka -->
+        <path d="M 905 235 L 905 285" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+        <rect x="855" y="248" width="100" height="20" rx="4" fill="#dbeafe"/>
+        <text x="905" y="262" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1d4ed8">Local Write (&lt; 2ms)</text>
+
+        <!-- Kafka Cluster Box -->
+        <g id="kafka3">
+          <rect x="785" y="295" width="240" height="145" rx="12" fill="url(#kafka-bg)" stroke="#0f172a" stroke-width="2"/>
+          <circle cx="825" cy="335" r="14" fill="#0f172a"/>
+          <circle cx="850" cy="325" r="8" fill="#0f172a"/>
+          <circle cx="850" cy="345" r="8" fill="#0f172a"/>
+          <line x1="825" y1="335" x2="850" y2="325" stroke="#0f172a" stroke-width="3"/>
+          <line x1="825" y1="335" x2="850" y2="345" stroke="#0f172a" stroke-width="3"/>
+
+          <text x="870" y="342" font-size="20" font-weight="800" fill="#0f172a">Apache Kafka</text>
+          <line x1="805" y1="365" x2="1005" y2="365" stroke="#e2e8f0" stroke-width="1"/>
+          <text x="905" y="390" text-anchor="middle" font-size="12" font-weight="600" fill="#475569">Local Broker Cluster</text>
+          <text x="905" y="412" text-anchor="middle" font-size="11" font-weight="500" fill="#059669">✓ Ingestion Source of Truth</text>
+        </g>
+      </g>
+
+      <!-- ==================== ASYNC DATA MIRRORING ARROWS ==================== -->
+      <!-- DC1 <-> DC2 -->
+      <path d="M 320 370 L 420 370" stroke="#7c3aed" stroke-width="3" stroke-dasharray="6 4" marker-end="url(#arrow-purple)" marker-start="url(#arrow-purple-rev)"/>
+      <rect x="335" y="355" width="70" height="18" rx="4" fill="#f3e8ff"/>
+      <text x="370" y="368" text-anchor="middle" font-size="10" font-weight="700" fill="#6b21a8">Mirroring</text>
+
+      <!-- DC2 <-> DC3 -->
+      <path d="M 675 370 L 775 370" stroke="#7c3aed" stroke-width="3" stroke-dasharray="6 4" marker-end="url(#arrow-purple)" marker-start="url(#arrow-purple-rev)"/>
+      <rect x="690" y="355" width="70" height="18" rx="4" fill="#f3e8ff"/>
+      <text x="725" y="368" text-anchor="middle" font-size="10" font-weight="700" fill="#6b21a8">Mirroring</text>
+
+      <!-- DC1 <-> DC3 Curved Bottom Arrow -->
+      <path d="M 195 445 C 195 530, 905 530, 905 445" stroke="#7c3aed" stroke-width="3" stroke-dasharray="8 6" fill="none" marker-end="url(#arrow-purple)" marker-start="url(#arrow-purple-rev)"/>
+      <!-- Pill Badge on Bottom Curve -->
+      <rect x="430" y="505" width="240" height="26" rx="13" fill="#7c3aed"/>
+      <text x="550" y="522" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">
+        ⚡ Asynchronous Data Mirroring (MirrorMaker)
+      </text>
+
+      <!-- Footer Branding / Professional Badge -->
+      <text x="50" y="565" font-size="12" font-weight="600" fill="#94a3b8">
+        Architecture Note: Concurrency & Idempotency must be handled at the consumer layer.
+      </text>
+      <text x="1050" y="565" text-anchor="end" font-size="12" font-weight="700" fill="#64748b">
+        Distributed Systems Architecture
+      </text>
+    </svg>
+  </div>
+
+  <canvas id="export-canvas" style="display: none;"></canvas>
+
+  <script>
+    function downloadImage() {
+      const svgElement = document.getElementById('architecture-svg');
+      const canvas = document.getElementById('export-canvas');
+      const ctx = canvas.getContext('2d');
+
+      // Set ultra high resolution (2x scaling for retina/LinkedIn display)
+      const scale = 2;
+      const width = 1100;
+      const height = 580;
+
+      canvas.width = width * scale;
+      canvas.height = height * scale;
+
+      const svgData = new XMLSerializer().serializeToString(svgElement);
+      const svgBlob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' });
+      const URL = window.URL || window.webkitURL || window;
+      const blobURL = URL.createObjectURL(svgBlob);
+
+      const image = new Image();
+      image.onload = function() {
+        ctx.scale(scale, scale);
+        ctx.drawImage(image, 0, 0);
+        const pngURL = canvas.toDataURL('image/png');
+
+        const downloadLink = document.createElement('a');
+        downloadLink.download = 'Kafka_Multi_Datacenter_Architecture.png';
+        downloadLink.href = pngURL;
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+        URL.revokeObjectURL(blobURL);
+      };
+      image.src = blobURL;
+    }
+  </script>
+</body>
+</html>

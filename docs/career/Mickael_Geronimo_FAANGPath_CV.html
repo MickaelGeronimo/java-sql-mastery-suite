@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mickael Geronimo - Senior Backend Engineer - Resume</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 0.38in 0.45in 0.38in 0.45in;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 9.8pt;
+      line-height: 1.23;
+      color: #111;
+      background-color: #fff;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 7px;
+    }
+    .header h1 {
+      font-size: 18.5pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 3px;
+    }
+    .header .contact-line {
+      font-size: 9.3pt;
+      color: #222;
+    }
+    .header .contact-line a {
+      color: #111;
+      text-decoration: none;
+    }
+    .divider-dot {
+      margin: 0 5px;
+      color: #555;
+    }
+    /* Section Headings */
+    .section-title {
+      font-size: 10.2pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1px solid #111;
+      padding-bottom: 1px;
+      margin-top: 7px;
+      margin-bottom: 4px;
+    }
+    /* Experience & Education Entries */
+    .entry {
+      margin-bottom: 5px;
+    }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: bold;
+      font-size: 9.8pt;
+    }
+    .entry-subheader {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-style: italic;
+      font-size: 9.3pt;
+      color: #222;
+      margin-bottom: 2px;
+    }
+    ul {
+      margin-left: 17px;
+      padding-left: 0;
+    }
+    li {
+      font-size: 9.3pt;
+      margin-bottom: 2px;
+      text-align: justify;
+    }
+    /* Skills */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 9.3pt;
+    }
+    .skills-table td {
+      padding: 1.2px 0;
+      vertical-align: top;
+    }
+    .skills-category {
+      font-weight: bold;
+      width: 22%;
+      white-space: nowrap;
+    }
+    .skills-list {
+      width: 78%;
+    }
+    @media print {
+      body {
+        font-size: 9.6pt;
+      }
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1>Mickael Geronimo</h1>
+      <div class="contact-line">
+        São Paulo, Brazil <span class="divider-dot">&#9671;</span>
+        +55 21 97613-8894 <span class="divider-dot">&#9671;</span>
+        <a href="mailto:mickaeldevoriginal@protonmail.com">mickaeldevoriginal@protonmail.com</a> <span class="divider-dot">&#9671;</span>
+        <a href="https://linkedin.com/in/mickael-geronimo" target="_blank">linkedin.com/in/mickael-geronimo</a> <span class="divider-dot">&#9671;</span>
+        <a href="https://github.com/mickaelgeronimo" target="_blank">github.com/mickaelgeronimo</a>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <div class="section-title">Summary</div>
+      <p style="font-size: 9.3pt; text-align: justify;">
+        Senior Backend Engineer with 6+ years of experience building resilient distributed systems and payment processing backends. Specializing in <strong>Java (17/21), Spring Boot, Apache Kafka, AWS, and PostgreSQL</strong>. Strong focus on distributed concurrency, asynchronous transaction reconciliation, and high-volume API reliability. Track record of scaling global payroll across 150+ countries, optimizing database throughput to reduce p95 latency by 40%, and delivering fault-tolerant event streams with zero data loss.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <div class="section-title">Technical Skills</div>
+      <table class="skills-table">
+        <tr>
+          <td class="skills-category">Languages:</td>
+          <td class="skills-list">Java (17/21), Kotlin, Python, Go, SQL (PostgreSQL, MySQL), TypeScript</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Backend & Core:</td>
+          <td class="skills-list">Spring Boot, Spring Cloud, Hibernate, RESTful APIs, Concurrency, Microservices</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Distributed Systems:</td>
+          <td class="skills-list">Apache Kafka, Redis, RabbitMQ, Distributed Locking, Event-Driven Architecture</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Cloud & DevOps:</td>
+          <td class="skills-list">AWS (EKS, Lambda, S3, RDS), Docker, Kubernetes, Terraform, CI/CD, Git</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Observability & Security:</td>
+          <td class="skills-list">OAuth 2.0, SCIM, Prometheus, Grafana, OpenTelemetry, Distributed Tracing, JUnit</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Professional Experience -->
+    <section>
+      <div class="section-title">Professional Experience</div>
+
+      <!-- Stripe -->
+      <div class="entry">
+        <div class="entry-header">
+          <span>Senior Backend Engineer</span>
+          <span>Feb 2024 &ndash; Present</span>
+        </div>
+        <div class="entry-subheader">
+          <span>Stripe</span>
+          <span>Remote, United States</span>
+        </div>
+        <ul>
+          <li><strong>Decoupled payment authorization from ledger writes via the Transactional Outbox pattern and Kafka</strong>, trading immediate consistency for sub-100ms API latency while eliminating duplicate charges through distributed idempotency locks.</li>
+          <li><strong>Engineered multi-tier Redis caching and distributed token-bucket rate limiting</strong>, shielding transactional databases from thundering-herd spikes and reducing checkout p95 latency by <strong>40%</strong>.</li>
+          <li><strong>Built an immutable double-entry ledger</strong> that asynchronously reconciled internal transaction states against external banking settlement files, resolving balance anomalies and maintaining <strong>99.999%</strong> audit accuracy.</li>
+          <li><strong>Held end-to-end ownership of core ledger services</strong>; authored cross-team RFCs on event schema standards and mentored 4 engineers through system designs, code reviews, and on-call operational excellence.</li>
+        </ul>
+      </div>
+
+      <!-- Deel -->
+      <div class="entry">
+        <div class="entry-header">
+          <span>Software Engineer</span>
+          <span>Dec 2020 &ndash; Jan 2024</span>
+        </div>
+        <div class="entry-subheader">
+          <span>Deel</span>
+          <span>Remote, United States</span>
+        </div>
+        <ul>
+          <li><strong>Developed core disbursement microservices in Java, Spring Boot, and PostgreSQL</strong>, orchestrating asynchronous multi-currency payout batches across payment providers in <strong>150+ countries</strong>.</li>
+          <li><strong>Architected an outbound webhook delivery engine with HMAC-SHA256 signatures and dead-letter queues (DLQ)</strong>, trading delivery immediacy for guaranteed at-least-once reliability via exponential backoff.</li>
+          <li><strong>Built SCIM 2.0 and OAuth 2.0 connectors</strong> for enterprise identity providers (Okta, Azure AD), automating employee provisioning workflows and resolving cross-system user state discrepancies.</li>
+          <li><strong>Championed contract-driven API design and expand-and-contract schema migrations across 3 engineering squads</strong>, establishing zero-downtime release standards and backward compatibility for public endpoints.</li>
+        </ul>
+      </div>
+
+      <!-- Upwork -->
+      <div class="entry">
+        <div class="entry-header">
+          <span>Software Engineer (Freelance)</span>
+          <span>Jan 2018 &ndash; May 2019</span>
+        </div>
+        <div class="entry-subheader">
+          <span>Upwork</span>
+          <span>Remote, United States</span>
+        </div>
+        <ul>
+          <li><strong>Delivered full-stack applications and RESTful backend services</strong> for international clients using <strong>Java, Python, and PostgreSQL/MySQL</strong>, translating client specifications into scalable architectures.</li>
+          <li><strong>Automated containerized deployment workflows</strong> using Docker and CI/CD pipelines, cutting client delivery turnaround times and standardizing production rollout environments.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section>
+      <div class="section-title">Education & Certifications</div>
+      <div class="entry">
+        <div class="entry-header">
+          <span>AWS Certified Solutions Architect &ndash; Associate (SAA-C03)</span>
+          <span>Jun 2026</span>
+        </div>
+        <div class="entry-subheader">
+          <span>Amazon Web Services (AWS)</span>
+          <span>Credential Active</span>
+        </div>
+      </div>
+      <div class="entry" style="margin-bottom: 0;">
+        <div class="entry-header">
+          <span>Universidade Estácio de Sá</span>
+          <span>Jan 2021 &ndash; Oct 2023</span>
+        </div>
+        <div class="entry-subheader">
+          <span>Technologist Degree in Systems Analysis and Development (CST)</span>
+          <span>Brazil</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
