@@ -21,11 +21,6 @@ Este capítulo aborda de ponta a ponta a teoria, sintaxe, boas práticas e armad
 Todos os documentos detalhados de estudo e transcrição didática deste capítulo estão catalogados abaixo:
 
 | Parte | Arquivo | Tema Principal |
-| :---: | :--- | :--- |
-| **01** | [**01_enhanced_switches.md**](file:///docs/curriculum/capitulo_18_enhanced_switches/01_enhanced_switches.md) | ðŸ’¡ CapÃ­tulo 18: Enhanced Switches (Switches Modernos) â€” Parte 1: O Problema do `if - else if` Repetitivo |
-| **02** | [**02_enhanced_switches.md**](file:///docs/curriculum/capitulo_18_enhanced_switches/02_enhanced_switches.md) | ðŸ’¡ CapÃ­tulo 18: Enhanced Switches (Switches Modernos) â€” Parte 2: A Sintaxe com Setinha (`->`), o `default` e o `Scanner` |
-| **03** | [**03_enhanced_switches_agrupamento.md**](file:///docs/curriculum/capitulo_18_enhanced_switches/03_enhanced_switches_agrupamento.md) | ðŸ’¡ CapÃ­tulo 18: Enhanced Switches (Switches Modernos) â€” Parte 3: O Poder do Agrupamento com VÃ­rgulas (CÃ³digo Perfeito e Compacto) |
-
----
-
-> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.
+| :---: | :--- | :--- |\n| **01** | [**01_enhanced_switches.md**](./01_enhanced_switches.md) | ðŸ’¡ CapÃ­tulo 18: Enhanced Switches (Switches Modernos) â€” Parte 1: O Problema do `if - else if` Repetitivo |
+| **02** | [**02_enhanced_switches.md**](./02_enhanced_switches.md) | ðŸ’¡ CapÃ­tulo 18: Enhanced Switches (Switches Modernos) â€” Parte 2: A Sintaxe com Setinha (`->`), o `default` e o `Scanner` |
+| **03** | [**03_enhanced_switches_agrupamento.md**](./03_enhanced_switches_agrupamento.md) | ðŸ’¡ CapÃ­tulo 18: Enhanced Switches (Switches Modernos) â€” Parte 3: O Poder do Agrupamento com VÃ­rgulas (CÃ³digo Perfeito e Compacto) |\n\n---\n\n> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.\n

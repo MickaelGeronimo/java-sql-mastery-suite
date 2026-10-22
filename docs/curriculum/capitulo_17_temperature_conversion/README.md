@@ -21,11 +21,6 @@ Este capítulo aborda de ponta a ponta a teoria, sintaxe, boas práticas e armad
 Todos os documentos detalhados de estudo e transcrição didática deste capítulo estão catalogados abaixo:
 
 | Parte | Arquivo | Tema Principal |
-| :---: | :--- | :--- |
-| **01** | [**01_conversor_temperatura.md**](file:///docs/curriculum/capitulo_17_temperature_conversion/01_conversor_temperatura.md) | ðŸŒ¡ï¸ CapÃ­tulo 17: Conversor de Temperatura (Temperature Converter) â€” Parte 1: Estrutura, Entradas e o Truque do `.toUpperCase()` |
-| **02** | [**02_conversor_temperatura.md**](file:///docs/curriculum/capitulo_17_temperature_conversion/02_conversor_temperatura.md) | ðŸŒ¡ï¸ CapÃ­tulo 17: Conversor de Temperatura (Temperature Converter) â€” Parte 2: O Operador TernÃ¡rio MatemÃ¡tico e o SÃ­mbolo de Grau (`Â°`) |
-| **03** | [**03_conversor_temperatura_printf.md**](file:///docs/curriculum/capitulo_17_temperature_conversion/03_conversor_temperatura_printf.md) | ðŸŒ¡ï¸ CapÃ­tulo 17: Conversor de Temperatura (Temperature Converter) â€” Parte 3: A FormataÃ§Ã£o Perfeita com `printf("%.1fÂ°%s")` |
-
----
-
-> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.
+| :---: | :--- | :--- |\n| **01** | [**01_conversor_temperatura.md**](./01_conversor_temperatura.md) | ðŸŒ¡ï¸ CapÃ­tulo 17: Conversor de Temperatura (Temperature Converter) â€” Parte 1: Estrutura, Entradas e o Truque do `.toUpperCase()` |
+| **02** | [**02_conversor_temperatura.md**](./02_conversor_temperatura.md) | ðŸŒ¡ï¸ CapÃ­tulo 17: Conversor de Temperatura (Temperature Converter) â€” Parte 2: O Operador TernÃ¡rio MatemÃ¡tico e o SÃ­mbolo de Grau (`Â°`) |
+| **03** | [**03_conversor_temperatura_printf.md**](./03_conversor_temperatura_printf.md) | ðŸŒ¡ï¸ CapÃ­tulo 17: Conversor de Temperatura (Temperature Converter) â€” Parte 3: A FormataÃ§Ã£o Perfeita com `printf("%.1fÂ°%s")` |\n\n---\n\n> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.\n

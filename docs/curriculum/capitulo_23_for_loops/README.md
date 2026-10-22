@@ -21,12 +21,7 @@ Este capítulo aborda de ponta a ponta a teoria, sintaxe, boas práticas e armad
 Todos os documentos detalhados de estudo e transcrição didática deste capítulo estão catalogados abaixo:
 
 | Parte | Arquivo | Tema Principal |
-| :---: | :--- | :--- |
-| **01** | [**01_for_loops_introducao.md**](file:///docs/curriculum/capitulo_23_for_loops/01_for_loops_introducao.md) | ðŸ”‚ Curso de Java para Iniciantes â€” Bro Code |
-| **02** | [**02_for_loops_contagem_regressiva_e_passos.md**](file:///docs/curriculum/capitulo_23_for_loops/02_for_loops_contagem_regressiva_e_passos.md) | ðŸ”‚ Curso de Java para Iniciantes â€” Bro Code |
-| **03** | [**03_for_loops_com_scanner_dinamico.md**](file:///docs/curriculum/capitulo_23_for_loops/03_for_loops_com_scanner_dinamico.md) | ðŸ”‚ Curso de Java para Iniciantes â€” Bro Code |
-| **04** | [**04_for_loops_contagem_regressiva_sleep.md**](file:///docs/curriculum/capitulo_23_for_loops/04_for_loops_contagem_regressiva_sleep.md) | ðŸ”‚ Curso de Java para Iniciantes â€” Bro Code |
-
----
-
-> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.
+| :---: | :--- | :--- |\n| **01** | [**01_for_loops_introducao.md**](./01_for_loops_introducao.md) | ðŸ”‚ Curso de Java para Iniciantes â€” Bro Code |
+| **02** | [**02_for_loops_contagem_regressiva_e_passos.md**](./02_for_loops_contagem_regressiva_e_passos.md) | ðŸ”‚ Curso de Java para Iniciantes â€” Bro Code |
+| **03** | [**03_for_loops_com_scanner_dinamico.md**](./03_for_loops_com_scanner_dinamico.md) | ðŸ”‚ Curso de Java para Iniciantes â€” Bro Code |
+| **04** | [**04_for_loops_contagem_regressiva_sleep.md**](./04_for_loops_contagem_regressiva_sleep.md) | ðŸ”‚ Curso de Java para Iniciantes â€” Bro Code |\n\n---\n\n> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.\n

@@ -1,4 +1,4 @@
-# Capítulo 45: A Palavra-chave `super` em Java (`super 🦸‍♂️`)
+﻿# Capítulo 45: A Palavra-chave `super` em Java (`super 🦸‍♂️`)
 
 Bem-vindo ao guia de referência consolidado do **Capítulo 45** do curso de Java. Após o domínio da **Herança (`inheritance`)** no Capítulo 44, este capítulo mergulha no mecanismo fundamental que viabiliza a cooperação limpa entre superclasses e subclasses: a palavra-chave reservada **`super`**.
 
@@ -68,22 +68,11 @@ classDiagram
 Todos os documentos detalhados para estudo e cópia direta para documentação estão catalogados abaixo:
 
 | Parte | Arquivo | Tema Central Dissecado |
-| :---: | :--- | :--- |
-| **01** | [**`01_definicao_e_criacao_classe_person.md`**](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_45_super/01_definicao_e_criacao_classe_person.md) | O que é `super`? Os 3 pilares teóricos nos comentários e criação da classe base `Person`. |
-| **02** | [**`02_implementando_person_atributos_construtor_e_showname.md`**](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_45_super/02_implementando_person_atributos_construtor_e_showname.md) | Atributos `first`/`last`, construtor com `this`, método `showName()` e teste inicial com Tom Riddle. |
-| **03** | [**`03_criando_student_o_grande_erro_do_construtor_pai.md`**](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_45_super/03_criando_student_o_grande_erro_do_construtor_pai.md) | Subclasse `Student extends Person`, atributo `gpa` e dissecação do erro vermelho do compilador. |
-| **04** | [**`04_super_em_acao_com_student_harry_potter.md`**](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_45_super/04_super_em_acao_com_student_harry_potter.md) | A solução definitiva com `super(first, last)`, por que `Person()` é ilegal e teste com Harry Potter. |
-| **05** | [**`05_adicionando_metodo_showgpa_no_student.md`**](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_45_super/05_adicionando_metodo_showgpa_no_student.md) | Criação de `showGPA()`, acesso unificado ao atributo herdado (`first`) e ao próprio (`gpa`). |
-| **06** | [**`06_criando_employee_com_salary_e_hagrid.md`**](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_45_super/06_criando_employee_com_salary_e_hagrid.md) | Segunda subclasse `Employee`, atributo `salary`, `showSalary()` e teste prático com Rubeus Hagrid. |
-| **07** | [**`07_saida_hagrid_e_o_experimento_do_construtor_vazio.md`**](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_45_super/07_saida_hagrid_e_o_experimento_do_construtor_vazio.md) | Saída de console formatada e o experimento arquitetural de esvaziar o construtor de `Person`. |
-| **08** | [**`08_o_que_acontece_sem_super_first_last_e_o_perigo_do_null.md`**](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_45_super/08_o_que_acontece_sem_super_first_last_e_o_perigo_do_null.md) | Efeito dominó, quebra de contratos de tipo, perigo dos atributos fantasmas com `null` e conclusão. |
-
----
-
-## 💻 Implementação no Projeto Java
-
-As classes prontas e executáveis do domínio estão implementadas no pacote:
-👉 [`com.mickaelgeronimo.mastery.core.oop.superkeyword`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/superkeyword)
-
-A suíte de testes automatizados com cobertura completa de regras de herança e encadeamento encontra-se em:
-👉 [`SuperKeywordTest.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/test/java/com/mickaelgeronimo/mastery/core/SuperKeywordTest.java)
+| :---: | :--- | :--- |\n| **01** | [**01_definicao_e_criacao_classe_person.md**](./01_definicao_e_criacao_classe_person.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |
+| **02** | [**02_implementando_person_atributos_construtor_e_showname.md**](./02_implementando_person_atributos_construtor_e_showname.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |
+| **03** | [**03_criando_student_o_grande_erro_do_construtor_pai.md**](./03_criando_student_o_grande_erro_do_construtor_pai.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |
+| **04** | [**04_super_em_acao_com_student_harry_potter.md**](./04_super_em_acao_com_student_harry_potter.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |
+| **05** | [**05_adicionando_metodo_showgpa_no_student.md**](./05_adicionando_metodo_showgpa_no_student.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |
+| **06** | [**06_criando_employee_com_salary_e_hagrid.md**](./06_criando_employee_com_salary_e_hagrid.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |
+| **07** | [**07_saida_hagrid_e_o_experimento_do_construtor_vazio.md**](./07_saida_hagrid_e_o_experimento_do_construtor_vazio.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |
+| **08** | [**08_o_que_acontece_sem_super_first_last_e_o_perigo_do_null.md**](./08_o_que_acontece_sem_super_first_last_e_o_perigo_do_null.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |\n\n---\n\n> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.\n

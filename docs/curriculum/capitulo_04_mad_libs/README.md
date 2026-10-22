@@ -21,9 +21,4 @@ Este capítulo aborda de ponta a ponta a teoria, sintaxe, boas práticas e armad
 Todos os documentos detalhados de estudo e transcrição didática deste capítulo estão catalogados abaixo:
 
 | Parte | Arquivo | Tema Principal |
-| :---: | :--- | :--- |
-| **01** | [**01_mad_libs.md**](file:///docs/curriculum/capitulo_04_mad_libs/01_mad_libs.md) | ðŸŽ® Mad Libs Game â€” ExplicaÃ§Ã£o Linha por Linha |
-
----
-
-> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.
+| :---: | :--- | :--- |\n| **01** | [**01_mad_libs.md**](./01_mad_libs.md) | ðŸŽ® Mad Libs Game â€” ExplicaÃ§Ã£o Linha por Linha |\n\n---\n\n> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.\n
