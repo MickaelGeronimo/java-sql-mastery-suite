@@ -1,0 +1,37 @@
+﻿# Capítulo 67: Mapas Chave-Valor com HashMap (HashMap)
+
+Tabelas hash associativas de alta performance: métodos put, get, remove, containsKey, containsValue, iteração de chaves/valores e o cuidado com chaves duplicadas.
+
+---
+
+## 🧭 Visão Geral e Arquitetura Conceitual
+
+Este capítulo aborda de ponta a ponta a teoria, sintaxe, boas práticas e armadilhas comuns encontradas na prática profissional ao lidar com este tópico em Java.
+
+### 🎯 Objetivos de Aprendizagem
+- Dominar a sintaxe fundamental e convenções da linguagem Java.
+- Compreender a anatomia interna e comportamento na JVM.
+- Reconhecer e contornar armadilhas e erros de compilação clássicos.
+- Aplicar o conceito em arquiteturas limpas e desacopladas.
+
+---
+
+## 📚 Índice Modular dos Materiais de Estudo
+
+Todos os documentos detalhados de estudo e transcrição didática deste capítulo estão catalogados abaixo:
+
+| Parte | Arquivo | Tema Principal |
+| :---: | :--- | :--- |
+| **01** | [**01_hashmaps_introducao_conceito_chave_valor_e_raw_types.md**](file:///docs/curriculum/capitulo_67_hashmaps/01_hashmaps_introducao_conceito_chave_valor_e_raw_types.md) | ðŸ—ºï¸ Curso de Java Completo â€” CapÃ­tulo 67: HashMaps (Parte 1) |
+| **02** | [**02_hashmaps_tipagem_string_double_erro_de_um_tipo_e_diamante.md**](file:///docs/curriculum/capitulo_67_hashmaps/02_hashmaps_tipagem_string_double_erro_de_um_tipo_e_diamante.md) | ðŸ—ºï¸ Curso de Java Completo â€” CapÃ­tulo 67: HashMaps (Parte 2) |
+| **03** | [**03_hashmaps_metodos_keyset_loop_e_regras.md**](file:///docs/curriculum/capitulo_67_hashmaps/03_hashmaps_metodos_keyset_loop_e_regras.md) | Curso de Java â€” Bro Code (12 Horas) |
+| **04** | [**04_hashmaps_put_coconut_remove_apple_e_get_metodos.md**](file:///docs/curriculum/capitulo_67_hashmaps/04_hashmaps_put_coconut_remove_apple_e_get_metodos.md) | Curso de Java â€” Bro Code (12 Horas) |
+| **05** | [**05_hashmaps_metodo_containskey_banana_pineapple.md**](file:///docs/curriculum/capitulo_67_hashmaps/05_hashmaps_metodo_containskey_banana_pineapple.md) | Curso de Java â€” Bro Code (12 Horas) |
+| **06** | [**06_hashmaps_if_else_containskey_apple_pineapple.md**](file:///docs/curriculum/capitulo_67_hashmaps/06_hashmaps_if_else_containskey_apple_pineapple.md) | Curso de Java â€” Bro Code (12 Horas) |
+| **07** | [**07_hashmaps_containsvalue_pegadinha_tipos_e_size.md**](file:///docs/curriculum/capitulo_67_hashmaps/07_hashmaps_containsvalue_pegadinha_tipos_e_size.md) | Curso de Java â€” Bro Code (12 Horas) |
+| **08** | [**08_hashmaps_nascimento_loop_keyset_impressao_bruta.md**](file:///docs/curriculum/capitulo_67_hashmaps/08_hashmaps_nascimento_loop_keyset_impressao_bruta.md) | Curso de Java â€” Bro Code (12 Horas) |
+| **09** | [**09_hashmaps_loop_keyset_saida_formatada_e_revisao_regras.md**](file:///docs/curriculum/capitulo_67_hashmaps/09_hashmaps_loop_keyset_saida_formatada_e_revisao_regras.md) | Curso de Java â€” Bro Code (12 Horas) |
+
+---
+
+> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.
