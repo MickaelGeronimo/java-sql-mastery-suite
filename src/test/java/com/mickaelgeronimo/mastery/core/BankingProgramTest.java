@@ -113,7 +113,9 @@ class BankingProgramTest {
         // 3 (sacar 40)
         // 4 (sair)
         String simulatedInput = "1\n2\n100,0\n3\n40,0\n4\n";
-        Scanner mockScanner = new Scanner(new ByteArrayInputStream(simulatedInput.getBytes(StandardCharsets.UTF_8)));
+        // Fixed locale: input uses the Brazilian decimal comma, independent of the machine default.
+        Scanner mockScanner = new Scanner(new ByteArrayInputStream(simulatedInput.getBytes(StandardCharsets.UTF_8)))
+                .useLocale(java.util.Locale.forLanguageTag("pt-BR"));
 
         BankingProgramCLI.setScanner(mockScanner);
         BankingProgramCLI.main(new String[]{});
