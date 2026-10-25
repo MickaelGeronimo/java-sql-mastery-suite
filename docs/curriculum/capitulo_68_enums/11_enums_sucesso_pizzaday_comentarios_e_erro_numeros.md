@@ -409,7 +409,7 @@ E o compilador deu erro: `Incompatible types. Found: 'int', required: 'Day'`.
 ## 8. Conclusão Final do Capítulo 68
 
 Parabéns! Você concluiu com maestria todo o **Capítulo 68 (`enums 📅`)** do curso do Bro Code:
-* Aprendeu o conceito de Enum e criou o arquivo [`Day.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Day.java).
+* Aprendeu o conceito de Enum e criou o arquivo [`Day.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/models/Day.java).
 * Adicionou atributos, construtores e métodos getters aos Enums.
 * Usou a sintaxe moderna de `switch` com setas (`->`) e múltiplos casos por linha.
 * Fez a leitura de teclado com `Scanner` e normalizou com `.toUpperCase()`.

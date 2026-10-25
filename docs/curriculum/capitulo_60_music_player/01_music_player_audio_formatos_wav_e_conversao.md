@@ -2,7 +2,7 @@
 
 > **Curso:** Java Full Course (Bro Code) — Capítulo 60: `music player`  
 > **Timestamp:** `[9:28:53 - 9:29:45]`  
-> **Arquivo do Workspace:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
+> **Arquivo do Workspace:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
 > **Objetivo:** Compreender por que o Java puro não toca arquivos `.mp3` nativamente, como obter músicas livres de direitos e convertê-las para `.wav`, e como funciona a arquitetura de áudio da biblioteca padrão `javax.sound.sampled` (`File`, `AudioInputStream`, `AudioSystem` e `Clip`) com um menu interativo no console.
 
 ---
@@ -172,7 +172,7 @@ flowchart TD
     E -->|"clip.setMicrosecondPosition(0)"| H["Rebobina para o Começo ⏮️"]
 ```
 
-1. **[`File`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):** É apenas o "endereço postal" do arquivo no seu HD ou SSD.
+1. **[`File`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):** É apenas o "endereço postal" do arquivo no seu HD ou SSD.
 2. **`AudioSystem`:** É a "fábrica" do Java que conversa com a placa de som do seu computador.
 3. **`AudioInputStream`:** É o canudo que lê as ondas de áudio do arquivo `.wav` e as decodifica.
 4. **`Clip`:** É a nossa vitrola / toca-fitas virtual! Diferente de uma leitura comum que lê e descarta os dados, o `Clip` guarda a música inteira na memória RAM. Isso permite você dar play, pausar, voltar pro início ou tocar em loop instantaneamente!

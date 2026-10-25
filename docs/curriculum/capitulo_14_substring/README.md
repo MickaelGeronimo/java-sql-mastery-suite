@@ -21,8 +21,12 @@ Este capítulo aborda de ponta a ponta a teoria, sintaxe, boas práticas e armad
 Todos os documentos detalhados de estudo e transcrição didática deste capítulo estão catalogados abaixo:
 
 | Parte | Arquivo | Tema Principal |
-| :---: | :--- | :--- |\n| **01** | [**01_substring.md**](./01_substring.md) | ðŸ§µ CapÃ­tulo 14: `substring()` â€” Fatiando Textos em Java (Parte 1) |
-| **02** | [**02_substring_com_um_argumento_e_armadilha.md**](./02_substring_com_um_argumento_e_armadilha.md) | ðŸ§µ CapÃ­tulo 14: `substring()` â€” Parte 2 (O Corte atÃ© o Final e a Armadilha dos NÃºmeros Fixos) |
-| **03** | [**03_substring_com_indexof_dinamico.md**](./03_substring_com_indexof_dinamico.md) | ðŸ§µ CapÃ­tulo 14: `substring()` DinÃ¢mico com `indexOf()` â€” Parte 3 |
-| **04** | [**04_substring_interativo_com_scanner.md**](./04_substring_interativo_com_scanner.md) | ðŸ§µ CapÃ­tulo 14: `substring()` Interativo com `Scanner` â€” Parte 4 |
-| **05** | [**05_substring_validacao_completa.md**](./05_substring_validacao_completa.md) | ðŸ§µ CapÃ­tulo 14: `substring()` â€” Parte 5 (O Grande Escudo de SeguranÃ§a: `if (email.contains("@"))`) |\n\n---\n\n> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.\n
+| :---: | :--- | :--- |\n| **01** | [**01_substring.md**](./01_substring.md) | 🧵 Capítulo 14: `substring()` — Fatiando Textos em Java (Parte 1) |
+| **02** | [**02_substring_com_um_argumento_e_armadilha.md**](./02_substring_com_um_argumento_e_armadilha.md) | 🧵 Capítulo 14: `substring()` — Parte 2 (O Corte até o Final e a Armadilha dos Números Fixos) |
+| **03** | [**03_substring_com_indexof_dinamico.md**](./03_substring_com_indexof_dinamico.md) | 🧵 Capítulo 14: `substring()` Dinâmico com `indexOf()` — Parte 3 |
+| **04** | [**04_substring_interativo_com_scanner.md**](./04_substring_interativo_com_scanner.md) | 🧵 Capítulo 14: `substring()` Interativo com `Scanner` — Parte 4 |
+| **05** | [**05_substring_validacao_completa.md**](./05_substring_validacao_completa.md) | 🧵 Capítulo 14: `substring()` — Parte 5 (O Grande Escudo de Segurança: `if (email.contains("@"))`) |
+
+---
+
+> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.

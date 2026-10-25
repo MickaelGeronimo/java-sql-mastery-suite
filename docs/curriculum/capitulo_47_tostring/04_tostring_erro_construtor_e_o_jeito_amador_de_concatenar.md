@@ -26,7 +26,7 @@ Nesta sequência de 5 capturas de tela, o professor Bro Code constrói a narrati
 Para quem está estudando pelo Google Docs e não tem as imagens na tela:
 
 ### Imagem 1 (`media_1791357678158.png` — 07:47:47): O Erro de Compilação
-* **Arquivo Ativo:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo Ativo:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Editor de Código:** Na linha 10, o professor acabou de digitar:
   ```java
   Car car = new Car();
@@ -34,7 +34,7 @@ Para quem está estudando pelo Google Docs e não tem as imagens na tela:
 * **O Alerta Visual:** Os parênteses `();` estão sublinhados com uma linha serrilhada vermelha. O compilador do Java está reclamando que o construtor `Car()` sem argumentos não existe.
 
 ### Imagem 2 (`media_1791357714637.png` — 07:48:18): A Correção dos Argumentos
-* O professor fornece os 4 valores necessários para satisfazer o construtor de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java):
+* O professor fornece os 4 valores necessários para satisfazer o construtor de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java):
   ```java
   Car car = new Car("Ford", "Mustang", 2025, "Red");
   ```
@@ -117,11 +117,11 @@ Mas por que isso é considerado uma **péssima prática de programação profiss
 4. **Falta de Padronização:** Um programador da sua equipe pode escrever `car.color + " " + car.model`, outro pode escrever `car.make + " - " + car.year`, gerando bagunça no sistema.
 
 **A Solução Elegante:**
-O próprio objeto [`Car`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) deve saber se apresentar sozinho! Basta que ele tenha o seu próprio método **`.toString()`** sobrescrito!
+O próprio objeto [`Car`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) deve saber se apresentar sozinho! Basta que ele tenha o seu próprio método **`.toString()`** sobrescrito!
 
 ---
 
-## 5. Análise Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 5. Análise Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Abaixo está a listagem de cada linha com sua função e o que ela provoca no computador:
 
@@ -149,13 +149,13 @@ Abaixo está a listagem de cada linha com sua função e o que ela provoca no co
 * **Linhas 4 a 7 (Comentários):** Notas explicativas sobre a teoria de `.toString()`. *(O compilador ignora completamente).*
 * **Linha 8:** Linha em branco.
 * **Linha 9 (`Car car = new Car("Ford", "Mustang", 2025, "Red");`):**
-  * Aloca espaço na memória Heap para um objeto da classe [`Car`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+  * Aloca espaço na memória Heap para um objeto da classe [`Car`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
   * Executa o construtor preenchendo: `make = "Ford"`, `model = "Mustang"`, `year = 2025` e `color = "Red"`.
   * *(Nada sai no console).*
 * **Linha 10:** Linha em branco.
 * **Linha 11 (`System.out.println(car);`):**
   * O `println` chama implicitamente `car.toString()`.
-  * Como a classe `Car` ainda não sobrescreveu o método, roda o `toString()` padrão herdado da classe mãe [`Object`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Object.java).
+  * Como a classe `Car` ainda não sobrescreveu o método, roda o `toString()` padrão herdado da classe mãe `Object`.
   * **Saída no Console:**
     ```text
     Car@6acbcfc0
@@ -204,4 +204,4 @@ Process finished with exit code 0
 1. **Construtores são rigorosos:** Se você declarou um construtor com 4 argumentos na classe, você não pode chamar `new Car()` vazio sem passar esses 4 argumentos.
 2. **`System.out.println(car)` entrega o hash code:** Porque a classe `Car` ainda não tem sua própria implementação de `toString()`.
 3. **Concatenação manual é armadilha:** Escrever `car.color + " " + car.year + ...` resolve temporariamente a exibição, mas polui o código e quebra as boas práticas.
-4. **O Grande Clímax que vem aí:** Vamos pegar essa lógica de formatação e guardá-la dentro de um método `@Override String toString()` dentro de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)! Assim, bastará escrever `System.out.println(car)` para ver o texto perfeito na tela!
+4. **O Grande Clímax que vem aí:** Vamos pegar essa lógica de formatação e guardá-la dentro de um método `@Override String toString()` dentro de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)! Assim, bastará escrever `System.out.println(car)` para ver o texto perfeito na tela!

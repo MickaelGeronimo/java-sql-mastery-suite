@@ -9,9 +9,9 @@
 
 ## 1. Visão Geral da Cena: O Efeito Dominó do Experimento
 
-Na Parte 7, o professor fez um teste radical em [`Person.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java): ele apagou os parâmetros `String first, String last` e transformou o construtor do pai em um construtor vazio sem argumentos: `Person(){ }`.
+Na Parte 7, o professor fez um teste radical em `Person.java`: ele apagou os parâmetros `String first, String last` e transformou o construtor do pai em um construtor vazio sem argumentos: `Person(){ }`.
 
-Agora, nestas 2 capturas de tela, o professor volta para a aba [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java) para mostrar aos alunos o efeito dominó dessa alteração:
+Agora, nestas 2 capturas de tela, o professor volta para a aba `Student.java` para mostrar aos alunos o efeito dominó dessa alteração:
 
 1. **O Erro em `Student.java` (Imagem 1):**  
    A linha `super(first, last);` fica com um **sublinhado vermelho ondulado** de erro!  
@@ -108,7 +108,7 @@ Veja o rastreamento da memória:
 
 ---
 
-## 4. Análise Linha por Linha de [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java)
+## 4. Análise Linha por Linha de `Student.java`
 
 ### Versão da Imagem 2 (Sem o `super`):
 

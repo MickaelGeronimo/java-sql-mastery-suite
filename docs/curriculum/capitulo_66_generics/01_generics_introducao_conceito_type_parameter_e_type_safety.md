@@ -213,7 +213,7 @@ Com Generics, **o compilador não deixa o código nem compilar**! O erro é dete
 
 ---
 
-## 🔍 Explicação Linha por Linha do Arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 🔍 Explicação Linha por Linha do Arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Abaixo está o código integral compilado e analisado nesta lição:
 

@@ -7,8 +7,8 @@
 - **Curso:** *Java Full Course for free* (Canal: Bro Code)
 - **Capítulo Oficial:** `58. write files ✍️`
 - **Intervalo de Tempo no Vídeo:** `09:16:55` até `09:17:35` (do total de 12:00:00)
-- **Arquivo Principal de Trabalho:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-- **Arquivo de Texto Criado no Projeto:** [`test.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/test.txt)
+- **Arquivo Principal de Trabalho:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+- **Arquivo de Texto Criado no Projeto:** [`test.txt`](../../../src/main/resources/test.txt)
 - **Pasta Alvo de Exemplo no Windows Desktop:** Pasta `"Nuclear Launch Codes"` (Códigos de Lançamento Nuclear)
 - **Ambiente de Desenvolvimento (IDE):** IntelliJ IDEA Community Edition rodando no Windows 10/11
 
@@ -113,7 +113,7 @@ Objetivo: Obter o CAMINHO ABSOLUTO (Absolute Path) dessa pasta no computador!
 
 ---
 
-## 🍕 O Código do Arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) Nesta Etapa
+## 🍕 O Código do Arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Nesta Etapa
 
 O código em execução neste trecho é o mesmo da etapa anterior, mas agora o professor o analisa sob a ótica de **onde** o arquivo foi parar:
 
@@ -176,7 +176,7 @@ File has been written
 Process finished with exit code 0
 ```
 
-### 2. O que tem dentro da aba [`test.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/test.txt) no IntelliJ (Imagem 3):
+### 2. O que tem dentro da aba [`test.txt`](../../../src/main/resources/test.txt) no IntelliJ (Imagem 3):
 ```text
 I like pizza!
 ```

@@ -7,7 +7,7 @@
 - **Curso:** *Java Full Course for free* (Canal: Bro Code)
 - **Capítulo Oficial:** `58. write files ✍️`
 - **Intervalo de Tempo no Vídeo:** `09:17:34` até `09:18:15` (do total de 12:00:00)
-- **Arquivo Principal de Trabalho:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+- **Arquivo Principal de Trabalho:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 - **Arquivo Criado na Área de Trabalho:** `C:\Users\HP\Desktop\test.txt` (aberto pelo Windows Notepad / Bloco de Notas)
 - **Ambiente de Desenvolvimento (IDE):** IntelliJ IDEA Community Edition + Sistema Operacional Windows
 
@@ -121,7 +121,7 @@ e cai diretamente na linha 14 do catch: "Could not write file"!
 
 ---
 
-## 🍕 O Código do Arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 🍕 O Código do Arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Aqui estão as duas versões de código demonstradas pelo professor nestas 5 imagens:
 

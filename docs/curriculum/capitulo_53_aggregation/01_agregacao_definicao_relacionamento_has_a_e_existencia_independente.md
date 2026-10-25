@@ -9,9 +9,9 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal com a Definição: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Guia de Conclusão do Capítulo Anterior (Capítulo 52 - Parte 10: Getters e Setters): [`explicacao_getters_and_setters_teste_de_validacao_regras_de_negocio_e_conclusao_capitulo52_parte10.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_teste_de_validacao_regras_de_negocio_e_conclusao_capitulo52_parte10.md)
+* Arquivo Principal com a Definição: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Guia de Conclusão do Capítulo Anterior (Capítulo 52 - Parte 10: Getters e Setters): `explicacao_getters_and_setters_teste_de_validacao_regras_de_negocio_e_conclusao_capitulo52_parte10.md`
 
 ---
 
@@ -27,7 +27,7 @@ Nas aulas passadas, você aprendeu:
 Agora, o professor Bro Code começa a ensinar **COMO OS OBJETOS SE CONECTAM E SE RELACIONAM ENTRE SI**.
 
 Nesta primeira imagem de abertura do capítulo:
-1. **Limpeza do Projeto:** O arquivo [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) do capítulo anterior foi apagado. Na pasta `src`, existe apenas o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+1. **Limpeza do Projeto:** O arquivo [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) do capítulo anterior foi apagado. Na pasta `src`, existe apenas o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 2. **O Conceito em Destaque:** O autor não digitou código executável ainda. Ele escreveu três linhas de comentário fundamentais que resumem a teoria de **Agregação**.
 
 ```text
@@ -110,8 +110,8 @@ Esse é o teste infalível para saber se algo é uma **Agregação**:
 * **Árvore de Projeto à Esquerda:**
   * Projeto: `MyFirstProject`
   * Pastas: `.idea`, `out`, `src`
-  * Arquivos dentro de `src`: Apenas [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (o arquivo `Car.java` foi removido para iniciar o novo capítulo limpo).
-* **Aba Ativa no Editor:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (única aba aberta).
+  * Arquivos dentro de `src`: Apenas [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (o arquivo `Car.java` foi removido para iniciar o novo capítulo limpo).
+* **Aba Ativa no Editor:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (única aba aberta).
 * **Código no Editor (Linhas 1 a 10):**
   ```java
    1    public class Main {
@@ -132,7 +132,7 @@ Esse é o teste infalível para saber se algo é uma **Agregação**:
 
 ---
 
-## 5. Análise Linha por Linha do Arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 5. Análise Linha por Linha do Arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1 public class Main {
@@ -167,6 +167,6 @@ Esse é o teste infalível para saber se algo é uma **Agregação**:
 Para demonstrar a Agregação na prática em Java, o professor Bro Code criará **pelo menos duas classes separadas**:
 1. Uma classe para representar o **objeto menor / contido** (por exemplo, `Book` com título e número de páginas, ou `Student` com nome e matrícula).
 2. Uma classe para representar o **objeto maior / agregador** (por exemplo, `Library` ou `School`), que terá uma variável ou array para guardar os objetos menores dentro de si.
-3. No [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), ele instanciará os objetos menores primeiro de forma independente, e depois passará esses objetos para dentro do objeto maior através do construtor ou de um método!
+3. No [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), ele instanciará os objetos menores primeiro de forma independente, e depois passará esses objetos para dentro do objeto maior através do construtor ou de um método!
 
 Isso provará com código real que os objetos menores nascem fora e continuam existindo mesmo se o objeto maior for descartado!

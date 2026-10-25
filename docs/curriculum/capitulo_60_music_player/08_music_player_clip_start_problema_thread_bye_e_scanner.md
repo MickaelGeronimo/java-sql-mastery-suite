@@ -2,8 +2,8 @@
 
 > **Curso:** Java Full Course (Bro Code) — Capítulo 60: `music player`  
 > **Timestamp do Vídeo:** `[9:36:51 - 9:38:20]`  
-> **Arquivo do Workspace:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
-> **Objetivo:** Compreender um dos maiores choques para alunos iniciantes em Java: por que chamar [`clip.start()`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L23) faz o programa imprimir `"Bye!"` e fechar em menos de 1 segundo sem tocar a música, entender como funcionam as **Threads em Segundo Plano (*Multithreading*)** da placa de som, e ver como o [`Scanner`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L18) é usado para "segurar" o programa aberto.
+> **Arquivo do Workspace:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
+> **Objetivo:** Compreender um dos maiores choques para alunos iniciantes em Java: por que chamar [`clip.start()`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L23) faz o programa imprimir `"Bye!"` e fechar em menos de 1 segundo sem tocar a música, entender como funcionam as **Threads em Segundo Plano (*Multithreading*)** da placa de som, e ver como o [`Scanner`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L18) é usado para "segurar" o programa aberto.
 
 ---
 

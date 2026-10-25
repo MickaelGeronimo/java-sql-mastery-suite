@@ -121,7 +121,7 @@ System.out.println("The word was: " + word);
 
 ---
 
-## 📜 Código-Fonte Atualizado ([`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java))
+## 📜 Código-Fonte Atualizado ([`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java))
 
 ```java
 import java.util.ArrayList;

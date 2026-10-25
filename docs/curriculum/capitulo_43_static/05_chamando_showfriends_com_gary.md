@@ -3,7 +3,7 @@
 > **Contexto do Curso:** *Java Full Course for free* (Bro Code)  
 > **Capítulo:** 43 — `static 🤝`  
 > **Tempo do Vídeo:** `07:20:00` até `07:20:30` / `12:00:00`  
-> **Arquivos do Projeto:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e [Friend.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java)  
+> **Arquivos do Projeto:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e [Friend.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java)  
 > **Objetivo Deste Documento:** Guia didático minucioso, pronto para copiar e colar no **Google Docs**, recriando com exatidão as telas do IntelliJ IDEA, dissecando cada linha de código para um iniciante absoluto e demonstrando a execução de um método estático em harmonia com uma variável estática.
 
 ---
@@ -42,7 +42,7 @@ Nesta etapa, o instrutor Bro Code une as duas metades da moeda do modificador `s
 ### Detalhamento Quadro a Quadro (As 2 Imagens Explicadas)
 
 #### 🖼️ Imagem 1: Substituindo o Print Manual por `Friend.showFriends()`
-* **Arquivo ativo:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo ativo:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que mudou no código:**
   * O autor apagou a linha `System.out.println(Friend.numOfFriends);`.
   * No lugar dela, na linha 14, ele chamou o novo método estático criado na classe `Friend`:
@@ -55,7 +55,7 @@ Nesta etapa, o instrutor Bro Code une as duas metades da moeda do modificador `s
 ---
 
 #### 🖼️ Imagem 2 (`07:20:26`): Adicionando Gary e a Saída Formatada no Console
-* **Arquivo ativo:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo ativo:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que mudou no código:**
   * Bro Code adicionou um quinto amigo na linha 13:
     ```java
@@ -127,7 +127,7 @@ Friend.showFriends();
 
 ## 4. Código Completo e Linha por Linha Numerado
 
-### Arquivo 1: [Friend.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java)
+### Arquivo 1: [Friend.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java)
 
 ```java
  1: public class Friend {
@@ -147,7 +147,7 @@ Friend.showFriends();
 15: }
 ```
 
-#### Explicação Detalhada de [Friend.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java):
+#### Explicação Detalhada de [Friend.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java):
 
 * **Linha 1 (`public class Friend {`):** Define a classe pública `Friend`.
 * **Linha 2 (` `):** Linha em branco.
@@ -178,7 +178,7 @@ Friend.showFriends();
 
 ---
 
-### Arquivo 2: [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: public class Main {
@@ -199,7 +199,7 @@ Friend.showFriends();
 16: }
 ```
 
-#### Explicação Detalhada de [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+#### Explicação Detalhada de [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 * **Linha 1 (`public class Main {`):** Abre a classe principal.
 * **Linha 2 (`public static void main(String[] args) {`):** Ponto de partida do programa.

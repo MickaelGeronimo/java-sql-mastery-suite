@@ -68,11 +68,15 @@ classDiagram
 Todos os documentos detalhados para estudo e cópia direta para documentação estão catalogados abaixo:
 
 | Parte | Arquivo | Tema Central Dissecado |
-| :---: | :--- | :--- |\n| **01** | [**01_definicao_e_criacao_classe_person.md**](./01_definicao_e_criacao_classe_person.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |
-| **02** | [**02_implementando_person_atributos_construtor_e_showname.md**](./02_implementando_person_atributos_construtor_e_showname.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |
-| **03** | [**03_criando_student_o_grande_erro_do_construtor_pai.md**](./03_criando_student_o_grande_erro_do_construtor_pai.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |
-| **04** | [**04_super_em_acao_com_student_harry_potter.md**](./04_super_em_acao_com_student_harry_potter.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |
-| **05** | [**05_adicionando_metodo_showgpa_no_student.md**](./05_adicionando_metodo_showgpa_no_student.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |
-| **06** | [**06_criando_employee_com_salary_e_hagrid.md**](./06_criando_employee_com_salary_e_hagrid.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |
-| **07** | [**07_saida_hagrid_e_o_experimento_do_construtor_vazio.md**](./07_saida_hagrid_e_o_experimento_do_construtor_vazio.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |
-| **08** | [**08_o_que_acontece_sem_super_first_last_e_o_perigo_do_null.md**](./08_o_que_acontece_sem_super_first_last_e_o_perigo_do_null.md) | Curso de Java â€” CapÃ­tulo 45: Palavra-chave `super` (`super ðŸ”`) |\n\n---\n\n> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.\n
+| :---: | :--- | :--- |\n| **01** | [**01_definicao_e_criacao_classe_person.md**](./01_definicao_e_criacao_classe_person.md) | Curso de Java — Capítulo 45: Palavra-chave `super` (`super 🔝`) |
+| **02** | [**02_implementando_person_atributos_construtor_e_showname.md**](./02_implementando_person_atributos_construtor_e_showname.md) | Curso de Java — Capítulo 45: Palavra-chave `super` (`super 🔝`) |
+| **03** | [**03_criando_student_o_grande_erro_do_construtor_pai.md**](./03_criando_student_o_grande_erro_do_construtor_pai.md) | Curso de Java — Capítulo 45: Palavra-chave `super` (`super 🔝`) |
+| **04** | [**04_super_em_acao_com_student_harry_potter.md**](./04_super_em_acao_com_student_harry_potter.md) | Curso de Java — Capítulo 45: Palavra-chave `super` (`super 🔝`) |
+| **05** | [**05_adicionando_metodo_showgpa_no_student.md**](./05_adicionando_metodo_showgpa_no_student.md) | Curso de Java — Capítulo 45: Palavra-chave `super` (`super 🔝`) |
+| **06** | [**06_criando_employee_com_salary_e_hagrid.md**](./06_criando_employee_com_salary_e_hagrid.md) | Curso de Java — Capítulo 45: Palavra-chave `super` (`super 🔝`) |
+| **07** | [**07_saida_hagrid_e_o_experimento_do_construtor_vazio.md**](./07_saida_hagrid_e_o_experimento_do_construtor_vazio.md) | Curso de Java — Capítulo 45: Palavra-chave `super` (`super 🔝`) |
+| **08** | [**08_o_que_acontece_sem_super_first_last_e_o_perigo_do_null.md**](./08_o_que_acontece_sem_super_first_last_e_o_perigo_do_null.md) | Curso de Java — Capítulo 45: Palavra-chave `super` (`super 🔝`) |
+
+---
+
+> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.

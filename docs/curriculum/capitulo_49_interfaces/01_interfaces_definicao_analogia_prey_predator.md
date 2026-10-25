@@ -2,7 +2,7 @@
 ## Parte 1: O Que É Uma Interface? — As 3 Regras de Ouro, a Criação de `Prey` e `Predator` e o Método `void flee()`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:01:45` até `08:02:45` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a introdução ao novo capítulo sobre **Interfaces (`interfaces 📋`)**: a definição teórica deixada em comentários pelo professor Bro Code em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), o porquê de as interfaces resolverem o maior limite da herança simples em Java (*"Multiple inheritance-like behavior"*), a criação das interfaces [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java) e [`Predator.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Predator.java) dentro da janela modal do IntelliJ IDEA, e a declaração do primeiro método contratual `void flee();` sem chaves `{}`.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a introdução ao novo capítulo sobre **Interfaces (`interfaces 📋`)**: a definição teórica deixada em comentários pelo professor Bro Code em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), o porquê de as interfaces resolverem o maior limite da herança simples em Java (*"Multiple inheritance-like behavior"*), a criação das interfaces [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java) e [`Predator.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Predator.java) dentro da janela modal do IntelliJ IDEA, e a declaração do primeiro método contratual `void flee();` sem chaves `{}`.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (janelas modais de criação, seleção da opção `Interface` com ícone verde `(I)`, destaques azuis de texto, sobreposições de vídeo e cursores piscando) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -21,9 +21,9 @@ Como representamos isso em Java se não podemos herdar de duas classes?
 👉 **A resposta são as INTERFACES!**
 
 Nesta sequência de 5 capturas de tela, o professor Bro Code inicia a construção desse ecossistema:
-1. **Em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Imagem 1):** Ele digita as 3 regras sagradas que definem o que é uma interface.
-2. **No IntelliJ IDEA (Imagens 2 e 3):** Ele usa o menu de criação e seleciona a opção oficial **`Interface`** (com o ícone verde `(I)`), criando [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java) (Presa) e [`Predator.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Predator.java) (Predador).
-3. **Em [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java) (Imagens 4 e 5):** Ele substitui a palavra `class` por `interface` e cria o método `void flee();` (fugir!).
+1. **Em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Imagem 1):** Ele digita as 3 regras sagradas que definem o que é uma interface.
+2. **No IntelliJ IDEA (Imagens 2 e 3):** Ele usa o menu de criação e seleciona a opção oficial **`Interface`** (com o ícone verde `(I)`), criando [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java) (Presa) e [`Predator.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Predator.java) (Predador).
+3. **Em [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java) (Imagens 4 e 5):** Ele substitui a palavra `class` por `interface` e cria o método `void flee();` (fugir!).
 
 ---
 
@@ -104,7 +104,7 @@ No bloco de comentários de `Main.java`, o professor deixou três frases que res
 *(Uma planta baixa / modelo para uma classe que especifica um conjunto de métodos abstratos)*
 * Uma interface não é uma classe completa; ela é como um **contrato de prestação de serviços**.
 * Ela diz: *"Qualquer um que assinar este contrato é obrigado a saber fazer estas ações"*.
-* Na interface [`Prey`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java), a ação é `void flee();` (*fugir*). Toda presa precisa saber fugir!
+* Na interface [`Prey`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java), a ação é `void flee();` (*fugir*). Toda presa precisa saber fugir!
 
 ### Regra 2: "that implementing classes MUST define"
 *(que as classes que a implementarem DEVEM obrigatoriamente definir)*
@@ -127,7 +127,7 @@ No bloco de comentários de `Main.java`, o professor deixou três frases que res
 
 ## 4. O Segredo Oculto de `void flee();` em uma Interface
 
-Olhe bem para a linha 3 de [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java):
+Olhe bem para a linha 3 de [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java):
 
 ```java
 void flee();
@@ -153,7 +153,7 @@ Você não precisa gastar seus dedos digitando `public abstract`; o Java já ass
 
 ---
 
-## 5. Análise Código por Código e Linha por Linha de [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java)
+## 5. Análise Código por Código e Linha por Linha de [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java)
 
 ```java
 1: public interface Prey {
@@ -179,7 +179,7 @@ Você não precisa gastar seus dedos digitando `public abstract`; o Java já ass
 
 ---
 
-## 6. Análise Código por Código e Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 6. Análise Código por Código e Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
 1:  
@@ -209,7 +209,7 @@ Como nenhum comando `System.out.println` foi chamado e não criamos nenhum objet
 Process finished with exit code 0
 ```
 
-* O programa compila sem nenhum erro (`exit code 0`), provando que a interface [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java) e o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) foram criados com sintaxe impecável!
+* O programa compila sem nenhum erro (`exit code 0`), provando que a interface [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java) e o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) foram criados com sintaxe impecável!
 
 ---
 

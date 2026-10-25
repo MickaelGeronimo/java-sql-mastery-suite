@@ -2,7 +2,7 @@
 ## Parte 6: A Limpeza do `Main`, o Erro Amador do `car.color` e o Resgate com `this`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `07:50:10` até `07:50:35` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a limpeza de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (eliminando a linha de concatenação manual feia), a demonstração proposital do erro clássico de iniciante ao tentar usar `car.color` dentro da classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java), e a correção elegante utilizando a palavra-chave **`this`** para referenciar os próprios atributos da instância.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a limpeza de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (eliminando a linha de concatenação manual feia), a demonstração proposital do erro clássico de iniciante ao tentar usar `car.color` dentro da classe [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), e a correção elegante utilizando a palavra-chave **`this`** para referenciar os próprios atributos da instância.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (remoção de linhas, lâmpadas vermelhas de erro no gutter, substituições de texto e avisos de escopo) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -12,8 +12,8 @@
 Nas etapas anteriores, vimos o problema: `System.out.println(car)` imprimia um código feio (`Car@6acbcfc0`) e a única forma que conhecíamos de imprimir os dados do carro era escrever uma tripa manual de código no `Main`.
 
 Nesta sequência de 3 imagens, o professor Bro Code realiza a grande mágica:
-1. **Ele limpa o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):** Apaga a tripa manual e deixa apenas o comando puro `System.out.println(car);`.
-2. **Ele vai para [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) e comete um erro didático proposital:** Ele tenta copiar e colar a expressão do `Main` escrevendo `return car.color + ...`. O compilador acende 5 erros vermelhos na tela!
+1. **Ele limpa o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):** Apaga a tripa manual e deixa apenas o comando puro `System.out.println(car);`.
+2. **Ele vai para [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) e comete um erro didático proposital:** Ele tenta copiar e colar a expressão do `Main` escrevendo `return car.color + ...`. O compilador acende 5 erros vermelhos na tela!
 3. **Ele ensina a lição do `this`:** Mostra que o objeto dentro da sua própria casa não se chama `car`, mas sim **`this`** (este objeto atual)! Ele corrige para `this.color + " " + this.year + ...` e a mágica se concretiza!
 
 ---
@@ -37,7 +37,7 @@ Para quem está estudando pelo Google Docs sem acesso às imagens originais:
 * **A Intenção:** O professor preparou o terreno: *"Agora o nosso Main só chama `System.out.println(car)`. Vamos fazer essa única linha imprimir tudo o que queremos!"*.
 
 ### Imagem 2 (`media_1791357925500.png`): A Armadilha do Copia e Cola (`car.color`)
-* **Aba Ativa:** Muda para [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba Ativa:** Muda para [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **Editor de Código:** Na linha 17, dentro do método `toString()`, o professor escreveu:
   ```java
   17         return car.color + " " + car.year + " " + car.make + " " + car.model
@@ -49,7 +49,7 @@ Para quem está estudando pelo Google Docs sem acesso às imagens originais:
   * O compilador não sabe o que é `car`: *"Cannot resolve symbol 'car'"*!
 
 ### Imagem 3 (`media_1791357944524.png` — 07:50:26): O Resgate com a Palavra-Chave `this`
-* **Aba Ativa:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba Ativa:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **A Correção no Código:**
   O professor substitui todas as ocorrências de `car.` pela palavra-chave **`this.`**:
   ```java
@@ -96,7 +96,7 @@ Este é um dos erros mais comuns de todo aluno iniciante em programação orient
 
 Para resolver essa dúvida de identidade, os criadores do Java inventaram a palavra-chave **`this`** (que em português significa *"este"* ou *"esta própria"*):
 
-* Quando você está dentro do arquivo [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) e escreve:
+* Quando você está dentro do arquivo [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) e escreve:
   ```java
   this.color
   ```
@@ -117,7 +117,7 @@ Para resolver essa dúvida de identidade, os criadores do Java inventaram a pala
 
 ## 5. Análise Código por Código e Linha por Linha
 
-### A. O Arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Linhas 1 a 14)
+### A. O Arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Linhas 1 a 14)
 ```java
 1:  public class Main {
 2:      public static void main(String[] args) {
@@ -138,7 +138,7 @@ Para resolver essa dúvida de identidade, os criadores do Java inventaram a pala
 
 ---
 
-### B. O Arquivo [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (Linhas 1 a 20)
+### B. O Arquivo [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (Linhas 1 a 20)
 ```java
 1:  public class Car {
 2:  
@@ -173,7 +173,7 @@ Para resolver essa dúvida de identidade, os criadores do Java inventaram a pala
 
 ## 6. O Que Sai Fielmente no Console Nesta Etapa
 
-Ao executar o [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) agora que o `toString()` está implementado em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java):
+Ao executar o [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) agora que o `toString()` está implementado em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java):
 
 ```text
 Red 2025 Ford Mustang

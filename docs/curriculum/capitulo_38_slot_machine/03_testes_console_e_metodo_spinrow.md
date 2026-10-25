@@ -169,7 +169,7 @@ return new String[0];
 
 ## 7. O Código Java Completo, Numerado e Atualizado
 
-Aqui está o arquivo [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) completo com a importação de `Random`, a chamada no `main` e o novo método:
+Aqui está o arquivo [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) completo com a importação de `Random`, a chamada no `main` e o novo método:
 
 ```java
 1:  import java.util.Random;

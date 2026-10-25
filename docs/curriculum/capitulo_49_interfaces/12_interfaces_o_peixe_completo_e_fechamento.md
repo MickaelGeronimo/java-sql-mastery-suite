@@ -2,7 +2,7 @@
 ## Parte 12: O Grande Final! — O Peixe Completo (`Fish.java`), a Execução Triunfante no `Main.java` e o Poder da "Múltipla Herança" de Comportamentos
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:06:38` até `08:07:15` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo e sem pressa) o desfecho triunfante do Capítulo 49: o momento em que completamos a classe [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java) implementando o método faltante `hunt()`, a satisfação simultânea de duas interfaces (`Prey` e `Predator`), o sumiço imediato de todas as linhas vermelhas de erro na IDE, a instanciação e chamada no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), a saída real e colorida no console, e o encerramento do capítulo onde o professor Bro Code seleciona com o mouse a palavra **`inheritance`** no comentário de cabeçalho para explicar por que as interfaces são a resposta sagrada do Java para contornar a proibição de herança múltipla.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo e sem pressa) o desfecho triunfante do Capítulo 49: o momento em que completamos a classe [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java) implementando o método faltante `hunt()`, a satisfação simultânea de duas interfaces (`Prey` e `Predator`), o sumiço imediato de todas as linhas vermelhas de erro na IDE, a instanciação e chamada no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), a saída real e colorida no console, e o encerramento do capítulo onde o professor Bro Code seleciona com o mouse a palavra **`inheritance`** no comentário de cabeçalho para explicar por que as interfaces são a resposta sagrada do Java para contornar a proibição de herança múltipla.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (todas as abas, ícones de sarjeta `(I)↑`, cursores de digitação, saídas de console neon e seleção de texto em azul) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -12,7 +12,7 @@
 Nesta sequência final de 4 telas (`08:06:38` a `08:07:15`), o professor conclui toda a lição de interfaces mostrando como uma única classe pode assumir múltiplos papéis simultaneamente na natureza.
 
 ### 🖼️ Imagem 1 (`media_1791399566478_53ea11a5.png` — 08:06:38)
-* **Aba ativa:** [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java).
+* **Aba ativa:** [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java).
 * **Demais abas abertas no topo:** `Main.java`, `Prey.java`, `Predator.java`, `Rabbit.java`, `Fish.java` (ativa), `Hawk.java`.
 * **Árvore do Projeto (à esquerda em `src`):**
   * `Fish` (ícone azul `(C)`)
@@ -22,7 +22,7 @@ Nesta sequência final de 4 telas (`08:06:38` a `08:07:15`), o professor conclui
   * `Prey` (ícone verde `(I)`)
   * `Rabbit` (ícone azul `(C)`)
 * **O que está acontecendo no código:**
-  * O professor está digitando o segundo método obrigatório em [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java):
+  * O professor está digitando o segundo método obrigatório em [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java):
     ```java
     @Override
     public void hunt(){
@@ -36,7 +36,7 @@ Nesta sequência final de 4 telas (`08:06:38` a `08:07:15`), o professor conclui
 ---
 
 ### 🖼️ Imagem 2 (`media_1791399593445_aa4c072b.png` — 08:06:55)
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que foi adicionado no método `main`:**
   * Linha 11: `Fish fish = new Fish();` (Instanciando o peixe).
   * Linha 13: `fish.flee();` (Mandando o peixe fugir).
@@ -48,7 +48,7 @@ Nesta sequência final de 4 telas (`08:06:38` a `08:07:15`), o professor conclui
 ---
 
 ### 🖼️ Imagem 3 (`media_1791399609352_340a0632.png` — 08:06:57)
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) com o painel inferior `Run` (Console de Execução) aberto.
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) com o painel inferior `Run` (Console de Execução) aberto.
 * **Comando executado pela IDE:**
   ```text
   C:\Users\HP\.jdks\openjdk-23\bin\java.exe ... Main
@@ -65,7 +65,7 @@ Nesta sequência final de 4 telas (`08:06:38` a `08:07:15`), o professor conclui
 ---
 
 ### 🖼️ Imagem 4 (`media_1791399628541_29eeb924.png` — 08:07:15)
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O Grande Destaque do Professor:**
   * O professor clica e arrasta o mouse sobre a linha 7, selecionando em azul a palavra:
     $$\textbf{inheritance}$$
@@ -132,7 +132,7 @@ public class Fish implements Prey, Predator {
 
 ## 3. Dissecação Linha por Linha: `Fish.java`
 
-Vejamos o código completo e final de [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java):
+Vejamos o código completo e final de [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java):
 
 ```java
 1:  public class Fish implements Prey, Predator{
@@ -220,7 +220,7 @@ Vejamos o código completo e final de [`Fish.java`](file:///c:/Users/mickel%201/
 
 ## 4. Dissecação Linha por Linha: `Main.java`
 
-Vejamos o código final de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) nas Imagens 2, 3 e 4:
+Vejamos o código final de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) nas Imagens 2, 3 e 4:
 
 ```java
 1:  public class Main {
@@ -375,12 +375,12 @@ Para você guardar este capítulo no seu caderno ou no Google Docs com chave de 
 
 | Arquivo | Tipo no Java | Papel na Arquitetura | Contrato Assinado | Métodos Concretos |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java) | `interface` | Contrato de Presa | *(Nenhum)* | `void flee();` (abstrato) |
-| [`Predator.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Predator.java) | `interface` | Contrato de Caçador | *(Nenhum)* | `void hunt();` (abstrato) |
-| [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java) | `class` | Presa pura | `implements Prey` | `@Override public void flee()` |
-| [`Hawk.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Hawk.java) | `class` | Predador puro | `implements Predator` | `@Override public void hunt()` |
-| [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java) | `class` | Papel duplo (Presa + Predador) | `implements Prey, Predator` | `@Override public void flee()`<br>`@Override public void hunt()` |
-| [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) | `class` | Ponto de Entrada | *(Nenhum)* | `main(String[] args)` |
+| [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java) | `interface` | Contrato de Presa | *(Nenhum)* | `void flee();` (abstrato) |
+| [`Predator.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Predator.java) | `interface` | Contrato de Caçador | *(Nenhum)* | `void hunt();` (abstrato) |
+| [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java) | `class` | Presa pura | `implements Prey` | `@Override public void flee()` |
+| [`Hawk.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Hawk.java) | `class` | Predador puro | `implements Predator` | `@Override public void hunt()` |
+| [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java) | `class` | Papel duplo (Presa + Predador) | `implements Prey, Predator` | `@Override public void flee()`<br>`@Override public void hunt()` |
+| [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) | `class` | Ponto de Entrada | *(Nenhum)* | `main(String[] args)` |
 
 ---
 
@@ -398,9 +398,9 @@ Para você guardar este capítulo no seu caderno ou no Google Docs com chave de 
 ## 9. Próximo Passo: Rumo ao Capítulo 50 (`polymorphism 🎭`)
 
 Com a conclusão deste capítulo, dominamos:
-* Como declarar interfaces ([`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java) e [`Predator.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Predator.java)).
-* Como implementar uma interface única ([`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java) e [`Hawk.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Hawk.java)).
-* Como implementar múltiplas interfaces em uma única classe ([`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java)).
+* Como declarar interfaces ([`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java) e [`Predator.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Predator.java)).
+* Como implementar uma interface única ([`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java) e [`Hawk.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Hawk.java)).
+* Como implementar múltiplas interfaces em uma única classe ([`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java)).
 * Como o compilador impede chamadas ilegais de métodos não declarados nos tipos.
 
 Você concluiu com maestria o **Capítulo 49: Interfaces**! Estamos 100% prontos para o próximo grande pilar da Orientação a Objetos: o **Capítulo 50 (`polymorphism`)**! 🚀

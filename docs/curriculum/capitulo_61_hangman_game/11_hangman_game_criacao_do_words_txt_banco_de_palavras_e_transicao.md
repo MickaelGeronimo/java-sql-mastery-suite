@@ -11,7 +11,7 @@ Agora começa a fase de transformação do protótipo em um **jogo real e dinâm
 2. **A Grande Pergunta de Design de Jogos**: De que adianta um jogo da forca se a palavra for sempre `"pizza"`? O jogador adivinharia na primeira tentativa em todas as partidas!
 3. **Criação do Banco de Palavras Externo (Imagens 2, 3 e 4)**: No IntelliJ IDEA, o instrutor cria um novo arquivo de texto na raiz do projeto chamado `words.txt`.
 4. **O Conteúdo de `words.txt`**: Cadastra 8 palavras de frutas em inglês (uma por linha) para servir de dicionário do jogo.
-5. **Preparação no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Imagens 4 e 5)**: O instrutor volta à aba do código principal e aponta para a linha 9 (`String word = "pizza";`), preparando os alunos para substituí-la pela leitura do arquivo e sorteio aleatório com a classe `Random`!
+5. **Preparação no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Imagens 4 e 5)**: O instrutor volta à aba do código principal e aponta para a linha 9 (`String word = "pizza";`), preparando os alunos para substituí-la pela leitura do arquivo e sorteio aleatório com a classe `Random`!
 
 ---
 
@@ -142,7 +142,7 @@ lemon
 
 ---
 
-### 4. O Que Faremos a Seguir no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)?
+### 4. O Que Faremos a Seguir no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)?
 Na Linha 9 do código atual, temos:
 ```java
 String word = "pizza";
@@ -163,9 +163,9 @@ E como todo o nosso laço de tracinhos, `wrongGuesses`, `indexOf` e forca já fo
 
 ---
 
-## 📄 O Arquivo [`words.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/words.txt) Criado no Seu Ambiente
+## 📄 O Arquivo [`words.txt`](../../../src/main/resources/words.txt) Criado no Seu Ambiente
 
-O arquivo [`words.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/words.txt) já foi criado no seu diretório de trabalho com as 8 palavras exatas do vídeo:
+O arquivo [`words.txt`](../../../src/main/resources/words.txt) já foi criado no seu diretório de trabalho com as 8 palavras exatas do vídeo:
 
 ```text
 apple
@@ -182,4 +182,4 @@ lemon
 
 ## 🖥️ Saída do Terminal no Momento Atual
 
-O jogo no arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) continua com o protótipo vencedor compilado e testado. O próximo passo será plugar a leitura do [`words.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/words.txt) diretamente no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)!
+O jogo no arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) continua com o protótipo vencedor compilado e testado. O próximo passo será plugar a leitura do [`words.txt`](../../../src/main/resources/words.txt) diretamente no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)!

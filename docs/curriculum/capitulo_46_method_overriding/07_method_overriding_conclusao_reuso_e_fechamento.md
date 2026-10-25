@@ -9,7 +9,7 @@
 
 ## 1. Visão Geral da Imagem (`media_1791357330737.png`): O Fechamento do Capítulo
 
-Nesta cena final do capítulo, o professor Bro Code retorna ao arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) para fazer a recapitulação teórica final.
+Nesta cena final do capítulo, o professor Bro Code retorna ao arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) para fazer a recapitulação teórica final.
 
 Com o mouse, ele dá um clique duplo sobre a palavra **`method`** no comentário explicativo da linha 6, deixando-a destacada em azul:
 
@@ -65,26 +65,26 @@ Vamos dissecar o bloco de comentários das linhas 5 a 7 como um cientista:
 
 ### A. *"When a subclass provides its own implementation..."*
 * **Tradução:** *"Quando uma subclasse fornece a sua própria implementação..."*
-* **Explicação para iniciantes:** A classe filha não é obrigada a aceitar tudo o que o pai faz do mesmo jeito. Se o pai tem uma ação genérica, a filha pode levantar a mão e dizer: *"Para mim, essa ação funciona de um jeito diferente e próprio!"*. No nosso projeto, a classe [`Fish`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java) levantou a mão e implementou o nado.
+* **Explicação para iniciantes:** A classe filha não é obrigada a aceitar tudo o que o pai faz do mesmo jeito. Se o pai tem uma ação genérica, a filha pode levantar a mão e dizer: *"Para mim, essa ação funciona de um jeito diferente e próprio!"*. No nosso projeto, a classe [`Fish`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java) levantou a mão e implementou o nado.
 
 ### B. *"...of a METHOD that is already defined."*
 * **Tradução:** *"...de um MÉTODO que já está definido [na classe pai]."*
 * **Por que o autor selecionou a palavra `method`?**
   * Porque a sobrescrita **só acontece com métodos**!
-  * O método tem que existir antes na superclasse ([`Animal`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java)). Você não pode "sobrescrever" algo que não existe.
+  * O método tem que existir antes na superclasse ([`Animal`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java)). Você não pode "sobrescrever" algo que não existe.
   * O nome do método, a quantidade de parâmetros e o tipo de retorno precisam ser idênticos.
 
 ### C. *"Allows for code reusability..."*
 * **Tradução:** *"Permite a reutilização de código..."*
 * **Onde vimos isso?**
-  * Nas classes [`Dog`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) e [`Cat`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java)!
+  * Nas classes `Dog` e [`Cat`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java)!
   * Essas duas classes estão **completamente vazias** dentro do corpo `{ }`.
-  * Nós não precisamos digitar `System.out.println("This animal is running")` nem para o cachorro, nem para o gato. Eles **reutilizaram 100%** o código escrito uma única vez na classe [`Animal`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java). Economizamos código e evitamos repetição!
+  * Nós não precisamos digitar `System.out.println("This animal is running")` nem para o cachorro, nem para o gato. Eles **reutilizaram 100%** o código escrito uma única vez na classe [`Animal`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java). Economizamos código e evitamos repetição!
 
 ### D. *"...and give specific implementations."*
 * **Tradução:** *"...e dar implementações específicas."*
 * **Onde vimos isso?**
-  * Na classe [`Fish`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java)!
+  * Na classe [`Fish`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java)!
   * Para o peixe, reutilizar a corrida do pai seria uma aberração da natureza ("peixe correndo"). Então ele forneceu a sua **implementação específica**: `"This animal is swimming"`.
 
 ### E. O Emoji da Reciclagem `♻️`:
@@ -125,7 +125,7 @@ classDiagram
 
 ---
 
-## 5. Análise Código por Código e Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 5. Análise Código por Código e Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Abaixo está a listagem fiel de cada linha do arquivo principal com a sua numeração exata e o que acontece em cada uma delas:
 
@@ -163,23 +163,23 @@ Abaixo está a listagem fiel de cada linha do arquivo principal com a sua numera
   * *(Linhas ignoradas pelo compilador, nada sai no console).*
 * **Linha 8 (Linha em branco):** Separa os comentários das declarações de variáveis.
 * **Linha 9 (`Dog dog = new Dog();`):**
-  * Cria uma nova instância de [`Dog`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) na memória Heap.
+  * Cria uma nova instância de `Dog` na memória Heap.
   * *(Nada sai no console).*
 * **Linha 10 (`Cat cat = new Cat();`):**
-  * Cria uma nova instância de [`Cat`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java) na memória Heap.
+  * Cria uma nova instância de [`Cat`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java) na memória Heap.
   * *(Nada sai no console).*
 * **Linha 11 (`Fish fish = new Fish();`):**
-  * Cria uma nova instância de [`Fish`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java) na memória Heap.
+  * Cria uma nova instância de [`Fish`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java) na memória Heap.
   * *(Nada sai no console).*
 * **Linha 12 (Linha em branco):** Separa a criação dos objetos das chamadas de métodos.
 * **Linha 13 (`dog.move();`):**
-  * O objeto `dog` chama o método `move()`. Como `Dog` não tem método próprio, herda de [`Animal`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java).
+  * O objeto `dog` chama o método `move()`. Como `Dog` não tem método próprio, herda de [`Animal`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java).
   * **Saída no Console:**
     ```text
     This animal is running
     ```
 * **Linha 14 (`cat.move();`):**
-  * O objeto `cat` chama o método `move()`. Como `Cat` também não tem método próprio, herda de [`Animal`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java).
+  * O objeto `cat` chama o método `move()`. Como `Cat` também não tem método próprio, herda de [`Animal`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java).
   * **Saída no Console:**
     ```text
     This animal is running

@@ -104,7 +104,7 @@ Vamos dissecar cada parte exatamente como o Bro Code explicou:
 
 ## 3. O Código Final Completo e Enumerado de `Main.java`
 
-Vejamos todas as 18 linhas do arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) na íntegra:
+Vejamos todas as 18 linhas do arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) na íntegra:
 
 ```java
 1:  public class Main {
@@ -152,7 +152,7 @@ Vejamos todas as 18 linhas do arquivo [`Main.java`](file:///c:/Users/mickel%201/
 
 ## 4. O Código Final Completo e Enumerado de `Student.java`
 
-Para ter a visão completa dos dois lados do projeto, veja [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java):
+Para ter a visão completa dos dois lados do projeto, veja `Student.java`:
 
 ```java
 1:  public class Student {

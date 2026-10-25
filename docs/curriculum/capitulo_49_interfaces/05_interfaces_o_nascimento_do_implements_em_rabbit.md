@@ -2,14 +2,14 @@
 ## Parte 5: O Surgimento da Palavra-Chave `implements` — A Conexão do Coelho à Interface `Prey`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:03:20` até `08:03:30` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a introdução de uma das palavras-chave mais importantes da linguagem Java: **`implements`**. Analisamos o momento exato em que o professor Bro Code entra no arquivo [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java) e digita `public class Rabbit implements {`, o erro transitório de sintaxe gerado pelo IntelliJ IDEA (o sublinhado vermelho ondulado sob a chave `{`), e a diferença conceitual e prática definitiva entre **`extends`** (herança de classe) e **`implements`** (assinatura de contrato com interface).  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a introdução de uma das palavras-chave mais importantes da linguagem Java: **`implements`**. Analisamos o momento exato em que o professor Bro Code entra no arquivo [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java) e digita `public class Rabbit implements {`, o erro transitório de sintaxe gerado pelo IntelliJ IDEA (o sublinhado vermelho ondulado sob a chave `{`), e a diferença conceitual e prática definitiva entre **`extends`** (herança de classe) e **`implements`** (assinatura de contrato com interface).  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (aba ativa `Rabbit.java`, cursor piscando no meio da instrução incompleta, avisos vermelhos de sintaxe e árvore de arquivos) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender da imagem original.
 
 ---
 
 ## 1. Visão Geral da Imagem (`media_1791399196428_d445478e.png` — 08:03:22)
 
-Logo após a vinheta cômica do coelho de Monty Python, o professor Bro Code clica na quarta aba do editor de código: [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java).
+Logo após a vinheta cômica do coelho de Monty Python, o professor Bro Code clica na quarta aba do editor de código: [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java).
 
 Na linha 1 do arquivo, ele começa a digitar a nova instrução:
 
@@ -81,7 +81,7 @@ Para quem está estudando pelo Google Docs e não tem a imagem na tela:
 
 ---
 
-## 4. Análise Código por Código e Linha por Linha de [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java)
+## 4. Análise Código por Código e Linha por Linha de [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java)
 
 Abaixo está o código congelado exatamente neste frame do vídeo:
 

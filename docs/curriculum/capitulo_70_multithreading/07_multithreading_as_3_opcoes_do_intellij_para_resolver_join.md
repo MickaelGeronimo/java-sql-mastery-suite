@@ -9,8 +9,8 @@
 - **Parte:** 7 (Tratamento de Exceção em Threads, Recursos da IDE IntelliJ e Sincronização de Execução)
 - **Timestamp de Referência:** `11:30:03`
 - **Arquivos do Projeto:**
-  - [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-  - [`MyRunnable.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/MyRunnable.java)
+  - [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+  - [`MyRunnable.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/MyRunnable.java)
 
 ---
 

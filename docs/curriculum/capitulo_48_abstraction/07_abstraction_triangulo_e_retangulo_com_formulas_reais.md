@@ -2,26 +2,26 @@
 ## Parte 7: Especializando o Triângulo e o Retângulo — Atributos, Construtores com `this` e as Fórmulas Reais de Área
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `07:59:10` até `08:00:20` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) como o professor Bro Code especializa as classes filhas [`Triangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java) e [`Rectangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java): definindo os atributos geométricos necessários para cada uma (`base`, `height`, `length`, `width`), construindo os construtores com atribuição via `this`, e substituindo os stubs `return 0;` pelas fórmulas matemáticas reais de cálculo de área. Inclui um alerta pedagógico de ouro sobre divisão inteira em Java (`1 / 2` vs `0.5`).  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) como o professor Bro Code especializa as classes filhas [`Triangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java) e [`Rectangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java): definindo os atributos geométricos necessários para cada uma (`base`, `height`, `length`, `width`), construindo os construtores com atribuição via `this`, e substituindo os stubs `return 0;` pelas fórmulas matemáticas reais de cálculo de área. Inclui um alerta pedagógico de ouro sobre divisão inteira em Java (`1 / 2` vs `0.5`).  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (navegação rápida entre abas, cursores piscando, realces roxos de variáveis de instância, tooltips de caminho de arquivo e transição com o mouse para `Main.java`) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
 
 ## 1. Visão Geral da Demonstração: Cada Forma com Sua Identidade Matemática
 
-Na Parte 6, vimos a classe [`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java) ganhar o atributo `radius` e implementar a fórmula $\pi \cdot r^2$ com `Math.PI`.
+Na Parte 6, vimos a classe [`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java) ganhar o atributo `radius` e implementar a fórmula $\pi \cdot r^2$ com `Math.PI`.
 
 Agora, nesta sequência de 5 capturas de tela, o professor Bro Code repete esse mesmo padrão de excelência nas outras duas subclasses:
 
-1. **[`Triangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java) (Imagens 1 e 2):**
+1. **[`Triangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java) (Imagens 1 e 2):**
    * Adiciona `double base;` e `double height;`.
    * Cria o construtor `Triangle(double base, double height)`.
    * Substitui `return 0;` por `return 0.5 * base * height;`.
-2. **[`Rectangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java) (Imagens 3, 4 e 5):**
+2. **[`Rectangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java) (Imagens 3, 4 e 5):**
    * Adiciona `double length;` e `double width;`.
    * Cria o construtor `Rectangle(double length, double width)`.
    * Substitui `return 0;` por `return length * width;`.
-3. **A Transição Final:** O professor clica na aba [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) para finalmente alimentar cada objeto com números reais e imprimir o cálculo de cada área no console!
+3. **A Transição Final:** O professor clica na aba [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) para finalmente alimentar cada objeto com números reais e imprimir o cálculo de cada área no console!
 
 ---
 
@@ -68,7 +68,7 @@ Para quem está estudando pelo Google Docs e não tem acesso visual às capturas
 * **Editor de Código:**
   * Linhas 6 a 9: Construtor finalizado com `this.length = length;` e `this.width = width;`.
   * Linha 13: A fórmula da área foi atualizada para `return length * width;`.
-* **Ação do Mouse:** O cursor do mouse está no topo esquerdo, clicando na primeira aba: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)!
+* **Ação do Mouse:** O cursor do mouse está no topo esquerdo, clicando na primeira aba: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)!
 
 ---
 
@@ -93,7 +93,7 @@ Por que o professor Bro Code escreveu **`0.5 * base * height;`** em vez de **`1 
 
 ---
 
-## 4. Análise Código por Código e Linha por Linha de [`Triangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java)
+## 4. Análise Código por Código e Linha por Linha de [`Triangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java)
 
 Abaixo está o código final do arquivo `Triangle.java` após a edição do professor:
 
@@ -117,7 +117,7 @@ Abaixo está o código final do arquivo `Triangle.java` após a edição do prof
 
 ### Explicação Passo a Passo:
 
-* **Linha 1 (`public class Triangle extends Shape{`):** Declara a classe pública `Triangle` como filha (herdeira) de [`Shape`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java). *(Nada no console).*
+* **Linha 1 (`public class Triangle extends Shape{`):** Declara a classe pública `Triangle` como filha (herdeira) de [`Shape`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java). *(Nada no console).*
 * **Linha 2:** Linha em branco.
 * **Linha 3 (`double base;`):** Cria a variável de instância `base` para armazenar o comprimento da base do triângulo. *(Nada no console).*
 * **Linha 4 (`double height;`):** Cria a variável de instância `height` para armazenar a altura do triângulo. *(Nada no console).*
@@ -134,7 +134,7 @@ Abaixo está o código final do arquivo `Triangle.java` após a edição do prof
 
 ---
 
-## 5. Análise Código por Código e Linha por Linha de [`Rectangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java)
+## 5. Análise Código por Código e Linha por Linha de [`Rectangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java)
 
 Abaixo está o código final do arquivo `Rectangle.java` após a edição do professor:
 
@@ -158,7 +158,7 @@ Abaixo está o código final do arquivo `Rectangle.java` após a edição do pro
 
 ### Explicação Passo a Passo:
 
-* **Linha 1 (`public class Rectangle extends Shape{`):** Declara a classe pública `Rectangle` herdando de [`Shape`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java). *(Nada no console).*
+* **Linha 1 (`public class Rectangle extends Shape{`):** Declara a classe pública `Rectangle` herdando de [`Shape`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java). *(Nada no console).*
 * **Linha 2:** Linha em branco.
 * **Linha 3 (`double length;`):** Atributo de instância para o comprimento (lado maior ou base) do retângulo. *(Nada no console).*
 * **Linha 4 (`double width;`):** Atributo de instância para a largura (altura) do retângulo. *(Nada no console).*
@@ -183,7 +183,7 @@ Como o professor estava apenas digitando o código dentro das classes de modelo 
 (Nenhuma execução foi disparada — O console permanece no estado anterior)
 ```
 
-### O Que Acontecerá em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) na Próxima Etapa?
+### O Que Acontecerá em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) na Próxima Etapa?
 Como criamos construtores específicos com parâmetros nas 3 classes:
 * `Circle(double radius)`
 * `Triangle(double base, double height)`
@@ -203,9 +203,9 @@ Estarão com erro de compilação até o professor passar os números reais (ex:
 
 | Classe | Atributos de Instância | Parâmetros do Construtor | Fórmula de `area()` | Tipo de Retorno |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Circle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java) | `double radius;` | `(double radius)` | `Math.PI * radius * radius` | `double` |
-| [`Triangle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java) | `double base;`<br>`double height;` | `(double base, double height)` | `0.5 * base * height` | `double` |
-| [`Rectangle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java) | `double length;`<br>`double width;` | `(double length, double width)` | `length * width` | `double` |
+| [`Circle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java) | `double radius;` | `(double radius)` | `Math.PI * radius * radius` | `double` |
+| [`Triangle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java) | `double base;`<br>`double height;` | `(double base, double height)` | `0.5 * base * height` | `double` |
+| [`Rectangle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java) | `double length;`<br>`double width;` | `(double length, double width)` | `length * width` | `double` |
 
 ---
 

@@ -9,8 +9,8 @@
 - **Parte:** 8 (Refinamento do Tratamento de Exceções, Agrupamento de Threads no `try` e Início da Execução Correta)
 - **Timestamp de Referência:** `11:30:10` até `11:30:30`
 - **Arquivos do Projeto:**
-  - [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-  - [`MyRunnable.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/MyRunnable.java)
+  - [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+  - [`MyRunnable.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/MyRunnable.java)
 
 ---
 

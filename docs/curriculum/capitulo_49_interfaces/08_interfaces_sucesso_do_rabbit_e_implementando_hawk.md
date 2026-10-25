@@ -2,7 +2,7 @@
 ## Parte 8: O Sucesso do Coelho no Console e a Implementação do Predador em `Hawk.java`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:04:33` até `08:05:00` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a primeira vitória prática do capítulo de interfaces no console do IntelliJ IDEA (a execução com sucesso de `rabbit.flee();` imprimindo `"*The rabbit is running away*"`), a troca de aba para [`Hawk.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Hawk.java) (o gavião), a assinatura do contrato do predador através de `public class Hawk implements Predator`, a implementação obrigatória do método `public void hunt()` exibindo `"*The hawk is hunting*"`, e o surgimento do selo verde `I↑` na margem da IDE.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a primeira vitória prática do capítulo de interfaces no console do IntelliJ IDEA (a execução com sucesso de `rabbit.flee();` imprimindo `"*The rabbit is running away*"`), a troca de aba para [`Hawk.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Hawk.java) (o gavião), a assinatura do contrato do predador através de `public class Hawk implements Predator`, a implementação obrigatória do método `public void hunt()` exibindo `"*The hawk is hunting*"`, e o surgimento do selo verde `I↑` na margem da IDE.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (saída do terminal com texto em verde neon, linha de comando do Java executado, troca de abas, cursores piscando e ícones de gutter) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -12,13 +12,13 @@
 Nesta sequência de 2 capturas de tela, presenciamos o funcionamento real do polimorfismo baseado em interfaces:
 
 1. **A Vitória do Coelho no Terminal (Imagem 1 — `08:04:33`):**  
-   O professor clica no botão verde de execução em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java). O painel do console se abre na metade inferior da tela e exibe com orgulho:
+   O professor clica no botão verde de execução em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java). O painel do console se abre na metade inferior da tela e exibe com orgulho:
    ```text
    *The rabbit is running away*
    ```
-   Isso prova que a interface [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java) funcionou de verdade: a classe [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java) assinou o contrato, cumpriu a regra e executou a ação perfeitamente!
+   Isso prova que a interface [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java) funcionou de verdade: a classe [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java) assinou o contrato, cumpriu a regra e executou a ação perfeitamente!
 2. **O Caçador Entra em Ação (Imagem 2):**  
-   Agora o autor clica na última aba: [`Hawk.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Hawk.java). Ele faz o gavião assinar o contrato oposto (`implements Predator`) e programa a caça com `public void hunt()`, imprimindo:
+   Agora o autor clica na última aba: [`Hawk.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Hawk.java). Ele faz o gavião assinar o contrato oposto (`implements Predator`) e programa a caça com `public void hunt()`, imprimindo:
    ```text
    *The hawk is hunting*
    ```
@@ -65,7 +65,7 @@ Para quem está estudando pelo Google Docs e não tem as imagens na tela:
 
 ---
 
-## 3. Dissecando a Classe [`Hawk.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Hawk.java)
+## 3. Dissecando a Classe [`Hawk.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Hawk.java)
 
 Vamos entender a lógica da implementação do Gavião:
 
@@ -101,7 +101,7 @@ Vamos entender a lógica da implementação do Gavião:
 
 ---
 
-## 4. Análise Código por Código e Linha por Linha de [`Hawk.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Hawk.java)
+## 4. Análise Código por Código e Linha por Linha de [`Hawk.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Hawk.java)
 
 Abaixo está o código completo do gavião na Imagem 2:
 
@@ -130,7 +130,7 @@ Abaixo está o código completo do gavião na Imagem 2:
 
 ---
 
-## 5. Análise Código por Código de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) na Execução da Imagem 1
+## 5. Análise Código por Código de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) na Execução da Imagem 1
 
 ```java
 1:  public class Main {
@@ -161,7 +161,7 @@ Abaixo está o código completo do gavião na Imagem 2:
 
 ## 6. O Quadro Comparativo: O Coelho vs O Gavião
 
-| Aspecto | O Coelho ([`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java)) | O Gavião ([`Hawk.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Hawk.java)) |
+| Aspecto | O Coelho ([`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java)) | O Gavião ([`Hawk.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Hawk.java)) |
 | :--- | :--- | :--- |
 | **Papel na Natureza** | Presa | Predador |
 | **Interface Implementada** | `implements Prey` | `implements Predator` |
@@ -178,7 +178,7 @@ Agora que:
 1. O animal **presa pura** (`Rabbit`) está pronto e funcionando;
 2. O animal **predador puro** (`Hawk`) está pronto e programado;
 
-Resta apenas um animal no nosso projeto: **o Peixe ([`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java))**!  
+Resta apenas um animal no nosso projeto: **o Peixe ([`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java))**!  
 Nas próximas etapas, o professor demonstrará como o peixe implementa **as duas interfaces juntas**:
 ```java
 public class Fish implements Prey, Predator {

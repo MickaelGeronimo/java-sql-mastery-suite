@@ -19,13 +19,13 @@ Nas etapas anteriores, criamos 3 construtores que exigiam pelo menos algum dado:
 Mas e se um visitante entrar no nosso aplicativo sem fazer login nem cadastro nenhum? Queremos criar um usuário "Convidado" / "Anônimo", sem precisar passar absolutamente **nada** nos parênteses!
 
 Nesta sequência de 5 capturas de tela do vídeo:
-1. **Imagem 1 (`media_1791324474201.png`):** O autor volta para a aba [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) e posiciona o cursor na linha 7, logo acima do construtor de 1 parâmetro.
+1. **Imagem 1 (`media_1791324474201.png`):** O autor volta para a aba `User.java` e posiciona o cursor na linha 7, logo acima do construtor de 1 parâmetro.
 2. **Imagem 2 (`media_1791324763806.png` - Timestamp `7:07:11`):** O autor cria o **quarto construtor**: `User()`, com os parênteses completamente **vazios**! Ele define:
    * `this.username = "Guest";` (Convidado/Visitante!)
    * `this.email = "Not provided";`
    * `this.age = 0;`
-   Em seguida, clica com o mouse na aba [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
-3. **Imagem 3 (`media_1791324837557.png`):** No [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), na linha 8, o autor começa a digitar `Use` para criar a variável `user4`.
+   Em seguida, clica com o mouse na aba [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
+3. **Imagem 3 (`media_1791324837557.png`):** No [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), na linha 8, o autor começa a digitar `Use` para criar a variável `user4`.
 4. **Imagem 4 (`media_1791324848661.png`):** O autor completa a linha: `User user4 = new User();` (parênteses vazios!).
 5. **Imagem 5 (`media_1791324868698.png`):** Para o código não ficar gigante e poluído na tela, o autor apaga os comandos `System.out.println` antigos de `user1`, `user2` e `user3`, deixando apenas a impressão dos dados do novo `user4`. Ele está editando as linhas de impressão com o cursor de texto selecionando a palavra `username`.
 
@@ -51,12 +51,12 @@ Nesta sequência de 5 capturas de tela do vídeo:
       this.age = 0;
   }
   ```
-* **Ação do mouse:** O ponteiro do mouse clica na aba superior [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) para voltar ao programa principal e testar a novidade.
+* **Ação do mouse:** O ponteiro do mouse clica na aba superior [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) para voltar ao programa principal e testar a novidade.
 
 ---
 
 ### 📸 Imagem 3: Digitando o Quarto Usuário
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Linhas 5 a 7:** `user1` (Spongebob), `user2` (Patrick), `user3` (Sandy).
 * **Linha 8:** O autor começou a digitar: `Use|` (com o cursor piscando na letra 'e').
 
@@ -108,9 +108,9 @@ Agora a nossa classe tem **4 construtores sobrecarregados**! Veja como o Java es
 
 ---
 
-## 4. Código Completo de [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) Linha por Linha
+## 4. Código Completo de `User.java` Linha por Linha
 
-Aqui está a classe [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) com todos os 4 construtores:
+Aqui está a classe `User.java` com todos os 4 construtores:
 
 ```java
  1: public class User {
@@ -164,7 +164,7 @@ Aqui está a classe [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20A
 
 ---
 
-## 5. Código Completo de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) Linha por Linha
+## 5. Código Completo de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Linha por Linha
 
 Aqui está o código do arquivo principal como ficou configurado:
 

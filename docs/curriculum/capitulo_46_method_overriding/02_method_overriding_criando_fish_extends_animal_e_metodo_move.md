@@ -14,12 +14,12 @@ No início do Capítulo 46, aprendemos que **Sobrescrita de Métodos** (*Method 
 Nestas 3 novas capturas de tela, o professor Bro Code prepara o exemplo mais didático e intuitivo possível:
 
 1. **A Chegada do Peixe — `Fish.java` (Imagem 1):**  
-   Além de cães e gatos, o professor cria uma terceira subclasse: [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java) (Peixe).  
+   Além de cães e gatos, o professor cria uma terceira subclasse: [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java) (Peixe).  
    *Por que um peixe?* Porque cães e gatos correm, mas **peixes não correm, peixes nadam**!
 2. **Ativando a Herança — `Dog extends Animal` (Imagem 2):**  
-   Ele abre [`Dog.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) e adiciona a cláusula `extends Animal`, conectando o cão à superclasse pai.
+   Ele abre `Dog.java` e adiciona a cláusula `extends Animal`, conectando o cão à superclasse pai.
 3. **O Método Genérico Padrão em `Animal.java` (Imagem 3):**  
-   Na superclasse [`Animal.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java), ele cria o método de movimento:
+   Na superclasse [`Animal.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java), ele cria o método de movimento:
    ```java
    void move(){
        System.out.println("This animal is running");
@@ -82,7 +82,7 @@ Para quem está estudando no Google Docs sem as imagens originais, aqui está a 
 
 Entenda com clareza o problema que estamos construindo:
 
-1. A classe pai [`Animal`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) tem o método:
+1. A classe pai [`Animal`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) tem o método:
    ```java
    void move(){
        System.out.println("This animal is running");
@@ -101,13 +101,13 @@ Entenda com clareza o problema que estamos construindo:
    fish.move(); // Imprime: "This animal is running" (ABSURDO! Peixes não correm!)
    ```
 4. **A Pergunta de Ouro:** Como fazemos para o peixe dizer `"This animal is swimming"` (*Este animal está nadando*), mantendo o nome do método como `move()` para todo mundo?  
-   **A Resposta:** **Method Overriding!** O peixe vai reescrever o método `move()` dentro de [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java).
+   **A Resposta:** **Method Overriding!** O peixe vai reescrever o método `move()` dentro de [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java).
 
 ---
 
 ## 4. Análise Linha por Linha de Todo o Código
 
-### Arquivo 1: [`Animal.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) (Imagem 3)
+### Arquivo 1: [`Animal.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) (Imagem 3)
 
 ```java
 1:  public class Animal {
@@ -130,7 +130,7 @@ Entenda com clareza o problema que estamos construindo:
 
 ---
 
-### Arquivo 2: [`Dog.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) (Imagem 2)
+### Arquivo 2: `Dog.java` (Imagem 2)
 
 ```java
 1: public class Dog extends Animal{
@@ -146,7 +146,7 @@ Entenda com clareza o problema que estamos construindo:
 
 ---
 
-### Arquivo 3: [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java) (Imagem 1)
+### Arquivo 3: [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java) (Imagem 1)
 
 ```java
 1: public class Fish extends Animal{

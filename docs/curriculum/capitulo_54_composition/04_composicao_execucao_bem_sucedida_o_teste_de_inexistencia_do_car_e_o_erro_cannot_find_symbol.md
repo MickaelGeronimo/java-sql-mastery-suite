@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe do Carro (Container): [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
-* Classe do Motor (Parte Integrante): [`Engine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Engine.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte Anterior (Capítulo 54 - Parte 3: Ponto Duplo e Métodos start): [`explicacao_composicao_acesso_ao_atributo_interno_metodos_start_e_execucao_completa_capitulo54_parte3.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_composicao_acesso_ao_atributo_interno_metodos_start_e_execucao_completa_capitulo54_parte3.md)
+* Arquivo Principal: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe do Carro (Container): [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
+* Classe do Motor (Parte Integrante): `Engine.java`
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte Anterior (Capítulo 54 - Parte 3: Ponto Duplo e Métodos start): `explicacao_composicao_acesso_ao_atributo_interno_metodos_start_e_execucao_completa_capitulo54_parte3.md`
 
 ---
 
@@ -118,7 +118,7 @@ flowchart TD
 ### A Explicação Amigável para Iniciantes:
 * Você já viu alguém andando na rua carregando apenas um motor V8 nas mãos para ir trabalhar? **Não!**
 * Um motor de carro nasce dentro da carcaça do carro.
-* Como o nosso código colocou a criação do motor **DENTRO** do construtor de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (`this.engine = new Engine(engineType);`):
+* Como o nosso código colocou a criação do motor **DENTRO** do construtor de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (`this.engine = new Engine(engineType);`):
   * Se você **não instancia o Carro**, o motor **NUNCA É FABRICADO**!
   * Você não pode nem sequer tentar escrever `car.engine`, porque a própria palavra `car` não existe!
 

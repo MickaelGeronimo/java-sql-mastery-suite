@@ -2,7 +2,7 @@
 ## Parte 7: A "Dança das Cadeiras" dos Erros! — Testando `Car[]`, `Bike[]` e `Boat[]`: Por Que Nenhuma Classe Filha Consegue Abrigá-las Todas?
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:11:30` até `08:11:55` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a genial sequência didática onde o professor Bro Code testa **todas as 3 combinações de arrays específicos possíveis** ([`Car[]`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java), [`Bike[]`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java) e [`Boat[]`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java)), provando matematicamente e na prática que, não importa qual classe filha você escolha como dona do array, **sempre haverá erro de tipos incompatíveis (`incompatible types`) com as outras duas filhas**. Analisaremos as 4 telas do IntelliJ IDEA, o painel inferior `Build Output`, a razão pela qual irmãos na hierarquia nunca se convertem entre si, e como esse beco sem saída prepara a entrada triunfal da superclasse [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java).  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a genial sequência didática onde o professor Bro Code testa **todas as 3 combinações de arrays específicos possíveis** ([`Car[]`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), `Bike[]` e `Boat[]`), provando matematicamente e na prática que, não importa qual classe filha você escolha como dona do array, **sempre haverá erro de tipos incompatíveis (`incompatible types`) com as outras duas filhas**. Analisaremos as 4 telas do IntelliJ IDEA, o painel inferior `Build Output`, a razão pela qual irmãos na hierarquia nunca se convertem entre si, e como esse beco sem saída prepara a entrada triunfal da superclasse `Vehicle.java`.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (todas as variações de sublinhados vermelhos, badges `❌ 2 ⚠️ 1`, mensagens de erro do compilador com números de linha e colunas, e seleções do editor) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -24,7 +24,7 @@ Nesta sequência (`08:11:30` a `08:11:55`), o professor realiza um experimento e
 ---
 
 ### 🖼️ Imagem 2 (`media_1791400101475_30c35836.png` — 08:11:38): O Teste 2 com `Bike[]` no Editor
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que o professor altera na Linha 14:**
   ```java
   Bike[] bikes = {car, bike, boat};
@@ -37,7 +37,7 @@ Nesta sequência (`08:11:30` a `08:11:55`), o professor realiza um experimento e
 ---
 
 ### 🖼️ Imagem 3 (`media_1791400110257_f7f29ff8.png` — 08:11:42): A Bronca do Compilador no Teste 2
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O professor clica no botão Run `▶`:**
   * O compilador recusa a execução e abre a janela preta `Build Output`:
     ```text
@@ -52,7 +52,7 @@ Nesta sequência (`08:11:30` a `08:11:55`), o professor realiza um experimento e
 ---
 
 ### 🖼️ Imagem 4 (`media_1791400121917_324b1a23.png` — 08:11:55): O Teste 3 com `Boat[]`
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que o professor altera na Linha 14:**
   ```java
   Boat[] bikes = {car, bike, boat};
@@ -113,7 +113,7 @@ Pense numa família com 3 irmãos pequenos:
 
 ## 4. Dissecação Linha por Linha de `Main.java`
 
-Vejamos o código do arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) durante o Teste 2 (`Bike[]`) e o Teste 3 (`Boat[]`):
+Vejamos o código do arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) durante o Teste 2 (`Bike[]`) e o Teste 3 (`Boat[]`):
 
 ```java
 1:  

@@ -15,7 +15,7 @@ Nas etapas anteriores, o professor Bro Code construiu uma árvore genealógica d
 3. `Dog` e `Cat` herdam de `Animal`, recebem `isAlive` e `eat()`, e adicionam suas próprias vidas (`lives`) e vozes (`speak()`).
 4. `Plant` herda diretamente de `Organism` (criando um ramo irmão de `Animal`) e adiciona `photosynthesize()`.
 
-Neste conjunto de 5 imagens, o professor vai para o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) para colocar a planta em ação no mundo real:
+Neste conjunto de 5 imagens, o professor vai para o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) para colocar a planta em ação no mundo real:
 
 * **Teste 1 (Imagens 1, 2 e 3):** Criar o objeto `plant` e verificar se ela está viva chamando `System.out.println(plant.isAlive);`.  
   * **Resultado no console:** `true`! Prova cabal de que `Plant` herdou com sucesso o atributo de `Organism`.
@@ -172,7 +172,7 @@ Para quem está lendo este documento no Google Docs sem ter as telas abertas, aq
 * **Linha 12 (`plant.photosynthesize();`):**  
   * Em vez de ler uma variável com `System.out.println`, agora damos uma **ordem direta** para a planta realizar uma ação!
   * `plant.`: Mira no objeto planta.
-  * `photosynthesize()`: Chama a função/método declarada em [`Plant.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Plant.java).
+  * `photosynthesize()`: Chama a função/método declarada em `Plant.java`.
   * O método executa o que está no seu corpo: `System.out.println("The plant absorbs sunlight");`.
   * **Saída no Console:**
     ```text
@@ -212,9 +212,9 @@ Aqui está o mapa mental completo de quem pode fazer o que em todo o projeto at�
 
 | Objeto Criado | Classe | De quem herda? | Tem `isAlive`? | Pode chamar `eat()`? | Pode chamar `speak()`? | Pode chamar `photosynthesize()`? |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
-| `dog` | [`Dog`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) | `Animal` (Pai) $\rightarrow$ `Organism` (Avô) | ✅ Sim (`true`) | ✅ Sim (*eating*) | ✅ Sim (*woof*) | ❌ Não |
-| `cat` | [`Cat`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java) | `Animal` (Pai) $\rightarrow$ `Organism` (Avô) | ✅ Sim (`true`) | ✅ Sim (*eating*) | ✅ Sim (*meow*) | ❌ Não |
-| `plant` | [`Plant`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Plant.java) | `Organism` (Mãe direta) | ✅ Sim (`true`) | ❌ Não | ❌ Não | ✅ Sim (*absorbs sunlight*) |
+| `dog` | `Dog` | `Animal` (Pai) $\rightarrow$ `Organism` (Avô) | ✅ Sim (`true`) | ✅ Sim (*eating*) | ✅ Sim (*woof*) | ❌ Não |
+| `cat` | [`Cat`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java) | `Animal` (Pai) $\rightarrow$ `Organism` (Avô) | ✅ Sim (`true`) | ✅ Sim (*eating*) | ✅ Sim (*meow*) | ❌ Não |
+| `plant` | `Plant` | `Organism` (Mãe direta) | ✅ Sim (`true`) | ❌ Não | ❌ Não | ✅ Sim (*absorbs sunlight*) |
 
 ---
 

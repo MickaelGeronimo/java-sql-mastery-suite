@@ -2,8 +2,8 @@
 
 > **Curso:** Java Full Course (Bro Code) — Capítulo 60: `music player`  
 > **Timestamp do Vídeo:** `[9:36:30 - 9:36:55]`  
-> **Arquivo do Workspace:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
-> **Objetivo:** Ver na prática a máquina virtual Java rejeitando um arquivo `.mp3` ao vivo, comprovar o funcionamento do bloco [`catch(UnsupportedAudioFileException e)`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L25) imprimindo `"Audio file is not supported"`, aprender a restaurar o caminho seguro para `.wav` e entender o mecanismo de [`Safe Delete`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) do IntelliJ IDEA para limpar arquivos temporários de teste.
+> **Arquivo do Workspace:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
+> **Objetivo:** Ver na prática a máquina virtual Java rejeitando um arquivo `.mp3` ao vivo, comprovar o funcionamento do bloco [`catch(UnsupportedAudioFileException e)`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L25) imprimindo `"Audio file is not supported"`, aprender a restaurar o caminho seguro para `.wav` e entender o mecanismo de [`Safe Delete`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) do IntelliJ IDEA para limpar arquivos temporários de teste.
 
 ---
 

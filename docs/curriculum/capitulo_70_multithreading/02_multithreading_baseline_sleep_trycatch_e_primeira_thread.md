@@ -9,8 +9,8 @@
 - **Parte:** 2 (Construção da Tarefa de Contagem e Teste Inicial com 1 Thread)
 - **Timestamp de Referência:** `11:24:57` até `11:26:00`
 - **Arquivos do Projeto:**
-  - [`MyRunnable.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/MyRunnable.java)
-  - [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+  - [`MyRunnable.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/MyRunnable.java)
+  - [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ---
 

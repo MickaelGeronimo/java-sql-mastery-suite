@@ -48,11 +48,11 @@ O gerente do clube (o compilador do Java) chega imediatamente e diz:
 > *"Espere aí! Você assinou que era um Salva-Vidas, mas cadê o seu nado?! Se você não sabe nadar, você quebrou o contrato!"*.
 
 É exatamente isso o que aconteceu na tela do professor:
-1. A interface [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java) estabeleceu que toda presa tem que ter o método:
+1. A interface [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java) estabeleceu que toda presa tem que ter o método:
    ```java
    void flee();
    ```
-2. A classe [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java) disse: `implements Prey`.
+2. A classe [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java) disse: `implements Prey`.
 3. Mas o corpo de `Rabbit` está **vazio**! Não tem nenhum método `flee()` escrito dentro dele!
 4. O compilador do Java **bloqueia o programa** e impede a compilação até que o coelho cumpra a sua obrigação!
 
@@ -103,7 +103,7 @@ Repare na incrível consistência pedagógica do Java. Veja como a mensagem de e
 
 ---
 
-## 5. Análise Código por Código e Linha por Linha de [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java)
+## 5. Análise Código por Código e Linha por Linha de [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java)
 
 Abaixo está o código exatamente como visto na imagem:
 

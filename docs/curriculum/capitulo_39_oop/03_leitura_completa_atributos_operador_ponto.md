@@ -153,7 +153,7 @@ Muitos iniciantes perguntam:
 *"Professor, por que não apareceu `$58000.99` com o símbolo de dinheiro?"*
 
 **Resposta:**  
-Porque em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) nós declaramos:
+Porque em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) nós declaramos:
 ```java
 double price = 58000.99;
 ```
@@ -193,7 +193,7 @@ Passo a Passo da Execução:
 
 ## 🔍 Análise Linha por Linha de Todo o Código Atualizado
 
-### Arquivo: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: public class Main {
@@ -247,7 +247,7 @@ Passo a Passo da Execução:
 
 ## 📜 Código-Fonte Completo e Atualizado dos Arquivos
 
-### Arquivo 1: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### Arquivo 1: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 ```java
 public class Car {
 
@@ -259,7 +259,7 @@ public class Car {
 }
 ```
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {

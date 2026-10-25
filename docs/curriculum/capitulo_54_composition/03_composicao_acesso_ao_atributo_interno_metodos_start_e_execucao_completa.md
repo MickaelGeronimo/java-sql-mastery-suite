@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Classe do Motor com `start()`: [`Engine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Engine.java)
-* Classe do Carro com Delegação de Partida: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
-* Arquivo Principal Executado: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte Anterior (Capítulo 54 - Parte 2: Construtor de Engine e Instanciação): [`explicacao_composicao_construtor_do_engine_resolucao_do_erro_instanciacao_do_car_e_o_misterio_do_car_engine_capitulo54_parte2.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_composicao_construtor_do_engine_resolucao_do_erro_instanciacao_do_car_e_o_misterio_do_car_engine_capitulo54_parte2.md)
+* Classe do Motor com `start()`: `Engine.java`
+* Classe do Carro com Delegação de Partida: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
+* Arquivo Principal Executado: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte Anterior (Capítulo 54 - Parte 2: Construtor de Engine e Instanciação): `explicacao_composicao_construtor_do_engine_resolucao_do_erro_instanciacao_do_car_e_o_misterio_do_car_engine_capitulo54_parte2.md`
 
 ---
 
@@ -109,7 +109,7 @@ V8
 ## 3. Adicionando Comportamento ao Motor em `Engine.java` (Imagem 3)
 
 Um motor não serve apenas para guardar o tipo `"V8"`; um motor serve para **ligar e funcionar**!
-Na **Imagem 3**, o professor adicionou o método `start()` dentro de [`Engine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Engine.java):
+Na **Imagem 3**, o professor adicionou o método `start()` dentro de `Engine.java`:
 
 ```java
 void start(){
@@ -124,7 +124,7 @@ void start(){
 
 ## 4. O Coração da Composição: A Delegação em `Car.java` (Imagem 4)
 
-Aqui está o momento mais brilhante de todo o capítulo! Veja como o método `start()` foi implementado dentro de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java):
+Aqui está o momento mais brilhante de todo o capítulo! Veja como o método `start()` foi implementado dentro de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java):
 
 ```java
 void start(){
@@ -162,7 +162,7 @@ Quando você entra no seu carro e gira a chave (ou aperta o botão Start):
 
 ## 5. Código-Fonte Definitivo dos Três Arquivos no Seu Computador
 
-### Arquivo 1: [`Engine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Engine.java)
+### Arquivo 1: `Engine.java`
 
 ```java
 public class Engine {
@@ -182,7 +182,7 @@ public class Engine {
 
 ---
 
-### Arquivo 2: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### Arquivo 2: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 
 ```java
 public class Car {
@@ -207,7 +207,7 @@ public class Car {
 
 ---
 
-### Arquivo 3: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 3: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
 public class Main {
@@ -233,7 +233,7 @@ public class Main {
 
 ## 6. Tabelas Linha por Linha de Todo o Projeto
 
-### A) Dissecação de [`Engine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Engine.java)
+### A) Dissecação de `Engine.java`
 
 | Linha | Código | Explicação Amigável |
 | :---: | :--- | :--- |
@@ -253,7 +253,7 @@ public class Main {
 
 ---
 
-### B) Dissecação de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### B) Dissecação de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 
 | Linha | Código | Explicação Amigável |
 | :---: | :--- | :--- |
@@ -278,7 +278,7 @@ public class Main {
 
 ---
 
-### C) Dissecação de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### C) Dissecação de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 | Linha | Código | Explicação Amigável |
 | :---: | :--- | :--- |

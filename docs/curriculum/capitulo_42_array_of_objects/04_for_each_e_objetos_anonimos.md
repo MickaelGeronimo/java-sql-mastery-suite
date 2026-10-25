@@ -115,7 +115,7 @@ Pense em comprar 3 refrigerantes no mercado:
 
 ---
 
-## 4. Código Completo de [`Main.java`](file:///c:/Users/mickel 1/Downloads/JAVA APRENDER/Main.java) Linha por Linha
+## 4. Código Completo de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Linha por Linha
 
 Aqui está o código final moderno e profissional presente no editor:
 

@@ -214,7 +214,7 @@ flowchart TD
 
 ## 🔍 Análise Linha por Linha do Código Atual
 
-### Arquivo 1: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 1: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
 1: public class Main {
@@ -236,7 +236,7 @@ flowchart TD
 
 ---
 
-### Arquivo 2: [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java)
+### Arquivo 2: `Student.java`
 
 ```java
 1: public class Student {
@@ -256,7 +256,7 @@ flowchart TD
 
 ## 📜 Código-Fonte Atual dos Arquivos do Projeto
 
-### Arquivo 1: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 1: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -269,7 +269,7 @@ public class Main {
 }
 ```
 
-### Arquivo 2: [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java)
+### Arquivo 2: `Student.java`
 ```java
 public class Student {
 

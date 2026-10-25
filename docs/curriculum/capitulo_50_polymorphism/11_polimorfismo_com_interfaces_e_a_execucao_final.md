@@ -2,7 +2,7 @@
 ## Parte 11: O Triunfo do Polimorfismo com Interfaces! — A Correção da Visibilidade (`public void go()`), a Atualização das Classes (`Car`, `Bike`, `Boat`) e a Execução Idêntica no Console!
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:13:44` até `08:14:05` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo, de forma simples e descontraída) a consagração máxima do Polimorfismo com **Interfaces**: o professor Bro Code corrige o erro de acesso em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) adicionando a palavra-chave `public`, atualiza [`Bike.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java) e [`Boat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java) para `implements Vehicle`, e volta para o [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) para rodar o código. Sem alterar uma única linha no `Main.java`, o programa compila com 0 erros e o console imprime exatamente as mesmas 3 frases!  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo, de forma simples e descontraída) a consagração máxima do Polimorfismo com **Interfaces**: o professor Bro Code corrige o erro de acesso em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) adicionando a palavra-chave `public`, atualiza `Bike.java` e `Boat.java` para `implements Vehicle`, e volta para o [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) para rodar o código. Sem alterar uma única linha no `Main.java`, o programa compila com 0 erros e o console imprime exatamente as mesmas 3 frases!  
 > **Formato para Google Docs:** Todo o contexto visual do IntelliJ IDEA (as 5 abas abertas, os ícones de calha `(I)↓` e `(I)↑`, o desaparecimento dos erros vermelhos, os cliques de navegação e a saída verde do console) foi minuciosamente convertido em texto, diagramas visuais e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -13,11 +13,11 @@ Nesta sequência dinâmica (`08:13:44` a `08:14:05`), assistimos ao desfecho tri
 
 | Imagem | Timestamp / Arquivo | O que é mostrado na tela do IntelliJ IDEA? | Ação Realizada pelo Professor Bro Code |
 | :--- | :--- | :--- | :--- |
-| **🖼️ Imagem 1** | `08:13:44`<br>`media_1791400467295_997f785e.png` | Editor aberto em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java). Linha 1: `public class Car implements Vehicle{` com sublinhado ondulado vermelho em `implements Vehicle`. Alerta no canto superior direito: **`2 red errors, 1 yellow warning`**. | O professor posiciona o cursor logo antes de `void go()`, explicando que o Java não aceita que o método seja de pacote (*package-private*) quando a interface exige que ele seja público. |
-| **🖼️ Imagem 2** | `08:13:50`<br>`media_1791400495084_a8c04045.png` | Editor na aba [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java). Na calha esquerda (ao lado dos números das linhas 1 e 3), surgem pequenos ícones verdes circulares **`(I)↓`** (com uma seta apontando para baixo). | O professor mostra o contrato da interface e relembra a regra de ouro: em uma interface, `void go();` é implicitamente `public abstract void go();`. |
-| **🖼️ Imagem 3** | `08:13:55`<br>`media_1791400505284_979d901c.png` | Editor de volta em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java). Linha 4 agora é: `public void go(){`. O sublinhado vermelho sumiu por completo! No canto superior direito, surge o ícone de **Check Verde (0 erros)**. | O professor adiciona a palavra `public` antes de `void go()`. Na calha da linha 4, aparece o ícone **`(I)↑`** (com seta verde apontando para cima), confirmando a implementação bem-sucedida! |
-| **🖼️ Imagem 4** | `08:14:00`<br>`media_1791400516115_c2694ee6.png` | Editor aberto em [`Boat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java). Linha 1: `public class Boat implements Vehicle{`. Linha 4: `public void go(){`. Ícone `(I)↑` presente na linha 4. | O professor atualiza as outras duas classes filhas (`Bike` e `Boat`) com o mesmo padrão. O mouse move-se até o topo esquerdo para clicar na aba [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java). |
-| **🖼️ Imagem 5** | `08:14:05`<br>`media_1791400529320_0ec951dc.png` | Aba ativa: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java). O professor clica em Run `▶`. O painel inferior `Run` abre e exibe a saída completa em texto verde brilhante. | **Sucesso absoluto!** O console imprime as 3 mensagens dos 3 veículos perfeitamente através da interface! |
+| **🖼️ Imagem 1** | `08:13:44`<br>`media_1791400467295_997f785e.png` | Editor aberto em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java). Linha 1: `public class Car implements Vehicle{` com sublinhado ondulado vermelho em `implements Vehicle`. Alerta no canto superior direito: **`2 red errors, 1 yellow warning`**. | O professor posiciona o cursor logo antes de `void go()`, explicando que o Java não aceita que o método seja de pacote (*package-private*) quando a interface exige que ele seja público. |
+| **🖼️ Imagem 2** | `08:13:50`<br>`media_1791400495084_a8c04045.png` | Editor na aba `Vehicle.java`. Na calha esquerda (ao lado dos números das linhas 1 e 3), surgem pequenos ícones verdes circulares **`(I)↓`** (com uma seta apontando para baixo). | O professor mostra o contrato da interface e relembra a regra de ouro: em uma interface, `void go();` é implicitamente `public abstract void go();`. |
+| **🖼️ Imagem 3** | `08:13:55`<br>`media_1791400505284_979d901c.png` | Editor de volta em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java). Linha 4 agora é: `public void go(){`. O sublinhado vermelho sumiu por completo! No canto superior direito, surge o ícone de **Check Verde (0 erros)**. | O professor adiciona a palavra `public` antes de `void go()`. Na calha da linha 4, aparece o ícone **`(I)↑`** (com seta verde apontando para cima), confirmando a implementação bem-sucedida! |
+| **🖼️ Imagem 4** | `08:14:00`<br>`media_1791400516115_c2694ee6.png` | Editor aberto em `Boat.java`. Linha 1: `public class Boat implements Vehicle{`. Linha 4: `public void go(){`. Ícone `(I)↑` presente na linha 4. | O professor atualiza as outras duas classes filhas (`Bike` e `Boat`) com o mesmo padrão. O mouse move-se até o topo esquerdo para clicar na aba [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java). |
+| **🖼️ Imagem 5** | `08:14:05`<br>`media_1791400529320_0ec951dc.png` | Aba ativa: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java). O professor clica em Run `▶`. O painel inferior `Run` abre e exibe a saída completa em texto verde brilhante. | **Sucesso absoluto!** O console imprime as 3 mensagens dos 3 veículos perfeitamente através da interface! |
 
 ---
 
@@ -75,7 +75,7 @@ O professor volta para `Car.java` e digita `public`:
 ---
 
 ### 2.4 Imagem 4: A Padronização em `Boat.java` (e `Bike.java`)
-O professor aplica a mesma correção em [`Boat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java):
+O professor aplica a mesma correção em `Boat.java`:
 ```java
 1      | public class Boat implements Vehicle{
 2      | 
@@ -85,7 +85,7 @@ O professor aplica a mesma correção em [`Boat.java`](file:///c:/Users/mickel%2
 6      |     }
 7      | }
 ```
-E em [`Bike.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java):
+E em `Bike.java`:
 ```java
 1      | public class Bike implements Vehicle{
 2      | 
@@ -100,7 +100,7 @@ Agora as três classes concretas (`Car`, `Bike`, `Boat`) implementam a interface
 ---
 
 ### 2.5 Imagem 5: A Execução no `Main.java` e o Triunfo no Console
-O professor clica na aba [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e aperta o botão verde de **Run `▶`**.
+O professor clica na aba [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e aperta o botão verde de **Run `▶`**.
 
 O painel inferior abre com o comando da JVM:
 ```text
@@ -119,7 +119,7 @@ Process finished with exit code 0
 
 ## 3. A Grande Lição: Por Que `Main.java` NÃO Precisou Mudar Uma Única Letra?
 
-Observe com muita atenção o código de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Observe com muita atenção o código de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```java
 Car car = new Car();
@@ -155,7 +155,7 @@ No método `main`:
 
 ## 4. Dissecação Linha por Linha de Todo o Projeto Atualizado
 
-### 4.1 Arquivo: [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java) (Interface)
+### 4.1 Arquivo: `Vehicle.java` (Interface)
 ```java
 1 | public interface Vehicle {
 2 | 
@@ -176,7 +176,7 @@ No método `main`:
 
 ---
 
-### 4.2 Arquivo: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (Classe Concreta)
+### 4.2 Arquivo: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (Classe Concreta)
 ```java
 1 | public class Car implements Vehicle{
 2 | 
@@ -205,7 +205,7 @@ No método `main`:
 
 ---
 
-### 4.3 Arquivo: [`Bike.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java) (Classe Concreta)
+### 4.3 Arquivo: `Bike.java` (Classe Concreta)
 ```java
 1 | public class Bike implements Vehicle{
 2 | 
@@ -224,7 +224,7 @@ No método `main`:
 
 ---
 
-### 4.4 Arquivo: [`Boat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java) (Classe Concreta)
+### 4.4 Arquivo: `Boat.java` (Classe Concreta)
 ```java
 1 | public class Boat implements Vehicle{
 2 | 
@@ -243,7 +243,7 @@ No método `main`:
 
 ---
 
-### 4.5 Arquivo: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Ponto de Entrada e Execução)
+### 4.5 Arquivo: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Ponto de Entrada e Execução)
 ```java
  1 | public class Main {
  2 |     public static void main(String[] args) {
@@ -296,7 +296,7 @@ No IntelliJ IDEA, a margem esquerda ao lado dos números das linhas chama-se **c
 
 ## 6. O Que Sai no Console? (Resultado da Execução)
 
-Ao clicar no botão verde de Run `▶` na Linha 2 de [`Main.java`](file:///c:/Users/mickel 1/Downloads/JAVA APRENDER/Main.java):
+Ao clicar no botão verde de Run `▶` na Linha 2 de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```text
 You drive the car

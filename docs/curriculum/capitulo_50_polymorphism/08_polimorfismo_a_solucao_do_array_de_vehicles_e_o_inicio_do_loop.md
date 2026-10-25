@@ -2,7 +2,7 @@
 ## Parte 8: A Vitória do Polimorfismo! — O Array Universal `Vehicle[] vehicles`, o Fim das Linhas Vermelhas e o Início do Loop `for`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:12:00` até `08:12:20` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) o momento mais importante e libertador de todo o **Capítulo 50**: a aplicação prática do Polimorfismo! Após demonstrar nas partes anteriores que tentar criar arrays específicos ([`Car[]`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java), [`Bike[]`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java) ou [`Boat[]`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java)) gerava erros grotescos de compilação, o professor Bro Code finalmente declara o array da superclasse comum: `Vehicle[] vehicles = {car, bike, boat};`. Analisaremos o desaparecimento instantâneo de todas as linhas vermelhas de erro no IntelliJ IDEA, a renomeação da variável para o plural correto, e o início da digitação do loop `for-each` (`for(Vehicle){`) que automatizará a locomoção de todos os veículos de uma só vez.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) o momento mais importante e libertador de todo o **Capítulo 50**: a aplicação prática do Polimorfismo! Após demonstrar nas partes anteriores que tentar criar arrays específicos ([`Car[]`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), `Bike[]` ou `Boat[]`) gerava erros grotescos de compilação, o professor Bro Code finalmente declara o array da superclasse comum: `Vehicle[] vehicles = {car, bike, boat};`. Analisaremos o desaparecimento instantâneo de todas as linhas vermelhas de erro no IntelliJ IDEA, a renomeação da variável para o plural correto, e o início da digitação do loop `for-each` (`for(Vehicle){`) que automatizará a locomoção de todos os veículos de uma só vez.  
 > **Formato para Google Docs:** Todo o contexto visual do IntelliJ IDEA (sumiço dos sublinhados vermelhos, transições de digitação do cursor, seleções em azul e rosa/marrom para rastreamento de referências e o início do bloco `for`) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -12,7 +12,7 @@
 Nesta sequência (`08:12:00` a `08:12:20`), testemunhamos a virada de chave que resolve todos os problemas de tipagem:
 
 ### 🖼️ Imagem 1 (`media_1791400162116_806f0023.png` — 08:12:00): A Troca do Tipo para `Vehicle[]`
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que o professor altera na Linha 14:**
   ```java
   Vehicle[] bikes = {car, bike, boat};
@@ -25,7 +25,7 @@ Nesta sequência (`08:12:00` a `08:12:20`), testemunhamos a virada de chave que 
 ---
 
 ### 🖼️ Imagem 2 (`media_1791400172580_b53c4f42.png` — 08:12:05): Renomeando a Variável e Rastreando Referências
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O código corrigido na Linha 14:**
   ```java
   Vehicle[] vehicles = {car, bike, boat};
@@ -39,7 +39,7 @@ Nesta sequência (`08:12:00` a `08:12:20`), testemunhamos a virada de chave que 
 ---
 
 ### 🖼️ Imagem 3 (`media_1791400208399_1d2a157c.png` — 08:12:15): Começando o Loop Polimórfico
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que o professor digita na Linha 16:**
   ```java
   for(Vehicle){
@@ -87,7 +87,7 @@ Lembra da confusão das partes anteriores onde cada irmão tentava expulsar os o
 
 ## 3. Dissecação Linha por Linha de `Main.java`
 
-Vejamos o código de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) exatamente como mostrado na Imagem 2 e no início da Imagem 3:
+Vejamos o código de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) exatamente como mostrado na Imagem 2 e no início da Imagem 3:
 
 ```java
 1:  
@@ -152,7 +152,7 @@ Se você salvar e compilar o arquivo com a Linha 14 concluída (`Vehicle[] vehic
 Process finished with exit code 0
 ```
 
-* **Zero erros de compilação:** Todos os 5 arquivos ([`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java), [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java), [`Bike.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java), [`Boat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java) e [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)) estão em perfeita harmonia.
+* **Zero erros de compilação:** Todos os 5 arquivos (`Vehicle.java`, [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), `Bike.java`, `Boat.java` e [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)) estão em perfeita harmonia.
 * **Por que ainda não há texto no console?** Porque ainda não mandamos o loop executar o comando `.go()`. Isso acontecerá nos próximos segundos do vídeo!
 
 ---
@@ -168,7 +168,7 @@ for (Vehicle x : vehicles) {
 
 Imagine a elegância absurda disso:
 * `x` é uma variável do tipo **`Vehicle`**.
-* O compilador sabe que **todo `Vehicle` tem o método `go()`** (porque definimos `abstract void go();` em [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java)).
+* O compilador sabe que **todo `Vehicle` tem o método `go()`** (porque definimos `abstract void go();` em `Vehicle.java`).
 * Mas quando o loop rodar em tempo de execução (*runtime*):
   1. Na primeira volta, `x` é o **Carro** $\rightarrow$ chama `Car.go()` e imprime `"You drive the car"`!
   2. Na segunda volta, `x` é a **Bicicleta** $\rightarrow$ chama `Bike.go()` e imprime `"You ride the bike"`!
@@ -176,4 +176,4 @@ Imagine a elegância absurda disso:
 
 Em apenas **três linhas de código**, controlamos uma frota inteira!
 
-O arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) na sua máquina já está com o array polimórfico funcionando perfeitamente e sem nenhum erro. Pode mandar as próximas imagens para fecharmos o loop com chave de ouro! 🚗🚲🚤✨
+O arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) na sua máquina já está com o array polimórfico funcionando perfeitamente e sem nenhum erro. Pode mandar as próximas imagens para fecharmos o loop com chave de ouro! 🚗🚲🚤✨

@@ -12,7 +12,7 @@
 Nesta sequência (`08:10:40` a `08:10:55`), o professor simula o erro mais comum que iniciantes cometem quando tentam agrupar objetos diferentes:
 
 ### 🖼️ Imagem 1 (`media_1791400007707_f439c8f0.png` — 08:10:45): O Alerta Visual no Editor
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Demais abas abertas no topo:** `Vehicle.java`, `Car.java`, `Bike.java`, `Boat.java`.
 * **Árvore do Projeto (em `src`):** `Bike`, `Boat`, `Car`, `Main`, `Vehicle`.
 * **A Linha do Erro (Linha 14):**
@@ -29,7 +29,7 @@ Nesta sequência (`08:10:40` a `08:10:55`), o professor simula o erro mais comum
 ---
 
 ### 🖼️ Imagem 2 (`media_1791400018963_b766b60e.png` — 08:10:50): A Bronca do Compilador no "Build Output"
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que acontece:** O professor clica no botão verde de Run `▶` no topo direito para forçar o Java a compilar.
 * **O Resultado:** O programa **não roda**! O painel inferior do IntelliJ se abre automaticamente na aba `Build Output` com fundo preto e mensagens em vermelho neon:
   ```text
@@ -113,7 +113,7 @@ Observe a estrutura familiar do nosso projeto:
 
 ## 4. Dissecação Linha por Linha de `Main.java`
 
-Vejamos o código do arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) exatamente como mostrado nas Imagens 1 e 2:
+Vejamos o código do arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) exatamente como mostrado nas Imagens 1 e 2:
 
 ```java
 1:  

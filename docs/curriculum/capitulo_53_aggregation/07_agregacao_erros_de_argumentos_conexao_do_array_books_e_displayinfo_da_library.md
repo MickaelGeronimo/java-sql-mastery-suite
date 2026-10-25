@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Classe Agregadora Atualizada com `displayInfo()`: [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)
-* Arquivo Principal com a Biblioteca Instanciada: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe do Livro Independente: [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte Anterior (Capítulo 53 - Parte 6: Atributo Book[] books e Construtor): [`explicacao_agregacao_criacao_da_classe_library_atributos_construtor_agregador_e_instanciacao_no_main_capitulo53_parte6.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_agregacao_criacao_da_classe_library_atributos_construtor_agregador_e_instanciacao_no_main_capitulo53_parte6.md)
+* Classe Agregadora Atualizada com `displayInfo()`: `Library.java`
+* Arquivo Principal com a Biblioteca Instanciada: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe do Livro Independente: `Book.java`
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte Anterior (Capítulo 53 - Parte 6: Atributo Book[] books e Construtor): `explicacao_agregacao_criacao_da_classe_library_atributos_construtor_agregador_e_instanciacao_no_main_capitulo53_parte6.md`
 
 ---
 
@@ -82,7 +82,7 @@ Main.java:15: error: constructor Library in class Library cannot be applied to g
 ```
 
 ### A Explicação "Para Lezado / Iniciante":
-Lembra do contrato que nós mesmos assinamos na Parte 6 dentro de [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)?
+Lembra do contrato que nós mesmos assinamos na Parte 6 dentro de `Library.java`?
 Lá nós escrevemos:
 ```java
 Library(String name, int year, Book[] books)
@@ -134,14 +134,14 @@ Ele está mostrando:
 
 ## 4. A Visita a `Book.java` (Imagem 3) e o Novo Método em `Library.java` (Imagem 4)
 
-Na **Imagem 3**, o professor abre [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java) para relembrar que cada livro sabe exibir a si mesmo:
+Na **Imagem 3**, o professor abre `Book.java` para relembrar que cada livro sabe exibir a si mesmo:
 ```java
 String displayInfo(){
     return this.title + " (" + this.pages + " pages)";
 }
 ```
 
-E na **Imagem 4**, ele abre [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java) e começa a criar o método de exibição **da própria Biblioteca**:
+E na **Imagem 4**, ele abre `Library.java` e começa a criar o método de exibição **da própria Biblioteca**:
 
 ```java
 void displayInfo(){
@@ -157,7 +157,7 @@ void displayInfo(){
 
 ## 5. Código Completo dos Arquivos Atualizados no seu Computador
 
-### Arquivo 1: [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)
+### Arquivo 1: `Library.java`
 
 ```java
 public class Library {
@@ -181,7 +181,7 @@ public class Library {
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
 public class Main {
@@ -255,7 +255,7 @@ java Main
 (Terminal limpo / saída vazia)
 ```
 **Por que não sai nada ainda?**
-Porque no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), nós instanciamos a biblioteca com sucesso (`Library library = new Library(...)`), mas ainda não chamamos `library.displayInfo()`.
+Porque no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), nós instanciamos a biblioteca com sucesso (`Library library = new Library(...)`), mas ainda não chamamos `library.displayInfo()`.
 
 ---
 
@@ -274,4 +274,4 @@ O professor acabou de criar a primeira linha do `displayInfo()` da biblioteca.
 O próximo passo lógico é:
 1. Pular uma linha após `"The 1897 NYC Public Library"`.
 2. Adicionar aquele laço `for-each` que aprendemos na Parte 5 **DENTRO** do método `displayInfo()` da biblioteca!
-3. Chamar `library.displayInfo()` no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) para ver a mágica da Agregação completa acontecer!
+3. Chamar `library.displayInfo()` no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) para ver a mágica da Agregação completa acontecer!

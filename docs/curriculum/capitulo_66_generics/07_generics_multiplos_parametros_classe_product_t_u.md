@@ -12,9 +12,9 @@
    - [Momento 3 (~10:48:00): Introduzindo Múltiplos Parâmetros `<T, U>`](#momento-3-104800-introduzindo-múltiplos-parâmetros-t-u)
    - [Momento 4 (10:48:37): Declarando `T item`, `U price` e o Esboço do Construtor](#momento-4-104837-declarando-t-item-u-price-e-o-esboço-do-construtor)
 3. [Código-Fonte Completo dos Arquivos do Projeto](#3-código-fonte-completo-dos-arquivos-do-projeto)
-   - [`Product.java` (O Novo Arquivo)](https://file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Product.java)
-   - [`Main.java`](https://file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-   - [`Box.java`](https://file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java)
+   - [`Product.java` (O Novo Arquivo)](https://../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Product.java)
+   - [`Main.java`](https://../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+   - [`Box.java`](https://../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java)
 4. [Explicação Linha por Linha ("Como se Fosse um Lezado Iniciante Amador")](#4-explicação-linha-por-linha-como-se-fosse-um-lezado-iniciante-amador)
    - [Dissecando `Product.java` Linha por Linha](#dissecando-productjava-linha-por-linha)
 5. [Por Que Usar `<T, U>`? A Ciência dos Múltiplos Tipos Genéricos](#5-por-que-usar-t-u-a-ciência-dos-múltiplos-tipos-genéricos)
@@ -154,7 +154,7 @@ INTELLIJ IDEA - [MyFirstProject] - 10:48:37 / 12:00:00 - Chapter: 66.generics
 
 Aqui estão os códigos atuais dos arquivos no seu projeto local:
 
-### [`Product.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Product.java)
+### [`Product.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Product.java)
 ```java
 public class Product<T, U> {
 
@@ -167,7 +167,7 @@ public class Product<T, U> {
 }
 ```
 
-### [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -181,7 +181,7 @@ public class Main {
 }
 ```
 
-### [`Box.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java)
+### [`Box.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java)
 *(Permanece intacta no projeto como referência do exemplo anterior de parâmetro único).*
 
 ---

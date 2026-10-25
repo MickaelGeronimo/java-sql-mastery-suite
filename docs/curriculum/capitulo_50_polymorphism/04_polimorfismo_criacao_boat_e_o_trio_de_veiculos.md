@@ -2,7 +2,7 @@
 ## Parte 4: O Trio Está Completo! — Criando `Boat.java` (Barco), o Sublinhado Vermelho do Contrato e a Mensagem `"You sail the boat"`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:09:46` até `08:09:59` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a criação da terceira e última classe filha da família de veículos: [`Boat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java). Analisaremos o momento exato em que o professor cria o arquivo, o surgimento do sublinhado vermelho na declaração da classe (uma demonstração visual de que o compilador cobra a implementação do método abstrato `go()`), a resolução do erro ao adicionar o método, o ajuste semântico do verbo em inglês para *"navegar"* (`sail`), e a consolidação da árvore completa de classes necessárias para demonstrar o Polimorfismo no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a criação da terceira e última classe filha da família de veículos: `Boat.java`. Analisaremos o momento exato em que o professor cria o arquivo, o surgimento do sublinhado vermelho na declaração da classe (uma demonstração visual de que o compilador cobra a implementação do método abstrato `go()`), a resolução do erro ao adicionar o método, o ajuste semântico do verbo em inglês para *"navegar"* (`sail`), e a consolidação da árvore completa de classes necessárias para demonstrar o Polimorfismo no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).  
 > **Formato para Google Docs:** Todo o contexto visual do IntelliJ IDEA (janela modal "New Java Class", o sublinhado ondulado vermelho de erro, a seleção de texto com o mouse, os ícones de sarjeta `(I)↑` e as legendas do vídeo) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -12,7 +12,7 @@
 Nesta sequência rápida e rica em detalhes didáticos (`08:09:46` a `08:09:59`), o professor conclui a criação das classes concretas:
 
 ### 🖼️ Imagem 1 (`media_1791399886650_687fd993.png` — 08:09:46): Criando a Classe `Boat`
-* **Aba ativa:** [`Bike.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java).
+* **Aba ativa:** `Bike.java`.
 * **O que acontece:** O professor aciona o menu de criação de classes do IntelliJ IDEA.
 * **Janela Modal "New Java Class":**
   * Campo de texto: a letra `B` digitada (ele está escrevendo `Boat`).
@@ -22,7 +22,7 @@ Nesta sequência rápida e rica em detalhes didáticos (`08:09:46` a `08:09:59`)
 ---
 
 ### 🖼️ Imagem 2 (`media_1791399898649_1dcf6f53.png` — 08:09:54): O Sublinhado Vermelho do Contrato Quebrado!
-* **Aba ativa:** [`Boat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java).
+* **Aba ativa:** `Boat.java`.
 * **Abas abertas no topo:** `Main.java`, `Vehicle.java`, `Car.java`, `Bike.java`, `Boat.java` (ativa).
 * **Árvore do Projeto (em `src`):**
   * `Bike`
@@ -37,13 +37,13 @@ Nesta sequência rápida e rica em detalhes didáticos (`08:09:46` a `08:09:59`)
   ```
 * **O Alerta Visual Imediato:**
   * Toda a linha 1 (`public class Boat extends Vehicle{`) está sublinhada com uma **linha ondulada vermelha vivo**!
-  * **Por que isso aconteceu?** Porque a classe `Boat` prometeu herdar de [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java), mas ainda não escreveu o código do método abstrato obrigatório `abstract void go();`!
+  * **Por que isso aconteceu?** Porque a classe `Boat` prometeu herdar de `Vehicle.java`, mas ainda não escreveu o código do método abstrato obrigatório `abstract void go();`!
   * O compilador não deixa compilar enquanto a promessa não for cumprida!
 
 ---
 
 ### 🖼️ Imagem 3 (`media_1791399907506_16b3fd39.png` — 08:09:56): O Erro Some e o Professor Seleciona `car`
-* **Aba ativa:** [`Boat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java).
+* **Aba ativa:** `Boat.java`.
 * **O que mudou:** O professor inseriu a estrutura do método `go()`.
 * **O Milagre da Compilação:** Assim que o método `go()` foi inserido, **a linha vermelha da Linha 1 desapareceu na mesma hora**!
 * **O que o professor faz:** Na linha 5:
@@ -55,7 +55,7 @@ Nesta sequência rápida e rica em detalhes didáticos (`08:09:46` a `08:09:59`)
 ---
 
 ### 🖼️ Imagem 4 (`media_1791399915730_a1e38fcd.png` — 08:09:59): O Barco Pronto com `"You sail the boat"`
-* **Aba ativa:** [`Boat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java).
+* **Aba ativa:** `Boat.java`.
 * **Código final ajustado:**
   ```java
   public class Boat extends Vehicle{
@@ -105,7 +105,7 @@ Em inglês, o professor teve o cuidado didático de usar o verbo exato para cada
 
 ## 3. Dissecação Linha por Linha: `Boat.java`
 
-Vejamos o código completo e final de [`Boat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java):
+Vejamos o código completo e final de `Boat.java`:
 
 ```java
 1:  public class Boat extends Vehicle{
@@ -160,14 +160,14 @@ Vejamos o código completo e final de [`Boat.java`](file:///c:/Users/mickel%201/
 
 ## 4. O Que Sai no Console se Executar Agora?
 
-Se você rodar o projeto pelo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Se você rodar o projeto pelo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```text
 Process finished with exit code 0
 ```
 
 * **Por que ainda não imprimiu as frases dos veículos?**  
-  Porque as três classes de veículos ([`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java), [`Bike.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java) e [`Boat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java)) são apenas "plantas arquitetônicas". Nós ainda não criamos nenhum objeto no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+  Porque as três classes de veículos ([`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), `Bike.java` e `Boat.java`) são apenas "plantas arquitetônicas". Nós ainda não criamos nenhum objeto no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Código de saída `0`:** Confirma que todos os 5 arquivos do projeto compilam com perfeição e sem nenhum erro!
 
 ---
@@ -178,9 +178,9 @@ Veja como as 3 classes filhas compartilham o mesmo pai, mas cada uma tem sua ide
 
 | Arquivo | Herança | Método Implementado | Saída Própria | Tipo Polimórfico Comum |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) | `extends Vehicle` | `@Override void go()` | `"You drive the car"` | `Vehicle` |
-| [`Bike.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java) | `extends Vehicle` | `@Override void go()` | `"You ride the bike"` | `Vehicle` |
-| [`Boat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java) | `extends Vehicle` | `@Override void go()` | `"You sail the boat"` | `Vehicle` |
+| [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) | `extends Vehicle` | `@Override void go()` | `"You drive the car"` | `Vehicle` |
+| `Bike.java` | `extends Vehicle` | `@Override void go()` | `"You ride the bike"` | `Vehicle` |
+| `Boat.java` | `extends Vehicle` | `@Override void go()` | `"You sail the boat"` | `Vehicle` |
 
 ---
 

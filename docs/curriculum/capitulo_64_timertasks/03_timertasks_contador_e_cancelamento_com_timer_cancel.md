@@ -152,7 +152,7 @@ O método `cancel()` é o **botão de desligar da tomada** do `Timer`:
 
 ---
 
-## 🔍 Explicação Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 🔍 Explicação Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Abaixo está o código integral compilado e executado:
 

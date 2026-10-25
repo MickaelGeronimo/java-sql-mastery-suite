@@ -21,8 +21,12 @@ Este capítulo aborda de ponta a ponta a teoria, sintaxe, boas práticas e armad
 Todos os documentos detalhados de estudo e transcrição didática deste capítulo estão catalogados abaixo:
 
 | Parte | Arquivo | Tema Principal |
-| :---: | :--- | :--- |\n| **01** | [**01_conversor_peso.md**](./01_conversor_peso.md) | ðŸ‹ï¸ CapÃ­tulo 15: Conversor de Peso (`Weight Converter`) â€” Parte 1 (A Estrutura e o Menu) |
-| **02** | [**02_conversor_peso_opcao1.md**](./02_conversor_peso_opcao1.md) | ðŸ‹ï¸ CapÃ­tulo 15: Conversor de Peso â€” Parte 2 (OpÃ§Ã£o 1: De Libras para Quilos) |
-| **03** | [**03_conversor_peso_printf.md**](./03_conversor_peso_printf.md) | ðŸ‹ï¸ CapÃ­tulo 15: Conversor de Peso â€” Parte 3 (O `printf` com `%.2f` na PrÃ¡tica) |
-| **04** | [**04_conversor_peso_opcao2.md**](./04_conversor_peso_opcao2.md) | ðŸ‹ï¸ CapÃ­tulo 15: Conversor de Peso (Weight Converter) â€” Parte 4: OpÃ§Ã£o 2 (Quilos para Libras) |
-| **05** | [**05_conversor_peso_final.md**](./05_conversor_peso_final.md) | ðŸ‹ï¸ CapÃ­tulo 15: Conversor de Peso (Weight Converter) â€” Parte 5: FinalizaÃ§Ã£o, Bloco `else` e `scanner.close()` |\n\n---\n\n> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.\n
+| :---: | :--- | :--- |\n| **01** | [**01_conversor_peso.md**](./01_conversor_peso.md) | 🏋️ Capítulo 15: Conversor de Peso (`Weight Converter`) — Parte 1 (A Estrutura e o Menu) |
+| **02** | [**02_conversor_peso_opcao1.md**](./02_conversor_peso_opcao1.md) | 🏋️ Capítulo 15: Conversor de Peso — Parte 2 (Opção 1: De Libras para Quilos) |
+| **03** | [**03_conversor_peso_printf.md**](./03_conversor_peso_printf.md) | 🏋️ Capítulo 15: Conversor de Peso — Parte 3 (O `printf` com `%.2f` na Prática) |
+| **04** | [**04_conversor_peso_opcao2.md**](./04_conversor_peso_opcao2.md) | 🏋️ Capítulo 15: Conversor de Peso (Weight Converter) — Parte 4: Opção 2 (Quilos para Libras) |
+| **05** | [**05_conversor_peso_final.md**](./05_conversor_peso_final.md) | 🏋️ Capítulo 15: Conversor de Peso (Weight Converter) — Parte 5: Finalização, Bloco `else` e `scanner.close()` |
+
+---
+
+> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.

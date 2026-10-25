@@ -2,7 +2,7 @@
 ## Parte 11: O Nascimento da Herança Múltipla com Interfaces — `Fish implements Prey, Predator` e a Obrigação Cumulativa de Contratos
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:05:50` até `08:06:25` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) o momento mais revolucionário de todo o capítulo de interfaces: a sintaxe mágica de implementar múltiplas interfaces separadas por vírgula em [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java) (`implements Prey, Predator`), a escrita do primeiro método contratual (`public void flee()` exibindo `"*The fish is swimming away*"`), o surgimento do ícone verde `I↑` na margem e a grande surpresa visual para qualquer iniciante: **por que a linha 1 continua sublinhada em vermelho com o badge `● 1` de erro mesmo após termos implementado o método `flee()` com perfeição!**  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) o momento mais revolucionário de todo o capítulo de interfaces: a sintaxe mágica de implementar múltiplas interfaces separadas por vírgula em [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java) (`implements Prey, Predator`), a escrita do primeiro método contratual (`public void flee()` exibindo `"*The fish is swimming away*"`), o surgimento do ícone verde `I↑` na margem e a grande surpresa visual para qualquer iniciante: **por que a linha 1 continua sublinhada em vermelho com o badge `● 1` de erro mesmo após termos implementado o método `flee()` com perfeição!**  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (múltiplas interfaces declaradas, sublinhados vermelhos persistentes, badges de erro no topo direito, cursores de texto entre aspas e ícones verdes de implementação no gutter) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -10,10 +10,10 @@
 ## 1. Visão Geral da Demonstração: O Grande Superpoder do Java Revelado!
 
 Até agora, vimos:
-* [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java) implementando apenas `Prey`.
-* [`Hawk.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Hawk.java) implementando apenas `Predator`.
+* [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java) implementando apenas `Prey`.
+* [`Hawk.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Hawk.java) implementando apenas `Predator`.
 
-Agora, na classe [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java), o professor Bro Code nos ensina como quebrar a maior barreira da herança do Java:
+Agora, na classe [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java), o professor Bro Code nos ensina como quebrar a maior barreira da herança do Java:
 
 1. **A Assinatura Dupla (Imagem 1):**  
    Ele digita na linha 1 de `Fish.java`:
@@ -118,7 +118,7 @@ Este é o momento em que a arquitetura do Java brilha com toda a sua força:
 
 ---
 
-## 4. Análise Código por Código e Linha por Linha de [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java)
+## 4. Análise Código por Código e Linha por Linha de [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java)
 
 Abaixo está o código exatamente como visto na Imagem 3:
 

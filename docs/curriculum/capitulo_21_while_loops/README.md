@@ -21,11 +21,15 @@ Este capítulo aborda de ponta a ponta a teoria, sintaxe, boas práticas e armad
 Todos os documentos detalhados de estudo e transcrição didática deste capítulo estão catalogados abaixo:
 
 | Parte | Arquivo | Tema Principal |
-| :---: | :--- | :--- |\n| **01** | [**01_while_loops_introducao.md**](./01_while_loops_introducao.md) | â™¾ï¸ Curso Completo de Java â€” CapÃ­tulo 21: While Loops (Parte 1) |
-| **02** | [**02_while_loops_loop_infinito_e_game_loop.md**](./02_while_loops_loop_infinito_e_game_loop.md) | â™¾ï¸ Curso Completo de Java â€” CapÃ­tulo 21: While Loops (Parte 2) |
-| **03** | [**03_banking_program_o_loop_infinito_com_while.md**](./03_banking_program_o_loop_infinito_com_while.md) | ðŸ’° Curso de Java para Iniciantes â€” Bro Code |
-| **04** | [**04_do_while_loops_validacao_idade.md**](./04_do_while_loops_validacao_idade.md) | â™¾ï¸ Curso Completo de Java â€” CapÃ­tulo 21: While Loops (Parte 3) |
-| **05** | [**05_do_while_validacao_numero.md**](./05_do_while_validacao_numero.md) | â™¾ï¸ Curso Completo de Java â€” CapÃ­tulo 21: While Loops (Parte 4 - Final) |
-| **06** | [**06_hangman_game_teste_jogo_completo_problema_loop_infinito_vitoria.md**](./06_hangman_game_teste_jogo_completo_problema_loop_infinito_vitoria.md) | ðŸŽ® CapÃ­tulo 61: Java Hangman Game (Jogo da Forca) ðŸ•º â€” Parte 7: Jogando a Partida de Teste, a Palavra Completa e o Bug do Loop Infinito |
-| **07** | [**07_rock_paper_scissors_loop_do_while_e_despedida.md**](./07_rock_paper_scissors_loop_do_while_e_despedida.md) | â˜• Curso de Java â€” CapÃ­tulo 37: `â­ rock paper scissors ðŸ—¿` (Parte 8) |
-| **08** | [**08_como_fazer_loop_infinito_e_como_parar.md**](./08_como_fazer_loop_infinito_e_como_parar.md) | ðŸ›‘ Como Funciona o Loop Infinito (`while(1 == 1)`) e Como Fazer Igual ao Professor |\n\n---\n\n> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.\n
+| :---: | :--- | :--- |\n| **01** | [**01_while_loops_introducao.md**](./01_while_loops_introducao.md) | ♾️ Curso Completo de Java — Capítulo 21: While Loops (Parte 1) |
+| **02** | [**02_while_loops_loop_infinito_e_game_loop.md**](./02_while_loops_loop_infinito_e_game_loop.md) | ♾️ Curso Completo de Java — Capítulo 21: While Loops (Parte 2) |
+| **03** | [**03_banking_program_o_loop_infinito_com_while.md**](./03_banking_program_o_loop_infinito_com_while.md) | 💰 Curso de Java para Iniciantes — Bro Code |
+| **04** | [**04_do_while_loops_validacao_idade.md**](./04_do_while_loops_validacao_idade.md) | ♾️ Curso Completo de Java — Capítulo 21: While Loops (Parte 3) |
+| **05** | [**05_do_while_validacao_numero.md**](./05_do_while_validacao_numero.md) | ♾️ Curso Completo de Java — Capítulo 21: While Loops (Parte 4 - Final) |
+| **06** | [**06_hangman_game_teste_jogo_completo_problema_loop_infinito_vitoria.md**](./06_hangman_game_teste_jogo_completo_problema_loop_infinito_vitoria.md) | 🎮 Capítulo 61: Java Hangman Game (Jogo da Forca) 🕺 — Parte 7: Jogando a Partida de Teste, a Palavra Completa e o Bug do Loop Infinito |
+| **07** | [**07_rock_paper_scissors_loop_do_while_e_despedida.md**](./07_rock_paper_scissors_loop_do_while_e_despedida.md) | ☕ Curso de Java — Capítulo 37: `⭐ rock paper scissors 🗿` (Parte 8) |
+| **08** | [**08_como_fazer_loop_infinito_e_como_parar.md**](./08_como_fazer_loop_infinito_e_como_parar.md) | 🛑 Como Funciona o Loop Infinito (`while(1 == 1)`) e Como Fazer Igual ao Professor |
+
+---
+
+> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.

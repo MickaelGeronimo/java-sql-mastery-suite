@@ -2,7 +2,7 @@
 ## Parte 1: O Quarto Pilar da Orientação a Objetos! — Etimologia Grega (`POLY` + `MORPH`), Definição Conceitual e a Famosa Analogia do Cachorro (`dog` ➔ `animal` ➔ `organism`)
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:08:00` até `08:08:12` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", com paciência e em linguagem simples) a abertura do **Capítulo 50**, apresentando o quarto e último grande pilar da Programação Orientada a Objetos: o **Polimorfismo**. Analisaremos a etimologia grega das palavras `POLY` e `MORPH`, as anotações conceituais feitas pelo professor no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), os destaques em azul das palavras `Polymorphism` e `objects`, e a clássica ilustração do cachorro para entender como um mesmo objeto no Java pode assumir múltiplos papéis e identidades na memória.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", com paciência e em linguagem simples) a abertura do **Capítulo 50**, apresentando o quarto e último grande pilar da Programação Orientada a Objetos: o **Polimorfismo**. Analisaremos a etimologia grega das palavras `POLY` e `MORPH`, as anotações conceituais feitas pelo professor no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), os destaques em azul das palavras `Polymorphism` e `objects`, e a clássica ilustração do cachorro para entender como um mesmo objeto no Java pode assumir múltiplos papéis e identidades na memória.  
 > **Formato para Google Docs:** Todo o contexto visual do IntelliJ IDEA e dos slides gráficos do vídeo (código limpo, comentários alinhados, cursores de seleção em azul e o gráfico do cãozinho com a hierarquia em três níveis) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -12,10 +12,10 @@
 Nesta abertura (`08:08:00` a `08:08:12`), o professor Bro Code limpa o projeto anterior das interfaces e prepara o terreno teórico antes de começarmos a digitar o exemplo prático de veículos.
 
 ### 🖼️ Imagem 1 (`media_1791399707272_186eb712.png` — 08:08:00)
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Árvore do Projeto (à esquerda em `src`):**
   * Todos os arquivos antigos do Capítulo 49 (`Fish.java`, `Hawk.java`, `Predator.java`, `Prey.java`, `Rabbit.java`) foram retirados da pasta `src`.
-  * A pasta `src` contém unicamente o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+  * A pasta `src` contém unicamente o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que está escrito no editor:**
   * O professor escreveu 4 linhas de comentários conceituais (linhas 5 a 8) explicando o que é polimorfismo.
   * Na linha 5, o professor seleciona com o mouse a palavra **`Polymorphism`** (destacada em azul escuro no tema do IntelliJ).
@@ -23,7 +23,7 @@ Nesta abertura (`08:08:00` a `08:08:12`), o professor Bro Code limpa o projeto a
 ---
 
 ### 🖼️ Imagem 2 (`media_1791399720479_f253b2ab.png` — 08:08:05)
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Barra inferior do YouTube:** O marcador de capítulos agora exibe com orgulho: `50.polymorphism >` aos `8:08:05 / 12:00:00`.
 * **O Destaque do Professor:**
   * O professor move o mouse para a linha 8:
@@ -145,7 +145,7 @@ Isso economiza centenas de linhas de código e torna o software flexível e inte
 
 ## 4. Dissecação Linha por Linha de `Main.java`
 
-Vejamos o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) exatamente como mostrado nas Imagens 1 e 2:
+Vejamos o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) exatamente como mostrado nas Imagens 1 e 2:
 
 ```java
 1:  
@@ -263,4 +263,4 @@ Nos próximos minutos do vídeo, o professor Bro Code vai criar um exemplo clás
 3. Todas as três filhas compartilharão um método de ação (como `go()`), mas cada uma se moverá do seu jeito!
 4. No `Main`, ele vai tentar agrupar todos esses veículos dentro de uma única lista polimórfica (`Vehicle[] racers = { car, bike, boat };`), mostrando o poder na prática!
 
-O seu workspace em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) já está exatamente igual à tela do professor e pronto para a próxima leva de códigos! 🚀
+O seu workspace em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) já está exatamente igual à tela do professor e pronto para a próxima leva de códigos! 🚀

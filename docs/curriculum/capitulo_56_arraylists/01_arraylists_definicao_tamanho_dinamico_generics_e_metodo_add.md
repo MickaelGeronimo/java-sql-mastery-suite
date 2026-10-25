@@ -9,9 +9,9 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal em Edição: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Fechamento do Capítulo Anterior (Capítulo 55 - Parte 5: Wrapper Classes): [`explicacao_wrapper_classes_character_isletter_isuppercase_e_conclusao_definitiva_capitulo55_parte5.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_wrapper_classes_character_isletter_isuppercase_e_conclusao_definitiva_capitulo55_parte5.md)
+* Arquivo Principal em Edição: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Fechamento do Capítulo Anterior (Capítulo 55 - Parte 5: Wrapper Classes): `explicacao_wrapper_classes_character_isletter_isuppercase_e_conclusao_definitiva_capitulo55_parte5.md`
 
 ---
 
@@ -148,7 +148,7 @@ fruits.add(2.01); // ❌ ERRO: java: incompatible types: double cannot be conver
 
 ---
 
-## 5. O Código Completo do [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 5. O Código Completo do [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Abaixo está o código integral exatamente como construído na **Imagem 4**:
 

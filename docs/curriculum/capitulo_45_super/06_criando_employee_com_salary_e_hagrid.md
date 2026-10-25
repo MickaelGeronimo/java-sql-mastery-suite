@@ -13,7 +13,7 @@ No início do capítulo, aprendemos que:
 * `Person` é a Superclasse (pai de todos) com `first`, `last`, construtor e `showName()`.
 * `Student` é a primeira subclasse (filho 1), que adicionou `gpa` e usou `super(first, last)` para acionar o construtor do pai.
 
-Agora, o professor Bro Code introduz a segunda subclasse da família: a classe [`Employee.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Employee.java) (Funcionário).
+Agora, o professor Bro Code introduz a segunda subclasse da família: a classe `Employee.java` (Funcionário).
 
 Nesta sequência de 5 imagens:
 1. **Criação da Classe (Imagem 1):**  
@@ -147,7 +147,7 @@ flowchart TD
 
 ## 4. Análise Linha por Linha de Todo o Código
 
-### Arquivo 1: [`Employee.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Employee.java) (Imagem 4)
+### Arquivo 1: `Employee.java` (Imagem 4)
 
 ```java
 1:  public class Employee extends Person{
@@ -170,7 +170,7 @@ flowchart TD
 * **Linha 3 (`int salary;`):** Declara a variável inteira `salary` (salário anual em dólares). É o atributo exclusivo dos funcionários.
 * **Linha 5 (`Employee(String first, String last, int salary){`):** Construtor que recebe nome, sobrenome e o salário.
 * **Linha 6 (`super(first, last);`):**  
-  * Repassa o primeiro nome e o sobrenome para o construtor da superclasse [`Person`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java).  
+  * Repassa o primeiro nome e o sobrenome para o construtor da superclasse `Person`.  
   * É a primeira linha obrigatória do construtor.
 * **Linha 7 (`this.salary = salary;`):** Guarda o salário recebido na variável do próprio funcionário.
 * **Linha 8 (`}`):** Encerra o construtor.
@@ -181,7 +181,7 @@ flowchart TD
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Imagem 5)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Imagem 5)
 
 ```java
 1:  public class Main {
@@ -219,7 +219,7 @@ flowchart TD
 
 ## 5. Saída Fiel do Console nesta Etapa
 
-Ao executar o [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) chamando `employee.showSalary()`:
+Ao executar o [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) chamando `employee.showSalary()`:
 
 ```text
 Rubeus's salary is $50000

@@ -142,7 +142,7 @@ A palavra **`this`** é como um pronome pessoal que muda de identidade dependend
 
 ## 4. O Código Completo e Enumerado de `Student.java`
 
-Vejamos como ficou o arquivo [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java) limpo e sem nenhum erro vermelho:
+Vejamos como ficou o arquivo `Student.java` limpo e sem nenhum erro vermelho:
 
 ```java
 1:  public class Student {

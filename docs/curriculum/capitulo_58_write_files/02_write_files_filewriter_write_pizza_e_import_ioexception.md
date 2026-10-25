@@ -7,8 +7,8 @@
 - **Curso:** *Java Full Course for free* (Canal: Bro Code)
 - **Capítulo Oficial:** `58. write files ✍️`
 - **Intervalo de Tempo no Vídeo:** `09:15:23` até `09:17:15` (do total de 12:00:00)
-- **Arquivo Principal de Trabalho:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-- **Arquivo Criado/Gerado em Disco:** [`test.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/test.txt)
+- **Arquivo Principal de Trabalho:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+- **Arquivo Criado/Gerado em Disco:** [`test.txt`](../../../src/main/resources/test.txt)
 - **Ambiente de Desenvolvimento (IDE):** IntelliJ IDEA Community Edition (OpenJDK 23)
 
 ---
@@ -109,7 +109,7 @@ E na árvore de arquivos do projeto (barra lateral esquerda), surge um novo arqu
 
 ---
 
-## 🍕 O Código Completo do Arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 🍕 O Código Completo do Arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Aqui está exatamente o código que ficou no editor do professor e que está salvo no seu projeto:
 
@@ -172,7 +172,7 @@ File has been written
 Process finished with exit code 0
 ```
 
-### 2. O que foi gerado no Disco Rígido ([`test.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/test.txt)):
+### 2. O que foi gerado no Disco Rígido ([`test.txt`](../../../src/main/resources/test.txt)):
 ```text
 I like pizza!
 ```
@@ -201,7 +201,7 @@ new FileWriter("test.txt")
 ```
 Estamos usando um **caminho relativo** (*relative path*). O Java cria o arquivo na pasta raiz do projeto (no mesmo nível da pasta `src/`, e não dentro de `src/`).
 - No computador do professor: `C:\Users\HP\IdeaProjects\MyFirstProject\test.txt`
-- No seu computador: [`c:\Users\mickel 1\Downloads\JAVA APRENDER\test.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/test.txt)
+- No seu computador: [`c:\Users\mickel 1\Downloads\JAVA APRENDER\test.txt`](../../../src/main/resources/test.txt)
 
 Se você quisesse salvá-lo em outro lugar específico (como na Área de Trabalho), teria que fornecer o caminho absoluto (*absolute path*), como `"C:\\Users\\mickel 1\\Desktop\\test.txt"`.
 
@@ -246,7 +246,7 @@ Imagine a seguinte cena da vida real:
 
 | Ação | Comando Java | Onde acontece? | Quem vê? |
 | :--- | :--- | :--- | :--- |
-| **Escrever no Arquivo** | `writer.write("I like pizza!");` | No disco rígido / SSD do computador ([`test.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/test.txt)) | Quem abrir o arquivo `.txt` pelo Bloco de Notas ou pela IDE |
+| **Escrever no Arquivo** | `writer.write("I like pizza!");` | No disco rígido / SSD do computador ([`test.txt`](../../../src/main/resources/test.txt)) | Quem abrir o arquivo `.txt` pelo Bloco de Notas ou pela IDE |
 | **Escrever na Tela** | `System.out.println("File has been written");` | Na saída padrão do terminal / console do IntelliJ | O programador ou operador que está olhando para a tela enquanto o programa roda |
 
 ---
@@ -257,4 +257,4 @@ Com essas 5 imagens, você completou o primeiro ciclo real de manipulação de a
 2. Protegeu a operação contra erros usando `try-with-resources` e `catch`.
 3. Gravou dados em disco com sucesso.
 4. Forneceu feedback no console para o usuário.
-5. Verificou a criação física do arquivo [`test.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/test.txt) no seu sistema!
+5. Verificou a criação física do arquivo [`test.txt`](../../../src/main/resources/test.txt) no seu sistema!

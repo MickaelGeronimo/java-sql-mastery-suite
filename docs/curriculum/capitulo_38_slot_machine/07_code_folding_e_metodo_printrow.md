@@ -166,7 +166,7 @@ Current balance: $99        <-- LINDO E PROFISSIONAL!
 
 ## 7. O Código Java Completo, Numerado e Atualizado
 
-Aqui está o arquivo [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) completo e funcional:
+Aqui está o arquivo [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) completo e funcional:
 
 ```java
 1:  import java.util.Random;

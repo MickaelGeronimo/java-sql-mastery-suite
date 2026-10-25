@@ -69,7 +69,7 @@ Nesta sequência de 5 telas, o professor Bro Code conecta a classe `User.java` c
 
 ## 2. A Grande Lição da Tela 2: Por Que `"Not provided"` em Vez de `null`?
 
-Observe o que o autor fez dentro do construtor de [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java):
+Observe o que o autor fez dentro do construtor de `User.java`:
 
 ```java
 User(String username){

@@ -9,12 +9,12 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal com os Getters Chamados: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe do Carro com Getters: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Guia da Parte 1 (Conceito e Falha de Acesso Aberto): [`explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md)
-* Guia da Parte 2 (Demonstração da Adulteração e Blindagem `private`): [`explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md)
-* Guia da Parte 3 (Os 3 Erros de Compilação e Criação dos Getters): [`explicacao_getters_and_setters_os_3_erros_de_acesso_privado_e_criacao_dos_getters_capitulo52_parte3.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_os_3_erros_de_acesso_privado_e_criacao_dos_getters_capitulo52_parte3.md)
+* Arquivo Principal com os Getters Chamados: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe do Carro com Getters: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Guia da Parte 1 (Conceito e Falha de Acesso Aberto): `explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md`
+* Guia da Parte 2 (Demonstração da Adulteração e Blindagem `private`): `explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md`
+* Guia da Parte 3 (Os 3 Erros de Compilação e Criação dos Getters): `explicacao_getters_and_setters_os_3_erros_de_acesso_privado_e_criacao_dos_getters_capitulo52_parte3.md`
 
 ---
 
@@ -22,14 +22,14 @@
 
 Nas partes anteriores, vimos o problema e criamos as ferramentas:
 * O problema: Variáveis `private` não deixam ninguém de fora ler nada diretamente (`car.color` dá erro).
-* A ferramenta: Criamos dentro de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) os métodos **Getters** (`getModel()`, `getColor()`, `getPrice()`).
+* A ferramenta: Criamos dentro de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) os métodos **Getters** (`getModel()`, `getColor()`, `getPrice()`).
 
 Nesta sequência de 5 imagens, acompanhamos o clímax da solução:
 1. **O Último Teste do Erro:** O autor re-executa o código com acesso direto para confirmar que ele continua quebrado (`java: color has private access in Car`).
-2. **A Digitação da Cura:** Em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), ele começa a trocar o acesso proibido pelas chamadas dos métodos Getters: `car.getColor()` e `car.getModel()`. Os erros vermelhos somem na mesma hora!
+2. **A Digitação da Cura:** Em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), ele começa a trocar o acesso proibido pelas chamadas dos métodos Getters: `car.getColor()` e `car.getModel()`. Os erros vermelhos somem na mesma hora!
 3. **A Validação Completa:** Ele finaliza com `car.getPrice()`. O editor IntelliJ exibe um ícone de verificação verde `✔` no canto superior direito: **zero erros de compilação!**
 4. **A Vitória da Execução:** Ele aperta Play (`▷`). O console inferior imprime com perfeição: `Yellow Charger 10000`. O programa funciona 100% e os dados continuam protegidos com `private`!
-5. **O Próximo Truque do Professor (Incompatibilidade de Tipos):** O autor volta para [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) e altera o Getter do preço de `int getPrice()` para `String getPrice()`. Como o preço original é um número inteiro (`int`), o Java imediatamente acusa um erro de tipo incompatível (`incompatible types: int cannot be converted to String`), demonstrando a regra de ouro dos tipos de retorno e preparando o terreno para a formatação de texto com cifrão (`$`).
+5. **O Próximo Truque do Professor (Incompatibilidade de Tipos):** O autor volta para [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) e altera o Getter do preço de `int getPrice()` para `String getPrice()`. Como o preço original é um número inteiro (`int`), o Java imediatamente acusa um erro de tipo incompatível (`incompatible types: int cannot be converted to String`), demonstrando a regra de ouro dos tipos de retorno e preparando o terreno para a formatação de texto com cifrão (`$`).
 
 ```mermaid
 flowchart TD
@@ -61,7 +61,7 @@ Aqui está a resposta que diferencia um amador de um programador profissional:
 
 #### O que se vê na interface do IntelliJ IDEA:
 * **Barra de Vídeo do YouTube:** Timestamp `8:23:52 / 12:00:00`, capítulo `52. getters and setters >`.
-* **Aba Ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba Ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Trecho de Código no Editor:**
   ```java
    9        Car car = new Car("Charger", "Yellow", 10000);
@@ -85,7 +85,7 @@ Aqui está a resposta que diferencia um amador de um programador profissional:
 
 #### O que se vê na interface do IntelliJ IDEA:
 * **Barra de Vídeo:** Timestamp `8:24:11 / 12:00:00`.
-* **Aba Ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba Ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Trecho no Editor (Linha 11):**
   ```java
   11    System.out.println(car.getColor() + " " + car.getModel() + " " + car.
@@ -101,7 +101,7 @@ Aqui está a resposta que diferencia um amador de um programador profissional:
 ### 📸 Imagem 3: A Linha 11 Completa e o Selo Verde de Aprovação (`media_1791402048451_0427d079.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
-* **Aba Ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba Ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Trecho no Editor (Linha 11 Completa):**
   ```java
   11 💡  System.out.println(car.getColor() + " " + car.getModel() + " " + car.getPrice());
@@ -139,7 +139,7 @@ Aqui está a resposta que diferencia um amador de um programador profissional:
 ### 📸 Imagem 5: A Mudança para `String getPrice()` e o Erro de Tipos (`media_1791402101140_08f761fe.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
-* **Aba Ativa:** O autor muda de aba e entra em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba Ativa:** O autor muda de aba e entra em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **Trecho de Código no Editor:**
   ```java
   19    String getPrice(){
@@ -161,7 +161,7 @@ Aqui está a resposta que diferencia um amador de um programador profissional:
 
 ## 4. Análise Linha por Linha dos Códigos
 
-### Arquivo 1: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Código Funcionando Perfeitamente das Imagens 3 e 4)
+### Arquivo 1: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Código Funcionando Perfeitamente das Imagens 3 e 4)
 
 ```java
  1 public class Main {
@@ -195,7 +195,7 @@ Aqui está a resposta que diferencia um amador de um programador profissional:
 
 ---
 
-### Arquivo 2: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (Com a Demonstração de Erro de Tipo da Imagem 5)
+### Arquivo 2: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (Com a Demonstração de Erro de Tipo da Imagem 5)
 
 ```java
  1 public class Car {

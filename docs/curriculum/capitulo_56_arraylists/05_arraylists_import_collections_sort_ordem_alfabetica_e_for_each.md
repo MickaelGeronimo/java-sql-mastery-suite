@@ -7,7 +7,7 @@
 - **Curso:** *Java Full Course for free* (Canal: Bro Code)
 - **Capítulo Oficial:** `56. arraylists 📃`
 - **Intervalo de Tempo no Vídeo:** `09:00:19` até `09:01:05` (do total de 12:00:00)
-- **Arquivo de Trabalho:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+- **Arquivo de Trabalho:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 - **Ambiente de Desenvolvimento:** IntelliJ IDEA Community Edition (JDK 23 / OpenJDK 23)
 
 ---
@@ -113,7 +113,7 @@ Como você vai copiar este material para o **Google Docs** e não terá as image
 
 ## 💻 Código-Fonte Completo e Rigorosamente Numerado (Linhas 1 a 29)
 
-Aqui está o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) exatamente como montado e executado no vídeo:
+Aqui está o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) exatamente como montado e executado no vídeo:
 
 ```java
  1: import java.util.ArrayList;

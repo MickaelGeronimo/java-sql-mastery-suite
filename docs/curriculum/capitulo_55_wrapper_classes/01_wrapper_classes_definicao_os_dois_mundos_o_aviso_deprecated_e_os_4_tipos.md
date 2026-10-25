@@ -9,9 +9,9 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal com as Wrapper Classes: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Conclusão do Capítulo Anterior (Capítulo 54 - Parte 5: Composição): [`explicacao_composicao_o_fechamento_filosofico_complex_objects_e_conclusao_definitiva_capitulo54_parte5.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_composicao_o_fechamento_filosofico_complex_objects_e_conclusao_definitiva_capitulo54_parte5.md)
+* Arquivo Principal com as Wrapper Classes: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Conclusão do Capítulo Anterior (Capítulo 54 - Parte 5: Composição): `explicacao_composicao_o_fechamento_filosofico_complex_objects_e_conclusao_definitiva_capitulo54_parte5.md`
 
 ---
 
@@ -157,7 +157,7 @@ Como os programadores odiavam ter que ficar digitando `new Integer(123)` ou `new
 
 ## 6. Código Completo de `Main.java` no seu Computador
 
-Aqui está o código exato que está salvo no seu arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Aqui está o código exato que está salvo no seu arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```java
 public class Main {

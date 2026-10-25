@@ -173,7 +173,7 @@ INTELLIJ IDEA - [MyFirstProject] - ~10:54:15 / 12:00:00 - Chapter: 67.hashmaps �
 
 Aqui está o código exato em execução no seu projeto local:
 
-### [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 import java.util.HashMap;
 

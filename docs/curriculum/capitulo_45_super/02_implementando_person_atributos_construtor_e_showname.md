@@ -107,7 +107,7 @@ Para quem está estudando no Google Docs sem as imagens originais, aqui está a 
 
 ## 3. Análise Linha por Linha de Todo o Código
 
-### Arquivo 1: [`Person.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java) (Imagem 1)
+### Arquivo 1: `Person.java` (Imagem 1)
 
 ```java
 1:  public class Person {
@@ -129,7 +129,7 @@ Para quem está estudando no Google Docs sem as imagens originais, aqui está a 
 #### Explicação Detalhada:
 
 * **Linha 1 (`public class Person {`):**  
-  Declara a classe pública [`Person`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java). Qualquer arquivo do projeto poderá criar pessoas ou herdar dela.
+  Declara a classe pública `Person`. Qualquer arquivo do projeto poderá criar pessoas ou herdar dela.
 * **Linhas 3 e 4 (`String first;` e `String last;`):**  
   * São os **Atributos de Instância** (as características que toda pessoa tem).
   * `first`: Guardará o primeiro nome em formato de texto (`String`).
@@ -156,7 +156,7 @@ Para quem está estudando no Google Docs sem as imagens originais, aqui está a 
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Imagens 3, 4 e 5)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Imagens 3, 4 e 5)
 
 ```java
 1:  public class Main {
@@ -214,7 +214,7 @@ E quando chamamos `person.showName();`, o método simplesmente busca essas duas 
 
 ## 5. Saída Fiel do Console nesta Etapa
 
-Ao clicar no botão verde Play em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Ao clicar no botão verde Play em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```text
 Tom Riddle

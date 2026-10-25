@@ -7,8 +7,8 @@
 - **Curso:** *Java Full Course for free* (Canal: Bro Code)
 - **Capítulo Oficial:** `59. read files 📖` *(Novo Capítulo!)*
 - **Intervalo de Tempo no Vídeo:** `09:22:05` até `09:22:45` (do total de 12:00:00)
-- **Arquivo Principal de Trabalho:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-- **Arquivo Preparado no Desktop:** [`test.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/test.txt) (criado manualmente no Windows)
+- **Arquivo Principal de Trabalho:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+- **Arquivo Preparado no Desktop:** [`test.txt`](../../../src/main/resources/test.txt) (criado manualmente no Windows)
 - **Ambiente de Desenvolvimento (IDE):** IntelliJ IDEA Community Edition + Windows Desktop
 
 ---
@@ -108,7 +108,7 @@ pronto para ser lido pelo nosso futuro código Java!
 
 ---
 
-## 🍕 O Código do Arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) Nesta Etapa
+## 🍕 O Código do Arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Nesta Etapa
 
 Aqui está o código exato que está no editor do IntelliJ:
 
@@ -207,7 +207,7 @@ flowchart TD
 
 ---
 
-## 📄 O Arquivo de Teste Criado no Desktop ([`test.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/test.txt))
+## 📄 O Arquivo de Teste Criado no Desktop ([`test.txt`](../../../src/main/resources/test.txt))
 
 Na Imagem 5, o professor preparou o arquivo `test.txt` com o seguinte conteúdo exato:
 

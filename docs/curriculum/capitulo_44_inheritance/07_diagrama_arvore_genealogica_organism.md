@@ -3,14 +3,14 @@
 > **Contexto do Curso:** *Java Full Course for free* (Bro Code)  
 > **Capítulo:** 44 — `inheritance 👨‍👧‍👦`  
 > **Tempo do Vídeo:** `07:27:55` em diante / `12:00:00`  
-> **Arquivos do Projeto:** [Organism.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Organism.java), [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java), [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java), [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java) e [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
+> **Arquivos do Projeto:** Organism.java, [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java), Dog.java, [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java) e [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
 > **Objetivo Deste Documento:** Guia didático definitivo para iniciantes, projetado para cópia direta no **Google Docs**, recriando com máxima fidelidade o diagrama gráfico cartunesco exibido pelo autor no vídeo, dissecando o arquivo ancestral `Organism.java` e explicando a cascata de construtores na memória.
 
 ---
 
 ## 1. Reconstituição Visual da Tela (Para Visualização sem as Imagens)
 
-Nesta imagem memorável, o instrutor Bro Code resume toda a teoria de **Herança Multinível e Hierárquica** sobrepondo um diagrama gráfico limpo e ilustrado por cima do código de [Organism.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Organism.java).
+Nesta imagem memorável, o instrutor Bro Code resume toda a teoria de **Herança Multinível e Hierárquica** sobrepondo um diagrama gráfico limpo e ilustrado por cima do código de Organism.java.
 
 ```
 +-----------------------------------------------------------------------------------------------+
@@ -53,7 +53,7 @@ Nesta imagem memorável, o instrutor Bro Code resume toda a teoria de **Herança
 
 ### Detalhamento dos Elementos Visuais da Imagem:
 
-* **Arquivo ativo no editor:** [Organism.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Organism.java).
+* **Arquivo ativo no editor:** Organism.java.
 * **Painel Project (à esquerda):**  
   A pasta `src` agora contém os 5 arquivos completos do projeto:
   1. `Animal.java`
@@ -134,7 +134,7 @@ Ou seja: **para que um filho nasça, todos os seus antepassados são inicializad
 
 ## 4. Dissecando o Código Linha por Linha Numerado
 
-### Arquivo: [Organism.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Organism.java)
+### Arquivo: Organism.java
 
 ```java
  1: public class Organism {
@@ -162,7 +162,7 @@ Ou seja: **para que um filho nasça, todos os seus antepassados são inicializad
 
 ---
 
-## 5. O Teste Supremo no [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 5. O Teste Supremo no [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Para consolidar tudo o que o autor ensinou neste capítulo, podemos rodar o teste definitivo com o `Dog` e o `Cat`:
 

@@ -9,7 +9,7 @@
 
 O **Capítulo 44** introduz um dos quatro pilares sagrados da Programação Orientada a Objetos: a **Herança (*Inheritance*)**.
 
-Neste módulo, construímos uma hierarquia biológica completa inspirada no reino dos seres vivos ([`Organism.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Organism.java)), explorando a eliminação radical de duplicação de código (*DRY*), herança multinível, herança hierárquica e o isolamento entre ramos colaterais da árvore genealógica.
+Neste módulo, construímos uma hierarquia biológica completa inspirada no reino dos seres vivos ([`Organism.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Organism.java)), explorando a eliminação radical de duplicação de código (*DRY*), herança multinível, herança hierárquica e o isolamento entre ramos colaterais da árvore genealógica.
 
 ### 🌟 Pilares Fundamentais do Capítulo
 
@@ -43,17 +43,17 @@ Neste módulo, construímos uma hierarquia biológica completa inspirada no rein
 
 | Arquivo | Título / Tema Principal |
 | :--- | :--- |
-| [01_definicao_e_criacao_classe_animal.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_44_inheritance/01_definicao_e_criacao_classe_animal.md) | O que é Herança, a relação *Child <- Parent* e a criação da classe `Animal.java`. |
-| [02_classe_animal_atributos_metodo_eat_e_criando_dog.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_44_inheritance/02_classe_animal_atributos_metodo_eat_e_criando_dog.md) | Atributos e método `eat()` em `Animal` e criação da classe filha `Dog extends Animal`. |
-| [03_criando_cat_extends_animal_e_heranca_em_acao.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_44_inheritance/03_criando_cat_extends_animal_e_heranca_em_acao.md) | Criação da classe `Cat extends Animal` e a consolidação do reaproveitamento de código. |
-| [04_testando_dog_cat_isalive_eat_e_eliminando_duplicacao.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_44_inheritance/04_testando_dog_cat_isalive_eat_e_eliminando_duplicacao.md) | Testes no console: `dog.isAlive`, `cat.isAlive`, `eat()` e a vitória contra a redundância. |
-| [05_atributos_e_metodos_exclusivos_das_filhas.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_44_inheritance/05_atributos_e_metodos_exclusivos_das_filhas.md) | Especialização das filhas: `lives = 1` e `bark()` no cão vs `lives = 9` e `speak()` no gato. |
-| [06_multinivel_organism_grandparent.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_44_inheritance/06_multinivel_organism_grandparent.md) | Herança multinível: promoção de `isAlive` para a superclasse avó `Organism.java`. |
-| [07_diagrama_arvore_genealogica_organism.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_44_inheritance/07_diagrama_arvore_genealogica_organism.md) | Árvore genealógica de classes: relações de ascendência e descendência na memória. |
-| [08_hierarquica_criando_classe_plant.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_44_inheritance/08_hierarquica_criando_classe_plant.md) | Herança hierárquica: criação de `Plant extends Organism` com o método `photosynthesize()`. |
-| [09_instanciando_plant_isalive_e_photosynthesize.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_44_inheritance/09_instanciando_plant_isalive_e_photosynthesize.md) | Execução da planta: comprovação de que `plant.isAlive` vem da raiz `Organism`. |
-| [10_arvore_completa_erro_dog_photosynthesize_e_conclusao.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_44_inheritance/10_arvore_completa_erro_dog_photosynthesize_e_conclusao.md) | Árvore completa, indução do erro proibido `dog.photosynthesize()` e fechamento pedagógico. |
-| [README.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_44_inheritance/README.md) | Guia curricular geral e diagrama de classes da árvore genealógica. |
+| [01_definicao_e_criacao_classe_animal.md](01_definicao_e_criacao_classe_animal.md) | O que é Herança, a relação *Child <- Parent* e a criação da classe `Animal.java`. |
+| [02_classe_animal_atributos_metodo_eat_e_criando_dog.md](02_classe_animal_atributos_metodo_eat_e_criando_dog.md) | Atributos e método `eat()` em `Animal` e criação da classe filha `Dog extends Animal`. |
+| [03_criando_cat_extends_animal_e_heranca_em_acao.md](03_criando_cat_extends_animal_e_heranca_em_acao.md) | Criação da classe `Cat extends Animal` e a consolidação do reaproveitamento de código. |
+| [04_testando_dog_cat_isalive_eat_e_eliminando_duplicacao.md](04_testando_dog_cat_isalive_eat_e_eliminando_duplicacao.md) | Testes no console: `dog.isAlive`, `cat.isAlive`, `eat()` e a vitória contra a redundância. |
+| [05_atributos_e_metodos_exclusivos_das_filhas.md](05_atributos_e_metodos_exclusivos_das_filhas.md) | Especialização das filhas: `lives = 1` e `bark()` no cão vs `lives = 9` e `speak()` no gato. |
+| [06_multinivel_organism_grandparent.md](06_multinivel_organism_grandparent.md) | Herança multinível: promoção de `isAlive` para a superclasse avó `Organism.java`. |
+| [07_diagrama_arvore_genealogica_organism.md](07_diagrama_arvore_genealogica_organism.md) | Árvore genealógica de classes: relações de ascendência e descendência na memória. |
+| [08_hierarquica_criando_classe_plant.md](08_hierarquica_criando_classe_plant.md) | Herança hierárquica: criação de `Plant extends Organism` com o método `photosynthesize()`. |
+| [09_instanciando_plant_isalive_e_photosynthesize.md](09_instanciando_plant_isalive_e_photosynthesize.md) | Execução da planta: comprovação de que `plant.isAlive` vem da raiz `Organism`. |
+| [10_arvore_completa_erro_dog_photosynthesize_e_conclusao.md](10_arvore_completa_erro_dog_photosynthesize_e_conclusao.md) | Árvore completa, indução do erro proibido `dog.photosynthesize()` e fechamento pedagógico. |
+| [README.md](README.md) | Guia curricular geral e diagrama de classes da árvore genealógica. |
 
 ---
 
@@ -92,10 +92,10 @@ classDiagram
 ---
 
 ## 💻 Código-Fonte e Testes no Projeto
-- Superclasse Raiz: [`Organism.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Organism.java)
-- Ramo Animal: [`Animal.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java)
-- Ramo Vegetal: [`Plant.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Plant.java)
-- Subclasse Cão: [`Dog.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Dog.java)
-- Subclasse Gato: [`Cat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java)
-- Demonstração Executável: [`InheritanceDemo.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/InheritanceDemo.java)
-- Suíte de Testes Automatizados: [`InheritanceTest.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/test/java/com/mickaelgeronimo/mastery/core/InheritanceTest.java)
+- Superclasse Raiz: [`Organism.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Organism.java)
+- Ramo Animal: [`Animal.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java)
+- Ramo Vegetal: [`Plant.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Plant.java)
+- Subclasse Cão: [`Dog.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Dog.java)
+- Subclasse Gato: [`Cat.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java)
+- Demonstração Executável: [`InheritanceDemo.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/InheritanceDemo.java)
+- Suíte de Testes Automatizados: [`InheritanceTest.java`](../../../src/test/java/com/mickaelgeronimo/mastery/core/InheritanceTest.java)

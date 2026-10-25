@@ -2,18 +2,18 @@
 ## Parte 3: O Foco na Palavra `overridden`, Criando a Classe `Car.java` e seus 4 Atributos
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `07:46:40` até `07:47:40` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a transição da teoria para a prática: por que o professor destacou a palavra **`overridden`** no comentário de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), como criar uma nova classe (`Car.java`) pelo menu do IntelliJ IDEA e dissecar linha por linha a estrutura dos seus 4 atributos de instância (`make`, `model`, `year`, `color`) acompanhados do construtor com a palavra-chave `this`.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a transição da teoria para a prática: por que o professor destacou a palavra **`overridden`** no comentário de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), como criar uma nova classe (`Car.java`) pelo menu do IntelliJ IDEA e dissecar linha por linha a estrutura dos seus 4 atributos de instância (`make`, `model`, `year`, `color`) acompanhados do construtor com a palavra-chave `this`.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (diálogos modais, seleções com o mouse, abas e legendas de vídeo) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
 
 ## 1. Visão Geral da Cena: Da Teoria do Hash Code à Prática do Carro
 
-Nas etapas anteriores, descobrimos que a classe ancestral [`Object.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Object.java) entrega de graça um método `toString()`, mas que esse método padrão imprime um código feio e inútil para humanos (`NomeDaClasse@HashCodeHexadecimal`).
+Nas etapas anteriores, descobrimos que a classe ancestral `Object.java` entrega de graça um método `toString()`, mas que esse método padrão imprime um código feio e inútil para humanos (`NomeDaClasse@HashCodeHexadecimal`).
 
 Agora, o professor Bro Code inicia a virada de chave do capítulo:
-1. Ele volta aos comentários em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e destaca a palavra **`overridden`** na linha 8 para nos lembrar: *"Nós podemos sobrescrever esse método!"*.
-2. Ele abre o menu do IntelliJ e cria um novo arquivo de código chamado [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+1. Ele volta aos comentários em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e destaca a palavra **`overridden`** na linha 8 para nos lembrar: *"Nós podemos sobrescrever esse método!"*.
+2. Ele abre o menu do IntelliJ e cria um novo arquivo de código chamado [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 3. Ele escreve a estrutura de dados completa de um carro de verdade com 4 características essenciais e o seu construtor parametrizado.
 
 ---
@@ -23,7 +23,7 @@ Agora, o professor Bro Code inicia a virada de chave do capítulo:
 Para quem está estudando pelo Google Docs e não tem as imagens abertas, aqui está a reconstrução cinematográfica da tela do professor:
 
 ### Imagem 1 (`media_1791357560680.png`): O Destaque da Palavra `overridden`
-* **Arquivo em Foco:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo em Foco:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Painel Esquerdo (`Project`):** A pasta `src` contém apenas `Main`.
 * **Editor de Código:** Vemos as 12 primeiras linhas de `Main.java`:
   ```java
@@ -49,7 +49,7 @@ Para quem está estudando pelo Google Docs e não tem as imagens abertas, aqui e
 * **Legenda Gigante no Vídeo:** No terço inferior da tela, aparece escrita em fonte branca grande com borda preta a palavra: **`Car`**. É o nome da classe que o professor está digitando para criar!
 
 ### Imagem 3 (`media_1791357630928.png` — 07:47:38): A Classe `Car.java` Construída
-* **Aba Ativa:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (a aba `Main.java` está ao lado).
+* **Aba Ativa:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (a aba `Main.java` está ao lado).
 * **Painel do Projeto:** A pasta `src` agora lista orgulhosamente dois arquivos: `Car` e `Main`.
 * **Editor de Código:** Mostra as 14 linhas de código completas da classe `Car`:
   * Linha 1: `public class Car {`
@@ -63,13 +63,13 @@ Para quem está estudando pelo Google Docs e não tem as imagens abertas, aqui e
 
 Lembre-se da conexão de ouro entre os capítulos:
 * No **Capítulo 46**, você aprendeu que uma classe filha pode **sobrescrever (`@Override`)** qualquer método herdado da classe pai para fornecer um comportamento personalizado.
-* No **Capítulo 47**, você descobriu que toda classe é filha de [`Object`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Object.java), e que `Object` tem um método chamado `toString()`.
+* No **Capítulo 47**, você descobriu que toda classe é filha de `Object`, e que `Object` tem um método chamado `toString()`.
 * **A Conclusão Lógica:** Se `Car` é filha de `Object`, então a classe `Car` tem o direito sagrado de **sobrescrever o método `toString()`**!
 * Em vez de deixar o Java imprimir o código hexadecimal sem graça (`Car@6acbcfc0`), nós vamos ensinar o `Car` a devolver um texto com a marca, o modelo, o ano e a cor do carro!
 
 ---
 
-## 4. Análise Linha por Linha de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+## 4. Análise Linha por Linha de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 
 Abaixo está o código digitado pelo professor na Imagem 3, com cada uma das suas 14 linhas minuciosamente explicadas:
 
@@ -152,7 +152,7 @@ Quando o comando `new Car("Ford", "Mustang", 2025, "Red")` for executado, é ist
 
 ## 6. O Que Sai no Console nesta Etapa?
 
-A classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) é um **modelo (blueprint)** e **não possui método `main`**.
+A classe [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) é um **modelo (blueprint)** e **não possui método `main`**.
 Portanto, ela não roda sozinha.
 
 Se compilarmos o projeto neste exato momento pelo terminal:

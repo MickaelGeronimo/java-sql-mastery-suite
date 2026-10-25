@@ -145,7 +145,7 @@ Abaixo, cada linha é explicada no detalhe mais simples possível:
 - **Saída no Console**: Nenhuma.
 
 ### Linha 3: `public class Main {`
-- **O que faz**: Declara a nossa classe principal [`Main`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L3).
+- **O que faz**: Declara a nossa classe principal [`Main`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L3).
 - **Saída no Console**: Nenhuma.
 
 ### Linha 4: `public static void main(String[] args) {`

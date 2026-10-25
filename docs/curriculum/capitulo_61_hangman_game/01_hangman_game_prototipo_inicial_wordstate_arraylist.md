@@ -141,7 +141,7 @@ Esta é uma das dúvidas mais clássicas de quem está aprendendo Java:
 
 ## 📜 Código-Fonte Completo Deste Passo Inicial
 
-Este é o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) que foi implementado e testado no seu projeto:
+Este é o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) que foi implementado e testado no seu projeto:
 
 ```java
 import java.util.ArrayList;

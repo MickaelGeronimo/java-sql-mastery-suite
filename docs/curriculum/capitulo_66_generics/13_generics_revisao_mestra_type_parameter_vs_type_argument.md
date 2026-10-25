@@ -33,9 +33,9 @@ Após demonstrar na prática o funcionamento de classes com 1 tipo genérico (`B
 
 Neste bloco de vídeo (minutos `10:51:42` a `10:51:55`), o instrutor não escreve nenhuma linha nova de código. Em vez disso, ele faz uma **revisão conceitual visual**:
 1. Ele mostra o resultado `15` no console do `Main.java`.
-2. Ele clica na aba de [`Box.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java) e dá dois cliques na letra `T`. O IntelliJ IDEA automaticamente **ilumina em cinza/azul todas as 4 posições onde a letra `T` aparece**.
+2. Ele clica na aba de [`Box.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java) e dá dois cliques na letra `T`. O IntelliJ IDEA automaticamente **ilumina em cinza/azul todas as 4 posições onde a letra `T` aparece**.
 3. Ele explica: *"Vejam como a letra `T` se repete na classe: no cabeçalho `<T>`, no campo `T item;`, no parâmetro `setItem(T item)` e no retorno `public T getItem()`."*
-4. Ele volta para [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e seleciona com o mouse as palavras **`type parameter`** no comentário da Linha 8:
+4. Ele volta para [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e seleciona com o mouse as palavras **`type parameter`** no comentário da Linha 8:
    ```java
    // <T> type parameter (placeholder that gets replaced with a real type)
    ```
@@ -161,7 +161,7 @@ INTELLIJ IDEA - [MyFirstProject] - 10:51:55 / 12:00:00 - Chapter: 66.generics (R
 
 Aqui estão os códigos exatos dos 3 arquivos do projeto na máquina local:
 
-### [`Box.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java)
+### [`Box.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java)
 ```java
 public class Box<T> {
 
@@ -177,7 +177,7 @@ public class Box<T> {
 }
 ```
 
-### [`Product.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Product.java)
+### [`Product.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Product.java)
 ```java
 public class Product<T, U> {
 
@@ -199,7 +199,7 @@ public class Product<T, U> {
 }
 ```
 
-### [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -227,7 +227,7 @@ Vamos entender exatamente o que o Bro Code quis mostrar com cada destaque visual
 
 ---
 
-### As 4 Aparições de `T` em [`Box.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java)
+### As 4 Aparições de `T` em [`Box.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java)
 
 Nas Imagens 2 e 3, o Bro Code deu dois cliques na letra `T` e o IntelliJ acendeu 4 lâmpadas azuis. Veja por que cada uma delas existe:
 
@@ -246,7 +246,7 @@ Nas Imagens 2 e 3, o Bro Code deu dois cliques na letra `T` e o IntelliJ acendeu
 
 ---
 
-### Os Comentários Decodificados em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Os Comentários Decodificados em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Na Imagem 4, o Bro Code selecionou com o mouse as palavras da linha 8:
 

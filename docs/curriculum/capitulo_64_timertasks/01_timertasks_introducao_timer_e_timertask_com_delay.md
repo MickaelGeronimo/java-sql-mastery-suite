@@ -210,7 +210,7 @@ $$\text{Milissegundos} = \text{Segundos} \times 1000$$
 
 ---
 
-## 🔍 Explicação Linha por Linha do Código de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 🔍 Explicação Linha por Linha do Código de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Abaixo está o código integral compilado e executado nesta etapa:
 

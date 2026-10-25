@@ -88,7 +88,7 @@ Assim que ele colocou `, 27, 4.0)` na **Tela 2**, os 3 ingredientes foram entreg
 
 ## 3. O Código Completo e Enumerado de `Main.java` (Telas 2 e 3)
 
-Vejamos todas as 24 linhas do arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) exatamente como ficou estruturado na tela do autor:
+Vejamos todas as 24 linhas do arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) exatamente como ficou estruturado na tela do autor:
 
 ```java
 1:  public class Main {

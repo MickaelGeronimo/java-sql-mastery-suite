@@ -2,7 +2,7 @@
 
 > **Curso:** Java Full Course (Bro Code) — Capítulo 60: `music player`  
 > **Timestamp do Vídeo:** `[9:29:56 - 9:30:15]`  
-> **Arquivo do Workspace:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
+> **Arquivo do Workspace:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
 > **Objetivo:** Entender o passo a passo prático de como trazer um arquivo de áudio `.wav` baixado da internet para dentro do projeto no IntelliJ IDEA, o que significam os popups que a IDE exibe (*Indexing* e *Refactor Move*), e analisar o ponto de partida do código onde a construção do player começa.
 
 ---
@@ -33,7 +33,7 @@ Neste trecho do vídeo, o autor Bro Code finaliza a conversão do áudio na web 
   * Arrasta o arquivo por cima da árvore do projeto no IntelliJ IDEA, soltando-o exatamente em cima da pasta azul **`src`** (`source root`).
   * A pasta `src` fica destacada com um contorno azul e o cursor ganha uma caixinha com uma setinha e a palavra **`Move`** (*Mover*).
 * **Editor de Código aberto:**
-  O arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) está limpo, pronto para começarmos do zero:
+  O arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) está limpo, pronto para começarmos do zero:
   ```java
   public class Main {
 
@@ -111,7 +111,7 @@ Se colocássemos na raiz do projeto (fora do `src`), seria apenas `"A Caring Fri
 
 ## 🔍 Análise Linha por Linha do Código Inicial (Esqueleto do Player)
 
-Abaixo está o código exato em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) que está na tela do autor nas imagens 2 a 5:
+Abaixo está o código exato em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) que está na tela do autor nas imagens 2 a 5:
 
 ```java
  1: public class Main {

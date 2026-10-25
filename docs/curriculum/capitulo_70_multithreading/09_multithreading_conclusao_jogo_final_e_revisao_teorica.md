@@ -9,8 +9,8 @@
 - **Parte:** 9 de 9 (Conclusão Definitiva do Capítulo 70)
 - **Timestamp de Referência:** `11:30:30` até `11:31:10`
 - **Arquivos do Projeto:**
-  - [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-  - [`MyRunnable.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/MyRunnable.java)
+  - [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+  - [`MyRunnable.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/MyRunnable.java)
 
 ---
 

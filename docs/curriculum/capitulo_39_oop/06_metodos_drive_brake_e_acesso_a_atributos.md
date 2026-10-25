@@ -198,7 +198,7 @@ sequenceDiagram
 
 ## 🔍 Análise Linha por Linha de Todo o Código
 
-### Arquivo 1: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### Arquivo 1: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 
 ```java
 18:     void drive(){
@@ -227,7 +227,7 @@ sequenceDiagram
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  8:         Car car = new Car();
@@ -247,7 +247,7 @@ sequenceDiagram
 
 ## 📜 Código-Fonte Completo e Atualizado dos Arquivos
 
-### Arquivo 1: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### Arquivo 1: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 ```java
 public class Car {
 
@@ -277,7 +277,7 @@ public class Car {
 }
 ```
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {

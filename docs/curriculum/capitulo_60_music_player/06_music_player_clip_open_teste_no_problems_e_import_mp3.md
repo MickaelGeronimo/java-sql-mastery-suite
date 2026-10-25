@@ -2,8 +2,8 @@
 
 > **Curso:** Java Full Course (Bro Code) — Capítulo 60: `music player`  
 > **Timestamp do Vídeo:** `[9:35:09 - 9:36:30]`  
-> **Arquivo do Workspace:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
-> **Objetivo:** Entender o comando [`clip.open(audioStream)`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L18), aprender por que adicionar [`FileNotFoundException`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L22) torna as mensagens de erro muito mais claras, analisar o teste bem-sucedido que imprime `"No problems detected"`, e entender por que o autor importa propositalmente um arquivo `.mp3` para provocar um erro controlado.
+> **Arquivo do Workspace:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
+> **Objetivo:** Entender o comando [`clip.open(audioStream)`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L18), aprender por que adicionar [`FileNotFoundException`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L22) torna as mensagens de erro muito mais claras, analisar o teste bem-sucedido que imprime `"No problems detected"`, e entender por que o autor importa propositalmente um arquivo `.mp3` para provocar um erro controlado.
 
 ---
 
@@ -100,7 +100,7 @@ catch(IOException e){
 }
 ```
 
-* **A Herança do Java:** [`FileNotFoundException`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L22) é "filho" de [`IOException`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L30).
+* **A Herança do Java:** [`FileNotFoundException`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L22) é "filho" de [`IOException`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L30).
 * Se você errar uma letra do nome da música (ex: `"musica_errada.wav"`), se tivéssemos apenas o `IOException`, o programa diria um vago: `"Something went wrong"` (*Algo deu errado*).
 * Ao colocar `FileNotFoundException` primeiro, o Java avisa com precisão cirúrgica:  
   **`Could not locate file`** (*Não foi possível localizar o arquivo*). Isso economiza horas de dor de cabeça procurando erros inexistentes no código!

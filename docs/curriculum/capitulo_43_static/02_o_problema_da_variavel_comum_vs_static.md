@@ -16,16 +16,16 @@ Esta sequência de 5 capturas de tela (timestamps **7:15:53 a 7:17:19**) é uma 
 Em vez de apenas jogar a regra na tela, o professor **primeiro faz do jeito errado de propósito** para que você sinta a dor do bug, e depois aplica a palavra-chave **`static`** para consertar tudo como mágica!
 
 Veja a linha do tempo do que aconteceu:
-1. **Imagem 1 (`media_1791326474671.png` - Timestamp `7:15:53`):** Em [`Friend.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java), o autor cria a variável `int numOfFriends;` **SEM a palavra `static`** e adiciona `numOfFriends++;` no construtor.
-2. **Imagem 2 (`media_1791326487002.png`):** No [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), ele cria apenas o Bob Esponja (`friend1`) e imprime `friend1.numOfFriends`. O console mostra `1`. Parece que está tudo bem...
+1. **Imagem 1 (`media_1791326474671.png` - Timestamp `7:15:53`):** Em [`Friend.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java), o autor cria a variável `int numOfFriends;` **SEM a palavra `static`** e adiciona `numOfFriends++;` no construtor.
+2. **Imagem 2 (`media_1791326487002.png`):** No [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), ele cria apenas o Bob Esponja (`friend1`) e imprime `friend1.numOfFriends`. O console mostra `1`. Parece que está tudo bem...
 3. **Imagem 3 (`media_1791326539652.png`):** O autor adiciona o Patrick (`friend2`) e manda imprimir a contagem dos dois amigos. **SURPRESA DESAGRADÁVEL:** O console imprime:
    ```text
    1
    1
    ```
    Ué?! Temos 2 amigos no programa, mas cada um diz que só tem 1 amigo?! **O contador quebrou!**
-4. **Imagem 4 (`media_1791326570936.png` - Timestamp `7:17:19`):** O autor volta para [`Friend.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java) e adiciona a palavra mágica: **`static int numOfFriends;`**!
-5. **Imagem 5 (`media_1791326585765.png`):** Ele roda o [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) novamente. **MILAGRE:** O console agora imprime:
+4. **Imagem 4 (`media_1791326570936.png` - Timestamp `7:17:19`):** O autor volta para [`Friend.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java) e adiciona a palavra mágica: **`static int numOfFriends;`**!
+5. **Imagem 5 (`media_1791326585765.png`):** Ele roda o [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) novamente. **MILAGRE:** O console agora imprime:
    ```text
    2
    2
@@ -125,7 +125,7 @@ A palavra **`static`** transforma a variável em uma **lousa única compartilhad
 
 ---
 
-## 4. Código Completo de [`Friend.java`](file:///c:/Users/mickel 1/Downloads/JAVA APRENDER/Friend.java) Linha por Linha
+## 4. Código Completo de [`Friend.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java) Linha por Linha
 
 ```java
  1: public class Friend {
@@ -161,7 +161,7 @@ A palavra **`static`** transforma a variável em uma **lousa única compartilhad
 
 ---
 
-## 5. Código Completo de [`Main.java`](file:///c:/Users/mickel 1/Downloads/JAVA APRENDER/Main.java) Linha por Linha
+## 5. Código Completo de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Linha por Linha
 
 ```java
  1: public class Main {

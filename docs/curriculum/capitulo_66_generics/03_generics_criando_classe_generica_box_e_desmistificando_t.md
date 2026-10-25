@@ -175,7 +175,7 @@ public class Box<T> {
 
 ---
 
-## 🔍 Explicação Linha por Linha do Arquivo [`Box.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java)
+## 🔍 Explicação Linha por Linha do Arquivo [`Box.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java)
 
 Abaixo está o código em desenvolvimento no final da Imagem 3:
 
@@ -218,7 +218,7 @@ Abaixo está o código em desenvolvimento no final da Imagem 3:
 ## 🖥️ Previsão do Console e Próximos Passos
 
 Nesta etapa (imagens 1 a 3):
-- O foco do autor está 100% no arquivo [`Box.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java), estruturando a classe genérica.
+- O foco do autor está 100% no arquivo [`Box.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java), estruturando a classe genérica.
 - Como o método `main` em `Main.java` ainda não instancia a classe `Box`, nenhuma saída nova é gerada no console.
 
 > **O Que Esperar para as Próximas Cenas**:  

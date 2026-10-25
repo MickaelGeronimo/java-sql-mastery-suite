@@ -9,22 +9,22 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal de Execução: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe do Carro Blindada: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Guia da Aula Anterior (Parte 1): [`explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md)
+* Arquivo Principal de Execução: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe do Carro Blindada: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Guia da Aula Anterior (Parte 1): `explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md`
 
 ---
 
 ## 1. O Que Está Acontecendo Aqui? (Visão Geral para Iniciantes Amadores)
 
-Na aula anterior (Parte 1), o autor criou a classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) com três atributos: `model`, `color` e `price`. Porém, ele **não colocou nenhuma palavra de proteção** antes dessas variáveis.
+Na aula anterior (Parte 1), o autor criou a classe [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) com três atributos: `model`, `color` e `price`. Porém, ele **não colocou nenhuma palavra de proteção** antes dessas variáveis.
 
 Nesta sequência de 4 imagens, o professor Bro Code faz uma **demonstração intencional de um perigo gravíssimo** em programação orientada a objetos:
 1. **Primeiro**, ele mostra o carro original rodando (`Yellow Charger 10000`).
-2. **Segundo**, ele entra no arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e digita: `car.model = "Corvette";`.
+2. **Segundo**, ele entra no arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e digita: `car.model = "Corvette";`.
 3. **Terceiro**, ele executa o programa e o console imprime: `Yellow Corvette 10000`. O modelo do carro mudou do nada, sem nenhuma validação, sem regras e sem permissão!
-4. **Quarto**, para impedir essa invasão, ele corre para a classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) e adiciona a palavra mágica **`private`** na frente de cada atributo (`private String model;`, `private String color;`, `private int price;`).
+4. **Quarto**, para impedir essa invasão, ele corre para a classe [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) e adiciona a palavra mágica **`private`** na frente de cada atributo (`private String model;`, `private String color;`, `private int price;`).
 
 ```mermaid
 flowchart TD
@@ -41,7 +41,7 @@ flowchart TD
 
 Imagine que você comprou um cofre para a sua casa e guardou lá dentro uma escritura de um carro modelo `"Charger"`.
 
-* **Sem `private` (Acesso Direto / Package-Private):** É como se o cofre não tivesse porta nem chave, e ficasse na calçada aberta da rua. Qualquer pessoa que passa pela rua ([`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)) pode enfiar a mão dentro do cofre, rabiscar a palavra `"Charger"` e escrever com canetinha `"Corvette"` (`car.model = "Corvette"`), ou pior, colocar que o preço é `-50000` ou `0` reais! Você perdeu o controle total dos seus próprios dados.
+* **Sem `private` (Acesso Direto / Package-Private):** É como se o cofre não tivesse porta nem chave, e ficasse na calçada aberta da rua. Qualquer pessoa que passa pela rua ([`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)) pode enfiar a mão dentro do cofre, rabiscar a palavra `"Charger"` e escrever com canetinha `"Corvette"` (`car.model = "Corvette"`), ou pior, colocar que o preço é `-50000` ou `0` reais! Você perdeu o controle total dos seus próprios dados.
 * **Com `private`:** Você coloca uma porta de aço maciço com tranca biométrica. **Ninguém** do lado de fora consegue tocar diretamente nas variáveis.
 * **E como alguém mexe no cofre então?** É aí que entram os **Getters** (o visor de vidro blindado para você enxergar o valor) e os **Setters** (uma portinhola segura com segurança armado que só aceita colocar um valor se você seguir as regras da casa).
 
@@ -56,7 +56,7 @@ Imagine que você comprou um cofre para a sua casa e guardou lá dentro uma escr
   * Projeto: `MyFirstProject`
   * Pastas: `.idea`, `out`, `src`
   * Arquivos dentro de `src`: `Car`, `Main`, `.gitignore`, `MyFirstProject.iml`.
-* **Aba Ativa no Editor:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba Ativa no Editor:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Trecho de Código no Editor:**
   ```java
    9        Car car = new Car("Charger", "Yellow", 10000);
@@ -77,10 +77,10 @@ Imagine que você comprou um cofre para a sua casa e guardou lá dentro uma escr
 
 ---
 
-### 📸 Imagem 2: A Invasão no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (`media_1791401807083_5156684e.png`)
+### 📸 Imagem 2: A Invasão no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (`media_1791401807083_5156684e.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
-* **Aba Ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba Ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Cursor do mouse:** Posicionado no canto superior direito sobre o botão verde de reproduzir (`▷ Current File`).
 * **Barra de status inferior:** `Parsing java... [MyFirstProject]`.
 * **Código Completo exibido na tela:**
@@ -134,10 +134,10 @@ Imagine que você comprou um cofre para a sua casa e guardou lá dentro uma escr
 
 ---
 
-### 📸 Imagem 4: A Blindagem com `private` no [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (`media_1791401837645_5fc813c0.png`)
+### 📸 Imagem 4: A Blindagem com `private` no [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (`media_1791401837645_5fc813c0.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
-* **Aba Ativa:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (sublinhada com a linha azul de seleção ativa).
+* **Aba Ativa:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (sublinhada com a linha azul de seleção ativa).
 * **Canto superior direito da janela:** Ícone amarelo de alerta `⚠️ 6 v` (indicando avisos de atributos privados não acessados ou sugestões).
 * **Barra de navegação inferior:** `MyFirstProject > src > Car > price`.
 * **Cursor de texto:** Piscando na linha 5 bem no final da palavra `price;`.
@@ -170,7 +170,7 @@ Imagine que você comprou um cofre para a sua casa e guardou lá dentro uma escr
 
 ## 4. Análise Linha por Linha dos Dois Arquivos
 
-### Arquivo A: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (O Arquivo de Teste)
+### Arquivo A: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (O Arquivo de Teste)
 
 ```java
  1 public class Main {
@@ -208,7 +208,7 @@ Imagine que você comprou um cofre para a sua casa e guardou lá dentro uma escr
 
 ---
 
-### Arquivo B: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (A Classe do Carro com a Blindagem `private`)
+### Arquivo B: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (A Classe do Carro com a Blindagem `private`)
 
 ```java
  1 public class Car {
@@ -246,7 +246,7 @@ Imagine que você comprou um cofre para a sua casa e guardou lá dentro uma escr
 
 ## 5. O Efeito Imediato: A "Bomba" que Acaba de Explodir no Código! 💥
 
-Assim que o professor colocou `private` em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (Imagem 4), o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) **parou de funcionar completamente**!
+Assim que o professor colocou `private` em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (Imagem 4), o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) **parou de funcionar completamente**!
 
 Se tentarmos compilar o projeto agora, o compilador do Java solta exatamente estes **4 erros no terminal**:
 
@@ -267,8 +267,8 @@ Main.java:12: error: price has private access in Car
 ```
 
 ### O que o compilador está gritando?
-1. *"Ei, [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)! Você está proibido de fazer `car.model = "Corvette"` porque `model` é privado!"*
-2. *"Ei, [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)! Você está proibido de tentar ler `car.color`, `car.model` e `car.price` no seu `System.out.println` porque tudo agora é privado!"*
+1. *"Ei, [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)! Você está proibido de fazer `car.model = "Corvette"` porque `model` é privado!"*
+2. *"Ei, [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)! Você está proibido de tentar ler `car.color`, `car.model` e `car.price` no seu `System.out.println` porque tudo agora é privado!"*
 
 ---
 

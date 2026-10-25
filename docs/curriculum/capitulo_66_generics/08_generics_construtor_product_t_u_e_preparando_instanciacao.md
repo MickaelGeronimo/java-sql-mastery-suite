@@ -148,7 +148,7 @@ INTELLIJ IDEA - [MyFirstProject] - 10:49:17 / 12:00:00 - Chapter: 66.generics (A
 
 Aqui estão os códigos exatos sincronizados com a máquina local:
 
-### [`Product.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Product.java)
+### [`Product.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Product.java)
 ```java
 public class Product<T, U> {
 
@@ -162,7 +162,7 @@ public class Product<T, U> {
 }
 ```
 
-### [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -178,7 +178,7 @@ public class Main {
 }
 ```
 
-### [`Box.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java)
+### [`Box.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java)
 ```java
 public class Box<T> {
 
@@ -202,7 +202,7 @@ Vamos analisar linha por linha, sem complicação ou jargões obscuros.
 
 ---
 
-### Dissecando [`Product.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Product.java) Linha por Linha
+### Dissecando [`Product.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Product.java) Linha por Linha
 
 ```java
 1: public class Product<T, U> {
@@ -267,7 +267,7 @@ Vamos analisar linha por linha, sem complicação ou jargões obscuros.
 
 ---
 
-### Dissecando [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Dissecando [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 - **Linha 4 (`public static void main(String[] args) {`):**
   - Ponto de partida do programa.
@@ -346,8 +346,8 @@ O compilador não vai aceitar, porque `Product` exige dois argumentos de tipo, e
 
 | Arquivo | Status de Compilação | Saída no Console | Explicação Técnica |
 | :--- | :---: | :---: | :--- |
-| **[`Product.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Product.java)** | ✅ Compila com Sucesso (`exit code 0`) | *(nenhuma)* | O construtor `Product(T, U)` e os campos `T item` e `U price` possuem sintaxe perfeita. |
-| **[`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)** | ✅ Compila com Sucesso (`exit code 0`) | *(nenhuma)* | O método `main` está atualmente com seu corpo limpo aguardando a instanciação do produto. |
+| **[`Product.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Product.java)** | ✅ Compila com Sucesso (`exit code 0`) | *(nenhuma)* | O construtor `Product(T, U)` e os campos `T item` e `U price` possuem sintaxe perfeita. |
+| **[`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)** | ✅ Compila com Sucesso (`exit code 0`) | *(nenhuma)* | O método `main` está atualmente com seu corpo limpo aguardando a instanciação do produto. |
 
 ---
 

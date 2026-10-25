@@ -2,8 +2,8 @@
 
 > **Curso:** Java Full Course (Bro Code) — Capítulo 60: `music player`  
 > **Timestamp do Vídeo:** `[9:38:20 - 9:39:35]`  
-> **Arquivo do Workspace:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
-> **Objetivo:** Compreender o que é a interface [`AutoCloseable`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L16) e por que podemos gerenciar o [`Scanner`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L9) e o [`AudioInputStream`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L1) juntos no mesmo `try(...)`, entender o erro clássico de compilação *"Variable 'response' might not have been initialized"* no loop [`while`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L24), e analisar detalhadamente cada linha com previsões de console.
+> **Arquivo do Workspace:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
+> **Objetivo:** Compreender o que é a interface [`AutoCloseable`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L16) e por que podemos gerenciar o [`Scanner`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L9) e o [`AudioInputStream`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L1) juntos no mesmo `try(...)`, entender o erro clássico de compilação *"Variable 'response' might not have been initialized"* no loop [`while`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L24), e analisar detalhadamente cada linha com previsões de console.
 
 ---
 
@@ -237,7 +237,7 @@ Abaixo está o código exatamente como configurado na tela do autor na **Imagem 
 ---
 
 #### Linhas 32 a 43 — A Barreira de Proteção contra Erros
-* Captura [`FileNotFoundException`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L32), [`UnsupportedAudioFileException`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L35), [`LineUnavailableException`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L38) e [`IOException`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L41).
+* Captura [`FileNotFoundException`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L32), [`UnsupportedAudioFileException`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L35), [`LineUnavailableException`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L38) e [`IOException`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L41).
 * **Saída no console:** Nenhuma se o arquivo estiver correto.
 
 ---

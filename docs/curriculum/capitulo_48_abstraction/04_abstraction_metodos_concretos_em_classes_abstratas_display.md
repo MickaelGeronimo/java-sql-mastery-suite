@@ -2,7 +2,7 @@
 ## Parte 4: Métodos Concretos em Classes Abstratas — A Adição de `display()` e a Chamada de `circle.display()`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `07:56:50` até `07:57:45` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a demonstração da Regra 5 da abstração: como uma classe abstrata pode conter **métodos concretos** (com corpo `{ }` e código funcional), como declarar o método `void display()` dentro de [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) e provar que todas as subclasses (como [`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java)) herdam esse comportamento de graça sem precisar escrever nada nelas.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a demonstração da Regra 5 da abstração: como uma classe abstrata pode conter **métodos concretos** (com corpo `{ }` e código funcional), como declarar o método `void display()` dentro de [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) e provar que todas as subclasses (como [`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java)) herdam esse comportamento de graça sem precisar escrever nada nelas.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (navegação rápida entre abas, ícones de execução, cursores e saídas de terminal) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -14,9 +14,9 @@ Muitos iniciantes pensam que uma classe abstrata só pode ter coisas abstratas (
 > **Uma classe abstrata pode misturar métodos abstratos (que não têm corpo) com métodos concretos (que têm código completo pronto para rodar)!**
 
 Nesta sequência de 4 imagens, o professor Bro Code prova a Regra 5 que anotamos no início do capítulo:
-1. **Em [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java):** Ele cria o método `void display(){ System.out.println("This is a shape"); }`.
-2. **Nas subclasses ([`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java) e [`Rectangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java)):** Ele mostra que nós **não precisamos digitar nada** sobre `display()`.
-3. **Em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):** Ele chama `circle.display();` e aperta o botão verde de execução. O círculo executa perfeitamente a frase herdada da mãe!
+1. **Em [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java):** Ele cria o método `void display(){ System.out.println("This is a shape"); }`.
+2. **Nas subclasses ([`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java) e [`Rectangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java)):** Ele mostra que nós **não precisamos digitar nada** sobre `display()`.
+3. **Em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):** Ele chama `circle.display();` e aperta o botão verde de execução. O círculo executa perfeitamente a frase herdada da mãe!
 
 ---
 
@@ -69,7 +69,7 @@ Para quem está estudando pelo Google Docs e não tem as imagens na tela:
 
 ## 3. Dissecando a Coexistência: Abstrato vs Concreto na Mesma Classe
 
-Olhe para a estrutura de [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java). Ela é um exemplo perfeito de arquitetura orientada a objetos:
+Olhe para a estrutura de [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java). Ela é um exemplo perfeito de arquitetura orientada a objetos:
 
 ```java
 public abstract class Shape {
@@ -97,7 +97,7 @@ public abstract class Shape {
 
 ## 4. O Rastreamento da JVM: O Que Acontece em `circle.display()`?
 
-Quando a linha 16 de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) é executada:
+Quando a linha 16 de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) é executada:
 
 ```
                CHAMADA: circle.display()
@@ -118,7 +118,7 @@ Quando a linha 16 de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20
 
 ## 5. Análise Código por Código e Linha por Linha
 
-### A. O Arquivo [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) (Linhas 1 a 8)
+### A. O Arquivo [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) (Linhas 1 a 8)
 ```java
 1:  public abstract class Shape {
 2:  
@@ -141,7 +141,7 @@ Quando a linha 16 de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20
 
 ---
 
-### B. O Arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Linhas 1 a 18)
+### B. O Arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Linhas 1 a 18)
 ```java
 1:  public class Main {
 2:      public static void main(String[] args) {

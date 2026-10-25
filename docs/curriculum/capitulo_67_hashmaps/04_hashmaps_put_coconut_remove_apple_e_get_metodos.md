@@ -117,7 +117,7 @@
 
 ## 2. O Código em Cada Etapa da Demonstração
 
-Para entender sem nenhuma confusão, veja o código do arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) exatamente como ele evoluiu nas 4 telas:
+Para entender sem nenhuma confusão, veja o código do arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) exatamente como ele evoluiu nas 4 telas:
 
 ### Estado A (Tela 1): 4 Frutas Cadastradas e Impressão Geral
 ```java
@@ -185,7 +185,7 @@ Abaixo está a explicação cirúrgica de cada linha do programa:
 - **Saída no Console**: Nenhuma.
 
 ### Linha 3: `public class Main {`
-- **O que faz**: Declara a classe pública chamada [`Main`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L3).
+- **O que faz**: Declara a classe pública chamada [`Main`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L3).
 - **Linguagem de Leigo**: É o casulo ou a pasta principal onde todo o código deste arquivo precisa ficar dentro.
 - **Saída no Console**: Nenhuma.
 

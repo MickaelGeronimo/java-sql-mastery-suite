@@ -9,30 +9,30 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal de Testes Concluído: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe do Carro 100% Encapsulada: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Guia da Parte 1 (Conceito Inicial e Acesso sem Proteção): [`explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md)
-* Guia da Parte 2 (Demonstração da Adulteração e Blindagem `private`): [`explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md)
-* Guia da Parte 3 (Os 3 Erros de Compilação e Criação dos Getters): [`explicacao_getters_and_setters_os_3_erros_de_acesso_privado_e_criacao_dos_getters_capitulo52_parte3.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_os_3_erros_de_acesso_privado_e_criacao_dos_getters_capitulo52_parte3.md)
-* Guia da Parte 4 (Substituição no Main e Erro de Tipos): [`explicacao_getters_and_setters_substituicao_pelos_getters_execucao_com_sucesso_e_incompatibilidade_de_tipos_capitulo52_parte4.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_substituicao_pelos_getters_execucao_com_sucesso_e_incompatibilidade_de_tipos_capitulo52_parte4.md)
-* Guia da Parte 5 (Formatação com Cifrão no Preço): [`explicacao_getters_and_setters_formatacao_com_cifrao_e_retorno_string_capitulo52_parte5.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_formatacao_com_cifrao_e_retorno_string_capitulo52_parte5.md)
-* Guia da Parte 6 (Introdução aos Setters `setColor` e `setPrice`): [`explicacao_getters_and_setters_introducao_aos_setters_setcolor_e_setprice_capitulo52_parte6.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_introducao_aos_setters_setcolor_e_setprice_capitulo52_parte6.md)
-* Guia da Parte 7 (O Erro de Atribuição com `=` no Setter): [`explicacao_getters_and_setters_tentativa_de_acesso_direto_e_o_erro_classico_de_atribuicao_no_setter_capitulo52_parte7.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_tentativa_de_acesso_direto_e_o_erro_classico_de_atribuicao_no_setter_capitulo52_parte7.md)
-* Guia da Parte 8 (Atributos Somente-Leitura): [`explicacao_getters_and_setters_execucao_dos_setters_e_o_poder_do_somente_leitura_read_only_capitulo52_parte8.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_execucao_dos_setters_e_o_poder_do_somente_leitura_read_only_capitulo52_parte8.md)
-* Guia da Parte 9 (A Palavra-Chave `final` e Validação `if/else`): [`explicacao_getters_and_setters_palavra_final_e_regras_de_validacao_no_setter_capitulo52_parte9.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_palavra_final_e_regras_de_validacao_no_setter_capitulo52_parte9.md)
+* Arquivo Principal de Testes Concluído: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe do Carro 100% Encapsulada: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Guia da Parte 1 (Conceito Inicial e Acesso sem Proteção): `explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md`
+* Guia da Parte 2 (Demonstração da Adulteração e Blindagem `private`): `explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md`
+* Guia da Parte 3 (Os 3 Erros de Compilação e Criação dos Getters): `explicacao_getters_and_setters_os_3_erros_de_acesso_privado_e_criacao_dos_getters_capitulo52_parte3.md`
+* Guia da Parte 4 (Substituição no Main e Erro de Tipos): `explicacao_getters_and_setters_substituicao_pelos_getters_execucao_com_sucesso_e_incompatibilidade_de_tipos_capitulo52_parte4.md`
+* Guia da Parte 5 (Formatação com Cifrão no Preço): `explicacao_getters_and_setters_formatacao_com_cifrao_e_retorno_string_capitulo52_parte5.md`
+* Guia da Parte 6 (Introdução aos Setters `setColor` e `setPrice`): `explicacao_getters_and_setters_introducao_aos_setters_setcolor_e_setprice_capitulo52_parte6.md`
+* Guia da Parte 7 (O Erro de Atribuição com `=` no Setter): `explicacao_getters_and_setters_tentativa_de_acesso_direto_e_o_erro_classico_de_atribuicao_no_setter_capitulo52_parte7.md`
+* Guia da Parte 8 (Atributos Somente-Leitura): `explicacao_getters_and_setters_execucao_dos_setters_e_o_poder_do_somente_leitura_read_only_capitulo52_parte8.md`
+* Guia da Parte 9 (A Palavra-Chave `final` e Validação `if/else`): `explicacao_getters_and_setters_palavra_final_e_regras_de_validacao_no_setter_capitulo52_parte9.md`
 
 ---
 
 ## 1. O Que Está Acontecendo Aqui? (Visão Geral para Iniciantes Amadores)
 
 Chegamos aos minutos finais do Capítulo 52! Nesta sequência de 4 imagens, o professor Bro Code amarra todas as pontas soltas da aula:
-1. **O Teste da Trapaça (Imagem 1):** No arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), ele tenta sabotar o carro passando um preço negativo: `car.setPrice(-100);`.
+1. **O Teste da Trapaça (Imagem 1):** No arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), ele tenta sabotar o carro passando um preço negativo: `car.setPrice(-100);`.
 2. **A Resposta do Console (Imagem 2):** Ao rodar o programa, a tela imprime **duas linhas**:
    * Linha 1: `Price can't be less than zero` (Aviso disparado pelo `if` do Setter!).
    * Linha 2: `Blue Charger $10000` (O preço do carro **NÃO** foi alterado para `-100`; ele continuou valendo `$10000` com segurança absoluta!).
 3. **A Conexão com a Teoria (Imagem 3):** O autor seleciona no editor as palavras **`add rules`** no comentário inicial: *"Eles ajudam a proteger os dados do objeto e ADICIONAM REGRAS para acessá-los ou modificá-los"*. A regra acabou de ser comprovada na prática!
-4. **O Encerramento e Recapitulação (Imagem 4):** Ele volta para [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) e seleciona em azul as três variáveis privadas (`private final String model;`, `private String color;`, `private int price;`), concluindo o capítulo com chave de ouro.
+4. **O Encerramento e Recapitulação (Imagem 4):** Ele volta para [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) e seleciona em azul as três variáveis privadas (`private final String model;`, `private String color;`, `private int price;`), concluindo o capítulo com chave de ouro.
 
 ```mermaid
 sequenceDiagram
@@ -72,7 +72,7 @@ Compare o que aconteceria nos dois cenários:
 
 #### O que se vê na interface do IntelliJ IDEA:
 * **Barra de Vídeo do YouTube:** Timestamp `8:29:02 / 12:00:00`, capítulo `52. getters and setters >`.
-* **Aba Ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba Ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Trecho no Editor:**
   ```java
   11    car.setColor("Blue");
@@ -101,8 +101,8 @@ Compare o que aconteceria nos dois cenários:
     ```
   * Linha final: `Process finished with exit code 0`.
 * **Análise Profunda do Resultado:**
-  1. **Linha 1 do Console (`Price can't be less than zero`):** Veio da linha 28 de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) dentro do método `setPrice`. Como `-100 < 0`, o `if` disparou o alerta imediatamente!
-  2. **Linha 2 do Console (`Blue Charger $10000`):** Veio da linha 14 de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java). Repare que a cor mudou para `Blue` com sucesso, o modelo continuou `Charger`, e o preço **permaneceu `$10000`**! Ele não virou `$-100`! A tentativa de sabotagem foi neutralizada!
+  1. **Linha 1 do Console (`Price can't be less than zero`):** Veio da linha 28 de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) dentro do método `setPrice`. Como `-100 < 0`, o `if` disparou o alerta imediatamente!
+  2. **Linha 2 do Console (`Blue Charger $10000`):** Veio da linha 14 de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java). Repare que a cor mudou para `Blue` com sucesso, o modelo continuou `Charger`, e o preço **permaneceu `$10000`**! Ele não virou `$-100`! A tentativa de sabotagem foi neutralizada!
 
 ---
 
@@ -110,7 +110,7 @@ Compare o que aconteceria nos dois cenários:
 
 #### O que se vê na interface do IntelliJ IDEA:
 * **Barra de Vídeo do YouTube:** Timestamp `8:29:18 / 12:00:00`.
-* **Aba Ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba Ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Trecho de Comentário Selecionado:**
   ```java
    5    // They help protect object data and add rules for accessing or modifying them.
@@ -122,10 +122,10 @@ Compare o que aconteceria nos dois cenários:
 
 ---
 
-### 📸 Imagem 4: A Recapitulação Final da Classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (`media_1791403319592_eada6098.png`)
+### 📸 Imagem 4: A Recapitulação Final da Classe [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (`media_1791403319592_eada6098.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
-* **Aba Ativa:** Muda para [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba Ativa:** Muda para [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **As Três Linhas Selecionadas em Azul Escuro:**
   ```java
   3    private final String model;
@@ -143,7 +143,7 @@ Compare o que aconteceria nos dois cenários:
 
 ## 4. O Código Final e Completo do Capítulo 52
 
-### Arquivo 1: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (Obra-Prima do Encapsulamento)
+### Arquivo 1: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (Obra-Prima do Encapsulamento)
 
 ```java
  1 public class Car {
@@ -185,7 +185,7 @@ Compare o que aconteceria nos dois cenários:
 37 }
 ```
 
-#### Tabela Linha por Linha de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java):
+#### Tabela Linha por Linha de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java):
 
 | Linha | Código em Java | Explicação Detalhada para Leigo Absoluto | O Que Sai no Console? |
 | :---: | :--- | :--- | :--- |
@@ -210,7 +210,7 @@ Compare o que aconteceria nos dois cenários:
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Arquivo de Testes e Demonstração)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Arquivo de Testes e Demonstração)
 
 ```java
  1 public class Main {

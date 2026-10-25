@@ -21,8 +21,12 @@ Este capítulo aborda de ponta a ponta a teoria, sintaxe, boas práticas e armad
 Todos os documentos detalhados de estudo e transcrição didática deste capítulo estão catalogados abaixo:
 
 | Parte | Arquivo | Tema Principal |
-| :---: | :--- | :--- |\n| **01** | [**01_operadores_logicos_e_comercial.md**](./01_operadores_logicos_e_comercial.md) | â• Curso Completo de Java â€” CapÃ­tulo 20: Operadores LÃ³gicos (Parte 1) |
-| **02** | [**02_operadores_logicos_not_encadeamento.md**](./02_operadores_logicos_not_encadeamento.md) | â• Curso Completo de Java â€” CapÃ­tulo 20: Operadores LÃ³gicos (Parte 2) |
-| **03** | [**03_operadores_logicos_or.md**](./03_operadores_logicos_or.md) | â• Curso Completo de Java â€” CapÃ­tulo 20: Operadores LÃ³gicos (Parte 3) |
-| **04** | [**04_operadores_logicos_validacao_username.md**](./04_operadores_logicos_validacao_username.md) | â• Curso Completo de Java â€” CapÃ­tulo 20: Operadores LÃ³gicos (Parte 4) |
-| **05** | [**05_operadores_logicos_contains_validacao_completa.md**](./05_operadores_logicos_contains_validacao_completa.md) | â• Curso Completo de Java â€” CapÃ­tulo 20: Operadores LÃ³gicos (Parte 5 - ConclusÃ£o) |\n\n---\n\n> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.\n
+| :---: | :--- | :--- |\n| **01** | [**01_operadores_logicos_e_comercial.md**](./01_operadores_logicos_e_comercial.md) | ❕ Curso Completo de Java — Capítulo 20: Operadores Lógicos (Parte 1) |
+| **02** | [**02_operadores_logicos_not_encadeamento.md**](./02_operadores_logicos_not_encadeamento.md) | ❕ Curso Completo de Java — Capítulo 20: Operadores Lógicos (Parte 2) |
+| **03** | [**03_operadores_logicos_or.md**](./03_operadores_logicos_or.md) | ❕ Curso Completo de Java — Capítulo 20: Operadores Lógicos (Parte 3) |
+| **04** | [**04_operadores_logicos_validacao_username.md**](./04_operadores_logicos_validacao_username.md) | ❕ Curso Completo de Java — Capítulo 20: Operadores Lógicos (Parte 4) |
+| **05** | [**05_operadores_logicos_contains_validacao_completa.md**](./05_operadores_logicos_contains_validacao_completa.md) | ❕ Curso Completo de Java — Capítulo 20: Operadores Lógicos (Parte 5 - Conclusão) |
+
+---
+
+> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.

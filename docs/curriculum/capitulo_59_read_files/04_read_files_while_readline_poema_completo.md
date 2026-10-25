@@ -7,8 +7,8 @@
 - **Curso:** *Java Full Course for free* (Canal: Bro Code)
 - **Capítulo Oficial:** `59. read files 📖` *(Fechamento do bloco BufferedReader + FileReader)*
 - **Intervalo de Tempo no Vídeo:** `09:26:58` até `09:28:40` (do total de 12:00:00)
-- **Arquivo Principal de Trabalho:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-- **Arquivo de Texto Lido no Desktop:** [`test.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/test.txt)
+- **Arquivo Principal de Trabalho:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+- **Arquivo de Texto Lido no Desktop:** [`test.txt`](../../../src/main/resources/test.txt)
 - **Ambiente de Desenvolvimento (IDE):** IntelliJ IDEA Community Edition + JDK 23
 
 ---
@@ -94,7 +94,7 @@ no Java, pois lê linha por linha de forma limpa, sem sobrecarregar a memória d
 
 ---
 
-## 🍕 O Código Completo do Arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 🍕 O Código Completo do Arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Aqui está o código final do Capítulo 59 que está salvo e funcionando no seu computador:
 

@@ -3,7 +3,7 @@
 > **Contexto do Curso:** *Java Full Course for free* (Bro Code)  
 > **Capítulo:** 44 — `inheritance 👨‍👧‍👦`  
 > **Tempo do Vídeo:** `07:26:16` até `07:26:55` / `12:00:00`  
-> **Arquivos do Projeto:** [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java), [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java), [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) e [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
+> **Arquivos do Projeto:** Dog.java, [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java), [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) e [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
 > **Objetivo Deste Documento:** Material didático completo para iniciantes, projetado para cópia direta no **Google Docs**, recriando as 4 telas do IntelliJ IDEA, explicando o conceito de **especialização** em Programação Orientada a Objetos e demonstrando como classes filhas recebem a herança do pai e ainda criam seus próprios membros exclusivos.
 
 ---
@@ -36,7 +36,7 @@ Nesta etapa, o autor conclui a demonstração de herança mostrando que uma clas
 ### Detalhamento Quadro a Quadro (As 4 Imagens Explicadas)
 
 #### 🖼️ Imagem 1 (`07:26:16`): Adicionando Atributos e Métodos ao `Dog.java`
-* **Arquivo ativo:** [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java).
+* **Arquivo ativo:** Dog.java.
 * **O que o autor digita:**
   ```java
   public class Dog extends Animal{
@@ -55,7 +55,7 @@ Nesta etapa, o autor conclui a demonstração de herança mostrando que uma clas
 ---
 
 #### 🖼️ Imagem 2: Adicionando Atributos e Métodos ao `Cat.java`
-* **Arquivo ativo:** [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java).
+* **Arquivo ativo:** [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java).
 * **O que o autor digita:**
   ```java
   public class Cat extends Animal{
@@ -74,7 +74,7 @@ Nesta etapa, o autor conclui a demonstração de herança mostrando que uma clas
 ---
 
 #### 🖼️ Imagem 3 (`07:26:52`): Testando o Atributo Exclusivo no `Main.java`
-* **Arquivo ativo:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo ativo:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que o autor testou primeiro:**
   ```java
   System.out.println(dog.lives);
@@ -85,7 +85,7 @@ Nesta etapa, o autor conclui a demonstração de herança mostrando que uma clas
 ---
 
 #### 🖼️ Imagem 4: Chamando `speak()` e a Saída no Terminal
-* **Arquivo ativo:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo ativo:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O código executado:**
   ```java
   dog.speak();
@@ -123,7 +123,7 @@ Muitos iniciantes pensam: *"Herança é só pra não ter que digitar o código d
 
 ## 3. Dissecando os Códigos Linha por Linha Numerado
 
-### Arquivo 1: [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) (Classe Filha Especializada)
+### Arquivo 1: Dog.java (Classe Filha Especializada)
 
 ```java
  1: public class Dog extends Animal{
@@ -144,7 +144,7 @@ Muitos iniciantes pensam: *"Herança é só pra não ter que digitar o código d
 
 ---
 
-### Arquivo 2: [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java) (Segunda Classe Filha Especializada)
+### Arquivo 2: [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java) (Segunda Classe Filha Especializada)
 
 ```java
  1: public class Cat extends Animal{
@@ -165,7 +165,7 @@ Muitos iniciantes pensam: *"Herança é só pra não ter que digitar o código d
 
 ---
 
-### Arquivo 3: [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Execução)
+### Arquivo 3: [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Execução)
 
 ```java
  1: public class Main {

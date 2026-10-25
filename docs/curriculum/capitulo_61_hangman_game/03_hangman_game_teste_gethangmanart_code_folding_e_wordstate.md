@@ -143,7 +143,7 @@ Dessa forma, o jogador sabe que a palavra tem 5 letras e que nenhuma letra foi d
 
 ---
 
-## 📜 Código-Fonte Atual ([`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java))
+## 📜 Código-Fonte Atual ([`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java))
 
 ```java
 import java.util.ArrayList;

@@ -75,7 +75,7 @@
 
 ## 2. O Código Completo do Arquivo `Main.java`
 
-Aqui está o código final exato e 100% funcional de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Aqui está o código final exato e 100% funcional de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```java
 import java.util.Scanner;

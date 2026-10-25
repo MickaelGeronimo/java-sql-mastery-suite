@@ -106,7 +106,7 @@
 
 ## 2. Os Códigos Completos dos Dois Arquivos do Projeto
 
-### Arquivo 1: [`Day.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Day.java)
+### Arquivo 1: [`Day.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/models/Day.java)
 ```java
 public enum Day {
 
@@ -124,7 +124,7 @@ public enum Day {
 }
 ```
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {

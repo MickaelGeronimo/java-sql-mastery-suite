@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal em Edição: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte 1 (Definição, Generics e Método `.add()`): [`explicacao_arraylists_definicao_tamanho_dinamico_generics_e_metodo_add_capitulo56_parte1.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_arraylists_definicao_tamanho_dinamico_generics_e_metodo_add_capitulo56_parte1.md)
-* Parte 2 (Método `.remove(0)` e Encolhimento de Índices): [`explicacao_arraylists_metodo_remove_redimensionamento_dinamico_e_reordenacao_de_indices_capitulo56_parte2.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_arraylists_metodo_remove_redimensionamento_dinamico_e_reordenacao_de_indices_capitulo56_parte2.md)
-* Parte 3 (Métodos `.set()` e `.get()`): [`explicacao_arraylists_metodos_set_e_get_atualizacao_e_acesso_individual_capitulo56_parte3.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_arraylists_metodos_set_e_get_atualizacao_e_acesso_individual_capitulo56_parte3.md)
+* Arquivo Principal em Edição: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte 1 (Definição, Generics e Método `.add()`): `explicacao_arraylists_definicao_tamanho_dinamico_generics_e_metodo_add_capitulo56_parte1.md`
+* Parte 2 (Método `.remove(0)` e Encolhimento de Índices): `explicacao_arraylists_metodo_remove_redimensionamento_dinamico_e_reordenacao_de_indices_capitulo56_parte2.md`
+* Parte 3 (Métodos `.set()` e `.get()`): `explicacao_arraylists_metodos_set_e_get_atualizacao_e_acesso_individual_capitulo56_parte3.md`
 
 ---
 
@@ -161,7 +161,7 @@ A lista será reorganizada na ordem alfabética exata:
 
 ---
 
-## 6. O Código Completo do [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 6. O Código Completo do [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Abaixo está o código exatamente como está na tela do professor na **Imagem 5** (com o comando aguardando a resolução do import):
 

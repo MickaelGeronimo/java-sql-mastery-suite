@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Classe Agregadora Criada: [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)
-* Classe do Livro Independente: [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java)
-* Arquivo Principal: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte Anterior (Capítulo 53 - Parte 5: Loop for-each no Main): [`explicacao_agregacao_loop_for_each_iteracao_no_array_de_livros_e_impressao_completa_capitulo53_parte5.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_agregacao_loop_for_each_iteracao_no_array_de_livros_e_impressao_completa_capitulo53_parte5.md)
+* Classe Agregadora Criada: `Library.java`
+* Classe do Livro Independente: `Book.java`
+* Arquivo Principal: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte Anterior (Capítulo 53 - Parte 5: Loop for-each no Main): `explicacao_agregacao_loop_for_each_iteracao_no_array_de_livros_e_impressao_completa_capitulo53_parte5.md`
 
 ---
 
@@ -87,7 +87,7 @@ flowchart TD
 ```
 
 ### O que isso significa para um iniciante amador?
-* `Book`: Não é um tipo nativo do Java, é a **classe que nós mesmos criamos** no arquivo [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java)!
+* `Book`: Não é um tipo nativo do Java, é a **classe que nós mesmos criamos** no arquivo `Book.java`!
 * `[]`: Significa que a biblioteca não guarda apenas um livro solto, mas sim uma **coleção / prateleira inteira de livros**!
 * `books`: É o nome do atributo da biblioteca que vai segurar essa coleção.
 
@@ -119,13 +119,13 @@ Repare no terceiro parâmetro: `Book[] books`.
 
 ### Agregação vs. Composição (Diferença Crucial):
 * **Se fosse Composição:** A biblioteca criaria os livros dentro do seu próprio construtor com `new Book(...)`. Se a biblioteca fosse apagada da memória, todos os livros morreriam juntos.
-* **Como é Agregação:** Os livros foram criados **fora** (no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)) e apenas **entregues** para a biblioteca. Se a biblioteca for destruída, os livros continuam vivos no `Main.java`!
+* **Como é Agregação:** Os livros foram criados **fora** (no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)) e apenas **entregues** para a biblioteca. Se a biblioteca for destruída, os livros continuam vivos no `Main.java`!
 
 ---
 
 ## 4. O Que Aconteceu no `Main.java`? (Imagem 4)
 
-Na **Imagem 4**, o professor voltou para o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Na **Imagem 4**, o professor voltou para o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```java
 Book book1 = new Book("The Fellow of the Ring", 423);
@@ -156,7 +156,7 @@ Library library = new Library("NYC Public Library", 1897, books);
 
 ## 5. Código Completo de `Library.java` no seu Computador
 
-Aqui está o código exato salvo e validado no arquivo [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java):
+Aqui está o código exato salvo e validado no arquivo `Library.java`:
 
 ```java
 public class Library {
@@ -214,13 +214,13 @@ O compilador avisa com precisão cirúrgica que a instrução não está complet
 ---
 
 ### Cenário 2: Com o Código Limpo e Válido
-Se compilarmos as classes [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java) e [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java):
+Se compilarmos as classes `Book.java` e `Library.java`:
 ```bash
 javac Book.java Library.java
 ```
 A compilação termina com **código de saída 0 (sucesso absoluto)**, sem nenhum erro ou aviso!
 
-E ao rodar o [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) sem a linha pela metade:
+E ao rodar o [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) sem a linha pela metade:
 ```text
 (Terminal limpo / saída vazia)
 ```
@@ -231,8 +231,8 @@ Porque removemos o laço `for-each` temporário do `main` e ainda não mandamos 
 
 ## 8. O Que Vem a Seguir?
 
-Agora que a classe [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java) está pronta:
-1. O professor vai finalizar a instanciação no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Agora que a classe `Library.java` está pronta:
+1. O professor vai finalizar a instanciação no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
    ```java
    Library library = new Library("NYC Public Library", 1897, books);
    ```

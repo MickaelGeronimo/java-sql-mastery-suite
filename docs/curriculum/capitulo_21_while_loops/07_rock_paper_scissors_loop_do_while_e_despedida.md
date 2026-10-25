@@ -167,7 +167,7 @@ playAgain = scanner.nextLine().toLowerCase();
 
 ## 6. O Código Java Completo, Numerado e Definitivo (52 Linhas)
 
-Aqui está o código 100% integral do arquivo [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), exatamente idêntico ao da tela do professor:
+Aqui está o código 100% integral do arquivo [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), exatamente idêntico ao da tela do professor:
 
 ```java
 1:  import java.util.Random;

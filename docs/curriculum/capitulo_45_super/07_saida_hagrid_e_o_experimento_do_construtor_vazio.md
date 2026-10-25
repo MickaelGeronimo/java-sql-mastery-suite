@@ -15,7 +15,7 @@ Neste conjunto de 3 capturas de tela, o professor Bro Code fecha o teste do func
    Vemos a tela do IntelliJ com o console aberto exibindo a saída em verde brilhante:  
    `Rubeus's salary is $50000`. Isso confirma que o funcionário herdou com sucesso o primeiro nome (`"Rubeus"`) de `Person` e exibiu o salário próprio (`$50000`).
 2. **O Questionamento em `Person.java` (Imagem 2):**  
-   O professor volta para [`Person.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java) e seleciona com o mouse os parâmetros `String first, String last` dentro de `Person(...)`. Ele faz a provocação:  
+   O professor volta para `Person.java` e seleciona com o mouse os parâmetros `String first, String last` dentro de `Person(...)`. Ele faz a provocação:  
    *"E se a classe pai `Person` não tivesse nenhum parâmetro? E se o construtor do pai fosse completamente vazio?"*.
 3. **O Experimento do Construtor Vazio (Imagem 3):**  
    Ele apaga os parâmetros e o corpo do construtor, deixando apenas:
@@ -100,11 +100,11 @@ Para um iniciante em Java entender isso de forma cristalina, pense em uma **toma
 * A chamada `super(...)` na classe filha é o **plugue** (deve ter exatamente a mesma quantidade de pinos da tomada).
 
 ### O Cenário Inicial (Tudo Funcionava Perfeitamente):
-* **Pai ([`Person.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java)):** Tomada de 2 pinos de texto:  
+* **Pai (`Person.java`):** Tomada de 2 pinos de texto:  
   `Person(String first, String last)`
-* **Filho ([`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java)):** Plugue de 2 pinos de texto:  
+* **Filho (`Student.java`):** Plugue de 2 pinos de texto:  
   `super(first, last);` $\longrightarrow$ **Encaixe Perfeito!**
-* **Filho ([`Employee.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Employee.java)):** Plugue de 2 pinos de texto:  
+* **Filho (`Employee.java`):** Plugue de 2 pinos de texto:  
   `super(first, last);` $\longrightarrow$ **Encaixe Perfeito!**
 
 ### O que Aconteceu Quando o Professor Mudou para `Person(){}`:
@@ -112,7 +112,7 @@ Para um iniciante em Java entender isso de forma cristalina, pense em uma **toma
   `Person(){ }`
 * Mas nos filhos `Student` e `Employee`, o código ainda tentava plugar com 2 pinos:  
   `super(first, last);`!
-* E no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), o comando ainda tentava criar:  
+* E no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), o comando ainda tentava criar:  
   `new Person("Tom", "Riddle");` com 2 pinos!
 
 ### O Grito do Compilador Java:
@@ -149,7 +149,7 @@ Main.java:8: error: constructor Person in class Person cannot be applied to give
 
 ## 4. Análise Linha por Linha de Todo o Código
 
-### Arquivo 1: [`Person.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java) (Versão do Experimento — Imagem 3)
+### Arquivo 1: `Person.java` (Versão do Experimento — Imagem 3)
 
 ```java
 1:  public class Person {
@@ -179,7 +179,7 @@ Main.java:8: error: constructor Person in class Person cannot be applied to give
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Imagem 1)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Imagem 1)
 
 ```java
 1:  public class Main {

@@ -141,7 +141,7 @@ String[] symbols = {"🍒", "🍉", "🍋", "🔔", "⭐", "💎", "🍀"}; // A
 
 ## 5. O Código Java Completo, Numerado e Atualizado
 
-Aqui está o arquivo [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) exatamente como mostrado na tela do professor na Imagem 4:
+Aqui está o arquivo [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) exatamente como mostrado na tela do professor na Imagem 4:
 
 ```java
 1:  import java.util.Random;

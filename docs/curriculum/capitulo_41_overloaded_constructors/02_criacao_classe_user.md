@@ -99,7 +99,7 @@ Repare na **Tela 2**: o autor digitou `User` com a **primeira letra maiúscula**
 
 ## 4. O Esqueleto Inicial Criado em `User.java`
 
-Assim que o autor apertou a tecla **ENTER** na Tela 2, o IntelliJ IDEA criou o arquivo [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) na pasta `src` com a seguinte estrutura:
+Assim que o autor apertou a tecla **ENTER** na Tela 2, o IntelliJ IDEA criou o arquivo `User.java` na pasta `src` com a seguinte estrutura:
 
 ```java
 1: public class User {
@@ -120,7 +120,7 @@ Assim que o autor apertou a tecla **ENTER** na Tela 2, o IntelliJ IDEA criou o a
 
 ## 5. Como Ficou o Arquivo `Main.java`
 
-Enquanto isso, o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) continua intacto com as definições conceituais na linha 5:
+Enquanto isso, o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) continua intacto com as definições conceituais na linha 5:
 
 ```java
 1: public class Main {
@@ -144,7 +144,7 @@ Se rodarmos o projeto neste segundo:
 Process finished with exit code 0
 ```
 * **Nenhuma mensagem é impressa**, porque os arquivos ainda estão apenas sendo estruturados.
-* O compilador do Java compila ambos os arquivos ([`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java)) sem nenhum erro!
+* O compilador do Java compila ambos os arquivos ([`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e `User.java`) sem nenhum erro!
 
 ---
 

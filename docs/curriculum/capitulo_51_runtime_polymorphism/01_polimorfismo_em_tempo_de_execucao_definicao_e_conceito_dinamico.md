@@ -2,7 +2,7 @@
 ## Parte 1: Abertura do Capítulo, Definição Conceitual e o Porquê do "Polimorfismo Dinâmico" (`Dynamic Polymorphism`)
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:14:20` até `08:15:00` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo, como para quem nunca programou na vida) a estreia do **Capítulo 51**: o que é **Polimorfismo em Tempo de Execução** (*Runtime Polymorphism*, também chamado de *Dynamic Polymorphism*), por que o capítulo tem o emoji de um homem dando de ombros (`🤷‍♂️`), a limpeza do projeto para iniciar um novo exemplo prático e a análise anatômica de cada palavra da definição escrita no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo, como para quem nunca programou na vida) a estreia do **Capítulo 51**: o que é **Polimorfismo em Tempo de Execução** (*Runtime Polymorphism*, também chamado de *Dynamic Polymorphism*), por que o capítulo tem o emoji de um homem dando de ombros (`🤷‍♂️`), a limpeza do projeto para iniciar um novo exemplo prático e a análise anatômica de cada palavra da definição escrita no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).  
 > **Formato para Google Docs:** Todo o contexto visual do IntelliJ IDEA (a barra de projeto limpa contendo apenas `Main.java`, as seleções em azul no editor, o letreiro estilizado `Dynamic Polymorphism` no vídeo e as linhas de código com numeração) foi integralmente convertido em texto, diagramas visuais e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -13,7 +13,7 @@ Nesta abertura oficial do Capítulo 51 (`08:14:20` a `08:15:00`), o professor Br
 
 | Imagem | Timestamp / Arquivo | O que é mostrado na tela do IntelliJ IDEA? | Ação Realizada pelo Professor Bro Code |
 | :--- | :--- | :--- | :--- |
-| **🖼️ Imagem 1** | `08:14:35`<br>`media_1791400828698_167665b4.png` | Na árvore lateral `src`, restou apenas o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (os arquivos `Car`, `Bike`, `Boat` e `Vehicle` foram fechados/removidos). No editor, há apenas o método `main` com 2 linhas de comentário (Linhas 5 e 6). | O professor seleciona com o mouse a palavra **`Runtime`** na Linha 5, preparando a explicação teórica da diferença entre "tempo de compilação" e "tempo de execução". |
+| **🖼️ Imagem 1** | `08:14:35`<br>`media_1791400828698_167665b4.png` | Na árvore lateral `src`, restou apenas o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (os arquivos `Car`, `Bike`, `Boat` e `Vehicle` foram fechados/removidos). No editor, há apenas o método `main` com 2 linhas de comentário (Linhas 5 e 6). | O professor seleciona com o mouse a palavra **`Runtime`** na Linha 5, preparando a explicação teórica da diferença entre "tempo de compilação" e "tempo de execução". |
 | **🖼️ Imagem 2** | `08:14:40`<br>`media_1791400940369_e8e7f107.png` | O professor estende a seleção azul sobre o termo completo: **`Runtime polymorphism`**. No centro da tela do vídeo, surge um letreiro gigante em fonte grossa: **`Dynamic Polymorphism`**. | O professor enfatiza verbalmente: *"Polimorfismo em tempo de execução também é conhecido por outro nome muito comum: Polimorfismo Dinâmico!"*. |
 | **🖼️ Imagem 3** | `08:14:43`<br>`media_1791400965634_12275e56.png` | No player do YouTube, o marcador exibe: `8:14:43 / 12:00:00` no capítulo `51.runtime polymorphism 🤷‍♂️ >`. No editor, a seleção azul se move para a última palavra da Linha 6: **`object`**. | O professor destaca que a decisão final sobre qual método será executado depende única e exclusivamente do **tipo real do objeto** instanciado quando o programa estiver rodando na memória. |
 
@@ -49,7 +49,7 @@ Se ele tivesse digitado `2`, o Java diria: *"Opa! É um Gato! Então vou chamar 
 
 ## 3. Dissecando a Definição do Professor Palavra por Palavra
 
-Na Linha 5 e Linha 6 do arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), o professor Bro Code escreveu uma das frases mais importantes da ciência da computação:
+Na Linha 5 e Linha 6 do arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), o professor Bro Code escreveu uma das frases mais importantes da ciência da computação:
 
 ```java
 // Runtime polymorphism = When the method that gets executed is decided
@@ -68,7 +68,7 @@ Vamos traduzir e dissecar termo por termo:
 
 ---
 
-## 4. O Código Completo de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) Linha por Linha (Linhas 1 a 9)
+## 4. O Código Completo de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Linha por Linha (Linhas 1 a 9)
 
 Aqui está a transcrição exata do estado atual do editor no início do Capítulo 51:
 

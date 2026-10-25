@@ -9,8 +9,8 @@
 - **Parte:** 5 de 5 (Daemon Threads, Encerramento Limpo da JVM e Timer de 10s)
 - **Timestamp de Referência:** `11:20:06` até `11:21:20`
 - **Arquivos do Projeto:**
-  - [`MyRunnable.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/MyRunnable.java)
-  - [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+  - [`MyRunnable.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/MyRunnable.java)
+  - [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ---
 

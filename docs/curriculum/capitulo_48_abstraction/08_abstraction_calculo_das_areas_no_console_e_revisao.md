@@ -2,7 +2,7 @@
 ## Parte 8: O Grande Clímax — Alimentando os Objetos em `Main.java`, a Impressão das Áreas no Console e a Revisão de `abstract`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:00:25` até `08:01:20` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a execução prática do polimorfismo e da abstração: como o professor Bro Code ajusta o [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) fornecendo os valores nos construtores (`new Circle(3)`, `new Triangle(4, 5)`, `new Rectangle(6, 7)`), substitui as chamadas de `display()` por `System.out.println(...area())`, confere no terminal os resultados matemáticos exatos de cada figura geométrica, e retorna para [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) e [`Triangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java) para uma revisão conceitual de fechamento.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a execução prática do polimorfismo e da abstração: como o professor Bro Code ajusta o [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) fornecendo os valores nos construtores (`new Circle(3)`, `new Triangle(4, 5)`, `new Rectangle(6, 7)`), substitui as chamadas de `display()` por `System.out.println(...area())`, confere no terminal os resultados matemáticos exatos de cada figura geométrica, e retorna para [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) e [`Triangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java) para uma revisão conceitual de fechamento.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (linhas selecionadas em azul, abas ativas, saídas no terminal em verde neon, realces de palavras-chave e navegação entre arquivos) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -10,8 +10,8 @@
 ## 1. Visão Geral da Demonstração: O Quebra-Cabeça Está Montado!
 
 Nas partes anteriores, preparamos toda a arquitetura:
-1. Criamos a superclasse abstrata [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) com o método abstrato `area()` e o método concreto `display()`.
-2. Especializamos [`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java), [`Triangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java) e [`Rectangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java) com seus próprios atributos e construtores.
+1. Criamos a superclasse abstrata [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) com o método abstrato `area()` e o método concreto `display()`.
+2. Especializamos [`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java), [`Triangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java) e [`Rectangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java) com seus próprios atributos e construtores.
 
 Nesta sequência de 5 capturas de tela, presenciamos o grande momento em que o código ganha vida no computador:
 
@@ -104,7 +104,7 @@ Vamos conferir na ponta do lápis se o computador fez a conta certa:
 
 ---
 
-## 4. Análise Código por Código e Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 4. Análise Código por Código e Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Abaixo está o código final exato de `Main.java` como visto na Imagem 3:
 

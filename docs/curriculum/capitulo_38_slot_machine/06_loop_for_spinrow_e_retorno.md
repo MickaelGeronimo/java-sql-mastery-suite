@@ -190,7 +190,7 @@ Em vez de deixar essa linha feia e improvisada dentro de `spinRow()`, a boa prá
 
 ## 7. O Código Java Completo, Numerado e Atualizado
 
-Aqui está o arquivo [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) com todo o código até a Imagem 2:
+Aqui está o arquivo [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) com todo o código até a Imagem 2:
 
 ```java
 1:  import java.util.Random;

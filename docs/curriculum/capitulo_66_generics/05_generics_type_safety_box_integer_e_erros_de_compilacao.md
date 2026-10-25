@@ -168,7 +168,7 @@ INTELLIJ IDEA - [MyFirstProject] - 10:46:47 / 12:00:00 - Chapter: 66.generics (S
 
 Aqui estão os códigos exatos dos arquivos locais da máquina, prontos para compilar e rodar.
 
-### [`Box.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java)
+### [`Box.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java)
 ```java
 public class Box<T> {
 
@@ -184,7 +184,7 @@ public class Box<T> {
 }
 ```
 
-### [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -212,7 +212,7 @@ Vamos destrinchar cada linha com calma absoluta, explicando o papel de cada cara
 
 ---
 
-### Dissecando [`Box.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java) (O Molde Genérico)
+### Dissecando [`Box.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java) (O Molde Genérico)
 
 ```java
 1: public class Box<T> {
@@ -287,7 +287,7 @@ Vamos destrinchar cada linha com calma absoluta, explicando o papel de cada cara
 
 ---
 
-### Dissecando [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (O Testador)
+### Dissecando [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (O Testador)
 
 ```java
 1: public class Main {

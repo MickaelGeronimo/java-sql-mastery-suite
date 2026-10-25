@@ -11,12 +11,12 @@
 
 ## 1. O Que Aconteceu Nesta Sequência de 3 Imagens? (Visão Geral)
 
-Nas imagens anteriores, tínhamos a classe [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) com apenas **um construtor** (que recebia somente o `username` e preenchia o resto com `"Not provided"` e `0`).
+Nas imagens anteriores, tínhamos a classe `User.java` com apenas **um construtor** (que recebia somente o `username` e preenchia o resto com `"Not provided"` e `0`).
 
 Nesta nova sequência de 3 capturas de tela do vídeo:
-1. **Imagem 1 (`media_1791323991547.png`):** O professor Bro Code dá um famoso **Ctrl+C / Ctrl+V** (copiar e colar) no primeiro construtor dentro de [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java). Imediatamente, o IntelliJ IDEA entra em pânico e desenha uma **linha ondulada vermelha** embaixo dos dois construtores! É o erro de **Construtor Duplicado**.
+1. **Imagem 1 (`media_1791323991547.png`):** O professor Bro Code dá um famoso **Ctrl+C / Ctrl+V** (copiar e colar) no primeiro construtor dentro de `User.java`. Imediatamente, o IntelliJ IDEA entra em pânico e desenha uma **linha ondulada vermelha** embaixo dos dois construtores! É o erro de **Construtor Duplicado**.
 2. **Imagem 2 (`media_1791324026135.png`):** O professor altera a assinatura do segundo construtor, adicionando um segundo parâmetro: `User(String username, String email)`. Ele ajusta o corpo para receber o e-mail real (`this.email = email;`). Na mesma hora, **todas as ondinhas vermelhas somem**! O código volta a ficar 100% limpo e válido.
-3. **Imagem 3 (`media_1791324057217.png`):** O autor revisa a classe [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) agora possuindo **dois construtores sobrecarregados** oficiais e prontos para atender o programa principal.
+3. **Imagem 3 (`media_1791324057217.png`):** O autor revisa a classe `User.java` agora possuindo **dois construtores sobrecarregados** oficiais e prontos para atender o programa principal.
 
 ---
 
@@ -45,7 +45,7 @@ Nesta nova sequência de 3 capturas de tela do vídeo:
 ---
 
 ### 📸 Imagem 3: A Estrutura Estabilizada de `User.java`
-* Mostra a classe [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) perfeitamente estruturada com os seus 3 atributos lá no topo e os seus **2 construtores sobrecarregados** lado a lado, sem erros de compilação.
+* Mostra a classe `User.java` perfeitamente estruturada com os seus 3 atributos lá no topo e os seus **2 construtores sobrecarregados** lado a lado, sem erros de compilação.
 
 ---
 
@@ -93,7 +93,7 @@ Agora o Java olha e pensa:
 
 ## 5. Código Completo de `User.java` Linha por Linha
 
-Aqui está o arquivo [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) exatamente como ficou ao final da Imagem 3:
+Aqui está o arquivo `User.java` exatamente como ficou ao final da Imagem 3:
 
 ```java
  1: public class User {
@@ -210,9 +210,9 @@ flowchart TD
 
 ## 7. O Que Sai no Console?
 
-Como as 3 imagens mostram a edição do arquivo [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java), criar ou editar construtores **não produz saída nenhuma no console** por si só.
+Como as 3 imagens mostram a edição do arquivo `User.java`, criar ou editar construtores **não produz saída nenhuma no console** por si só.
 
-Porém, se rodarmos o programa com o [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) atual:
+Porém, se rodarmos o programa com o [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) atual:
 
 ```java
 public class Main {
@@ -236,7 +236,7 @@ Not provided
 
 > [!TIP]
 > **O que vem a seguir no vídeo?**
-> No próximo passo, o Bro Code irá criar um terceiro construtor que aceita os 3 dados `(username, email, age)`, e depois irá para o [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) instanciar `user2` e `user3` para testar todos eles!
+> No próximo passo, o Bro Code irá criar um terceiro construtor que aceita os 3 dados `(username, email, age)`, e depois irá para o [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) instanciar `user2` e `user3` para testar todos eles!
 
 ---
 

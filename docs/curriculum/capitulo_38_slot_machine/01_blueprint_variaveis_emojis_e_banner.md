@@ -201,7 +201,7 @@ String[] row;
 
 ## 6. O Código Java Completo, Numerado e Definitivo
 
-Abaixo está o arquivo [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) exatamente como montado e executado pelo professor na Imagem 5:
+Abaixo está o arquivo [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) exatamente como montado e executado pelo professor na Imagem 5:
 
 ```java
 1:  import java.util.Scanner;

@@ -165,7 +165,7 @@ INTELLIJ IDEA - [MyFirstProject] - 10:51:39 / 12:00:00 - Chapter: 66.generics
 
 Aqui estão os códigos exatos sincronizados com a máquina local:
 
-### [`Product.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Product.java)
+### [`Product.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Product.java)
 ```java
 public class Product<T, U> {
 
@@ -187,7 +187,7 @@ public class Product<T, U> {
 }
 ```
 
-### [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -207,7 +207,7 @@ public class Main {
 }
 ```
 
-### [`Box.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java)
+### [`Box.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java)
 ```java
 public class Box<T> {
 
@@ -231,7 +231,7 @@ Vamos explicar cada linha do arquivo principal `Main.java` como se estivéssemos
 
 ---
 
-### Dissecando [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) Linha por Linha
+### Dissecando [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Linha por Linha
 
 ```java
 1: public class Main {
@@ -303,7 +303,7 @@ Stack (Variáveis Locais)              Heap (Objetos Criados)
                                       └────────────────────────────────────────────────────────┘
 ```
 
-Ambos os objetos foram construídos a partir da mesma receita de bolo: [`Product.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Product.java). Porém, no momento da fabricação, cada um recebeu ingredientes de tipos diferentes!
+Ambos os objetos foram construídos a partir da mesma receita de bolo: [`Product.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Product.java). Porém, no momento da fabricação, cada um recebeu ingredientes de tipos diferentes!
 
 ---
 

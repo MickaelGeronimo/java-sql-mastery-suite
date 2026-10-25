@@ -18,16 +18,16 @@ Este módulo aborda as regras de assinatura de método (*Method Signature = Nome
 
 | Arquivo | Título / Tema Principal |
 | :--- | :--- |
-| [01_introducao_e_erro_tamanho.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_27_overloaded_methods/01_introducao_e_erro_tamanho.md) | Introdução ao conceito de sobrecarga e erro de aridade na chamada. |
-| [02_criando_segundo_metodo_add.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_27_overloaded_methods/02_criando_segundo_metodo_add.md) | Criação de assinaturas variadas (`add(a, b)` e `add(a, b, c)`). |
-| [03_erro_already_defined_e_soma_4_parametros.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_27_overloaded_methods/03_erro_already_defined_e_soma_4_parametros.md) | O erro de colisão de assinaturas idênticas e expansão para 4 parâmetros. |
-| [04_exemplo_pizza_uma_cobertura.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_27_overloaded_methods/04_exemplo_pizza_uma_cobertura.md) | Modelagem da pizza básica: massa + molho. |
-| [05_pizza_com_queijo_mozzarella.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_27_overloaded_methods/05_pizza_com_queijo_mozzarella.md) | Sobrecarga com inclusão de queijo (`cheese`). |
-| [06_pizza_com_pepperoni.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_27_overloaded_methods/06_pizza_com_pepperoni.md) | Sobrecarga completa com pepperoni e coberturas adicionais. |
-| [apostila_completa_overloaded_methods_capitulo27.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_27_overloaded_methods/apostila_completa_overloaded_methods_capitulo27.md) | Apostila unificada contendo todos os conceitos, diagramas e código-fonte completo. |
+| [01_introducao_e_erro_tamanho.md](01_introducao_e_erro_tamanho.md) | Introdução ao conceito de sobrecarga e erro de aridade na chamada. |
+| [02_criando_segundo_metodo_add.md](02_criando_segundo_metodo_add.md) | Criação de assinaturas variadas (`add(a, b)` e `add(a, b, c)`). |
+| [03_erro_already_defined_e_soma_4_parametros.md](03_erro_already_defined_e_soma_4_parametros.md) | O erro de colisão de assinaturas idênticas e expansão para 4 parâmetros. |
+| [04_exemplo_pizza_uma_cobertura.md](04_exemplo_pizza_uma_cobertura.md) | Modelagem da pizza básica: massa + molho. |
+| [05_pizza_com_queijo_mozzarella.md](05_pizza_com_queijo_mozzarella.md) | Sobrecarga com inclusão de queijo (`cheese`). |
+| [06_pizza_com_pepperoni.md](06_pizza_com_pepperoni.md) | Sobrecarga completa com pepperoni e coberturas adicionais. |
+| [apostila_completa_overloaded_methods_capitulo27.md](apostila_completa_overloaded_methods_capitulo27.md) | Apostila unificada contendo todos os conceitos, diagramas e código-fonte completo. |
 
 ---
 
 ## 💻 Código-Fonte e Testes no Projeto
-- Classe Didática: [`OverloadedMethodsMasteryDemo.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/methods/OverloadedMethodsMasteryDemo.java)
-- Suíte de Testes Unitários: [`OverloadedMethodsMasteryTest.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/test/java/com/mickaelgeronimo/mastery/core/OverloadedMethodsMasteryTest.java)
+- Classe Didática: [`OverloadedMethodsMasteryDemo.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/methods/OverloadedMethodsMasteryDemo.java)
+- Suíte de Testes Unitários: [`OverloadedMethodsMasteryTest.java`](../../../src/test/java/com/mickaelgeronimo/mastery/core/OverloadedMethodsMasteryTest.java)

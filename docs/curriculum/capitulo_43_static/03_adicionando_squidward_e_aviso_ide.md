@@ -3,7 +3,7 @@
 > **Contexto do Curso:** *Java Full Course for free* (Bro Code)  
 > **Capítulo:** 43 — `static 🤝`  
 > **Tempo do Vídeo:** `07:17:33` até `07:17:50` / `12:00:00`  
-> **Arquivos do Projeto:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e [Friend.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java)  
+> **Arquivos do Projeto:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e [Friend.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java)  
 > **Objetivo Deste Documento:** Fornecer um guia didático visual e conceitual completo, pronto para ser colado no **Google Docs**, recriando cada detalhe da tela do IntelliJ IDEA, dissecando o código linha por linha para iniciantes, desmistificando o contador estático e explicando o aviso amarelo da IDE.
 
 ---
@@ -42,7 +42,7 @@ Nesta sequência de 4 capturas de tela, o instrutor Bro Code expande o teste cri
 
 #### 🖼️ Imagem 1 (`07:17:33`): Fechando o Console Anterior
 * **O que aparece na tela:**
-  * O editor está aberto no arquivo [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+  * O editor está aberto no arquivo [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
   * O painel inferior **Run** ainda exibe a execução anterior, que mostrava:
     ```text
     2
@@ -178,7 +178,7 @@ Se você passar o mouse em cima da ondinha amarela ou clicar na lâmpada 💡, o
 
 ## 4. Código Completo e Explicado Linha por Linha
 
-### Arquivo 1: [Friend.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java)
+### Arquivo 1: [Friend.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java)
 
 ```java
  1: public class Friend {
@@ -194,7 +194,7 @@ Se você passar o mouse em cima da ondinha amarela ou clicar na lâmpada 💡, o
 11: }
 ```
 
-#### Explicação Linha por Linha de [Friend.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java):
+#### Explicação Linha por Linha de [Friend.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java):
 
 * **Linha 1 (`public class Friend {`):**  
   Declara a classe pública `Friend` (o modelo/fôrma para criar amigos).
@@ -221,7 +221,7 @@ Se você passar o mouse em cima da ondinha amarela ou clicar na lâmpada 💡, o
 
 ---
 
-### Arquivo 2: [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: public class Main {
@@ -242,7 +242,7 @@ Se você passar o mouse em cima da ondinha amarela ou clicar na lâmpada 💡, o
 16: }
 ```
 
-#### Explicação Linha por Linha de [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+#### Explicação Linha por Linha de [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 * **Linha 1 (`public class Main {`):**  
   Declara a classe principal onde fica o ponto de partida do nosso projeto.

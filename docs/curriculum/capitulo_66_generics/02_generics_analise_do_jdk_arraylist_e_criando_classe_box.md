@@ -178,7 +178,7 @@ private static final Object[] EMPTY_ELEMENTDATA = {};
 
 ## 🔍 Explicação Linha por Linha dos Códigos
 
-### Arquivo 1: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) *(Imagem 3)*
+### Arquivo 1: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) *(Imagem 3)*
 
 ```java
  1: import java.util.ArrayList;
@@ -216,7 +216,7 @@ private static final Object[] EMPTY_ELEMENTDATA = {};
 
 ---
 
-### Arquivo 2: [`Box.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java) *(Imagem 5)*
+### Arquivo 2: [`Box.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java) *(Imagem 5)*
 
 ```java
 1: public class Box {

@@ -7,7 +7,7 @@
 - **Curso:** *Java Full Course for free* (Canal: Bro Code)
 - **Capítulo Oficial:** `59. read files 📖`
 - **Intervalo de Tempo no Vídeo:** `09:24:52` até `09:25:55` (do total de 12:00:00)
-- **Arquivo Principal de Trabalho:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+- **Arquivo Principal de Trabalho:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 - **Arquivo Alvo de Leitura:** `C:\Users\HP\Desktop\test.txt` (no Desktop do professor)
 - **Ambiente de Desenvolvimento (IDE):** IntelliJ IDEA Community Edition rodando com JDK 23
 
@@ -120,7 +120,7 @@ e o método close() dispara "IOException", que ainda NÃO está sendo capturado 
 
 ---
 
-## 🍕 O Código do Arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) na Imagem 5
+## 🍕 O Código do Arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) na Imagem 5
 
 Aqui está o código exato presente no editor do professor neste instante:
 

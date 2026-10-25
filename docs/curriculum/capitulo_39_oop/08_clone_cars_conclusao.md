@@ -71,7 +71,7 @@ Pense numa fábrica de brinquedos com uma esteira rolante:
 * Aperta uma terceira vez: **Mais um Mustang vermelho!**
 
 Isso é exatamente o que está acontecendo no nosso código agora:
-* Em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java), nós escrevemos valores fixos (*hardcoded*):
+* Em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), nós escrevemos valores fixos (*hardcoded*):
   ```java
   String make = "Ford";
   String model = "Mustang";
@@ -175,7 +175,7 @@ flowchart TD
 
 ## 🔍 Análise Linha por Linha de Todo o Código Final
 
-### Arquivo 1: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### Arquivo 1: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 
 ```java
  1: public class Car {
@@ -213,7 +213,7 @@ flowchart TD
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: public class Main {
@@ -244,7 +244,7 @@ flowchart TD
 
 ## 📜 Código-Fonte Completo e Oficial dos Arquivos
 
-### Arquivo 1: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### Arquivo 1: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 ```java
 public class Car {
 
@@ -274,7 +274,7 @@ public class Car {
 }
 ```
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {

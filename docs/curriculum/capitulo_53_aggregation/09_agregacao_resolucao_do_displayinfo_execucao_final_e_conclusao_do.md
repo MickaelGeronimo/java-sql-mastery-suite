@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal Executado: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe Agregadora Completa: [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)
-* Classe do Livro Independente: [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte Anterior (Capítulo 53 - Parte 8: Cabeçalho e Migração do Loop): [`explicacao_agregacao_execucao_do_cabecalho_da_library_e_migracao_do_loop_para_dentro_da_biblioteca_capitulo53_parte8.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_agregacao_execucao_do_cabecalho_da_library_e_migracao_do_loop_para_dentro_da_biblioteca_capitulo53_parte8.md)
+* Arquivo Principal Executado: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe Agregadora Completa: `Library.java`
+* Classe do Livro Independente: `Book.java`
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte Anterior (Capítulo 53 - Parte 8: Cabeçalho e Migração do Loop): `explicacao_agregacao_execucao_do_cabecalho_da_library_e_migracao_do_loop_para_dentro_da_biblioteca_capitulo53_parte8.md`
 
 ---
 
@@ -69,7 +69,7 @@ for(Book book : books){
 ```
 
 ### Por Que Isso Não Imprimiria Nada?
-Lembre-se de como declaramos o método dentro de [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java):
+Lembre-se de como declaramos o método dentro de `Book.java`:
 ```java
 String displayInfo(){
     return this.title + " (" + this.pages + " pages)";
@@ -104,7 +104,7 @@ System.out.println(book.displayInfo());
 
 ## 3. O Clique no Botão Run (Imagem 3)
 
-Na **Imagem 3**, o professor volta para o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e leva a setinha do mouse até o topo direito da janela do IntelliJ, clicando no triângulo verde de **Execução (Run / Play)**.
+Na **Imagem 3**, o professor volta para o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e leva a setinha do mouse até o topo direito da janela do IntelliJ, clicando no triângulo verde de **Execução (Run / Play)**.
 
 ```
 +----------------------------------------------------+
@@ -145,7 +145,7 @@ Process finished with exit code 0
 
 ## 5. Código-Fonte Completo e Definitivo do Projeto
 
-### Arquivo 1: [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java)
+### Arquivo 1: `Book.java`
 
 ```java
 public class Book {
@@ -167,7 +167,7 @@ public class Book {
 
 ---
 
-### Arquivo 2: [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)
+### Arquivo 2: `Library.java`
 
 ```java
 public class Library {
@@ -195,7 +195,7 @@ public class Library {
 
 ---
 
-### Arquivo 3: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 3: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
 public class Main {
@@ -223,7 +223,7 @@ public class Main {
 
 ## 6. Tabelas Linha por Linha de Todo o Projeto
 
-### A) Dissecação de [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)
+### A) Dissecação de `Library.java`
 
 | Linha | Código | Explicação Amigável para Iniciantes |
 | :---: | :--- | :--- |
@@ -251,7 +251,7 @@ public class Main {
 
 ---
 
-### B) Dissecação de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### B) Dissecação de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 | Linha | Código | Explicação Amigável para Iniciantes |
 | :---: | :--- | :--- |

@@ -13,7 +13,7 @@ Nas partes anteriores, tínhamos preparado:
 * `Dog dog = new Dog();`
 * `Cat cat = new Cat();`
 * `Fish fish = new Fish();`
-* E todos herdando de [`Animal.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java), que possui:
+* E todos herdando de [`Animal.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java), que possui:
   ```java
   void move(){
       System.out.println("This animal is running");
@@ -30,7 +30,7 @@ Nesta sequência de 4 imagens, o professor Bro Code fecha o ciclo do problema e 
    `This animal is running`  
    O autor seleciona a frase no console com o mouse e destaca o problema para os alunos: *"Vejam só! O cachorro está correndo, o gato está correndo... e o peixe também está correndo?! Peixes não correm na terra! O peixe precisa nadar!"*.
 2. **A Sobrescrita em `Fish.java` (Imagem 3):**  
-   Ele abre [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java) e reescreve o método com o mesmo nome exato:
+   Ele abre [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java) e reescreve o método com o mesmo nome exato:
    ```java
    void move(){
        System.out.println("This animal is swimming");
@@ -153,7 +153,7 @@ Quando outro desenvolvedor abre a classe `Fish.java` e bate o olho em `@Override
 
 ## 4. Análise Linha por Linha de Todo o Código
 
-### Arquivo 1: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Imagens 1 e 2)
+### Arquivo 1: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Imagens 1 e 2)
 
 ```java
 1:  public class Main {
@@ -184,7 +184,7 @@ Quando outro desenvolvedor abre a classe `Fish.java` e bate o olho em `@Override
 
 ---
 
-### Arquivo 2: [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java) (Versão Final com `@Override` — Imagem 4)
+### Arquivo 2: [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java) (Versão Final com `@Override` — Imagem 4)
 
 ```java
 1:  public class Fish extends Animal{

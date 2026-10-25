@@ -211,7 +211,7 @@ System.out.println(key + );
 
 ## 5. Explicação Linha por Linha do Código Nesse Ponto
 
-Abaixo, todas as linhas do arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) enumeradas:
+Abaixo, todas as linhas do arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) enumeradas:
 
 ### Linha 1: `import java.util.HashMap;`
 - **O que faz**: Importa a classe `HashMap`.

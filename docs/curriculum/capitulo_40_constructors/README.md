@@ -9,7 +9,7 @@
 
 O **Capítulo 40** resolve a maior limitação pedagógica apresentada no capítulo anterior (os "objetos clones"), introduzindo o mecanismo canônico de inicialização de instâncias: os **Construtores (*Constructors*)**.
 
-Neste módulo, construímos a classe [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/Student.java) e a testamos com os personagens icônicos da Fenda do Biquíni: **Bob Esponja**, **Patrick Estrela** e **Sandy Bochechas**.
+Neste módulo, construímos a classe [`Student.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Student.java) e a testamos com os personagens icônicos da Fenda do Biquíni: **Bob Esponja**, **Patrick Estrela** e **Sandy Bochechas**.
 
 ### 🌟 Pilares Fundamentais do Capítulo
 
@@ -37,19 +37,19 @@ Neste módulo, construímos a classe [`Student.java`](file:///c:/Users/mickel%20
 
 | Arquivo | Título / Tema Principal |
 | :--- | :--- |
-| [01_definicao_e_criacao_classe_student.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_40_constructors/01_definicao_e_criacao_classe_student.md) | Definição formal em 3 linhas, superação dos clones e criação do arquivo `Student.java` na IDE. |
-| [02_atributos_student_e_o_problema_dos_clones.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_40_constructors/02_atributos_student_e_o_problema_dos_clones.md) | Declaração dos 4 atributos (`name`, `age`, `gpa`, `isEnrolled`) e a constatação dos dois "Spongebobs" idênticos. |
-| [03_analise_console_clones_e_transicao.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_40_constructors/03_analise_console_clones_e_transicao.md) | O momento chave: fechamento da aba `Run` e a decisão técnica de parametrizar o nascimento dos objetos. |
-| [04_passagem_argumentos_criacao_this_e_erro_compilacao.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_40_constructors/04_passagem_argumentos_criacao_this_e_erro_compilacao.md) | Passagem de argumentos na `main`, indução intencional do erro de compilação e criação do construtor com `this`. |
-| [05_por_que_usar_this_e_nao_student1_ou_student2.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_40_constructors/05_por_que_usar_this_e_nao_student1_ou_student2.md) | Análise profunda de escopo: por que tentar usar `student1.name` dentro de `Student.java` gera erro vermelho. |
-| [06_parametros_a_b_c_vs_this_e_boas_praticas.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_40_constructors/06_parametros_a_b_c_vs_this_e_boas_praticas.md) | O dilema dos parâmetros `a, b, c`: comparação entre atalhos preguiçosos e o padrão canônico da indústria. |
-| [07_isEnrolled_valores_padrao_e_student3.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_40_constructors/07_isEnrolled_valores_padrao_e_student3.md) | Regras de negócio automáticas (`this.isEnrolled = true`) e impressão de valores booleanos. |
-| [08_criacao_sandy_student3_e_12_saidas_console.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_40_constructors/08_criacao_sandy_student3_e_12_saidas_console.md) | A chegada de Sandy Cheeks (`student3`), auditoria das 12 saídas no console e independência total. |
-| [09_panoramica_this_argumentos_e_metodos.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_40_constructors/09_panoramica_this_argumentos_e_metodos.md) | Visão panorâmica unificando atributos, construtores e o método de instância `study()`. |
-| [10_metodo_study_this_name_e_conclusao.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_40_constructors/10_metodo_study_this_name_e_conclusao.md) | Implementação de `study()`, o poder de `this.name` e as ações personalizadas de cada estudante. |
-| [11_por_que_usar_this_name_no_metodo_study.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_40_constructors/11_por_que_usar_this_name_no_metodo_study.md) | Teste intencional proibido (`student3.name` no método) e a comprovação matemática de que `this.name` é indispensável. |
-| [12_revisao_conceitual_e_fechamento.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_40_constructors/12_revisao_conceitual_e_fechamento.md) | Fechamento pedagógico, conexão entre as 3 linhas de teoria e o software real em execução. |
-| [README.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_40_constructors/README.md) | Guia curricular geral e tabela comparativa dos estudantes. |
+| [01_definicao_e_criacao_classe_student.md](01_definicao_e_criacao_classe_student.md) | Definição formal em 3 linhas, superação dos clones e criação do arquivo `Student.java` na IDE. |
+| [02_atributos_student_e_o_problema_dos_clones.md](02_atributos_student_e_o_problema_dos_clones.md) | Declaração dos 4 atributos (`name`, `age`, `gpa`, `isEnrolled`) e a constatação dos dois "Spongebobs" idênticos. |
+| [03_analise_console_clones_e_transicao.md](03_analise_console_clones_e_transicao.md) | O momento chave: fechamento da aba `Run` e a decisão técnica de parametrizar o nascimento dos objetos. |
+| [04_passagem_argumentos_criacao_this_e_erro_compilacao.md](04_passagem_argumentos_criacao_this_e_erro_compilacao.md) | Passagem de argumentos na `main`, indução intencional do erro de compilação e criação do construtor com `this`. |
+| [05_por_que_usar_this_e_nao_student1_ou_student2.md](05_por_que_usar_this_e_nao_student1_ou_student2.md) | Análise profunda de escopo: por que tentar usar `student1.name` dentro de `Student.java` gera erro vermelho. |
+| [06_parametros_a_b_c_vs_this_e_boas_praticas.md](06_parametros_a_b_c_vs_this_e_boas_praticas.md) | O dilema dos parâmetros `a, b, c`: comparação entre atalhos preguiçosos e o padrão canônico da indústria. |
+| [07_isEnrolled_valores_padrao_e_student3.md](07_isEnrolled_valores_padrao_e_student3.md) | Regras de negócio automáticas (`this.isEnrolled = true`) e impressão de valores booleanos. |
+| [08_criacao_sandy_student3_e_12_saidas_console.md](08_criacao_sandy_student3_e_12_saidas_console.md) | A chegada de Sandy Cheeks (`student3`), auditoria das 12 saídas no console e independência total. |
+| [09_panoramica_this_argumentos_e_metodos.md](09_panoramica_this_argumentos_e_metodos.md) | Visão panorâmica unificando atributos, construtores e o método de instância `study()`. |
+| [10_metodo_study_this_name_e_conclusao.md](10_metodo_study_this_name_e_conclusao.md) | Implementação de `study()`, o poder de `this.name` e as ações personalizadas de cada estudante. |
+| [11_por_que_usar_this_name_no_metodo_study.md](11_por_que_usar_this_name_no_metodo_study.md) | Teste intencional proibido (`student3.name` no método) e a comprovação matemática de que `this.name` é indispensável. |
+| [12_revisao_conceitual_e_fechamento.md](12_revisao_conceitual_e_fechamento.md) | Fechamento pedagógico, conexão entre as 3 linhas de teoria e o software real em execução. |
+| [README.md](README.md) | Guia curricular geral e tabela comparativa dos estudantes. |
 
 ---
 
@@ -88,6 +88,6 @@ sequenceDiagram
 ---
 
 ## 💻 Código-Fonte e Testes no Projeto
-- Classe com Construtores: [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/Student.java)
-- Demonstração Interativa / CLI: [`ConstructorsDemo.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/ConstructorsDemo.java)
-- Suíte de Testes Automatizados: [`ConstructorsStudentTest.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/test/java/com/mickaelgeronimo/mastery/core/ConstructorsStudentTest.java)
+- Classe com Construtores: [`Student.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Student.java)
+- Demonstração Interativa / CLI: [`ConstructorsDemo.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/ConstructorsDemo.java)
+- Suíte de Testes Automatizados: [`ConstructorsStudentTest.java`](../../../src/test/java/com/mickaelgeronimo/mastery/core/ConstructorsStudentTest.java)

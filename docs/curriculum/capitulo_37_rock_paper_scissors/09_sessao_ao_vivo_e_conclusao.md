@@ -162,7 +162,7 @@ Na Imagem 3, o professor Bro Code seleciona com o mouse a linha 7:
 
 ## 7. O Código Java Completo, Numerado e Definitivo
 
-Abaixo está o arquivo [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) integral com todas as 51 linhas exatas do projeto:
+Abaixo está o arquivo [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) integral com todas as 51 linhas exatas do projeto:
 
 ```java
 1:  import java.util.Random;

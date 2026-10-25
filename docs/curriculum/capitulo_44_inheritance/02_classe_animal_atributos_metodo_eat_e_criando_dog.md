@@ -3,14 +3,14 @@
 > **Contexto do Curso:** *Java Full Course for free* (Bro Code)  
 > **Capítulo:** 44 — `inheritance 👨‍👧‍👦`  
 > **Tempo do Vídeo:** `07:23:10` até `07:23:22` / `12:00:00`  
-> **Arquivos do Projeto:** [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java), [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) e [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
+> **Arquivos do Projeto:** [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java), Dog.java e [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
 > **Objetivo Deste Documento:** Material didático completo para iniciantes, projetado para cópia direta no **Google Docs**, recriando as 4 telas do IntelliJ IDEA, explicando a montagem da superclasse genérica, a inicialização do estado de vida, a habilidade de comer e a regra de ouro do relacionamento "É UM" (*IS-A*).
 
 ---
 
 ## 1. Reconstituição Visual da Tela (Para Visualização sem as Imagens)
 
-Nesta etapa, o instrutor Bro Code preenche a classe [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) com as características e comportamentos universais que qualquer animal possui, e em seguida cria o primeiro animal específico: a classe [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java).
+Nesta etapa, o instrutor Bro Code preenche a classe [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) com as características e comportamentos universais que qualquer animal possui, e em seguida cria o primeiro animal específico: a classe Dog.java.
 
 ```
 +-----------------------------------------------------------------------------------------------+
@@ -63,7 +63,7 @@ Nesta etapa, o instrutor Bro Code preenche a classe [Animal.java](file:///c:/Use
 ---
 
 #### 🖼️ Imagem 2 (`07:23:10`): Visão Completa da Classe `Animal.java`
-* **Arquivo ativo:** [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java).
+* **Arquivo ativo:** [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java).
 * **O que vemos no código:**
   * Linha 1: `public class Animal {`
   * Linha 3: `boolean isAlive;` $\rightarrow$ variável booleana que indica se o animal está vivo.
@@ -74,7 +74,7 @@ Nesta etapa, o instrutor Bro Code preenche a classe [Animal.java](file:///c:/Use
 ---
 
 #### 🖼️ Imagem 3 (`07:23:19`): Abrindo o Menu para Criar a Subclasse
-* **Arquivo ativo:** [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java).
+* **Arquivo ativo:** [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java).
 * **O que mudou no código:**
   * A correção ortográfica foi concluída: agora está devidamente escrito `"The animal is eating"`.
   * O autor clicou com o botão direito na pasta `src` ou usou o atalho `Alt + Insert` para abrir a janelinha modal:
@@ -89,7 +89,7 @@ Nesta etapa, o instrutor Bro Code preenche a classe [Animal.java](file:///c:/Use
   * A opção **`Class`** (marcada com o ícone azul `C`) está selecionada.
   * No centro inferior da tela do vídeo, aparece um letreiro em fonte grossa cartunesca branca com contorno preto escrito:  
     # **Dog**
-  * O autor vai pressionar `Enter` para criar o arquivo [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java).
+  * O autor vai pressionar `Enter` para criar o arquivo Dog.java.
 
 ---
 
@@ -141,7 +141,7 @@ Se a frase fizer sentido no mundo real ("Cachorro é um animal"), a herança é 
 
 ## 4. Dissecando o Código Linha por Linha Numerado
 
-### Arquivo 1: [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java)
+### Arquivo 1: [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java)
 
 ```java
  1: public class Animal {
@@ -159,7 +159,7 @@ Se a frase fizer sentido no mundo real ("Cachorro é um animal"), a herança é 
 13: }
 ```
 
-#### Explicação Linha por Linha de [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java):
+#### Explicação Linha por Linha de [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java):
 
 * **Linha 1 (`public class Animal {`):**  
   Declara a classe pública `Animal`. Esta classe será a **Superclasse (Classe Pai)**.
@@ -184,7 +184,7 @@ Se a frase fizer sentido no mundo real ("Cachorro é um animal"), a herança é 
 
 ---
 
-### Arquivo 2: [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java)
+### Arquivo 2: Dog.java
 
 ```java
 1: public class Dog {
@@ -192,7 +192,7 @@ Se a frase fizer sentido no mundo real ("Cachorro é um animal"), a herança é 
 3: }
 ```
 
-#### Explicação de [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java):
+#### Explicação de Dog.java:
 
 * **Linha 1 (`public class Dog {`):**  
   Declara a nova classe pública `Dog`. Neste exato instante da Imagem 4, o arquivo acabou de ser criado e ainda está vazio.
@@ -207,7 +207,7 @@ Se a frase fizer sentido no mundo real ("Cachorro é um animal"), a herança é 
 
 ## 5. O Que Deve Sair no Console?
 
-Nesta etapa, como estamos apenas criando as classes e seus métodos sem invocar nenhuma execução no [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), o terminal permanece sem nenhuma saída:
+Nesta etapa, como estamos apenas criando as classes e seus métodos sem invocar nenhuma execução no [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), o terminal permanece sem nenhuma saída:
 
 ```text
 (Nenhuma saída impressa no console)

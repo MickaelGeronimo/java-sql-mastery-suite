@@ -9,27 +9,27 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal de Execução: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe do Carro com os Novos Getters: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Guia da Parte 1 (Conceito e Falha de Acesso Aberto): [`explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md)
-* Guia da Parte 2 (Demonstração da Adulteração e Blindagem `private`): [`explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md)
+* Arquivo Principal de Execução: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe do Carro com os Novos Getters: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Guia da Parte 1 (Conceito e Falha de Acesso Aberto): `explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md`
+* Guia da Parte 2 (Demonstração da Adulteração e Blindagem `private`): `explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md`
 
 ---
 
 ## 1. O Que Está Acontecendo Aqui? (Visão Geral para Iniciantes Amadores)
 
-Na aula anterior (Parte 2), o professor Bro Code blindou as variáveis `model`, `color` e `price` adicionando a palavra-chave **`private`** dentro de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+Na aula anterior (Parte 2), o professor Bro Code blindou as variáveis `model`, `color` e `price` adicionando a palavra-chave **`private`** dentro de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 
 Nesta sequência de 5 imagens, acompanhamos o desenrolar dessa decisão:
-1. **O Choque do Bloqueio:** O arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) tenta imprimir `car.color`, `car.model` e `car.price`. Como agora eles são privados, o IntelliJ marca tudo de vermelho (`🔴 3 erros`).
+1. **O Choque do Bloqueio:** O arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) tenta imprimir `car.color`, `car.model` e `car.price`. Como agora eles são privados, o IntelliJ marca tudo de vermelho (`🔴 3 erros`).
 2. **A Prova Real no Compilador:** O autor clica no botão de executar (`▷`). O compilador Java interrompe tudo e cospe no painel inferior de compilação: `java: color has private access in Car`, `model has private access in Car`, `price has private access in Car`. O programa não roda!
-3. **A Criação da Solução (Os GETTERS):** O autor volta para [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) e constrói métodos oficiais para leitura:
+3. **A Criação da Solução (Os GETTERS):** O autor volta para [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) e constrói métodos oficiais para leitura:
    * `getModel()` que devolve o texto do modelo.
    * `getColor()` que devolve o texto da cor.
    * `getPrice()` que devolve o número inteiro do preço.
 4. **O Alinhamento dos Tipos:** Ele destaca que o tipo de retorno do Getter tem que ser idêntico ao tipo da variável (`int` para `price`, `String` para `model` e `color`).
-5. **O Retorno ao Main:** Ele volta para [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), pronto para trocar o antigo acesso direto proibido pelos novos métodos Getters!
+5. **O Retorno ao Main:** Ele volta para [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), pronto para trocar o antigo acesso direto proibido pelos novos métodos Getters!
 
 ```mermaid
 flowchart TD
@@ -54,10 +54,10 @@ flowchart TD
 
 ## 2. Analogia do Balcão de Farmácia: Por Que Getters São Necessários?
 
-Pense na classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) como uma farmácia que guarda remédios controlados (as variáveis privadas `model`, `color`, `price`).
+Pense na classe [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) como uma farmácia que guarda remédios controlados (as variáveis privadas `model`, `color`, `price`).
 
 * **Acesso Direto Sem `private`:** Qualquer cliente da rua entra correndo até o depósito atrás do balcão, mexe nas gavetas e pega o remédio sozinho. (Bagunça e perigo total!).
-* **Bloqueio com `private`:** O dono da farmácia tranca a porta do depósito com grade de ferro. Agora ninguém entra. Mas se ninguém entra, o cliente na recepção ([`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)) não consegue remédio nenhum e começa a gritar: *"Não consigo pegar nada!"* (São os 3 erros de compilação!).
+* **Bloqueio com `private`:** O dono da farmácia tranca a porta do depósito com grade de ferro. Agora ninguém entra. Mas se ninguém entra, o cliente na recepção ([`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)) não consegue remédio nenhum e começa a gritar: *"Não consigo pegar nada!"* (São os 3 erros de compilação!).
 * **O que é o GETTER?** O Getter é o **atendente no balcão**. O cliente chega educadamente e pergunta: *"Atendente, você pode pegar o modelo do carro para mim?"* (`car.getModel()`). O atendente vai lá dentro do depósito privado (onde ele tem permissão total de acesso), pega a caixinha do modelo e entrega na mão do cliente com total segurança.
 
 ---
@@ -70,7 +70,7 @@ Pense na classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APREND
 
 #### O que se vê na interface do IntelliJ IDEA:
 * **Árvore do Projeto:** Pastas `.idea`, `out`, `src` com os arquivos `Car` e `Main`.
-* **Aba Ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba Ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Canto Superior Direito:** Um badge vermelho com o texto **`🔴 3 v`**, indicando que a IDE detectou **3 erros críticos de sintaxe/compilação** no arquivo ativo.
 * **Linhas no Editor:**
   ```java
@@ -86,7 +86,7 @@ Pense na classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APREND
   * Na linha 11, o autor transformou a alteração indevida em comentário adicionando duas barras no início: `//car.model = "Corvette";`.
   * Na linha 13, as palavras **`color`**, **`model`** e **`price`** estão sublinhadas com ondas vermelhas de erro!
   * O cursor do mouse está posicionado logo abaixo da palavra `color`.
-* **Significado:** Como o autor colocou `private` em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java), a classe [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) perdeu instantaneamente o direito de ler essas variáveis diretamente.
+* **Significado:** Como o autor colocou `private` em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), a classe [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) perdeu instantaneamente o direito de ler essas variáveis diretamente.
 
 ---
 
@@ -111,10 +111,10 @@ Pense na classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APREND
 
 ---
 
-### 📸 Imagem 3: Criando o Primeiro Getter em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (`media_1791401942442_748675ed.png`)
+### 📸 Imagem 3: Criando o Primeiro Getter em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (`media_1791401942442_748675ed.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
-* **Aba Ativa:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (selecionada em azul).
+* **Aba Ativa:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (selecionada em azul).
 * **Trecho de Código no Editor:**
   ```java
    3        private String model;
@@ -145,7 +145,7 @@ Pense na classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APREND
 ### 📸 Imagem 4: Todos os 3 Getters Concluídos e Seleção do Preço (`media_1791401957219_8d425090.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
-* **Aba Ativa:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba Ativa:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **Trecho Completo dos Getters (Linhas 13 a 21):**
   ```java
   13        String getModel(){
@@ -171,10 +171,10 @@ Pense na classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APREND
 
 ---
 
-### 📸 Imagem 5: Voltando ao [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) para Chamar os Getters (`media_1791401968926_32c694c1.png`)
+### 📸 Imagem 5: Voltando ao [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) para Chamar os Getters (`media_1791401968926_32c694c1.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
-* **Aba Ativa:** Volta para [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba Ativa:** Volta para [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Limpeza do Código:** O comentário `//car.model = "Corvette";` foi completamente apagado.
 * **Linhas no Editor:**
   ```java
@@ -201,7 +201,7 @@ Pense na classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APREND
 
 ## 4. O Código Completo e Atualizado dos Dois Arquivos
 
-### Arquivo 1: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (Com os 3 Getters Implementados)
+### Arquivo 1: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (Com os 3 Getters Implementados)
 
 ```java
  1 public class Car {
@@ -230,7 +230,7 @@ Pense na classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APREND
 24 }
 ```
 
-#### Tabela Linha por Linha de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java):
+#### Tabela Linha por Linha de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java):
 
 | Linha | Código Java | Explicação para Leigo Absoluto | O que sai no Console? |
 | :---: | :--- | :--- | :--- |
@@ -261,7 +261,7 @@ Pense na classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APREND
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Estado da Imagem 5)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Estado da Imagem 5)
 
 ```java
  1 public class Main {
@@ -278,7 +278,7 @@ Pense na classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APREND
 12 }
 ```
 
-#### Tabela Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+#### Tabela Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 | Linha | Código Java | Explicação para Leigo Absoluto | O que sai no Console? |
 | :---: | :--- | :--- | :--- |

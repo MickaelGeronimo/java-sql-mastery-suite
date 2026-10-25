@@ -11,7 +11,7 @@
 
 ## 1. O Cenário Visual das 2 Imagens (O Que o Professor Bro Code Faz na Tela)
 
-Nesta sequência de 2 telas, o professor entra no arquivo recém-criado [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java), define os 3 campos de dados do usuário e constrói o primeiro dos múltiplos construtores que teremos neste capítulo:
+Nesta sequência de 2 telas, o professor entra no arquivo recém-criado `User.java`, define os 3 campos de dados do usuário e constrói o primeiro dos múltiplos construtores que teremos neste capítulo:
 
 ```
 +----------------------------------------------------------------------------------------------------+
@@ -50,7 +50,7 @@ Nesta sequência de 2 telas, o professor entra no arquivo recém-criado [`User.j
 
 ## 2. A Anatomia dos Atributos da Classe `User`
 
-Nas linhas 3 a 5 de [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java), o autor declarou:
+Nas linhas 3 a 5 de `User.java`, o autor declarou:
 
 ```java
 String username;
@@ -113,7 +113,7 @@ Como o Java lida com isso?
 
 ## 4. O Código Completo e Enumerado de `User.java` (Tela 2)
 
-Vejamos como ficou o arquivo [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) completo:
+Vejamos como ficou o arquivo `User.java` completo:
 
 ```java
 1:  public class User {
@@ -167,7 +167,7 @@ E em seguida, ele adicionará os outros construtores sobrecarregados em `User.ja
 ## 6. O Que Sai no Console Neste Momento?
 
 * Se você compilar e rodar o projeto agora, **nada é impresso no console** (`Process finished with exit code 0`).
-* Ambos os arquivos ([`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java)) estão compilando com 100% de sucesso e zero erros!
+* Ambos os arquivos ([`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e `User.java`) estão compilando com 100% de sucesso e zero erros!
 
 ---
 

@@ -135,7 +135,7 @@ Quando uma classe foi criada com um parâmetro de tipo (como `public class Box<T
 
 ---
 
-## 🔬 A Anatomia da Classe Genérica Completa: [`Box.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java)
+## 🔬 A Anatomia da Classe Genérica Completa: [`Box.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java)
 
 Veja como ficou o arquivo da caixa genérica com os métodos de colocar (*set*) e pegar (*get*):
 
@@ -182,7 +182,7 @@ Observe a harmonia perfeita da letra **`T`**:
 
 ## 🔍 Explicação Linha por Linha de Todo o Código
 
-### Arquivo 1: [`Box.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java)
+### Arquivo 1: [`Box.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java)
 
 ```java
  1: public class Box<T> {
@@ -222,7 +222,7 @@ Observe a harmonia perfeita da letra **`T`**:
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: import java.util.ArrayList;

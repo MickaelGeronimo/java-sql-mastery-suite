@@ -9,14 +9,14 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal de Execução: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe do Carro com os Novos Setters: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Guia da Parte 1 (Conceito e Falha de Acesso Aberto): [`explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md)
-* Guia da Parte 2 (Demonstração da Adulteração e Blindagem `private`): [`explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md)
-* Guia da Parte 3 (Os 3 Erros de Compilação e Criação dos Getters): [`explicacao_getters_and_setters_os_3_erros_de_acesso_privado_e_criacao_dos_getters_capitulo52_parte3.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_os_3_erros_de_acesso_privado_e_criacao_dos_getters_capitulo52_parte3.md)
-* Guia da Parte 4 (Substituição no Main e Erro de Tipos): [`explicacao_getters_and_setters_substituicao_pelos_getters_execucao_com_sucesso_e_incompatibilidade_de_tipos_capitulo52_parte4.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_substituicao_pelos_getters_execucao_com_sucesso_e_incompatibilidade_de_tipos_capitulo52_parte4.md)
-* Guia da Parte 5 (Formatação com Cifrão no Preço): [`explicacao_getters_and_setters_formatacao_com_cifrao_e_retorno_string_capitulo52_parte5.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_formatacao_com_cifrao_e_retorno_string_capitulo52_parte5.md)
+* Arquivo Principal de Execução: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe do Carro com os Novos Setters: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Guia da Parte 1 (Conceito e Falha de Acesso Aberto): `explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md`
+* Guia da Parte 2 (Demonstração da Adulteração e Blindagem `private`): `explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md`
+* Guia da Parte 3 (Os 3 Erros de Compilação e Criação dos Getters): `explicacao_getters_and_setters_os_3_erros_de_acesso_privado_e_criacao_dos_getters_capitulo52_parte3.md`
+* Guia da Parte 4 (Substituição no Main e Erro de Tipos): `explicacao_getters_and_setters_substituicao_pelos_getters_execucao_com_sucesso_e_incompatibilidade_de_tipos_capitulo52_parte4.md`
+* Guia da Parte 5 (Formatação com Cifrão no Preço): `explicacao_getters_and_setters_formatacao_com_cifrao_e_retorno_string_capitulo52_parte5.md`
 
 ---
 
@@ -31,8 +31,8 @@ Mas agora surge a pergunta de um milhão de dólares:
 
 A resposta oficial da Engenharia de Software são os **SETTERS**!
 Nesta sequência de 5 imagens, o professor Bro Code inicia a construção dos Setters:
-1. **O Foco no Comentário (Imagem 1):** No arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), ele posiciona o cursor na linha 7: `// SETTERS = Methods that make a field WRITEABLE.` (Setters são métodos que tornam um campo gravável/modificável).
-2. **A Escolha do Alvo (Imagem 2):** Ele muda para [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) e foca na linha 4 (`private String color;`).
+1. **O Foco no Comentário (Imagem 1):** No arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), ele posiciona o cursor na linha 7: `// SETTERS = Methods that make a field WRITEABLE.` (Setters são métodos que tornam um campo gravável/modificável).
+2. **A Escolha do Alvo (Imagem 2):** Ele muda para [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) e foca na linha 4 (`private String color;`).
 3. **A Estrutura do Primeiro Setter (Imagem 3):** Ele escreve a assinatura de `void setColor(String color){ ... }`.
 4. **O Corpo do Setter da Cor (Imagem 4):** Ele preenche `this.color = color;`. Em seguida, foca na linha 19 (`getPrice`), preparando o próximo Setter.
 5. **A Estrutura do Setter do Preço (Imagem 5):** Ele escreve `void setPrice(int price){ ... }`, mostrando que o parâmetro precisa ser um número inteiro (`int`) para combinar com o tipo do atributo original!
@@ -59,7 +59,7 @@ flowchart TD
 Pense no carro como um veículo de luxo estacionado:
 
 * **O Ataque Proibido (Acesso Direto):** Um desconhecido da rua chega com uma lata de spray de tinta e espirra tinta vermelha na lataria (`car.color = "Red"`). O Java não deixa isso acontecer porque a lataria tem alarme biométrico (`private`).
-* **O Caminho Educado e Oficial (O SETTER):** O dono do carro leva o veículo até uma oficina autorizada ([`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)) e diz ao mecânico: *"Mecânico, por favor, pinte este carro com esta cor aqui: 'Azul'"* (`car.setColor("Blue")`).
+* **O Caminho Educado e Oficial (O SETTER):** O dono do carro leva o veículo até uma oficina autorizada ([`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)) e diz ao mecânico: *"Mecânico, por favor, pinte este carro com esta cor aqui: 'Azul'"* (`car.setColor("Blue")`).
 * **Por que o Setter é genial?** Porque dentro do método `setColor` a classe pode colocar **regras de segurança**! Por exemplo:
   * *"Se a cor for nula ou vazia, não pinta!"*
   * *"Se o novo preço for negativo (`-5000`), recusa a alteração!"*
@@ -75,7 +75,7 @@ Pense no carro como um veículo de luxo estacionado:
 
 #### O que se vê na interface do IntelliJ IDEA:
 * **Barra de Vídeo do YouTube:** Timestamp `8:25:08 / 12:00:00`, capítulo `52. getters and setters >`.
-* **Aba Ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba Ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Trecho de Código no Editor:**
   ```java
    5    // They help protect object data and add rules for accessing or modify
@@ -90,11 +90,11 @@ Pense no carro como um veículo de luxo estacionado:
 
 ---
 
-### 📸 Imagem 2: Selecionando o Atributo `color` em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (`media_1791402827441_7176f45c.png`)
+### 📸 Imagem 2: Selecionando o Atributo `color` em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (`media_1791402827441_7176f45c.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
 * **Barra de Vídeo do YouTube:** Timestamp `8:25:30 / 12:00:00`.
-* **Aba Ativa:** Muda para [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba Ativa:** Muda para [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **Trecho de Código no Topo:**
   ```java
    3    private String model;
@@ -112,7 +112,7 @@ Pense no carro como um veículo de luxo estacionado:
 
 #### O que se vê na interface do IntelliJ IDEA:
 * **Barra de Vídeo do YouTube:** Timestamp `8:25:51 / 12:00:00`.
-* **Aba Ativa:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba Ativa:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **Novo Trecho Digitado (Linhas 23 a 25):**
   ```java
   23    void setColor(String color){
@@ -132,7 +132,7 @@ Pense no carro como um veículo de luxo estacionado:
 
 #### O que se vê na interface do IntelliJ IDEA:
 * **Barra de Vídeo do YouTube:** Timestamp `8:26:01 / 12:00:00`.
-* **Aba Ativa:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba Ativa:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **Trecho Completo de `setColor`:**
   ```java
   23    void setColor(String color){
@@ -150,7 +150,7 @@ Pense no carro como um veículo de luxo estacionado:
 ### 📸 Imagem 5: Criando o Setter do Preço (`setPrice`) (`media_1791402871677_c318bc57.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
-* **Aba Ativa:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba Ativa:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **Novo Trecho Digitado (Linhas 26 a 28):**
   ```java
   26    void setPrice(int price){
@@ -182,7 +182,7 @@ Aqui está o comparativo definitivo para nunca mais esquecer a diferença entre 
 
 ## 5. Código Completo e Atualizado dos Arquivos
 
-### Arquivo 1: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (Com os Getters e os Primeiros Setters)
+### Arquivo 1: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (Com os Getters e os Primeiros Setters)
 
 ```java
  1 public class Car {
@@ -219,7 +219,7 @@ Aqui está o comparativo definitivo para nunca mais esquecer a diferença entre 
 32 }
 ```
 
-#### Tabela Linha por Linha das Novidades em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java):
+#### Tabela Linha por Linha das Novidades em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java):
 
 | Linha | Código em Java | Explicação Detalhada para Leigo Absoluto | O Que Sai no Console? |
 | :---: | :--- | :--- | :--- |
@@ -234,7 +234,7 @@ Aqui está o comparativo definitivo para nunca mais esquecer a diferença entre 
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1 public class Main {
@@ -260,7 +260,7 @@ Aqui está o comparativo definitivo para nunca mais esquecer a diferença entre 
 
 ## 6. O Que o Autor Fará nas Próximas Cenas?
 
-Com os métodos `setColor` e `setPrice` criados dentro de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java), o autor agora poderá ir em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e testar a modificação oficial:
+Com os métodos `setColor` e `setPrice` criados dentro de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), o autor agora poderá ir em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e testar a modificação oficial:
 ```java
 car.setColor("Blue");
 car.setPrice(15000);

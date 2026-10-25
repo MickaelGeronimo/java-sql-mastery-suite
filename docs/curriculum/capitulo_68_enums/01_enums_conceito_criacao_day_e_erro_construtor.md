@@ -156,7 +156,7 @@ O Enum é como um **Menu Suspenso Fechado** (*combobox / dropdown*). A pessoa **
 
 ## 3. As 3 Grandes Vantagens Explicadas pelo Autor (Tela 1)
 
-Nas linhas 5 a 10 de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L5-L10), o Bro Code listou 3 motivos para usar enums:
+Nas linhas 5 a 10 de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L5-L10), o Bro Code listou 3 motivos para usar enums:
 
 1. **"Fixed set of constants" (Conjunto fixo de constantes)**:
    - Os valores nunca mudam enquanto o programa roda. Segunda é sempre segunda; Domingo é sempre domingo.
@@ -170,7 +170,7 @@ Nas linhas 5 a 10 de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20
 
 ## 4. O Código dos Arquivos
 
-### Arquivo 1: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 1: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -184,7 +184,7 @@ public class Main {
 }
 ```
 
-### Arquivo 2: [`Day.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Day.java) (O Código com os 7 Erros da Tela 4)
+### Arquivo 2: [`Day.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/models/Day.java) (O Código com os 7 Erros da Tela 4)
 ```java
 public enum Day {
 
@@ -197,7 +197,7 @@ public enum Day {
 
 ## 5. Explicação Linha por Linha ("Como se fosse um iniciante amador leigo")
 
-### No arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+### No arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 - **Linha 1 (`public class Main {`)**: Declara a classe principal onde fica o programa de teste.
 - **Linha 2 (`public static void main(String[] args) {`)**: O ponto de entrada. O autor apagou todo o código do capítulo anterior de `HashMap` para começar a nova lição com a tela limpa.
 - **Linhas 5 a 10**: As anotações conceituais com `//`.
@@ -205,7 +205,7 @@ public enum Day {
 
 ---
 
-### No arquivo [`Day.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Day.java):
+### No arquivo [`Day.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/models/Day.java):
 
 #### Linha 1: `public enum Day {`
 - **`public`**: Significa que qualquer outro arquivo do nosso projeto (como o `Main.java`) tem permissão de enxergar e usar esse Enum.
@@ -251,7 +251,7 @@ Quando o autor passou o mouse em cima de `SUNDAY(1)`, surgiu o aviso:
    ```java
    Day(int dayNumber) // Esse construtor AINDA NÃO EXISTE!
    ```
-   Como o arquivo [`Day.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Day.java) ainda não possui esse construtor nem a variável para guardar o número, o compilador entra em pânico e diz:
+   Como o arquivo [`Day.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/models/Day.java) ainda não possui esse construtor nem a variável para guardar o número, o compilador entra em pânico e diz:
    > *"Ei! Você está me passando o número 1, mas eu não tenho nenhum construtor preparado para receber esse número!"*
 
 ### A Dica que o IntelliJ deu no Balão (Tela 5):

@@ -9,12 +9,12 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal no Computador: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte 1 (Conceito, Primitivos vs Wrappers e Depreciação do `new`): [`explicacao_wrapper_classes_definicao_os_dois_mundos_o_aviso_deprecated_e_os_4_tipos_capitulo55_parte1.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_wrapper_classes_definicao_os_dois_mundos_o_aviso_deprecated_e_os_4_tipos_capitulo55_parte1.md)
-* Parte 2 (Autoboxing, Unboxing e Conversões Automáticas): [`explicacao_wrapper_classes_autoboxing_unboxing_e_as_conversoes_automaticas_capitulo55_parte2.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_wrapper_classes_autoboxing_unboxing_e_as_conversoes_automaticas_capitulo55_parte2.md)
-* Parte 3 (Métodos Estáticos toString e Concatenação Textual): [`explicacao_wrapper_classes_metodos_utilitarios_estaticos_tostring_e_concatenacao_capitulo55_parte3.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_wrapper_classes_metodos_utilitarios_estaticos_tostring_e_concatenacao_capitulo55_parte3.md)
-* Parte 4 (Métodos parse, Erro de Compilação e Character.isLetter): [`explicacao_wrapper_classes_metodos_parse_o_erro_do_operador_e_character_isletter_capitulo55_parte4.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_wrapper_classes_metodos_parse_o_erro_do_operador_e_character_isletter_capitulo55_parte4.md)
+* Arquivo Principal no Computador: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte 1 (Conceito, Primitivos vs Wrappers e Depreciação do `new`): `explicacao_wrapper_classes_definicao_os_dois_mundos_o_aviso_deprecated_e_os_4_tipos_capitulo55_parte1.md`
+* Parte 2 (Autoboxing, Unboxing e Conversões Automáticas): `explicacao_wrapper_classes_autoboxing_unboxing_e_as_conversoes_automaticas_capitulo55_parte2.md`
+* Parte 3 (Métodos Estáticos toString e Concatenação Textual): `explicacao_wrapper_classes_metodos_utilitarios_estaticos_tostring_e_concatenacao_capitulo55_parte3.md`
+* Parte 4 (Métodos parse, Erro de Compilação e Character.isLetter): `explicacao_wrapper_classes_metodos_parse_o_erro_do_operador_e_character_isletter_capitulo55_parte4.md`
 
 ---
 
@@ -145,7 +145,7 @@ flowchart TD
 
 ## 5. O Código Final de Fechamento do Capítulo 55
 
-Este é o código que o professor deixou registrado no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) na marca de **8:55:48** (Imagem 4):
+Este é o código que o professor deixou registrado no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) na marca de **8:55:48** (Imagem 4):
 
 ```java
 public class Main {
@@ -187,7 +187,7 @@ System.out.println(Character.isUpperCase(letter));
 
 ---
 
-### Tabela 2: Código Final em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Imagens 3 e 4)
+### Tabela 2: Código Final em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Imagens 3 e 4)
 
 | Linha | Código Exato | O que faz no computador? | Saída no Console |
 | :---: | :--- | :--- | :---: |

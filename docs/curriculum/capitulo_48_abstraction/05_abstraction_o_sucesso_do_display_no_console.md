@@ -9,7 +9,7 @@
 
 ## 1. Visão Geral da Imagem (`media_1791359280921.png`): O Momento do Destaque
 
-Nesta captura de tela (`07:57:42` do vídeo), o professor Bro Code aperta o botão verde de execução no arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e o terminal se abre na metade inferior da tela.
+Nesta captura de tela (`07:57:42` do vídeo), o professor Bro Code aperta o botão verde de execução no arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e o terminal se abre na metade inferior da tela.
 
 Aparece a frase impressa pelo computador:
 ```text
@@ -20,7 +20,7 @@ This is a shape
 O autor pega o mouse e arrasta o cursor sobre as palavras **`This is a shape`**, deixando o texto totalmente coberto por uma barra retangular azul de seleção.
 
 Ele faz isso para cravar na mente dos alunos a grande revelação:
-> *"Vejam isso no console! O Círculo acabou de falar `This is a shape`! Mas onde foi que nós digitamos essa frase? Em [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java)! Dentro de [`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java) não há nenhuma menção a essa frase! Isso prova que métodos concretos de classes abstratas são herdados diretamente por todas as subclasses!"*.
+> *"Vejam isso no console! O Círculo acabou de falar `This is a shape`! Mas onde foi que nós digitamos essa frase? Em [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java)! Dentro de [`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java) não há nenhuma menção a essa frase! Isso prova que métodos concretos de classes abstratas são herdados diretamente por todas as subclasses!"*.
 
 ---
 
@@ -88,7 +88,7 @@ Esta captura de tela prova que **a classe abstrata é a espinha dorsal de um sis
 ```
 
 1. **Economia Brutal de Código:** Imagine que o seu sistema tem 50 formas geométricas diferentes (Hexágono, Trapézio, Losango, etc.). Você precisaria escrever `void display()` 50 vezes? **NÃO!** Você escreve uma única vez na mãe `Shape` e as 50 filhas herdam instantaneamente!
-2. **Manutenção Instantânea:** Se amanhã você quiser mudar a mensagem para `"Esta figura é uma forma geométrica bidimensional"`, você altera apenas uma linha em [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) e todas as 50 formas são atualizadas automaticamente no mesmo milissegundo!
+2. **Manutenção Instantânea:** Se amanhã você quiser mudar a mensagem para `"Esta figura é uma forma geométrica bidimensional"`, você altera apenas uma linha em [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) e todas as 50 formas são atualizadas automaticamente no mesmo milissegundo!
 
 ---
 
@@ -103,7 +103,7 @@ Todas as formas geométricas compartilham a mesma identidade herdada da supercla
 
 ---
 
-## 5. Análise Código por Código e Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 5. Análise Código por Código e Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Abaixo está a listagem de cada linha com a explicação do que ela faz no computador:
 
@@ -139,7 +139,7 @@ Abaixo está a listagem de cada linha com a explicação do que ela faz no compu
 * **Linhas 14 e 15:** Linhas em branco para espaçamento visual.
 * **Linha 16 (`circle.display();`):**
   * O objeto `circle` chama o método `display()`.
-  * Como a classe [`Circle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java) não tem esse método, o Java busca na classe mãe [`Shape`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) e executa o método concreto herdado!
+  * Como a classe [`Circle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java) não tem esse método, o Java busca na classe mãe [`Shape`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) e executa o método concreto herdado!
   * **Saída no Console:**
     ```text
     This is a shape
@@ -167,8 +167,8 @@ Process finished with exit code 0
 
 | O que você chamou no código? | Onde o código está escrito? | Tipo de Método | O que aconteceu? |
 | :--- | :--- | :--- | :--- |
-| **`circle.display();`** | Na mãe [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) | **Concreto** (tem corpo `{}`) | Imprimiu `"This is a shape"` de graça. |
-| **`circle.area();`** | No filho [`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java) | **Abstrato** na mãe, implementado no filho | Retornará o cálculo matemático real da área. |
+| **`circle.display();`** | Na mãe [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) | **Concreto** (tem corpo `{}`) | Imprimiu `"This is a shape"` de graça. |
+| **`circle.area();`** | No filho [`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java) | **Abstrato** na mãe, implementado no filho | Retornará o cálculo matemático real da área. |
 
 ---
 

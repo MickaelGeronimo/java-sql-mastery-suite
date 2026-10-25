@@ -99,7 +99,7 @@ Análise Visual da Imagem:
 
 ---
 
-## 🔍 Explicação Integral Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Linhas 1 a 33)
+## 🔍 Explicação Integral Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Linhas 1 a 33)
 
 ```java
  1: import java.util.Timer;

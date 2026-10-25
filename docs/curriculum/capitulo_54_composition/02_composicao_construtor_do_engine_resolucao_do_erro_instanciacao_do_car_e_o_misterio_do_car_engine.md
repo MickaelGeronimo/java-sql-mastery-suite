@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Classe do Motor Atualizada: [`Engine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Engine.java)
-* Classe do Carro (Composição Concluída): [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
-* Arquivo Principal Executável: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte Anterior (Capítulo 54 - Parte 1: Introdução à Composição): [`explicacao_composicao_definicao_part_of_criacao_de_car_e_engine_e_instanciacao_interna_capitulo54_parte1.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_composicao_definicao_part_of_criacao_de_car_e_engine_e_instanciacao_interna_capitulo54_parte1.md)
+* Classe do Motor Atualizada: `Engine.java`
+* Classe do Carro (Composição Concluída): [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
+* Arquivo Principal Executável: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte Anterior (Capítulo 54 - Parte 1: Introdução à Composição): `explicacao_composicao_definicao_part_of_criacao_de_car_e_engine_e_instanciacao_interna_capitulo54_parte1.md`
 
 ---
 
@@ -69,14 +69,14 @@ Abaixo está o registro cronológico exato do que aconteceu na tela do professor
 
 ## 2. A Resolução do Erro: Por Que a Linha Vermelha Sumiu na Imagem 3?
 
-Na Parte 1, o arquivo [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) estava com um sublinhado ondulado vermelho acusando erro:
+Na Parte 1, o arquivo [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) estava com um sublinhado ondulado vermelho acusando erro:
 ```
 this.engine = new Engine(engineType);
               ~~~~~~~~~~~~~~~~~~~~~~
               (Erro: Não existe construtor Engine que aceite String)
 ```
 
-Na **Imagem 1**, o professor entrou em [`Engine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Engine.java) e construiu o ritual de nascimento do motor:
+Na **Imagem 1**, o professor entrou em `Engine.java` e construiu o ritual de nascimento do motor:
 
 ```java
 public class Engine {
@@ -90,7 +90,7 @@ public class Engine {
 ```
 
 * Ao fazer isso, o Java aprendeu: *"Toda vez que alguém chamar `new Engine(...)`, essa pessoa deve me entregar um texto (`String type`), que eu guardarei no atributo `this.type`"*.
-* Quando o professor voltou para [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (Imagem 3), o compilador conferiu:
+* Quando o professor voltou para [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (Imagem 3), o compilador conferiu:
   * `engineType` é uma `String`? **Sim!**
   * O construtor `Engine` aceita uma `String`? **Sim!**
 * **Resultado:** O erro desapareceu no mesmo segundo! A classe `Car` agora consegue dar à luz ao motor sem nenhum impedimento!
@@ -99,7 +99,7 @@ public class Engine {
 
 ## 3. A Beleza da Composição no `Main.java` (Imagem 4)
 
-Observe como o carro é criado no arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Observe como o carro é criado no arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```java
 Car car = new Car("Corvette", 2025, "V8");
@@ -181,7 +181,7 @@ flowchart LR
 
 ## 5. Código-Fonte Completo dos Três Arquivos no Seu Computador
 
-### Arquivo 1: [`Engine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Engine.java)
+### Arquivo 1: `Engine.java`
 
 ```java
 public class Engine {
@@ -196,7 +196,7 @@ public class Engine {
 
 ---
 
-### Arquivo 2: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### Arquivo 2: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 
 ```java
 public class Car {
@@ -216,7 +216,7 @@ public class Car {
 
 ---
 
-### Arquivo 3: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 3: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
 public class Main {
@@ -240,7 +240,7 @@ public class Main {
 
 ## 6. Explicação Linha por Linha de `Engine.java` e `Main.java`
 
-### A) Dissecação de [`Engine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Engine.java)
+### A) Dissecação de `Engine.java`
 
 | Linha | Código | Explicação Amigável |
 | :---: | :--- | :--- |
@@ -255,7 +255,7 @@ public class Main {
 
 ---
 
-### B) Dissecação de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### B) Dissecação de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 | Linha | Código | Explicação Amigável |
 | :---: | :--- | :--- |

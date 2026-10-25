@@ -178,7 +178,7 @@ INTELLIJ IDEA - [MyFirstProject] - 10:47:15 / 12:00:00 - Chapter: 66.generics
 
 Aqui estão os códigos exatos dos dois arquivos Java presentes no projeto, testados e validados na máquina local.
 
-### [`Box.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java)
+### [`Box.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java)
 ```java
 public class Box<T> {
 
@@ -194,7 +194,7 @@ public class Box<T> {
 }
 ```
 
-### [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -222,7 +222,7 @@ Não tenha vergonha se programação parecer cheia de termos difíceis. Vamos ex
 
 ---
 
-### Dissecando [`Box.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Box.java) (O Molde Perfeito)
+### Dissecando [`Box.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Box.java) (O Molde Perfeito)
 
 ```java
 1: public class Box<T> {
@@ -292,7 +292,7 @@ Não tenha vergonha se programação parecer cheia de termos difíceis. Vamos ex
 
 ---
 
-### Dissecando [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (O Teste com `Double`)
+### Dissecando [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (O Teste com `Double`)
 
 ```java
 1: public class Main {

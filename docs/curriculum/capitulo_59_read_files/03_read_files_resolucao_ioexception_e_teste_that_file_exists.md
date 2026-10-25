@@ -7,8 +7,8 @@
 - **Curso:** *Java Full Course for free* (Canal: Bro Code)
 - **Capítulo Oficial:** `59. read files 📖`
 - **Intervalo de Tempo no Vídeo:** `09:26:28` até `09:26:44` (do total de 12:00:00)
-- **Arquivo Principal de Trabalho:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-- **Arquivo Alvo no Desktop:** `C:\Users\HP\Desktop\test.txt` (ou [`test.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/test.txt) no projeto)
+- **Arquivo Principal de Trabalho:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+- **Arquivo Alvo no Desktop:** `C:\Users\HP\Desktop\test.txt` (ou [`test.txt`](../../../src/main/resources/test.txt) no projeto)
 - **Ambiente de Desenvolvimento (IDE):** IntelliJ IDEA Community Edition + JDK 23
 
 ---
@@ -85,7 +85,7 @@ nenhum erro e imprimiu a mensagem de confirmação: "That file exists"!
 
 ---
 
-## 🍕 O Código Completo do Arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 🍕 O Código Completo do Arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Aqui está o código exato que está no editor do professor e que foi testado com sucesso no seu projeto:
 

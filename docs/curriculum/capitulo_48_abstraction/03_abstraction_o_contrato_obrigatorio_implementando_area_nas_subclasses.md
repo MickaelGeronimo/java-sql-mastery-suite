@@ -2,22 +2,22 @@
 ## Parte 3: O Contrato Obrigatório em Ação — O Erro nas Subclasses e a Implementação de `area()`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `07:55:50` até `07:56:50` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a consequência imediata e devastadora de declarar um método abstrato na classe mãe: o surgimento do erro vermelho em todas as subclasses ([`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java), [`Rectangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java) e [`Triangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java)), o significado da mensagem formal da IDE (*"must either be declared abstract or implement abstract method"*), e a solução profissional usando `@Override double area(){ return 0; }`.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a consequência imediata e devastadora de declarar um método abstrato na classe mãe: o surgimento do erro vermelho em todas as subclasses ([`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java), [`Rectangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java) e [`Triangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java)), o significado da mensagem formal da IDE (*"must either be declared abstract or implement abstract method"*), e a solução profissional usando `@Override double area(){ return 0; }`.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (sublinhados vermelhos de erro em classes inteiras, balões modais de assistência rápida, ícones `I↑` no gutter e seleções com o mouse) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
 
 ## 1. Visão Geral da Cena: A Lei Foi Promulgada e as Filhas Devem Obedecer!
 
-Na parte anterior, vimos o professor Bro Code criar na classe mãe [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) o método:
+Na parte anterior, vimos o professor Bro Code criar na classe mãe [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) o método:
 ```java
 abstract double area(); // ABSTRACT
 ```
 
 Nesta sequência de 5 capturas de tela, presenciamos o verdadeiro poder da Programação Orientada a Objetos:
-1. **O Alarme Geral (Imagem 1):** Ao abrir a classe filha [`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java), ela está inteiramente sublinhada em **vermelho vivo**! O Java se recusa a compilar e exige: *"Ou você implementa o método `area()`, ou você não pode existir como classe concreta!"*.
+1. **O Alarme Geral (Imagem 1):** Ao abrir a classe filha [`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java), ela está inteiramente sublinhada em **vermelho vivo**! O Java se recusa a compilar e exige: *"Ou você implementa o método `area()`, ou você não pode existir como classe concreta!"*.
 2. **A Obediência Contratual (Imagens 2 e 3):** O professor escreve `@Override double area(){ return 0; }`. O erro vermelho desaparece na hora e na margem acende o ícone verde/azul **`I↑`** (*Implements method in Shape*).
-3. **A Propagação em Massa (Imagens 4 e 5):** O professor copia essa estrutura e cola em [`Rectangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java) (e [`Triangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java)), padronizando todas as formas geométricas do projeto!
+3. **A Propagação em Massa (Imagens 4 e 5):** O professor copia essa estrutura e cola em [`Rectangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java) (e [`Triangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java)), padronizando todas as formas geométricas do projeto!
 
 ---
 
@@ -65,7 +65,7 @@ Para quem está estudando pelo Google Docs e não tem as imagens na tela:
 * Ele pressiona `Ctrl + C` no teclado para copiar esse bloco de código.
 
 ### Imagem 5 (`media_1791359190919.png`): Padronizando `Rectangle.java`
-* **Aba Ativa:** Muda para [`Rectangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java).
+* **Aba Ativa:** Muda para [`Rectangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java).
 * **Editor de Código:**
   ```java
   1 public class Rectangle extends Shape{
@@ -118,7 +118,7 @@ Repare no ícone que apareceu ao lado da linha 4:
 * No IntelliJ IDEA:
   * A letra **`O↑`** significa **Overriding** (sobrescrevendo um método que já tinha código na classe pai).
   * A letra **`I↑`** significa **Implementing** (implementando um método abstrato que estava vazio na classe pai ou numa interface).
-* Se você clicar com o mouse em cima desse ícone `I↑`, a IDE te transporta instantaneamente para a linha 3 de [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java)!
+* Se você clicar com o mouse em cima desse ícone `I↑`, a IDE te transporta instantaneamente para a linha 3 de [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java)!
 
 ---
 
@@ -130,13 +130,13 @@ Esta é uma técnica profissional fundamental chamada **Stub (ou Código Tempor�
 1. O método `area()` promete devolver um número `double`: `double area()`.
 2. Para que o compilador pare de reclamar e nos deixe trabalhar, nós precisamos devolver *qualquer* número `double`.
 3. Escrever `return 0;` faz o código compilar na hora com zero erros!
-4. Isso permite ao arquiteto de software montar a estrutura completa de todas as classes primeiro ([`Circle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java), [`Rectangle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java), [`Triangle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java)) e garantir que todos os contratos estão assinados, para só depois preencher cada classe com os seus atributos próprios (raio, base, altura) e suas fórmulas definitivas!
+4. Isso permite ao arquiteto de software montar a estrutura completa de todas as classes primeiro ([`Circle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java), [`Rectangle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java), [`Triangle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java)) e garantir que todos os contratos estão assinados, para só depois preencher cada classe com os seus atributos próprios (raio, base, altura) e suas fórmulas definitivas!
 
 ---
 
 ## 6. Análise Código por Código das Classes Atualizadas
 
-### A. A Classe [`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java)
+### A. A Classe [`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java)
 ```java
 1:  public class Circle extends Shape{
 2:  
@@ -154,7 +154,7 @@ Esta é uma técnica profissional fundamental chamada **Stub (ou Código Tempor�
 
 ---
 
-### B. A Classe [`Rectangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java)
+### B. A Classe [`Rectangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java)
 ```java
 1:  public class Rectangle extends Shape{
 2:  
@@ -169,7 +169,7 @@ Esta é uma técnica profissional fundamental chamada **Stub (ou Código Tempor�
 
 ---
 
-### C. A Classe [`Triangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java)
+### C. A Classe [`Triangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java)
 ```java
 1:  public class Triangle extends Shape{
 2:  
@@ -185,7 +185,7 @@ Esta é uma técnica profissional fundamental chamada **Stub (ou Código Tempor�
 
 ## 7. O Que Sai no Console Nesta Etapa?
 
-Se você rodar o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) agora:
+Se você rodar o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) agora:
 
 ```text
 Process finished with exit code 0
@@ -200,10 +200,10 @@ Process finished with exit code 0
 
 | Classe | É Abstrata? | Pode usar `new`? | Método `area()` | O que o método faz nesta etapa? |
 | :--- | :---: | :---: | :--- | :--- |
-| [`Shape`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) | ✅ Sim (`abstract`) | ❌ Proibido | `abstract double area();` | Não faz nada! Apenas dita a ordem (sem chaves). |
-| [`Circle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java) | ❌ Não (Concreta) | ✅ Permitido | `@Override double area()` | Retorna `0` (Stub temporário). |
-| [`Rectangle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java) | ❌ Não (Concreta) | ✅ Permitido | `@Override double area()` | Retorna `0` (Stub temporário). |
-| [`Triangle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java) | ❌ Não (Concreta) | ✅ Permitido | `@Override double area()` | Retorna `0` (Stub temporário). |
+| [`Shape`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) | ✅ Sim (`abstract`) | ❌ Proibido | `abstract double area();` | Não faz nada! Apenas dita a ordem (sem chaves). |
+| [`Circle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java) | ❌ Não (Concreta) | ✅ Permitido | `@Override double area()` | Retorna `0` (Stub temporário). |
+| [`Rectangle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java) | ❌ Não (Concreta) | ✅ Permitido | `@Override double area()` | Retorna `0` (Stub temporário). |
+| [`Triangle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java) | ❌ Não (Concreta) | ✅ Permitido | `@Override double area()` | Retorna `0` (Stub temporário). |
 
 ---
 

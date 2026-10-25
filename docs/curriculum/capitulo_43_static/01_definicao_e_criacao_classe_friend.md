@@ -20,10 +20,10 @@ public static void main(String[] args)
 Mas afinal, o que raios significa esse tal de **`static`**? É exatamente isso que o professor vai ensinar agora!
 
 Nesta sequência de 4 imagens:
-1. **Imagem 1 (`media_1791326411675.png`):** O autor abre o [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e escreve nos comentários a definição técnica oficial do modificador `static`. A palavra `main` na linha 3 está com destaque azul.
+1. **Imagem 1 (`media_1791326411675.png`):** O autor abre o [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e escreve nos comentários a definição técnica oficial do modificador `static`. A palavra `main` na linha 3 está com destaque azul.
 2. **Imagem 2 (`media_1791326423217.png` - Timestamp `7:14:39`):** O autor abre a janelinha `New Java Class` do IntelliJ e digita o nome da nova classe do capítulo: **`Friend`** (Amigo!). Na tela do vídeo surge uma legenda grande em branco escrito `Friend`.
-3. **Imagem 3 (`media_1791326448115.png` - Timestamp `7:15:04`):** Dentro de [`Friend.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java), ele cria um atributo comum `String name;` e o construtor `Friend(String name)`. Em seguida, clica de volta na aba [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
-4. **Imagem 4 (`media_1791326461749.png` - Timestamp `7:15:28`):** No [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), ele cria o primeiro amigo (`friend1 = new Friend("Spongebob");`), manda imprimir o nome na tela e roda o programa. O console exibe em verde: **`Spongebob`**.
+3. **Imagem 3 (`media_1791326448115.png` - Timestamp `7:15:04`):** Dentro de [`Friend.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java), ele cria um atributo comum `String name;` e o construtor `Friend(String name)`. Em seguida, clica de volta na aba [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
+4. **Imagem 4 (`media_1791326461749.png` - Timestamp `7:15:28`):** No [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), ele cria o primeiro amigo (`friend1 = new Friend("Spongebob");`), manda imprimir o nome na tela e roda o programa. O console exibe em verde: **`Spongebob`**.
 
 ---
 
@@ -65,7 +65,7 @@ Nesta sequência de 4 imagens:
 
   }
   ```
-* **Ação do mouse:** O ponteiro do mouse clica na aba superior [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Ação do mouse:** O ponteiro do mouse clica na aba superior [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 
 ---
 
@@ -116,7 +116,7 @@ Pense em uma casa onde moram vários amigos (Bob Esponja, Patrick, Sandy):
 
 ---
 
-## 4. Código Completo de [`Friend.java`](file:///c:/Users/mickel 1/Downloads/JAVA APRENDER/Friend.java) Linha por Linha
+## 4. Código Completo de [`Friend.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java) Linha por Linha
 
 Aqui está o molde inicial da classe `Friend`:
 
@@ -146,7 +146,7 @@ Aqui está o molde inicial da classe `Friend`:
 
 ---
 
-## 5. Código Completo de [`Main.java`](file:///c:/Users/mickel 1/Downloads/JAVA APRENDER/Main.java) Linha por Linha
+## 5. Código Completo de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Linha por Linha
 
 ```java
  1: public class Main {
@@ -196,4 +196,4 @@ Spongebob
 ## 7. O Que Vem a Seguir no Vídeo?
 
 Até este momento, criamos apenas um amigo com uma variável normal (`name`).
-Nas próximas imagens, o professor Bro Code irá adicionar a variável mágica **`static int numOfFriends`** (número de amigos) dentro de [`Friend.java`](file:///c:/Users/mickel 1/Downloads/JAVA APRENDER/Friend.java), e veremos como essa variável conta automaticamente cada amigo novo que criamos no `Main.java`!
+Nas próximas imagens, o professor Bro Code irá adicionar a variável mágica **`static int numOfFriends`** (número de amigos) dentro de [`Friend.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java), e veremos como essa variável conta automaticamente cada amigo novo que criamos no `Main.java`!

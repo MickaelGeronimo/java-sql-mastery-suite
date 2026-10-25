@@ -108,7 +108,7 @@ Se você estiver lendo este material no Google Docs ou impresso, aqui está a de
 
 ### 1. O que são Atributos em `Car.java`? (A Ficha Técnica do Carro)
 
-Abra o arquivo [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) e olhe o que nós escrevemos:
+Abra o arquivo [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) e olhe o que nós escrevemos:
 ```java
 public class Car {
 
@@ -241,7 +241,7 @@ Ao fazer System.out.println(car.model):
 
 ## 🔍 Análise Linha por Linha de Todo o Código
 
-### Arquivo 1: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### Arquivo 1: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 
 ```java
 1: public class Car {
@@ -281,7 +281,7 @@ Ao fazer System.out.println(car.model):
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: public class Main {
@@ -315,7 +315,7 @@ Ao fazer System.out.println(car.model):
 
 ## 📜 Código-Fonte Atual dos Arquivos do Projeto
 
-### [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 ```java
 public class Car {
 
@@ -327,7 +327,7 @@ public class Car {
 }
 ```
 
-### [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {

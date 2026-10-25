@@ -13,7 +13,7 @@ Nesta etapa preparatória (`08:14:45` a `08:15:10`), o professor estabelece a po
 
 | Imagem | Timestamp / Arquivo | O que é mostrado na tela do IntelliJ IDEA? | Ação Realizada pelo Professor Bro Code |
 | :--- | :--- | :--- | :--- |
-| **🖼️ Imagem 1** | `08:14:49`<br>`media_1791400982989_bde5ae7d.png` | Editor aberto em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Linhas 1 a 9). O cursor pisca no final da Linha 6 (`...actual type of the object.\|`). No meio da tela do vídeo, surge um letreiro estilizado em fonte grossa: **`new Dog() or new Cat()`**. | O professor explica a intuição do exemplo: *"Por exemplo, imagine que nosso programa não sabe de antemão se vai criar um Cachorro (`new Dog()`) ou um Gato (`new Cat()`)!"*. |
+| **🖼️ Imagem 1** | `08:14:49`<br>`media_1791400982989_bde5ae7d.png` | Editor aberto em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Linhas 1 a 9). O cursor pisca no final da Linha 6 (`...actual type of the object.\|`). No meio da tela do vídeo, surge um letreiro estilizado em fonte grossa: **`new Dog() or new Cat()`**. | O professor explica a intuição do exemplo: *"Por exemplo, imagine que nosso programa não sabe de antemão se vai criar um Cachorro (`new Dog()`) ou um Gato (`new Cat()`)!"*. |
 | **🖼️ Imagem 2** | `08:15:00`<br>`media_1791401004755_9c2c71fa.png` | A metade inferior da tela do IntelliJ se abre com o painel **`Run`** da aba `Main`. O comando de execução da JVM aparece em cinza escura no topo e, logo abaixo, a mensagem: `Process finished with exit code 0`. | O professor roda a classe `Main` vazia para demonstrar que o ambiente de desenvolvimento está 100% configurado, sem erros antigos e pronto para a criação das novas classes. |
 
 ---
@@ -75,7 +75,7 @@ Mas no mundo real, os programas interagem com seres humanos imprevisíveis. Imag
 
 ---
 
-## 3. Dissecação Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Linhas 1 a 9)
+## 3. Dissecação Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Linhas 1 a 9)
 
 Aqui está o código exato presente no editor durante as duas imagens:
 
@@ -152,15 +152,15 @@ Process finished with exit code 0
 
 Para demonstrar o `new Dog() or new Cat()`, o professor Bro Code vai construir nos próximos minutos a seguinte estrutura orientada a objetos:
 
-1. **A Classe Pai: [`Animal.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java)**
+1. **A Classe Pai: [`Animal.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java)**
    * Terá um método genérico `public void speak()` que diz *"the animal goes *brrr*"*.
-2. **A Classe Filha 1: [`Dog.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java)**
+2. **A Classe Filha 1: `Dog.java`**
    * Herdará de `Animal` (`extends Animal`).
    * Sobrescreverá (`@Override`) o método `speak()` para dizer *"the dog goes *woof*"*.
-3. **A Classe Filha 2: [`Cat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java)**
+3. **A Classe Filha 2: [`Cat.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java)**
    * Herdará de `Animal` (`extends Animal`).
    * Sobrescreverá (`@Override`) o método `speak()` para dizer *"the cat goes *meow*"*.
-4. **A Interatividade no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):**
+4. **A Interatividade no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):**
    * Usará um `Scanner` para ler a escolha do usuário no console.
    * Se o usuário escolher 1, instanciará um `new Dog()`.
    * Se o usuário escolher 2, instanciará um `new Cat()`.

@@ -2,7 +2,7 @@
 ## Parte 9: O Loop Mágico em Ação! — O `for-each` Polimórfico, a Saída no Console e a Surpreendente Deleção de `Vehicle.java` para Virar Interface
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:12:30` até `08:13:00` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a consagração do Polimorfismo em tempo de execução: o professor Bro Code finaliza o loop `for(Vehicle vehicle : vehicles)` no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), clica no botão verde de Run `▶`, e vemos uma única instrução genérica (`vehicle.go();`) fazer o Carro dirigir, a Bicicleta pedalar e o Barco navegar no console! Em seguida, analisaremos a surpreendente reviravolta do vídeo: o professor clica com o botão direito em [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java), clica em `Delete...`, e a janela de alarme do IntelliJ IDEA salta avisando: *"Class Vehicle has 5 usages that are not safe to delete"*, preparando a demonstração de que o Polimorfismo também funciona perfeitamente com **Interfaces**!  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a consagração do Polimorfismo em tempo de execução: o professor Bro Code finaliza o loop `for(Vehicle vehicle : vehicles)` no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), clica no botão verde de Run `▶`, e vemos uma única instrução genérica (`vehicle.go();`) fazer o Carro dirigir, a Bicicleta pedalar e o Barco navegar no console! Em seguida, analisaremos a surpreendente reviravolta do vídeo: o professor clica com o botão direito em `Vehicle.java`, clica em `Delete...`, e a janela de alarme do IntelliJ IDEA salta avisando: *"Class Vehicle has 5 usages that are not safe to delete"*, preparando a demonstração de que o Polimorfismo também funciona perfeitamente com **Interfaces**!  
 > **Formato para Google Docs:** Todo o contexto visual do IntelliJ IDEA (o código do loop completo, o console verde neon, a seleção de texto em azul, os cliques na árvore do projeto e o pop-up modal "Usages Detected") foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -12,7 +12,7 @@
 Nesta sequência rica e dinâmica (`08:12:30` a `08:13:00`), temos dois momentos distintos: o triunfo da execução do loop e o início da refatoração para interface:
 
 ### 🖼️ Imagem 1 (`media_1791400238427_e1645e82.png` — 08:12:30): O Loop Polimórfico Pronto para Rodar
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O código completo do loop nas Linhas 16 a 18:**
   ```java
   for(Vehicle vehicle : vehicles){
@@ -24,7 +24,7 @@ Nesta sequência rica e dinâmica (`08:12:30` a `08:13:00`), temos dois momentos
 ---
 
 ### 🖼️ Imagem 2 (`media_1791400249570_e7ae4b10.png` — 08:12:35): O Console Roda com Sucesso Total!
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Painel inferior `Run` aberto:** O programa compilou e executou perfeitamente.
 * **Texto impresso no console (em verde neon brilhante):**
   ```text
@@ -63,9 +63,9 @@ Nesta sequência rica e dinâmica (`08:12:30` a `08:13:00`), temos dois momentos
   ```
 * **Botões no rodapé da janela:** `View Usages` (Ver Usos), `Delete Anyway` (Deletar Mesmo Assim), `Cancel` (Cancelar).
 * **Por que o IntelliJ avisa isso?** Porque a IDE é inteligente e detectou que existem **5 pontos no nosso código** que dependem diretamente de `Vehicle`:
-  1. [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (`extends Vehicle`)
-  2. [`Bike.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java) (`extends Vehicle`)
-  3. [`Boat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java) (`extends Vehicle`)
+  1. [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (`extends Vehicle`)
+  2. `Bike.java` (`extends Vehicle`)
+  3. `Boat.java` (`extends Vehicle`)
   4. O array `Vehicle[] vehicles` na linha 14 do `Main.java`
   5. A variável `Vehicle vehicle` no loop `for` na linha 16 do `Main.java`
 
@@ -107,7 +107,7 @@ Isso é o ápice da Orientação a Objetos: **código genérico que se adapta di
 
 ## 3. Dissecação Linha por Linha de `Main.java`
 
-Vejamos o código completo e exato de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) nas Imagens 1 e 2:
+Vejamos o código completo e exato de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) nas Imagens 1 e 2:
 
 ```java
 1:  
@@ -213,4 +213,4 @@ Agora vem a grande surpresa que muitos iniciantes não esperam:
 * E mostrará para o aluno a lição definitiva:  
   > **O Polimorfismo funciona EXATAMENTE DA MESMA FORMA se o pai for uma Classe Abstrata (`extends`) OU se for uma Interface (`implements`)!**
 
-O seu código em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) já foi executado e testado no seu terminal com sucesso total! Estamos prontos para ver a recriação de `Vehicle` como Interface na próxima imagem! 🚗🚲🚤✨
+O seu código em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) já foi executado e testado no seu terminal com sucesso total! Estamos prontos para ver a recriação de `Vehicle` como Interface na próxima imagem! 🚗🚲🚤✨

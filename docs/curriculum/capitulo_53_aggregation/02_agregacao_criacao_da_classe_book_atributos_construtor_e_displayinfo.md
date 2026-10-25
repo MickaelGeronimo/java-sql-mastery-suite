@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Classe do Livro: [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java)
-* Classe da Biblioteca: [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)
-* Arquivo Principal: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte Anterior (Capítulo 53 - Parte 1: Conceito Teórico): [`explicacao_agregacao_definicao_relacionamento_has_a_e_existencia_independente_capitulo53_parte1.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_agregacao_definicao_relacionamento_has_a_e_existencia_independente_capitulo53_parte1.md)
+* Classe do Livro: `Book.java`
+* Classe da Biblioteca: `Library.java`
+* Arquivo Principal: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte Anterior (Capítulo 53 - Parte 1: Conceito Teórico): `explicacao_agregacao_definicao_relacionamento_has_a_e_existencia_independente_capitulo53_parte1.md`
 
 ---
 
@@ -199,7 +199,7 @@ Assim que você adiciona o ponto e vírgula `;` no final da linha 12, o erro des
 ## 6. O Que Sai no Console Neste Momento?
 
 ### Teste 1: Executando o Projeto Como Está Agora
-Se abrirmos o terminal e rodarmos o comando para compilar e executar o [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Se abrirmos o terminal e rodarmos o comando para compilar e executar o [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```bash
 javac Book.java Library.java Main.java
@@ -212,7 +212,7 @@ java Main
 ```
 
 **Por que não sai nada?**
-Porque o método `main` dentro de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) ainda contém apenas comentários explicativos. Nós construímos o molde do livro ([`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java)), mas ainda não fabricamos nenhum livro de verdade dentro do `main` com `new Book(...)` e nem mandamos imprimir com `System.out.println()`.
+Porque o método `main` dentro de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) ainda contém apenas comentários explicativos. Nós construímos o molde do livro (`Book.java`), mas ainda não fabricamos nenhum livro de verdade dentro do `main` com `new Book(...)` e nem mandamos imprimir com `System.out.println()`.
 
 ---
 
@@ -239,8 +239,8 @@ Harry Potter 223
 
 ## 7. Resumo da Ópera (Para Guardar na Mente)
 
-1. **Agregação** começa criando o objeto que tem vida própria. Criamos a classe [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java).
+1. **Agregação** começa criando o objeto que tem vida própria. Criamos a classe `Book.java`.
 2. O livro possui duas características: título (`String title`) e total de páginas (`int pages`).
 3. O construtor `Book(String title, int pages)` recebe esses dados de fora e os grava na memória do livro usando a palavra-chave **`this`**.
 4. O método `displayInfo()` retorna uma frase unindo o título e o número de páginas.
-5. Também já deixamos criado o arquivo [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java) vazio no seu computador, exatamente como o professor fez, aguardando os próximos passos onde conectaremos a biblioteca aos livros!
+5. Também já deixamos criado o arquivo `Library.java` vazio no seu computador, exatamente como o professor fez, aguardando os próximos passos onde conectaremos a biblioteca aos livros!

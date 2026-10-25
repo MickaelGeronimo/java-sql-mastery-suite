@@ -112,7 +112,7 @@ Análise Visual da Imagem 3:
 
 ## 🧠 Análise Técnica: Como Passar Dados do `Scanner` para uma Classe Anônima?
 
-Observe atentamente a ponte entre as linhas 13 e 18 de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Observe atentamente a ponte entre as linhas 13 e 18 de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```java
 int response = scanner.nextInt(); // <-- Linha 13: Variável local do método main()
@@ -131,7 +131,7 @@ Para quem está aprendendo Java, isso parece mágica, mas é um recurso poderoso
 
 ---
 
-## 🔍 Explicação Linha por Linha de Todo o Programa Final ([`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java))
+## 🔍 Explicação Linha por Linha de Todo o Programa Final ([`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java))
 
 Abaixo está o código final do projeto, exatamente como executado nas Imagens 1, 2 e 3:
 

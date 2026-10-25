@@ -21,16 +21,16 @@ Este módulo aborda o desafio central da alocação de memória para dados gerad
 
 | Arquivo | Título / Tema Principal |
 | :--- | :--- |
-| [01_array_vazio_e_foods_length.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_32_user_input_array/01_array_vazio_e_foods_length.md) | A ilusão da "sacola elástica" e o tamanho `0` do array literal vazio. |
-| [02_erro_arrayindexoutofbounds_index_0.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_32_user_input_array/02_erro_arrayindexoutofbounds_index_0.md) | Metáfora do motoboy no terreno baldio 🍕🛵 e o crash fatal em runtime. |
-| [03_sintaxe_new_capacidade_fixa.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_32_user_input_array/03_sintaxe_new_capacidade_fixa.md) | Pré-alocação de capacidade fixa na memória Heap com a palavra `new String[3]`. |
-| [04_preenchimento_manual_e_for_each.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_32_user_input_array/04_preenchimento_manual_e_for_each.md) | Atribuição manual direta e leitura elegante com laço `for-each`. |
-| [05_scanner_laco_for_e_preenchimento.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_32_user_input_array/05_scanner_laco_for_e_preenchimento.md) | Captura de entrada via teclado e atribuição em `foods[i]`. |
-| [06_mudando_tamanho_para_4_e_foods_length.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_32_user_input_array/06_mudando_tamanho_para_4_e_foods_length.md) | O poder do `.length` em manter os laços auto-adaptáveis sem quebras. |
-| [07_tamanho_dinamico_e_bug_do_buffer.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_32_user_input_array/07_tamanho_dinamico_e_bug_do_buffer.md) | Entrada do tamanho pelo usuário (`size`) e a quebra de linha `\n` não consumida na esteira. |
-| [08_destaque_size_e_limpeza_buffer.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_32_user_input_array/08_destaque_size_e_limpeza_buffer.md) | A solução definitiva: limpeza do buffer com `scanner.nextLine()` antes de iniciar o loop. |
-| [apostila_completa_user_input_array_capitulo32.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_32_user_input_array/apostila_completa_user_input_array_capitulo32.md) | Apostila definitiva e unificada contendo checklist de aprendizado e código compilável. |
-| [README.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_32_user_input_array/README.md) | Guia curricular e sumário do módulo. |
+| [01_array_vazio_e_foods_length.md](01_array_vazio_e_foods_length.md) | A ilusão da "sacola elástica" e o tamanho `0` do array literal vazio. |
+| [02_erro_arrayindexoutofbounds_index_0.md](02_erro_arrayindexoutofbounds_index_0.md) | Metáfora do motoboy no terreno baldio 🍕🛵 e o crash fatal em runtime. |
+| [03_sintaxe_new_capacidade_fixa.md](03_sintaxe_new_capacidade_fixa.md) | Pré-alocação de capacidade fixa na memória Heap com a palavra `new String[3]`. |
+| [04_preenchimento_manual_e_for_each.md](04_preenchimento_manual_e_for_each.md) | Atribuição manual direta e leitura elegante com laço `for-each`. |
+| [05_scanner_laco_for_e_preenchimento.md](05_scanner_laco_for_e_preenchimento.md) | Captura de entrada via teclado e atribuição em `foods[i]`. |
+| [06_mudando_tamanho_para_4_e_foods_length.md](06_mudando_tamanho_para_4_e_foods_length.md) | O poder do `.length` em manter os laços auto-adaptáveis sem quebras. |
+| [07_tamanho_dinamico_e_bug_do_buffer.md](07_tamanho_dinamico_e_bug_do_buffer.md) | Entrada do tamanho pelo usuário (`size`) e a quebra de linha `\n` não consumida na esteira. |
+| [08_destaque_size_e_limpeza_buffer.md](08_destaque_size_e_limpeza_buffer.md) | A solução definitiva: limpeza do buffer com `scanner.nextLine()` antes de iniciar o loop. |
+| [apostila_completa_user_input_array_capitulo32.md](apostila_completa_user_input_array_capitulo32.md) | Apostila definitiva e unificada contendo checklist de aprendizado e código compilável. |
+| [README.md](README.md) | Guia curricular e sumário do módulo. |
 
 ---
 
@@ -52,6 +52,6 @@ scanner.nextLine(); // 👈 LIXEIRA DO TECLADO: Limpa o buffer!
 ---
 
 ## 💻 Código-Fonte e Testes no Projeto
-- Motor de Alocação e Preenchimento: [`UserInputArrayCollector.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/arrays/UserInputArrayCollector.java)
-- CLI Interativa de Coleta: [`UserInputArrayCLI.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/arrays/UserInputArrayCLI.java)
-- Suíte de Testes Automatizados: [`UserInputArrayTest.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/test/java/com/mickaelgeronimo/mastery/core/UserInputArrayTest.java)
+- Motor de Alocação e Preenchimento: [`UserInputArrayCollector.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/arrays/UserInputArrayCollector.java)
+- CLI Interativa de Coleta: [`UserInputArrayCLI.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/arrays/UserInputArrayCLI.java)
+- Suíte de Testes Automatizados: [`UserInputArrayTest.java`](../../../src/test/java/com/mickaelgeronimo/mastery/core/UserInputArrayTest.java)

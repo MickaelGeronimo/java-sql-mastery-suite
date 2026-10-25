@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal no Computador: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte 1 (Conceito, Primitivos vs Wrappers e Depreciação do `new`): [`explicacao_wrapper_classes_definicao_os_dois_mundos_o_aviso_deprecated_e_os_4_tipos_capitulo55_parte1.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_wrapper_classes_definicao_os_dois_mundos_o_aviso_deprecated_e_os_4_tipos_capitulo55_parte1.md)
-* Parte 2 (Autoboxing, Unboxing e Conversões Automáticas): [`explicacao_wrapper_classes_autoboxing_unboxing_e_as_conversoes_automaticas_capitulo55_parte2.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_wrapper_classes_autoboxing_unboxing_e_as_conversoes_automaticas_capitulo55_parte2.md)
-* Parte 3 (Métodos Estáticos toString e Concatenação Textual): [`explicacao_wrapper_classes_metodos_utilitarios_estaticos_tostring_e_concatenacao_capitulo55_parte3.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_wrapper_classes_metodos_utilitarios_estaticos_tostring_e_concatenacao_capitulo55_parte3.md)
+* Arquivo Principal no Computador: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte 1 (Conceito, Primitivos vs Wrappers e Depreciação do `new`): `explicacao_wrapper_classes_definicao_os_dois_mundos_o_aviso_deprecated_e_os_4_tipos_capitulo55_parte1.md`
+* Parte 2 (Autoboxing, Unboxing e Conversões Automáticas): `explicacao_wrapper_classes_autoboxing_unboxing_e_as_conversoes_automaticas_capitulo55_parte2.md`
+* Parte 3 (Métodos Estáticos toString e Concatenação Textual): `explicacao_wrapper_classes_metodos_utilitarios_estaticos_tostring_e_concatenacao_capitulo55_parte3.md`
 
 ---
 
@@ -180,7 +180,7 @@ System.out.println(Character.isLetter(letter)); // Imprime: false
 
 ---
 
-## 5. Código Atual no seu [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 5. Código Atual no seu [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Abaixo está o código correspondente à **Imagem 5** (versão funcional do fechamento):
 

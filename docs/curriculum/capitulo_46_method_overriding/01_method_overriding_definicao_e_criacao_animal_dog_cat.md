@@ -15,13 +15,13 @@ Isso se chama **Method Overriding** (Sobrescrita ou Substituição de Método).
 
 Nesta sequência inaugural de 5 imagens:
 1. **O Projeto Limpo e o Conceito em `Main.java` (Imagem 1):**  
-   O professor Bro Code limpa a pasta `src`, mantendo apenas [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), e escreve três linhas de comentários que definem com precisão cirúrgica o que é Sobrescrita de Métodos.
+   O professor Bro Code limpa a pasta `src`, mantendo apenas [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), e escreve três linhas de comentários que definem com precisão cirúrgica o que é Sobrescrita de Métodos.
 2. **Criação da Superclasse `Animal` (Imagens 2 e 3):**  
-   Ele abre o menu de criação de classes do IntelliJ e cria a classe genérica [`Animal.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java).
+   Ele abre o menu de criação de classes do IntelliJ e cria a classe genérica [`Animal.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java).
 3. **Criação da Subclasse `Dog` (Imagem 4):**  
-   Ele cria a classe [`Dog.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java).
+   Ele cria a classe `Dog.java`.
 4. **Criação da Subclasse `Cat` (Imagem 5):**  
-   Ele cria a classe [`Cat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java).
+   Ele cria a classe [`Cat.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java).
 
 Ao final desta preparação, o palco está montado: temos uma classe pai (`Animal`) e dois filhos (`Dog` e `Cat`) prontos para demonstrar o que acontece quando o pai ensina uma coisa genérica e cada filho decide fazer do seu próprio jeito!
 
@@ -97,11 +97,11 @@ Pense na palavra em inglês:
 
 ### A Metáfora do Mundo Real:
 Imagine a seguinte situação:
-1. Existe uma classe pai chamada [`Animal`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java).
+1. Existe uma classe pai chamada [`Animal`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java).
 2. Todo animal faz algum som quando quer se comunicar. Então, na classe pai, criamos uma ação genérica:
    `move()` ou `speak()` $\longrightarrow$ *"This animal makes a sound"*.
-3. Mas se você criar um cachorro ([`Dog`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java)) e mandar ele falar, você não quer que apareça na tela *"Este animal faz um som genérico"*. Você quer que ele diga: **`*woof*`** (au-au)!
-4. E se você criar um gato ([`Cat`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java)), você quer que ele diga: **`*meow*`** (miau)!
+3. Mas se você criar um cachorro (`Dog`) e mandar ele falar, você não quer que apareça na tela *"Este animal faz um som genérico"*. Você quer que ele diga: **`*woof*`** (au-au)!
+4. E se você criar um gato ([`Cat`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java)), você quer que ele diga: **`*meow*`** (miau)!
 
 > **Isso é Method Overriding:**  
 > A classe pai fornece uma versão genérica padrão.  
@@ -133,7 +133,7 @@ Vamos analisar linha por linha a explicação que o autor escreveu:
 
 ## 5. Análise Linha por Linha de Todos os Arquivos Envolvidos
 
-### Arquivo 1: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Imagem 1)
+### Arquivo 1: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Imagem 1)
 
 ```java
 1:  public class Main {
@@ -155,7 +155,7 @@ Vamos analisar linha por linha a explicação que o autor escreveu:
 
 ---
 
-### Arquivo 2: [`Animal.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) (Imagens 2 e 3)
+### Arquivo 2: [`Animal.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) (Imagens 2 e 3)
 
 ```java
 1: public class Animal {
@@ -163,12 +163,12 @@ Vamos analisar linha por linha a explicação que o autor escreveu:
 3: }
 ```
 
-* **Linha 1:** Declara a superclasse pública [`Animal`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java). Ela servirá de modelo genérico para todos os animais do sistema.
+* **Linha 1:** Declara a superclasse pública [`Animal`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java). Ela servirá de modelo genérico para todos os animais do sistema.
 * **Linha 3:** Encerra a classe.
 
 ---
 
-### Arquivo 3: [`Dog.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) (Imagem 4)
+### Arquivo 3: `Dog.java` (Imagem 4)
 
 ```java
 1: public class Dog {
@@ -176,12 +176,12 @@ Vamos analisar linha por linha a explicação que o autor escreveu:
 3: }
 ```
 
-* **Linha 1:** Declara a classe pública [`Dog`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java). Na próxima etapa, ela receberá `extends Animal`.
+* **Linha 1:** Declara a classe pública `Dog`. Na próxima etapa, ela receberá `extends Animal`.
 * **Linha 3:** Encerra a classe.
 
 ---
 
-### Arquivo 4: [`Cat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java) (Imagem 5)
+### Arquivo 4: [`Cat.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java) (Imagem 5)
 
 ```java
 1: public class Cat {
@@ -189,7 +189,7 @@ Vamos analisar linha por linha a explicação que o autor escreveu:
 3: }
 ```
 
-* **Linha 1:** Declara a classe pública [`Cat`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java). Também receberá `extends Animal`.
+* **Linha 1:** Declara a classe pública [`Cat`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java). Também receberá `extends Animal`.
 * **Linha 3:** Encerra a classe.
 
 ---

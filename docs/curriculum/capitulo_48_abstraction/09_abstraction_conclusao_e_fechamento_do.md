@@ -2,14 +2,14 @@
 ## Parte 9: O Grande Fechamento do Capítulo — A Revisão das 5 Regras de Ouro e a Essência da Abstração
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:01:20` até `08:01:45` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a cena final de encerramento do Capítulo 48 sobre **Abstração (`abstraction 🌫️`)**: o fechamento do painel inferior do terminal para dar destaque total ao código limpo e completo em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), a seleção com o mouse da palavra-chave **`abstract`** no cabeçalho de comentários, a correlação prática entre cada uma das 5 regras teóricas e o código funcional escrito abaixo, e a analogia definitiva para você nunca mais esquecer o que é Abstração no mundo real e na programação.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a cena final de encerramento do Capítulo 48 sobre **Abstração (`abstraction 🌫️`)**: o fechamento do painel inferior do terminal para dar destaque total ao código limpo e completo em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), a seleção com o mouse da palavra-chave **`abstract`** no cabeçalho de comentários, a correlação prática entre cada uma das 5 regras teóricas e o código funcional escrito abaixo, e a analogia definitiva para você nunca mais esquecer o que é Abstração no mundo real e na programação.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (destaque azul no texto do comentário, ícones de lâmpada no gutter, abas ativas e estrutura de árvore de arquivos em `src`) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender da imagem original.
 
 ---
 
 ## 1. Visão Geral da Imagem (`media_1791359644865.png` — 08:01:28): A Cena Final
 
-Na marca de `08:01:28` do vídeo (a exatamente 20 segundos do final do capítulo 48), o professor Bro Code recolhe a janela do console para que os alunos possam apreciar o código completo, elegante e sem erros no arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Na marca de `08:01:28` do vídeo (a exatamente 20 segundos do final do capítulo 48), o professor Bro Code recolhe a janela do console para que os alunos possam apreciar o código completo, elegante e sem erros no arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 * **O Painel de Arquivos (`src` no lado esquerdo):**
   Mostra todas as 5 classes do nosso projeto criadas em harmonia:
@@ -74,7 +74,7 @@ No topo de `Main.java`, o professor deixou cinco regras comentadas. Vamos entend
 
 ---
 
-## 3. Análise Código por Código e Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 3. Análise Código por Código e Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Abaixo está o código completo exatamente como exibido na Imagem da cena final:
 

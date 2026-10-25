@@ -13,7 +13,7 @@ Nesta sequência dinâmica (`08:17:30` a `08:18:28`), o professor Bro Code trans
 
 | Imagem | Timestamp / Arquivo | O que é mostrado na tela do IntelliJ IDEA? | Ação Realizada pelo Professor Bro Code |
 | :--- | :--- | :--- | :--- |
-| **🖼️ Imagem 1** | `08:17:30`<br>`media_1791401265481_a3c40dd5.png` | Editor em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java). Linha 13: `System.out.println("Would you like a dog or a cat");`. | O professor começa a escrever a pergunta inicial que o usuário verá no terminal. |
+| **🖼️ Imagem 1** | `08:17:30`<br>`media_1791401265481_a3c40dd5.png` | Editor em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java). Linha 13: `System.out.println("Would you like a dog or a cat");`. | O professor começa a escrever a pergunta inicial que o usuário verá no terminal. |
 | **🖼️ Imagem 2** | `08:17:45`<br>`media_1791401310688_00a378cc.png` | Linha 13 atualizada com as opções: `"Would you like a dog or a cat? (1 = dog, 2 = cat): "`. O cursor de texto pisca em `println(` para fazer uma edição sutil. | O professor decide trocar `println` por `print` para que a digitação do usuário ocorra exatamente ao lado da pergunta no console. |
 | **🖼️ Imagem 3** | `08:18:07`<br>`media_1791401333452_ed95ebc3.png` | Linha 13 finalizada com `print`. Linha 14 adicionada: `int choice = scanner.nextInt();`. Linha 16: `if(choice == 1){` com o cursor piscando dentro do bloco aberto. | O professor cria a variável inteira `choice` para receber o número digitado e abre a verificação condicional para o número 1. |
 | **🖼️ Imagem 4** | `08:18:28`<br>`media_1791401358945_3ecbd9f6.png` | Linha 17: `animal = new Dog();`. Linha 18: `animal.speak();`. | **O primeiro momento de Polimorfismo Dinâmico:** a referência genérica `animal` recebe o objeto concreto `new Dog()` e executa a fala do cão! |
@@ -86,7 +86,7 @@ Note que a chamada é feita através da variável `animal`, mas quem responde é
 
 ## 3. Dissecação Código por Código, Linha por Linha
 
-Aqui está o código exato de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) ao final da Imagem 4:
+Aqui está o código exato de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) ao final da Imagem 4:
 
 ```java
  1 | import java.util.Scanner;

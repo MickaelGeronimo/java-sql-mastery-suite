@@ -2,7 +2,7 @@
 ## Parte 5: O Contraste no Console, a Entrada em `Car.java` e o `@Override` em Ação
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `07:49:25` até `07:50:10` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a transição decisiva do capítulo: o contraste visual no console entre a saída padrão de `Object` e a saída manual do carro, a abertura da classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java), a declaração do método `public String toString()` acompanhado da anotação `@Override` e a explicação da causa do sublinhado vermelho na chave final (*missing return statement*).  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a transição decisiva do capítulo: o contraste visual no console entre a saída padrão de `Object` e a saída manual do carro, a abertura da classe [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), a declaração do método `public String toString()` acompanhado da anotação `@Override` e a explicação da causa do sublinhado vermelho na chave final (*missing return statement*).  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (saídas comparativas no terminal, ícones de gutter de sobrescrita, cursores de edição e avisos de erro em vermelho) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -17,7 +17,7 @@ Nesta sequência de 3 imagens, o professor Bro Code fecha o cerco sobre o proble
    Red 2025 Ford Mustang
    ```
    Ele aponta e diz: *"A primeira linha é simples de chamar no código (`System.out.println(car)`), mas o texto é feio e inútil. A segunda linha tem o texto bonito que queremos, mas é um parto de escrever no código (`car.color + " " + car.year + ...`). Nós queremos o melhor dos dois mundos!"*.
-2. **Nas Imagens 2 e 3:** Ele muda para a aba [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) e começa a escrever a versão oficial do método `toString()`. Ele coloca a anotação **`@Override`** e o IntelliJ imediatamente acende o ícone azul de sobrescrita na margem!
+2. **Nas Imagens 2 e 3:** Ele muda para a aba [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) e começa a escrever a versão oficial do método `toString()`. Ele coloca a anotação **`@Override`** e o IntelliJ imediatamente acende o ícone azul de sobrescrita na margem!
 
 ---
 
@@ -43,7 +43,7 @@ Para quem está estudando pelo Google Docs e não tem as imagens abertas:
 * **Posição do Cursor:** O cursor de texto pisca logo após a palavra `Mustang` no terminal.
 
 ### Imagem 2 (`media_1791357854382.png`): Entrando em `Car.java` e a Linha 15
-* **Aba Ativa:** Muda para [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba Ativa:** Muda para [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **Editor de Código:**
   * Abaixo do construtor, na linha 16, o professor colou a fórmula original que vimos dentro de `Object.java`:
     ```java
@@ -55,7 +55,7 @@ Para quem está estudando pelo Google Docs e não tem as imagens abertas:
   * O cursor de texto pisca logo após o `@|`.
 
 ### Imagem 3 (`media_1791357873191.png`): O `@Override` e o Erro Transitório
-* **Aba Ativa:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba Ativa:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **Editor de Código:**
   * Na linha 15: O professor completou a palavra: **`@Override`** (destacada em amarelo/laranja).
   * Na linha 16: A assinatura do método:
@@ -84,8 +84,8 @@ public String toString() {
 
 ### 2. `public`
 * **Regra Fundamental de Sobrescrita em Java:** Você **nunca pode diminuir a visibilidade** de um método que herdou do pai!
-* Na classe [`Object.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Object.java), o método foi declarado como `public`.
-* Portanto, na classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java), você é **estritamente obrigado** a colocar a palavra `public` antes de `String`. Se você esquecer o `public`, o código **não compila**!
+* Na classe `Object.java`, o método foi declarado como `public`.
+* Portanto, na classe [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), você é **estritamente obrigado** a colocar a palavra `public` antes de `String`. Se você esquecer o `public`, o código **não compila**!
 
 ### 3. `String`
 * É o **tipo de retorno**. O método promete solenemente que, ao terminar de rodar, ele vai entregar um texto (`String`) para quem o chamou.
@@ -112,7 +112,7 @@ Todo iniciante se assusta quando vê um sublinhado vermelho no código. Mas aqui
 
 ---
 
-## 5. Análise Linha por Linha de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) nesta Fase de Construção
+## 5. Análise Linha por Linha de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) nesta Fase de Construção
 
 Abaixo está o código exatamente como visto na tela do professor na Imagem 3:
 
@@ -152,7 +152,7 @@ Abaixo está o código exatamente como visto na tela do professor na Imagem 3:
 
 ## 6. O Que Sai no Console Nesta Etapa?
 
-### Cenário 1: Se você executar o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Imagem 1):
+### Cenário 1: Se você executar o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Imagem 1):
 ```text
 Car@6acbcfc0
 Red 2025 Ford Mustang
@@ -162,7 +162,7 @@ Process finished with exit code 0
 * **Linha 1:** Saída gerada por `System.out.println(car);` (antes de salvar o método em `Car.java`).
 * **Linha 2:** Saída gerada por `System.out.println(car.color + " " + car.year + ...);`.
 
-### Cenário 2: Se você tentar compilar [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) enquanto a linha 17 estiver vazia (Imagem 3):
+### Cenário 2: Se você tentar compilar [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) enquanto a linha 17 estiver vazia (Imagem 3):
 ```text
 Car.java:18: error: missing return statement
     }

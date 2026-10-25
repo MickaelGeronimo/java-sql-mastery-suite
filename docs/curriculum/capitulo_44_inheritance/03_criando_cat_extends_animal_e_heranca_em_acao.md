@@ -3,7 +3,7 @@
 > **Contexto do Curso:** *Java Full Course for free* (Bro Code)  
 > **Capítulo:** 44 — `inheritance 👨‍👧‍👦`  
 > **Tempo do Vídeo:** `07:23:22` até `07:23:55` / `12:00:00`  
-> **Arquivos do Projeto:** [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java), [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java), [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) e [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
+> **Arquivos do Projeto:** Dog.java, [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java), [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) e [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
 > **Objetivo Deste Documento:** Guia didático completo para iniciantes, projetado para cópia direta no **Google Docs**, recriando as 4 telas do IntelliJ IDEA, explicando a sintaxe do `extends`, o erro de compilação transitório e a demonstração visual do que a classe filha recebe de presente da classe pai.
 
 ---
@@ -11,10 +11,10 @@
 ## 1. Reconstituição Visual da Tela (Para Visualização sem as Imagens)
 
 Nesta sequência, o autor conecta a teoria à prática:
-1. Cria a classe filha [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java).
-2. Cria a segunda classe filha [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java).
+1. Cria a classe filha Dog.java.
+2. Cria a segunda classe filha [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java).
 3. Usa a palavra-chave **`extends`** para estabelecer o vínculo de filiação entre `Dog` e `Animal`.
-4. Volta para a classe [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) e **seleciona todo o código em azul** para provar que o `Dog` herdou tudo aquilo sem que precisássemos reescrever uma única vírgula!
+4. Volta para a classe [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) e **seleciona todo o código em azul** para provar que o `Dog` herdou tudo aquilo sem que precisássemos reescrever uma única vírgula!
 
 ```
 +-----------------------------------------------------------------------------------------------+
@@ -50,24 +50,24 @@ Nesta sequência, o autor conecta a teoria à prática:
 * **O que aparece na tela:**
   * Janela `New Java Class` aberta no centro do IntelliJ com o nome `Dog` digitado.
   * O letreiro em fonte grossa cartunesca branca no vídeo anuncia: **`Dog`**.
-  * Ao pressionar `Enter`, o arquivo [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) é gerado no projeto.
+  * Ao pressionar `Enter`, o arquivo Dog.java é gerado no projeto.
 
 ---
 
 #### 🖼️ Imagem 2 (`07:23:27`): Criando a Segunda Classe Filha: `Cat`
-* **Arquivo ativo:** [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java).
+* **Arquivo ativo:** Dog.java.
 * **O que acontece:**
   * Imediatamente após criar `Dog`, o autor volta a clicar na pasta `src` e abre novamente a janela `New Java Class`.
   * Ele digita o nome: **`Cat`**.
   * No vídeo surge um letreiro gigante cartunesco escrito:  
     # **Cat**
-  * Pressiona `Enter` e cria o arquivo [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java).
+  * Pressiona `Enter` e cria o arquivo [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java).
   * Agora o projeto possui 4 arquivos na pasta `src`: `Animal.java`, `Cat.java`, `Dog.java` e `Main.java`.
 
 ---
 
 #### 🖼️ Imagem 3 (`07:23:47`): A Palavra `extends` e o Erro Vermelho Temporário
-* **Arquivo ativo:** [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java).
+* **Arquivo ativo:** Dog.java.
 * **O que o autor digitou:**
   ```java
   public class Dog extends {
@@ -84,7 +84,7 @@ Nesta sequência, o autor conecta a teoria à prática:
 ---
 
 #### 🖼️ Imagem 4 (`07:23:55`): O Ícone de Herança e a Seleção em Azul de `Animal.java`
-* **Arquivo ativo:** [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java).
+* **Arquivo ativo:** [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java).
 * **O que aparece na tela:**
   * O autor troca para a aba `Animal.java`.
   * **O Ícone na Margem Esquerda (Linha 1):**  
@@ -116,7 +116,7 @@ public class Dog extends Animal {
 ---
 
 ### 2. O Teste de "Clonagem Automática": O Que o `Dog` Tem Agora?
-Mesmo que o arquivo [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) esteja com o corpo aparentemente vazio:
+Mesmo que o arquivo Dog.java esteja com o corpo aparentemente vazio:
 ```java
 public class Dog extends Animal {
 
@@ -142,7 +142,7 @@ Isso é o que os programadores chamam de **Reutilização de Código** (*Code Re
 
 ## 3. Dissecando os Códigos Linha por Linha Numerado
 
-### Arquivo 1: [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) (Superclasse / Pai)
+### Arquivo 1: [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) (Superclasse / Pai)
 
 ```java
  1: public class Animal {
@@ -169,7 +169,7 @@ Isso é o que os programadores chamam de **Reutilização de Código** (*Code Re
 
 ---
 
-### Arquivo 2: [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) (Subclasse / Filho)
+### Arquivo 2: Dog.java (Subclasse / Filho)
 
 ```java
 1: public class Dog extends Animal {
@@ -185,7 +185,7 @@ Isso é o que os programadores chamam de **Reutilização de Código** (*Code Re
 
 ---
 
-### Arquivo 3: [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java) (Segunda Subclasse)
+### Arquivo 3: [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java) (Segunda Subclasse)
 
 ```java
 1: public class Cat {
@@ -224,7 +224,7 @@ Isso é o que os programadores chamam de **Reutilização de Código** (*Code Re
 
 ## 5. O Que Deve Sair no Console?
 
-Nesta etapa, como ainda estamos construindo a estrutura de herança entre os arquivos e nenhuma linha foi executada no [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), o terminal permanece limpo:
+Nesta etapa, como ainda estamos construindo a estrutura de herança entre os arquivos e nenhuma linha foi executada no [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), o terminal permanece limpo:
 
 ```text
 (Nenhuma saída impressa no console)
@@ -237,7 +237,7 @@ Process finished with exit code 0
 
 No próximo passo da aula:
 1. O autor conectará também a classe `Cat` com `extends Animal`.
-2. Voltaremos para o arquivo [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e faremos:
+2. Voltaremos para o arquivo [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e faremos:
    ```java
    Dog dog = new Dog();
    dog.eat();

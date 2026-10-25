@@ -117,7 +117,7 @@ Pergunte-se: **Onde está `boolean isEnrolled` dentro dos parênteses `(...)` do
 
 ## 4. O Código Completo e Explicado de `Student.java`
 
-Vejamos o arquivo [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java) exatamente como ficou estruturado na tela do autor:
+Vejamos o arquivo `Student.java` exatamente como ficou estruturado na tela do autor:
 
 ```java
 1: public class Student {
@@ -191,7 +191,7 @@ Vejamos o arquivo [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20
 
 ## 5. O Código Completo e Explicado de `Main.java`
 
-Vejamos agora o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) que instancia e comanda os nossos 3 estudantes:
+Vejamos agora o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) que instancia e comanda os nossos 3 estudantes:
 
 ```java
 1:  public class Main {
@@ -320,5 +320,5 @@ Process finished with exit code 0
 ## 9. Arquivos do Projeto no Seu Computador
 
 Os arquivos correspondentes a este capítulo já estão criados, atualizados e testados no seu computador:
-* Arquivo Principal: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe do Objeto: [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java)
+* Arquivo Principal: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe do Objeto: `Student.java`

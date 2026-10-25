@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Classe do Livro (Intacta e Autônoma): [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java)
-* Arquivo Principal de Testes: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe da Biblioteca (Testada e Deletada no Experimento): [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte Anterior (Capítulo 53 - Parte 9: Conclusão do displayInfo e Execução): [`explicacao_agregacao_resolucao_do_displayinfo_execucao_final_e_conclusao_do_capitulo53_parte9.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_agregacao_resolucao_do_displayinfo_execucao_final_e_conclusao_do_capitulo53_parte9.md)
+* Classe do Livro (Intacta e Autônoma): `Book.java`
+* Arquivo Principal de Testes: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe da Biblioteca (Testada e Deletada no Experimento): `Library.java`
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte Anterior (Capítulo 53 - Parte 9: Conclusão do displayInfo e Execução): `explicacao_agregacao_resolucao_do_displayinfo_execucao_final_e_conclusao_do_capitulo53_parte9.md`
 
 ---
 
@@ -61,7 +61,7 @@ Abaixo está a reconstituição exata do que aconteceu na tela do professor dura
 
 ## 2. O Que o Professor Quis Provar? ("O Teste da Bomba Atômica")
 
-Logo no primeiro minuto deste capítulo (e na linha 7 de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)), você leu a seguinte definição:
+Logo no primeiro minuto deste capítulo (e na linha 7 de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)), você leu a seguinte definição:
 
 ```java
 // but the contained object/s can exist independently.
@@ -129,7 +129,7 @@ E o professor clica sem medo em **`Delete Anyway`** (*Apagar Mesmo Assim*), just
 
 ## 4. O Significado da Imagem 4: As Linhas Azuis e as Linhas Vermelhas
 
-Após a exclusão, a tela de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) fica dividida em duas realidades fascinantes:
+Após a exclusão, a tela de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) fica dividida em duas realidades fascinantes:
 
 ```
 Linha 09: [🟦 Book book1 = new Book("The Fellow of the Ring", 423); ]  <-- INTACTO!

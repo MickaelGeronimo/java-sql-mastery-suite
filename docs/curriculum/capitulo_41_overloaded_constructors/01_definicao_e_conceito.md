@@ -139,7 +139,7 @@ Lá atrás no curso, o Bro Code ensinou **Métodos Sobrecarregados** (*Overloade
 
 ## 5. O Código Completo e Enumerado de `Main.java`
 
-Vejamos todas as 10 linhas do arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) neste início de capítulo:
+Vejamos todas as 10 linhas do arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) neste início de capítulo:
 
 ```java
 1:  public class Main {

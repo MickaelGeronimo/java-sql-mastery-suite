@@ -9,8 +9,8 @@
 - **Parte:** 3 (Refatoração para Objeto Anônimo, Instanciação de Múltiplas Threads e Paralelismo Real)
 - **Timestamp de Referência:** `11:26:19` até `11:26:50`
 - **Arquivos do Projeto:**
-  - [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-  - [`MyRunnable.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/MyRunnable.java)
+  - [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+  - [`MyRunnable.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/MyRunnable.java)
 
 ---
 

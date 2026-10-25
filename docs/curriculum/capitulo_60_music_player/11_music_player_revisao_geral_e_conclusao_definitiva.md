@@ -2,7 +2,7 @@
 
 > **Curso:** Java Full Course (Bro Code) — Capítulo 60: `finished music player`  
 > **Timestamp do Vídeo:** `[9:43:10 - 9:43:55]`  
-> **Arquivo do Workspace:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
+> **Arquivo do Workspace:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
 > **Objetivo:** Fazer a revisão geral de fechamento do projeto completo do **Player de Música**, analisando a tela final onde o autor Bro Code recapitula a lição destacando o comentário `"// How to PLAY AUDIO with Java (.wav, .au, .aiff)"`, dissecando todas as 61 linhas do código final linha por linha com previsões de console e consolidando todos os conceitos aprendidos para consulta no Google Docs.
 
 ---
@@ -65,7 +65,7 @@ Para você nunca mais esquecer como o Java toca música, visualize o projeto com
 
 ## 🔍 Código Completo e Análise Linha por Linha (1 a 61)
 
-Abaixo está o código final completo em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), com todas as linhas rigorosamente enumeradas:
+Abaixo está o código final completo em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), com todas as linhas rigorosamente enumeradas:
 
 ```java
  1: import javax.sound.sampled.AudioInputStream;

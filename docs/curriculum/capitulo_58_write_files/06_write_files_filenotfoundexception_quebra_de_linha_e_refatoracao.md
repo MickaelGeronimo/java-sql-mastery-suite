@@ -7,8 +7,8 @@
 - **Curso:** *Java Full Course for free* (Canal: Bro Code)
 - **Capítulo Oficial:** `58. write files ✍️`
 - **Intervalo de Tempo no Vídeo:** `09:19:11` até `09:20:10` (do total de 12:00:00)
-- **Arquivo Principal de Trabalho:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-- **Arquivo Gerado com Múltiplas Linhas:** [`test.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/test.txt) (ou no Desktop)
+- **Arquivo Principal de Trabalho:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+- **Arquivo Gerado com Múltiplas Linhas:** [`test.txt`](../../../src/main/resources/test.txt) (ou no Desktop)
 - **Ambiente de Desenvolvimento (IDE):** IntelliJ IDEA Community Edition + Windows Notepad (Bloco de Notas)
 
 ---
@@ -113,7 +113,7 @@ O cursor do mouse move-se até o botão Play verde no topo direito para rodar o 
 
 ---
 
-## 🍕 O Código Completo do Arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 🍕 O Código Completo do Arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Aqui está o código exato da Imagem 5 que está sincronizado no seu computador:
 
@@ -190,7 +190,7 @@ Abaixo está o raio-X minucioso de cada linha do código final:
 
   Process finished with exit code 0
   ```
-- **Dentro do Arquivo [`test.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/test.txt) no Disco:**
+- **Dentro do Arquivo [`test.txt`](../../../src/main/resources/test.txt) no Disco:**
   ```text
   I like pizza!
   It's really good!

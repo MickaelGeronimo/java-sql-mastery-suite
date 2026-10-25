@@ -9,13 +9,13 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal de Execução: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe do Carro com Getter Formatado: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Guia da Parte 1 (Conceito e Falha de Acesso Aberto): [`explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md)
-* Guia da Parte 2 (Demonstração da Adulteração e Blindagem `private`): [`explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md)
-* Guia da Parte 3 (Os 3 Erros de Compilação e Criação dos Getters): [`explicacao_getters_and_setters_os_3_erros_de_acesso_privado_e_criacao_dos_getters_capitulo52_parte3.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_os_3_erros_de_acesso_privado_e_criacao_dos_getters_capitulo52_parte3.md)
-* Guia da Parte 4 (Substituição no Main e Erro de Tipos): [`explicacao_getters_and_setters_substituicao_pelos_getters_execucao_com_sucesso_e_incompatibilidade_de_tipos_capitulo52_parte4.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_substituicao_pelos_getters_execucao_com_sucesso_e_incompatibilidade_de_tipos_capitulo52_parte4.md)
+* Arquivo Principal de Execução: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe do Carro com Getter Formatado: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Guia da Parte 1 (Conceito e Falha de Acesso Aberto): `explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md`
+* Guia da Parte 2 (Demonstração da Adulteração e Blindagem `private`): `explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md`
+* Guia da Parte 3 (Os 3 Erros de Compilação e Criação dos Getters): `explicacao_getters_and_setters_os_3_erros_de_acesso_privado_e_criacao_dos_getters_capitulo52_parte3.md`
+* Guia da Parte 4 (Substituição no Main e Erro de Tipos): `explicacao_getters_and_setters_substituicao_pelos_getters_execucao_com_sucesso_e_incompatibilidade_de_tipos_capitulo52_parte4.md`
 
 ---
 
@@ -27,8 +27,8 @@ Nesta sequência de 5 imagens, o autor revela o motivo genial por trás dessa mu
 1. **O Erro Inicial de Tipos (Imagem 1):** O método `String getPrice()` está dando erro de compilação porque `this.price` é um `int`.
 2. **O Início do Concerto (Imagem 2):** Ele digita `"$"` antes de `this.price` para adicionar o símbolo de dinheiro americano (cifrão).
 3. **A Concatenação Mágica (Imagem 3):** Ele adiciona o sinal de `+`, formando `return "$" + this.price;`. Em Java, quando você soma um texto com um número, o número vira texto automaticamente! O erro desaparece na mesma hora!
-4. **O Resultado no Console (Imagem 4):** Ele volta para [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), clica em Play (`▷`) e o console imprime: `Yellow Charger $10000` (com o cifrão perfeitamente grudado no valor!).
-5. **A Revisão Geral de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (Imagem 5):** O autor exibe a classe finalizada e totalmente funcional, mostrando como os Getters deram controle total sobre a apresentação dos dados.
+4. **O Resultado no Console (Imagem 4):** Ele volta para [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), clica em Play (`▷`) e o console imprime: `Yellow Charger $10000` (com o cifrão perfeitamente grudado no valor!).
+5. **A Revisão Geral de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (Imagem 5):** O autor exibe a classe finalizada e totalmente funcional, mostrando como os Getters deram controle total sobre a apresentação dos dados.
 
 ```mermaid
 flowchart TD
@@ -67,7 +67,7 @@ Se a variável fosse um texto com cifrão dentro, pense nos desastres que aconte
 ### 📸 Imagem 1: O Erro de Incompatibilidade de Tipos (`media_1791402641214_c2a7ec93.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
-* **Aba Ativa:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (selecionada no topo do editor).
+* **Aba Ativa:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (selecionada no topo do editor).
 * **Canto Superior Direito:** Badge de erro: **`🔴 1 ⚠️ 3 v`** (1 erro crítico e 3 avisos).
 * **Trecho de Código no Editor:**
   ```java
@@ -85,7 +85,7 @@ Se a variável fosse um texto com cifrão dentro, pense nos desastres que aconte
 ### 📸 Imagem 2: Digitando o Cifrão (`media_1791402658425_5857c2ab.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
-* **Aba Ativa:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba Ativa:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **Canto Superior Direito:** O contador de erros subiu temporariamente para **`🔴 2 ⚠️ 3 v`**.
 * **Trecho de Código no Editor (Linha 20):**
   ```java
@@ -102,7 +102,7 @@ Se a variável fosse um texto com cifrão dentro, pense nos desastres que aconte
 
 #### O que se vê na interface do IntelliJ IDEA:
 * **Barra de Vídeo do YouTube:** Timestamp `8:24:40 / 12:00:00`, capítulo `52. getters and setters >`.
-* **Aba Ativa:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba Ativa:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **Linha 20 Corrigida:**
   ```java
   20 💡  return "$" + this.price;
@@ -110,7 +110,7 @@ Se a variável fosse um texto com cifrão dentro, pense nos desastres que aconte
 * **A Mágica Visual:**
   * Os sublinhados vermelhos de erro sumiram completamente!
   * Há uma pequena lâmpada amarela 💡 ao lado da linha 20 (apenas sugestões de estilo da IDE).
-  * O cursor do mouse está se movendo para a aba [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) para executar o teste.
+  * O cursor do mouse está se movendo para a aba [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) para executar o teste.
 * **O Que o Java Fez Internamente:**
   Ao ver `"$" + this.price`, o Java executa uma **coerção de tipos (concatenação)**:
   `"$" + 10000` ➔ `"$10000"`.
@@ -122,7 +122,7 @@ Se a variável fosse um texto com cifrão dentro, pense nos desastres que aconte
 
 #### O que se vê na interface do IntelliJ IDEA:
 * **Barra de Vídeo do YouTube:** Timestamp `8:24:49 / 12:00:00`.
-* **Aba Ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba Ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Trecho de Código no Editor:**
   ```java
   11 💡  System.out.println(car.getColor() + " " + car.getModel() + " " + car.getPrice());
@@ -137,16 +137,16 @@ Se a variável fosse um texto com cifrão dentro, pense nos desastres que aconte
 * **Destaque do Autor:**
   * O autor selecionou a palavra `Yellow` com o mouse no console.
   * Repare na terceira palavra impressa: **`$10000`**!
-  * O cifrão `$` apareceu automaticamente na tela sem que o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) precisasse colocar cifrão em lugar nenhum! Quem cuidou da formatação foi o Getter dentro de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)!
+  * O cifrão `$` apareceu automaticamente na tela sem que o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) precisasse colocar cifrão em lugar nenhum! Quem cuidou da formatação foi o Getter dentro de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)!
 
 ---
 
-### 📸 Imagem 5: A Visão Geral e Limpa da Classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (`media_1791402775733_127c728c.png`)
+### 📸 Imagem 5: A Visão Geral e Limpa da Classe [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (`media_1791402775733_127c728c.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
 * **Barra de Navegação Inferior:** `MyFirstProject > src > Car > getPrice`.
 * **Canto Inferior Direito:** `20:22 LF UTF-8 4 spaces`.
-* **Aba Ativa:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba Ativa:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **Trecho Completo Visível:**
   ```java
    7    Car(String model, String color, int price){
@@ -174,7 +174,7 @@ Se a variável fosse um texto com cifrão dentro, pense nos desastres que aconte
 
 ## 4. Análise Linha por Linha dos Códigos
 
-### Arquivo 1: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (Código Completo e Atualizado)
+### Arquivo 1: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (Código Completo e Atualizado)
 
 ```java
  1 public class Car {
@@ -232,7 +232,7 @@ Se a variável fosse um texto com cifrão dentro, pense nos desastres que aconte
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1 public class Main {

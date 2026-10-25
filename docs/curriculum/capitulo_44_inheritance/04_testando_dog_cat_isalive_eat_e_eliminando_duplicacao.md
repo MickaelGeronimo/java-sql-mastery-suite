@@ -3,7 +3,7 @@
 > **Contexto do Curso:** *Java Full Course for free* (Bro Code)  
 > **Capítulo:** 44 — `inheritance 👨‍👧‍👦`  
 > **Tempo do Vídeo:** `07:24:25` até `07:24:55` / `12:00:00`  
-> **Arquivos do Projeto:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java), [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java) e [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java)  
+> **Arquivos do Projeto:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), Dog.java, [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java) e [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java)  
 > **Objetivo Deste Documento:** Material didático definitivo para iniciantes, projetado para cópia direta no **Google Docs**, recriando as 5 telas do IntelliJ IDEA, comprovando que o cachorro e o gato herdaram variáveis e métodos sem uma única linha redundante e mostrando o contraste entre código limpo vs. código duplicado.
 
 ---
@@ -14,7 +14,7 @@ Nesta sequência espetacular, o autor testa ao vivo o poder da herança:
 1. Instancia `Dog dog = new Dog();` e `Cat cat = new Cat();`.
 2. Acessa a variável `isAlive` em ambos e obtém `true`.
 3. Chama o método `eat()` em ambos e o console imprime duas vezes a mensagem da superclasse.
-4. Faz uma demonstração dramática em [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java), colando o código repetido para mostrar o horror que seria programar sem herança.
+4. Faz uma demonstração dramática em [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java), colando o código repetido para mostrar o horror que seria programar sem herança.
 
 ```
 +-----------------------------------------------------------------------------------------------+
@@ -44,7 +44,7 @@ Nesta sequência espetacular, o autor testa ao vivo o poder da herança:
 ### Detalhamento Quadro a Quadro (As 5 Imagens Explicadas)
 
 #### 🖼️ Imagem 1 (`07:24:25`): Testando o Atributo Herdado `isAlive`
-* **Arquivo ativo:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo ativo:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que o autor escreveu:**
   ```java
   Dog dog = new Dog();
@@ -59,7 +59,7 @@ Nesta sequência espetacular, o autor testa ao vivo o poder da herança:
 ---
 
 #### 🖼️ Imagem 2 (`07:24:45`): Chamando o Método `eat()` e a Saída no Console
-* **Arquivo ativo:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo ativo:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que mudou no código:**
   * O autor substitui os prints de atributos pelas ações:
     ```java
@@ -76,8 +76,8 @@ Nesta sequência espetacular, o autor testa ao vivo o poder da herança:
 
 ---
 
-#### 🖼️ Imagem 3: A Classe [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java) Limpa e Elegante
-* **Arquivo ativo:** [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java).
+#### 🖼️ Imagem 3: A Classe [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java) Limpa e Elegante
+* **Arquivo ativo:** [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java).
 * **O código exibido:**
   ```java
   public class Cat extends Animal{
@@ -88,8 +88,8 @@ Nesta sequência espetacular, o autor testa ao vivo o poder da herança:
 
 ---
 
-#### 🖼️ Imagem 4: A Classe [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) Limpa e Elegante
-* **Arquivo ativo:** [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java).
+#### 🖼️ Imagem 4: A Classe Dog.java Limpa e Elegante
+* **Arquivo ativo:** Dog.java.
 * **O código exibido:**
   ```java
   public class Dog extends Animal{
@@ -101,7 +101,7 @@ Nesta sequência espetacular, o autor testa ao vivo o poder da herança:
 ---
 
 #### 🖼️ Imagem 5: O Pesadelo do Código Duplicado (O Contraexemplo Didático)
-* **Arquivo ativo:** [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java).
+* **Arquivo ativo:** [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java).
 * **O que aparece na tela:**
   * O autor colou todo o código de `Animal` dentro de `Cat`:
     ```java
@@ -157,7 +157,7 @@ O construtor `Animal()` rodou nas sombras e executou `isAlive = true;`. Por isso
 
 ## 3. Dissecando os Códigos Linha por Linha Numerado
 
-### Arquivo 1: [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 1: [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: public class Main {
@@ -177,7 +177,7 @@ O construtor `Animal()` rodou nas sombras e executou `isAlive = true;`. Por isso
 15: }
 ```
 
-#### Explicação Linha por Linha de [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+#### Explicação Linha por Linha de [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 * **Linhas 1 a 6:** Abertura da classe, método `main` e os comentários conceituais de herança.
 * **Linha 9 (`Dog dog = new Dog();`):**  
@@ -201,7 +201,7 @@ O construtor `Animal()` rodou nas sombras e executou `isAlive = true;`. Por isso
 
 ---
 
-### Arquivo 2: [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) (Superclasse)
+### Arquivo 2: [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) (Superclasse)
 
 ```java
  1: public class Animal {
@@ -223,7 +223,7 @@ O construtor `Animal()` rodou nas sombras e executou `isAlive = true;`. Por isso
 
 ---
 
-### Arquivo 3: [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) e [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java) (Subclasses)
+### Arquivo 3: Dog.java e [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java) (Subclasses)
 
 ```java
 public class Dog extends Animal {

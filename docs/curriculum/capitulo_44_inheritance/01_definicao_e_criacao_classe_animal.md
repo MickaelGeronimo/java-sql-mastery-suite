@@ -3,7 +3,7 @@
 > **Contexto do Curso:** *Java Full Course for free* (Bro Code)  
 > **Capítulo:** 44 — `inheritance 👨‍👧‍👦`  
 > **Tempo do Vídeo:** `07:22:16` até `07:22:35` / `12:00:00`  
-> **Arquivos do Projeto:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java)  
+> **Arquivos do Projeto:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java)  
 > **Objetivo Deste Documento:** Material didático completo para iniciantes, pronto para cópia direta no **Google Docs**, recriando minuciosamente as telas do IntelliJ IDEA, explicando o pilar fundamental da Herança em Programação Orientada a Objetos com analogias da vida real e dissecando cada linha de código.
 
 ---
@@ -163,7 +163,7 @@ No mundo Java, as pessoas usam palavras diferentes para significar exatamente a 
 
 ## 4. Código Atual e Dissecação Linha por Linha
 
-### Arquivo 1: [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 1: [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: public class Main {
@@ -178,7 +178,7 @@ No mundo Java, as pessoas usam palavras diferentes para significar exatamente a 
 10: }
 ```
 
-#### Explicação Linha por Linha de [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+#### Explicação Linha por Linha de [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 * **Linha 1 (`public class Main {`):** Declara a classe executável onde o programa começa.
 * **Linha 2 (`public static void main(String[] args) {`):** O ponto de partida onde o código Java é executado pela JVM.
@@ -194,7 +194,7 @@ No mundo Java, as pessoas usam palavras diferentes para significar exatamente a 
 
 ---
 
-### Arquivo 2: [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java)
+### Arquivo 2: [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java)
 
 ```java
 1: public class Animal {
@@ -202,7 +202,7 @@ No mundo Java, as pessoas usam palavras diferentes para significar exatamente a 
 3: }
 ```
 
-#### Explicação de [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java):
+#### Explicação de [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java):
 
 * **Linha 1 (`public class Animal {`):**  
   Cria a classe pública `Animal`. Esta classe será a **Superclasse (Classe Pai)** do nosso projeto. Todas as características gerais compartilhadas pelos animais da nossa aplicação (como estar vivo, comer, etc.) serão escritas aqui dentro.

@@ -2,18 +2,18 @@
 ## Parte 2: A Fórmula Secreta de `Object.toString()`, a Classe `Car` e o Mistério do `Car@6acbcfc0`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `07:46:20` até `07:46:40` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a revelação da fórmula exata do método `toString()` dentro do código-fonte original da classe `Object.java` da JDK, a criação do objeto [`Car`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) com 4 atributos (marca, modelo, ano e cor) e a razão matemática e computacional pela qual o comando `System.out.println(car)` imprimiu o texto bizarro `Car@6acbcfc0` no console.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a revelação da fórmula exata do método `toString()` dentro do código-fonte original da classe `Object.java` da JDK, a criação do objeto [`Car`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) com 4 atributos (marca, modelo, ano e cor) e a razão matemática e computacional pela qual o comando `System.out.println(car)` imprimiu o texto bizarro `Car@6acbcfc0` no console.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (busca com `Ctrl+F` no código do Java, abas, cursor de texto e saídas do terminal) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
 
 ## 1. Visão Geral da Demonstração: Abrindo a Caixa-Preta do Java
 
-Nas imagens anteriores, vimos o professor Bro Code usar o recurso **`Jump to Source (F4)`** para entrar no arquivo sagrado da linguagem Java: o [`Object.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Object.java).
+Nas imagens anteriores, vimos o professor Bro Code usar o recurso **`Jump to Source (F4)`** para entrar no arquivo sagrado da linguagem Java: o `Object.java`.
 
 Nesta sequência de 3 imagens, o professor faz duas coisas fundamentais:
 1. **Ele encontra a fórmula do método `toString()` na linha 269 do código do próprio Java** e nos mostra exatamente quais linhas de código a Oracle/Sun escreveram para fazer esse método funcionar!
-2. **Ele volta para [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)**, cria um carro de corrida novinho em folha (`Car car = new Car("Ford", "Mustang", 2025, "Red")`) e manda imprimir na tela com `System.out.println(car);`.
+2. **Ele volta para [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)**, cria um carro de corrida novinho em folha (`Car car = new Car("Ford", "Mustang", 2025, "Red")`) e manda imprimir na tela com `System.out.println(car);`.
 
 O resultado que surge no terminal deixa qualquer iniciante chocado:
 ```text
@@ -48,7 +48,7 @@ Para quem está estudando pelo Google Docs sem acesso às fotos originais:
 * O cursor de texto pisca logo abaixo da chave de fechamento. Essa única linha 270 é a explicação científica de todo o mistério!
 
 ### Imagem 3 (`media_1791357530141.png` — 07:46:34): O Experimento no `Main.java` e a Saída no Console
-* **Aba Ativa:** `Main.java`. A aba `Object.java` foi fechada e a aba [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) está ao lado.
+* **Aba Ativa:** `Main.java`. A aba `Object.java` foi fechada e a aba [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) está ao lado.
 * **Editor de Código:** Mostra as linhas 10 a 14 de `Main.java`:
   ```java
   10         Car car = new Car("Ford", "Mustang", 2025, "Red");
@@ -112,7 +112,7 @@ Juntando tudo:
 
 ## 4. O Segredo Oculto: Por que `System.out.println(car)` chamou `toString()` se ninguém pediu?
 
-Repare bem na linha 12 de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Repare bem na linha 12 de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 ```java
 System.out.println(car);
 ```
@@ -130,13 +130,13 @@ System.out.println(car);
 System.out.println(car.toString());
 ```
 
-E como a classe [`Car`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) **não tem o seu próprio `toString()`**, a JVM sobe a árvore genealógica até a mãe de todas as classes ([`Object`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Object.java)) e executa a fórmula padrão da linha 270, imprimindo `Car@6acbcfc0`!
+E como a classe [`Car`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) **não tem o seu próprio `toString()`**, a JVM sobe a árvore genealógica até a mãe de todas as classes (`Object`) e executa a fórmula padrão da linha 270, imprimindo `Car@6acbcfc0`!
 
 ---
 
 ## 5. Análise Código por Código das Duas Classes do Projeto
 
-### A. A Classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### A. A Classe [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 ```java
 1:  public class Car {
 2:  
@@ -164,7 +164,7 @@ E como a classe [`Car`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Ca
 
 ---
 
-### B. A Classe [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) Linha por Linha
+### B. A Classe [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Linha por Linha
 ```java
 1:  public class Main {
 2:      public static void main(String[] args) {
@@ -217,7 +217,7 @@ Pare um momento e pense como um usuário de aplicativo:
 O valor padrão do `.toString()` que vem da classe `Object` é inútil para seres humanos. Ele serve apenas para o computador saber onde o objeto está na memória.
 
 **A Grande Solução:**
-No próximo passo do vídeo, o professor Bro Code vai nos ensinar a **sobrescrever (`@Override`) o método `toString()` dentro de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)** para ensinar o carro a se apresentar com elegância, imprimindo todos os seus dados organizados!
+No próximo passo do vídeo, o professor Bro Code vai nos ensinar a **sobrescrever (`@Override`) o método `toString()` dentro de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)** para ensinar o carro a se apresentar com elegância, imprimindo todos os seus dados organizados!
 
 ---
 
@@ -225,9 +225,9 @@ No próximo passo do vídeo, o professor Bro Code vai nos ensinar a **sobrescrev
 
 | Chamada no Código | O que o Java realmente executa por trás? | De onde vem a resposta nesta etapa? | O que aparece na tela do terminal? | É útil para um ser humano? |
 | :--- | :--- | :--- | :--- | :---: |
-| `System.out.println(car);` | `System.out.println(car.toString());` | Superclasse mãe [`Object`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Object.java) (Linha 270) | `Car@6acbcfc0` | ❌ Não |
-| `System.out.println(car.toString());` | `car.toString()` explícito | Superclasse mãe [`Object`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Object.java) (Linha 270) | `Car@6acbcfc0` | ❌ Não |
-| *(Próxima etapa: após `@Override`)* | Executa a versão personalizada de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) | Subclasse filha [`Car`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) | `"Ford Mustang 2025 Red"` | ✅ Sim! Maravilhoso! |
+| `System.out.println(car);` | `System.out.println(car.toString());` | Superclasse mãe `Object` (Linha 270) | `Car@6acbcfc0` | ❌ Não |
+| `System.out.println(car.toString());` | `car.toString()` explícito | Superclasse mãe `Object` (Linha 270) | `Car@6acbcfc0` | ❌ Não |
+| *(Próxima etapa: após `@Override`)* | Executa a versão personalizada de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) | Subclasse filha [`Car`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) | `"Ford Mustang 2025 Red"` | ✅ Sim! Maravilhoso! |
 
 ---
 

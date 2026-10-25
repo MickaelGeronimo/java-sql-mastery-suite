@@ -7,8 +7,8 @@
 - **Curso:** *Java Full Course for free* (Canal: Bro Code)
 - **Capítulo Oficial:** Conclusão de `58. write files ✍️` e início de `59. read files 📖`
 - **Intervalo de Tempo no Vídeo:** `09:20:10` até `09:22:20` (do total de 12:00:00)
-- **Arquivo Principal de Trabalho:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-- **Arquivo Físico Manipulado:** [`test.txt`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/test.txt) (na Área de Trabalho / Desktop)
+- **Arquivo Principal de Trabalho:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+- **Arquivo Físico Manipulado:** [`test.txt`](../../../src/main/resources/test.txt) (na Área de Trabalho / Desktop)
 - **Ambiente de Desenvolvimento (IDE):** IntelliJ IDEA Community Edition + Windows Notepad (Bloco de Notas)
 
 ---

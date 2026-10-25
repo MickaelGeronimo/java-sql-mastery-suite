@@ -2,7 +2,7 @@
 ## Parte 3: O Segundo Filho Chega à Família! — Criando `Bike.java` (Bicicleta), Estendendo `Vehicle` e Sobrescrevendo `go()` com `"You ride the bike"`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:09:28` até `08:09:43` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a criação da segunda classe filha concreta da nossa hierarquia de veículos: a classe [`Bike.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java). Veremos o momento em que o professor cria o novo arquivo Java, herda de [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java) usando `extends`, copia a estrutura de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java), ajusta a mensagem semântica no método `go()` de *"dirigir"* (`drive`) para *"pedalar/andar"* (`ride`), e consolida mais um degrau rumo à demonstração de Polimorfismo.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a criação da segunda classe filha concreta da nossa hierarquia de veículos: a classe `Bike.java`. Veremos o momento em que o professor cria o novo arquivo Java, herda de `Vehicle.java` usando `extends`, copia a estrutura de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), ajusta a mensagem semântica no método `go()` de *"dirigir"* (`drive`) para *"pedalar/andar"* (`ride`), e consolida mais um degrau rumo à demonstração de Polimorfismo.  
 > **Formato para Google Docs:** Todo o contexto visual do IntelliJ IDEA (janela flutuante "New Java Class", árvore do projeto, abas abertas, ícones de sarjeta `(I)↑` e legendas do vídeo) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -12,7 +12,7 @@
 Nesta sequência rápida (`08:09:28` a `08:09:43`), o professor expande a família de veículos adicionando a bicicleta:
 
 ### 🖼️ Imagem 1 (`media_1791399849045_5e892fd4.png` — 08:09:28): Criando a Classe `Bike`
-* **Aba ativa antes da ação:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba ativa antes da ação:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **O que acontece:** O professor abre a janela modal de atalho do IntelliJ IDEA para criar uma nova classe.
 * **Janela Modal "New Java Class":**
   * Campo de texto: a letra `B` digitada (o autor está no meio da digitação da palavra `Bike`).
@@ -22,7 +22,7 @@ Nesta sequência rápida (`08:09:28` a `08:09:43`), o professor expande a famíl
 ---
 
 ### 🖼️ Imagem 2 (`media_1791399861398_7906d71b.png` — 08:09:38): Estruturando `Bike.java` com a Base do Carro
-* **Aba ativa:** [`Bike.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java).
+* **Aba ativa:** `Bike.java`.
 * **Abas abertas no topo do IntelliJ:** `Main.java`, `Vehicle.java`, `Car.java`, `Bike.java` (ativa).
 * **Árvore do Projeto (à esquerda em `src`):**
   * `Bike` (ícone azul `(C)`)
@@ -44,7 +44,7 @@ Nesta sequência rápida (`08:09:28` a `08:09:43`), o professor expande a famíl
 ---
 
 ### 🖼️ Imagem 3 (`media_1791399872046_0ef1b0e1.png` — 08:09:43): A Frase Própria da Bicicleta!
-* **Aba ativa:** [`Bike.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java).
+* **Aba ativa:** `Bike.java`.
 * **Código final ajustado:**
   ```java
   public class Bike extends Vehicle{
@@ -99,7 +99,7 @@ Observe a árvore da família que estamos construindo:
 
 ## 3. Dissecação Linha por Linha: `Bike.java`
 
-Vejamos o código completo de [`Bike.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java):
+Vejamos o código completo de `Bike.java`:
 
 ```java
 1:  public class Bike extends Vehicle{
@@ -159,7 +159,7 @@ Vejamos o código completo de [`Bike.java`](file:///c:/Users/mickel%201/Download
 
 ## 4. O Que Sai no Console se Executar o Projeto Agora?
 
-Se você rodar o projeto pelo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Se você rodar o projeto pelo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```text
 Process finished with exit code 0
@@ -175,7 +175,7 @@ Process finished with exit code 0
 
 Veja lado a lado a simetria elegante da arquitetura criada até agora:
 
-| Aspecto | [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) | [`Bike.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java) |
+| Aspecto | [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) | `Bike.java` |
 | :--- | :--- | :--- |
 | **Declaração** | `public class Car extends Vehicle` | `public class Bike extends Vehicle` |
 | **Superclasse** | `Vehicle` | `Vehicle` |

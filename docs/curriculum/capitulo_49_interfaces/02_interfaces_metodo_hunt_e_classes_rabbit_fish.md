@@ -2,19 +2,19 @@
 ## Parte 2: A Interface `Predator`, o Método `void hunt()` e o Nascimento das Classes `Rabbit` e `Fish`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:02:45` até `08:03:05` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a continuação da criação do ecossistema de interfaces no IntelliJ IDEA: a declaração do método de caça `void hunt();` dentro da interface [`Predator.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Predator.java), a criação da classe concreta [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java) (o coelho, um animal presa) e da classe [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java) (o peixe, o animal chave que será ao mesmo tempo presa e predador). Inclui a análise visual das cores e ícones da IDE (`(I)` verde para Interfaces vs `(C)` azul para Classes).  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a continuação da criação do ecossistema de interfaces no IntelliJ IDEA: a declaração do método de caça `void hunt();` dentro da interface [`Predator.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Predator.java), a criação da classe concreta [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java) (o coelho, um animal presa) e da classe [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java) (o peixe, o animal chave que será ao mesmo tempo presa e predador). Inclui a análise visual das cores e ícones da IDE (`(I)` verde para Interfaces vs `(C)` azul para Classes).  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (janelas modais de criação de classes, seleção do tipo `Class` com ícone azul `(C)`, abas abertas em sequência, legendas em tela cheia e árvores de arquivos do projeto) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
 
 ## 1. Visão Geral da Demonstração: Montando o Tabuleiro da Natureza
 
-Na Parte 1, nós criamos a interface [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java) e colocamos nela o método `void flee();` (*fugir*).
+Na Parte 1, nós criamos a interface [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java) e colocamos nela o método `void flee();` (*fugir*).
 
 Nesta sequência de 3 capturas de tela, o professor Bro Code equilibra o jogo da natureza:
-1. **O Contrato do Caçador (Imagem 1):** Dentro de [`Predator.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Predator.java), ele cria o método `void hunt();` (*caçar*).
-2. **A Criação do Coelho (Imagem 2):** Ele abre a janela de criação e cria uma classe normal chamada [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java). No mundo animal, o coelho é puramente uma presa (`Prey`).
-3. **A Criação do Peixe (Imagem 3):** Ele cria a classe [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java). O peixe é a peça de ouro desta aula: ele demonstrará que uma mesma classe pode assinar contratos múltiplos no Java (`implements Prey, Predator`)!
+1. **O Contrato do Caçador (Imagem 1):** Dentro de [`Predator.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Predator.java), ele cria o método `void hunt();` (*caçar*).
+2. **A Criação do Coelho (Imagem 2):** Ele abre a janela de criação e cria uma classe normal chamada [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java). No mundo animal, o coelho é puramente uma presa (`Prey`).
+3. **A Criação do Peixe (Imagem 3):** Ele cria a classe [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java). O peixe é a peça de ouro desta aula: ele demonstrará que uma mesma classe pode assinar contratos múltiplos no Java (`implements Prey, Predator`)!
 
 ---
 
@@ -122,7 +122,7 @@ Vamos entender a arquitetura que o professor Bro Code está desenhando diante do
 
 ---
 
-## 4. Análise Código por Código e Linha por Linha de [`Predator.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Predator.java)
+## 4. Análise Código por Código e Linha por Linha de [`Predator.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Predator.java)
 
 ```java
 1: public interface Predator {
@@ -138,7 +138,7 @@ Vamos entender a arquitetura que o professor Bro Code está desenhando diante do
 
 ---
 
-## 5. Análise Código por Código e Linha por Linha de [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java)
+## 5. Análise Código por Código e Linha por Linha de [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java)
 
 ```java
 1: public class Rabbit {
@@ -153,7 +153,7 @@ Vamos entender a arquitetura que o professor Bro Code está desenhando diante do
 
 ---
 
-## 6. Análise Código por Código e Linha por Linha de [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java)
+## 6. Análise Código por Código e Linha por Linha de [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java)
 
 ```java
 1: public class Fish {
@@ -181,10 +181,10 @@ Process finished with exit code 0
 
 | Nome do Arquivo | Tipo no Java | Ícone no IntelliJ | Papel na Natureza | Método Contratual |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java) | `interface` | `(I)` verde | Contrato de Presa | `void flee();` |
-| [`Predator.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Predator.java) | `interface` | `(I)` verde | Contrato de Predador | `void hunt();` |
-| [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java) | `class` | `(C)` azul | Animal que é presa | Implementará `flee()` |
-| [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java) | `class` | `(C)` azul | Animal presa E predador | Implementará `flee()` e `hunt()` |
+| [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java) | `interface` | `(I)` verde | Contrato de Presa | `void flee();` |
+| [`Predator.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Predator.java) | `interface` | `(I)` verde | Contrato de Predador | `void hunt();` |
+| [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java) | `class` | `(C)` azul | Animal que é presa | Implementará `flee()` |
+| [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java) | `class` | `(C)` azul | Animal presa E predador | Implementará `flee()` e `hunt()` |
 
 ---
 

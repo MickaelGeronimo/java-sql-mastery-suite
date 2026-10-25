@@ -2,7 +2,7 @@
 ## Parte 5: Testando os Motores! — Instanciando o Trio (`Car`, `Bike`, `Boat`), Chamadas Individuais de `go()`, a Saída no Console e a Provocação do Array Polimórfico
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:10:26` até `08:10:34` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) o momento em que o professor Bro Code volta para o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), instancia os três veículos na memória (`new Car()`, `new Bike()`, `new Boat()`), chama o método `go()` individualmente para cada um deles, executa o programa no IntelliJ IDEA, analisa a saída gerada no console (destacando com o mouse a frase do carro em azul), e faz a grande pergunta provocativa que nos levará ao verdadeiro poder do Polimorfismo: *"E se tivéssemos 100 veículos? Teríamos que chamar um por um ou poderíamos agrupá-los todos dentro de um único array?"*.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) o momento em que o professor Bro Code volta para o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), instancia os três veículos na memória (`new Car()`, `new Bike()`, `new Boat()`), chama o método `go()` individualmente para cada um deles, executa o programa no IntelliJ IDEA, analisa a saída gerada no console (destacando com o mouse a frase do carro em azul), e faz a grande pergunta provocativa que nos levará ao verdadeiro poder do Polimorfismo: *"E se tivéssemos 100 veículos? Teríamos que chamar um por um ou poderíamos agrupá-los todos dentro de um único array?"*.  
 > **Formato para Google Docs:** Todo o contexto visual do IntelliJ IDEA (árvore de 5 arquivos em `src`, abas abertas, cursores de digitação, janela de execução `Run` e a seleção de texto azul no terminal) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -12,7 +12,7 @@
 Nesta sequência (`08:10:26` a `08:10:34`), o professor coloca os veículos para rodar pela primeira vez:
 
 ### 🖼️ Imagem 1 (`media_1791399945645_7ce5adb7.png` — 08:10:26): Criando os Objetos e Chamando `car.go()`
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Abas abertas no topo:** `Main.java` (ativa), `Vehicle.java`, `Car.java`, `Bike.java`, `Boat.java`.
 * **Árvore do Projeto (à esquerda em `src`):**
   * `Bike` (ícone azul `(C)`)
@@ -36,7 +36,7 @@ Nesta sequência (`08:10:26` a `08:10:34`), o professor coloca os veículos para
 ---
 
 ### 🖼️ Imagem 2 (`media_1791399957078_75078777.png` — 08:10:30): As Três Chamadas Individuais
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O código adicionado nas linhas 14 a 16:**
   ```java
   car.go();
@@ -48,7 +48,7 @@ Nesta sequência (`08:10:26` a `08:10:34`), o professor coloca os veículos para
 ---
 
 ### 🖼️ Imagem 3 (`media_1791399968779_37c1f97a.png` — 08:10:34): A Execução no Console e o Destaque em Azul
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Painel inferior aberto:** Janela `Run` (Console de saída do IntelliJ).
 * **Texto impresso no console (em verde neon brilhante no tema do terminal):**
   ```text
@@ -106,7 +106,7 @@ Em Java, arrays são de **tipo estrito**:
 
 ### A Luz no Fim do Túnel:
 > *"Qual é o único tipo que abriga o Carro, a Bicicleta e o Barco ao mesmo tempo?"*  
-> **A SUPERCLASSE COMUM: [`Vehicle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java)!**  
+> **A SUPERCLASSE COMUM: `Vehicle`!**  
 > Como os três herdam de `Vehicle`, podemos tratá-los como veículos:
 > ```java
 > Vehicle[] racers = { car, bike, boat }; // PERFEITO! ISSO É POLIMORFISMO!
@@ -116,7 +116,7 @@ Em Java, arrays são de **tipo estrito**:
 
 ## 3. Dissecação Linha por Linha de `Main.java`
 
-Vejamos o código completo e exato de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) nas Imagens 1, 2 e 3:
+Vejamos o código completo e exato de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) nas Imagens 1, 2 e 3:
 
 ```java
 1:  

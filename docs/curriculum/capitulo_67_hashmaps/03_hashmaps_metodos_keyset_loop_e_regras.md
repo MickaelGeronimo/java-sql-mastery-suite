@@ -97,7 +97,7 @@
 
 ## 2. O Código Completo do Arquivo `Main.java`
 
-Aqui está o código exato presente no arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Aqui está o código exato presente no arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```java
 import java.util.HashMap;
@@ -146,7 +146,7 @@ Abaixo, cada linha de código é destrinchada nos mínimos detalhes:
 - **O que faz**: Organização visual.
 
 ### Linha 3: `public class Main {`
-- **O que faz**: Cria a nossa classe principal, chamada [`Main`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L3).
+- **O que faz**: Cria a nossa classe principal, chamada [`Main`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L3).
 - **Analogia do Leigo**: É a casca do nosso programa. Todo código em Java precisa morar dentro de uma classe.
 - **O que sai no console**: Nada.
 

@@ -21,7 +21,11 @@ Este capítulo aborda de ponta a ponta a teoria, sintaxe, boas práticas e armad
 Todos os documentos detalhados de estudo e transcrição didática deste capítulo estão catalogados abaixo:
 
 | Parte | Arquivo | Tema Principal |
-| :---: | :--- | :--- |\n| **01** | [**01_timertasks_introducao_timer_e_timertask_com_delay.md**](./01_timertasks_introducao_timer_e_timertask_com_delay.md) | Curso de Java Completo (Bro Code) â€” CapÃ­tulo 64: `timertasks â²ï¸` (Parte 1) |
-| **02** | [**02_timertasks_execucao_periodica_schedule_3_parametros.md**](./02_timertasks_execucao_periodica_schedule_3_parametros.md) | Curso de Java Completo (Bro Code) â€” CapÃ­tulo 64: `timertasks â²ï¸` (Parte 2) |
-| **03** | [**03_timertasks_contador_e_cancelamento_com_timer_cancel.md**](./03_timertasks_contador_e_cancelamento_com_timer_cancel.md) | Curso de Java Completo (Bro Code) â€” CapÃ­tulo 64: `timertasks â²ï¸` (Parte 3) |
-| **04** | [**04_timertasks_visao_geral_completa_e_conclusao.md**](./04_timertasks_visao_geral_completa_e_conclusao.md) | Curso de Java Completo (Bro Code) â€” CapÃ­tulo 64: `timertasks â²ï¸` (Parte 4) |\n\n---\n\n> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.\n
+| :---: | :--- | :--- |\n| **01** | [**01_timertasks_introducao_timer_e_timertask_com_delay.md**](./01_timertasks_introducao_timer_e_timertask_com_delay.md) | Curso de Java Completo (Bro Code) — Capítulo 64: `timertasks ⏲️` (Parte 1) |
+| **02** | [**02_timertasks_execucao_periodica_schedule_3_parametros.md**](./02_timertasks_execucao_periodica_schedule_3_parametros.md) | Curso de Java Completo (Bro Code) — Capítulo 64: `timertasks ⏲️` (Parte 2) |
+| **03** | [**03_timertasks_contador_e_cancelamento_com_timer_cancel.md**](./03_timertasks_contador_e_cancelamento_com_timer_cancel.md) | Curso de Java Completo (Bro Code) — Capítulo 64: `timertasks ⏲️` (Parte 3) |
+| **04** | [**04_timertasks_visao_geral_completa_e_conclusao.md**](./04_timertasks_visao_geral_completa_e_conclusao.md) | Curso de Java Completo (Bro Code) — Capítulo 64: `timertasks ⏲️` (Parte 4) |
+
+---
+
+> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.

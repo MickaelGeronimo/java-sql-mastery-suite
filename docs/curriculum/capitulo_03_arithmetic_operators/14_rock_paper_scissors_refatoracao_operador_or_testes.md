@@ -155,7 +155,7 @@ $$\underbrace{(\text{Pedra} \ \&\& \ \text{Tesoura})}_{\text{Cápsula 1}} \quad 
 
 ## 5. O Código Java Completo, Numerado e Atualizado
 
-Aqui está o arquivo [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) exatamente como está na tela do professor:
+Aqui está o arquivo [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) exatamente como está na tela do professor:
 
 ```java
 1:  import java.util.Random;

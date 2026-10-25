@@ -12,8 +12,8 @@
 Até agora, você aprendeu que sobrescrever um método significa criar uma versão personalizada na classe filha com o **mesmo nome exato** e a **mesma lista de parâmetros** do método da classe pai.
 
 Mas e se você for humano e cometer um errinho bobo de digitação ao escrever o código?
-* Na classe [`Animal`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java), o método se chama **`move()`** (sem 's').
-* Se na classe [`Fish`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java), por distração, você digitar **`moves()`** (com 's' no final)?
+* Na classe [`Animal`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java), o método se chama **`move()`** (sem 's').
+* Se na classe [`Fish`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java), por distração, você digitar **`moves()`** (com 's' no final)?
 
 Nesta sequência de 4 imagens, o professor Bro Code faz um experimento crucial para responder a uma dúvida que quase todo aluno iniciante tem:
 > *"Professor, a anotação `@Override` é realmente obrigatória? Se o código funciona sem ela, por que eu deveria me dar ao trabalho de digitá-la?"*
@@ -27,7 +27,7 @@ A resposta que o professor dá é visual e contundente: **O `@Override` é o seu
 Para quem está estudando pelo Google Docs e não tem as imagens na frente, aqui está a reconstrução cinematográfica do que aconteceu na tela do professor:
 
 ### Imagem 1 (`media_1791357259362.png` — 07:45:28): O Erro de Digitação Solitário
-* **Arquivo em Foco:** [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java).
+* **Arquivo em Foco:** [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java).
 * **O que o autor fez:** Ele apagou a anotação `@Override` e adicionou a letra **`s`** no nome do método:
   ```java
   public class Fish extends Animal{
@@ -143,7 +143,7 @@ public @interface Override
 
 ---
 
-## 5. Análise Linha por Linha de [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java) (Versão do Experimento vs Versão Final)
+## 5. Análise Linha por Linha de [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java) (Versão do Experimento vs Versão Final)
 
 ### Versão do Experimento (Com Erro Intencional):
 ```java
@@ -156,7 +156,7 @@ public @interface Override
 7: }
 ```
 
-* **Linha 1:** Declara a classe `Fish` como filha de [`Animal`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java). *(Válido).*
+* **Linha 1:** Declara a classe `Fish` como filha de [`Animal`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java). *(Válido).*
 * **Linha 3 (`@Override`):** Instrução para o compilador verificar se a linha 4 sobrescreve um método do pai.
 * **Linha 4 (`void moves(){`):** O método com erro de digitação (`s` a mais).
   * **Comportamento do Compilador:** **ERRO DE COMPILAÇÃO!**

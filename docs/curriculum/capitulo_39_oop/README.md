@@ -9,7 +9,7 @@
 
 O **Capítulo 39** marca o divisor de águas na formação do desenvolvedor Java: a transição da programação puramente procedural/estruturada para o paradigma da **Programação Orientada a Objetos (POO / OOP)**.
 
-Neste módulo, modelamos a classe automotiva [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), explorando os seguintes pilares fundamentais:
+Neste módulo, modelamos a classe automotiva [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), explorando os seguintes pilares fundamentais:
 
 - **Definição Canônica de Objeto**:
   > *"An entity that holds data (attributes) and can perform actions (methods). It is a reference data type."*
@@ -47,15 +47,15 @@ Neste módulo, modelamos a classe automotiva [`Car.java`](file:///c:/Users/micke
 
 | Arquivo | Título / Tema Principal |
 | :--- | :--- |
-| [01_fundamentos_classes_objetos_e_memoria.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_39_oop/01_fundamentos_classes_objetos_e_memoria.md) | O despertar da OOP: conceito formal de objeto, analogias do mundo real (iPhone, caneca, microfone), classe vs objeto e arquitetura Stack vs Heap. |
-| [02_atributos_instanciacao_operador_ponto_e_hashcode.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_39_oop/02_atributos_instanciacao_operador_ponto_e_hashcode.md) | Criação da classe `Car`, operador `new`, o mistério do hash `Car@6acbcfc0` e o operador ponto (`.`). |
-| [03_leitura_completa_atributos_operador_ponto.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_39_oop/03_leitura_completa_atributos_operador_ponto.md) | Extração e exibição no console de todos os atributos (`make`, `model`, `year`, `price`, `isRunning`). |
-| [04_modificacao_atributos_estado_e_transicao.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_39_oop/04_modificacao_atributos_estado_e_transicao.md) | Mutação dinâmica de variáveis de instância em tempo de execução e inspeção de transição de estado. |
-| [05_metodos_acoes_start_stop_e_encapsulamento_de_estado.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_39_oop/05_metodos_acoes_start_stop_e_encapsulamento_de_estado.md) | Métodos de instância `start()` e `stop()`, ausência do `static` e alternância do boolean `isRunning` (`false -> true -> false`). |
-| [06_metodos_drive_brake_e_acesso_a_atributos.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_39_oop/06_metodos_drive_brake_e_acesso_a_atributos.md) | Ações `drive()` e `brake()` dialogando diretamente com variáveis de instância (`model`). |
-| [07_multiplos_objetos_car1_car2_e_independencia.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_39_oop/07_multiplos_objetos_car1_car2_e_independencia.md) | Instanciação de múltiplos objetos (`car1` e `car2`) e demonstração prática do isolamento no Heap. |
-| [08_clone_cars_conclusao.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_39_oop/08_clone_cars_conclusao.md) | O fenômeno dos "3 Mustangs vermelhos", o diagnóstico dos valores *hardcoded*, teaser do Cap. 40 (Construtores) e síntese dos 7 grandes pilares. |
-| [README.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_39_oop/README.md) | Guia curricular geral e mapa conceitual de OOP. |
+| [01_fundamentos_classes_objetos_e_memoria.md](01_fundamentos_classes_objetos_e_memoria.md) | O despertar da OOP: conceito formal de objeto, analogias do mundo real (iPhone, caneca, microfone), classe vs objeto e arquitetura Stack vs Heap. |
+| [02_atributos_instanciacao_operador_ponto_e_hashcode.md](02_atributos_instanciacao_operador_ponto_e_hashcode.md) | Criação da classe `Car`, operador `new`, o mistério do hash `Car@6acbcfc0` e o operador ponto (`.`). |
+| [03_leitura_completa_atributos_operador_ponto.md](03_leitura_completa_atributos_operador_ponto.md) | Extração e exibição no console de todos os atributos (`make`, `model`, `year`, `price`, `isRunning`). |
+| [04_modificacao_atributos_estado_e_transicao.md](04_modificacao_atributos_estado_e_transicao.md) | Mutação dinâmica de variáveis de instância em tempo de execução e inspeção de transição de estado. |
+| [05_metodos_acoes_start_stop_e_encapsulamento_de_estado.md](05_metodos_acoes_start_stop_e_encapsulamento_de_estado.md) | Métodos de instância `start()` e `stop()`, ausência do `static` e alternância do boolean `isRunning` (`false -> true -> false`). |
+| [06_metodos_drive_brake_e_acesso_a_atributos.md](06_metodos_drive_brake_e_acesso_a_atributos.md) | Ações `drive()` e `brake()` dialogando diretamente com variáveis de instância (`model`). |
+| [07_multiplos_objetos_car1_car2_e_independencia.md](07_multiplos_objetos_car1_car2_e_independencia.md) | Instanciação de múltiplos objetos (`car1` e `car2`) e demonstração prática do isolamento no Heap. |
+| [08_clone_cars_conclusao.md](08_clone_cars_conclusao.md) | O fenômeno dos "3 Mustangs vermelhos", o diagnóstico dos valores *hardcoded*, teaser do Cap. 40 (Construtores) e síntese dos 7 grandes pilares. |
+| [README.md](README.md) | Guia curricular geral e mapa conceitual de OOP. |
 
 ---
 
@@ -82,6 +82,6 @@ flowchart LR
 ---
 
 ## 💻 Código-Fonte e Testes no Projeto
-- Classe de Entidade do Domínio: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
-- Demonstração Interativa / CLI de Objetos: [`OOPCarDemo.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/OOPCarDemo.java)
-- Suíte de Testes Automatizados: [`OOPCarTest.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/test/java/com/mickaelgeronimo/mastery/core/OOPCarTest.java)
+- Classe de Entidade do Domínio: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
+- Demonstração Interativa / CLI de Objetos: [`OOPCarDemo.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/OOPCarDemo.java)
+- Suíte de Testes Automatizados: [`OOPCarTest.java`](../../../src/test/java/com/mickaelgeronimo/mastery/core/OOPCarTest.java)

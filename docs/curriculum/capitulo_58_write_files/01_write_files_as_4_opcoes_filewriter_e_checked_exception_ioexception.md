@@ -7,7 +7,7 @@
 - **Curso:** *Java Full Course for free* (Canal: Bro Code)
 - **Capítulo Oficial:** `58. write files ✍` *(Capítulo Novo!)*
 - **Intervalo de Tempo no Vídeo:** `09:13:36` até `09:15:23` (do total de 12:00:00)
-- **Arquivo de Trabalho:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+- **Arquivo de Trabalho:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 - **Ambiente de Desenvolvimento:** IntelliJ IDEA Community Edition (JDK 23 / OpenJDK 23)
 
 ---
@@ -96,7 +96,7 @@ Como você copiará este material diretamente para o seu **Google Docs** e não 
 
 ---
 
-## 💻 Código-Fonte Completo da Tela na Imagem 5 ([`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java))
+## 💻 Código-Fonte Completo da Tela na Imagem 5 ([`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java))
 
 ```java
  1: import java.io.FileWriter;

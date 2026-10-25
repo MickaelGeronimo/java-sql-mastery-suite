@@ -186,7 +186,7 @@ Análise Visual da Imagem 5:
 
 ## 🔬 A Anatomia de uma Classe Anônima (Dessecando a Sintaxe)
 
-Observe com atenção a linha 10 até a linha 15 de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Observe com atenção a linha 10 até a linha 15 de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```java
 Dog dog2 = new Dog(){
@@ -237,9 +237,9 @@ Quando o compilador do Java (`javac`) lê o nosso código com classe anônima, e
 
 ---
 
-## 🔍 Explicação Linha por Linha do Arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 🔍 Explicação Linha por Linha do Arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
-Abaixo está o código final do arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) presente nas Imagens 4 e 5:
+Abaixo está o código final do arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) presente nas Imagens 4 e 5:
 
 ```java
  1: public class Main {
@@ -270,7 +270,7 @@ Abaixo está o código final do arquivo [`Main.java`](file:///c:/Users/mickel%20
 - **Linhas 5 a 7**: Comentários didáticos conceituais explicando que uma classe anônima não tem nome, não pode ser reutilizada, adiciona comportamento sob medida e é muito usada em tarefas de uso único (`TimerTask`, `Runnable`, `callbacks`).
 - **Linha 8**: Linha em branco.
 - **Linha 9 (`Dog dog1 = new Dog();`)**:
-  - Instancia um cachorro padrão da classe base [`Dog.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java).
+  - Instancia um cachorro padrão da classe base `Dog.java`.
   - Aloca memória no Heap com as características comuns da espécie canina.
 - **Linha 10 (`Dog dog2 = new Dog(){`)**:
   - Declara a variável `dog2` do tipo `Dog`.

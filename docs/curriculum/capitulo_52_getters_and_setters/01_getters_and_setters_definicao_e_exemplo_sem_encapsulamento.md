@@ -2,7 +2,7 @@
 ## Parte 1: A Estreia do Encapsulamento — Definição Conceitual, a Criação de `Car.java` e o Acesso Direto aos Atributos
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:19:40` até `08:21:00` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo, como para quem nunca programou na vida) a estreia do **Capítulo 52**: o que são **Getters** e **Setters**, por que o capítulo possui o emoji de um cadeado trancado com chave (`🔐`), o conceito supremo de **Encapsulamento** (*Encapsulation*), a criação da nova classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) e a demonstração do estado "Antes da Proteção" (onde os atributos ainda estão expostos e acessíveis diretamente no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)).  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo, como para quem nunca programou na vida) a estreia do **Capítulo 52**: o que são **Getters** e **Setters**, por que o capítulo possui o emoji de um cadeado trancado com chave (`🔐`), o conceito supremo de **Encapsulamento** (*Encapsulation*), a criação da nova classe [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) e a demonstração do estado "Antes da Proteção" (onde os atributos ainda estão expostos e acessíveis diretamente no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)).  
 > **Formato para Google Docs:** Todo o contexto visual do IntelliJ IDEA (a lousa limpa do projeto, os comentários das Linhas 5 a 7, os popups de criação, o código do construtor de `Car` e a saída impressa no console) foi minuciosamente convertido em texto, diagramas visuais e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -13,11 +13,11 @@ Nesta abertura oficial do Capítulo 52 (`08:19:40` a `08:21:00`), o professor Br
 
 | Imagem | Timestamp / Arquivo | O que é mostrado na tela do IntelliJ IDEA? | Ação Realizada pelo Professor Bro Code |
 | :--- | :--- | :--- | :--- |
-| **🖼️ Imagem 1** | `08:19:45`<br>`media_1791401615134_cee91da1.png` | Editor aberto em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (pasta `src` limpa, apenas com `Main`). Linhas 5 a 7 contêm as definições de Getters e Setters. O professor seleciona a palavra **`GETTERS`** em azul. | O professor introduz a teoria: Getters tornam um campo legível (*readable*), enquanto Setters tornam um campo modificável/gravável (*writeable*). |
+| **🖼️ Imagem 1** | `08:19:45`<br>`media_1791401615134_cee91da1.png` | Editor aberto em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (pasta `src` limpa, apenas com `Main`). Linhas 5 a 7 contêm as definições de Getters e Setters. O professor seleciona a palavra **`GETTERS`** em azul. | O professor introduz a teoria: Getters tornam um campo legível (*readable*), enquanto Setters tornam um campo modificável/gravável (*writeable*). |
 | **🖼️ Imagem 2** | `08:19:51`<br>`media_1791401630542_657a0c29.png` | No player do YouTube, o título marca `52.getters and setters 🔐 >`. Abre-se o popup **"New Java Class"**. Letreiro estilizado gigante no vídeo: **`Car`**. | O professor clica com botão direito em `src` e cria uma classe chamada `Car` para servir como exemplo didático. |
-| **🖼️ Imagem 3** | `08:20:32`<br>`media_1791401665315_28f93766.png` | Editor aberto em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (Linhas 1 a 12). Código com 3 atributos (`model`, `color`, `price`) e um construtor `Car(...)` atribuindo com `this`. | O professor escreve a classe do carro. **Atenção:** os atributos ainda NÃO têm a palavra `private` (estão abertos/desprotegidos de propósito para comparação). |
-| **🖼️ Imagem 4** | `08:20:55`<br>`media_1791401676888_d68b9cda.png` | Editor de volta em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java). Linha 9 adicionada: `Car car = new Car("Charger", "Yellow", 10000);`. | O professor instancia um Dodge Charger amarelo com preço de 10.000 dólares. |
-| **🖼️ Imagem 5** | `08:21:00`<br>`media_1791401696548_aba21611.png` | Linha 11 adicionada em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java): `System.out.println(car.color + " " + car.model + " " + car.price);`. | O professor demonstra o acesso direto aos campos através do ponto (`car.color`), preparando a explicação de por que isso é perigoso no mundo real. |
+| **🖼️ Imagem 3** | `08:20:32`<br>`media_1791401665315_28f93766.png` | Editor aberto em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (Linhas 1 a 12). Código com 3 atributos (`model`, `color`, `price`) e um construtor `Car(...)` atribuindo com `this`. | O professor escreve a classe do carro. **Atenção:** os atributos ainda NÃO têm a palavra `private` (estão abertos/desprotegidos de propósito para comparação). |
+| **🖼️ Imagem 4** | `08:20:55`<br>`media_1791401676888_d68b9cda.png` | Editor de volta em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java). Linha 9 adicionada: `Car car = new Car("Charger", "Yellow", 10000);`. | O professor instancia um Dodge Charger amarelo com preço de 10.000 dólares. |
+| **🖼️ Imagem 5** | `08:21:00`<br>`media_1791401696548_aba21611.png` | Linha 11 adicionada em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java): `System.out.println(car.color + " " + car.model + " " + car.price);`. | O professor demonstra o acesso direto aos campos através do ponto (`car.color`), preparando a explicação de por que isso é perigoso no mundo real. |
 
 ---
 
@@ -48,7 +48,7 @@ Imagine que você tem uma conta bancária ou uma carteira física com dinheiro d
 
 ## 3. Dissecando as Definições do Professor (Linhas 5 a 7)
 
-No arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), o professor Bro Code escreveu as três regras fundamentais do Encapsulamento:
+No arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), o professor Bro Code escreveu as três regras fundamentais do Encapsulamento:
 
 ```java
 // They help protect object data and add rules for accessing or modifying them.
@@ -68,7 +68,7 @@ No arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/M
 
 Vamos analisar os dois arquivos criados nesta aula inicial:
 
-### 4.1 Arquivo: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (Linhas 1 a 12)
+### 4.1 Arquivo: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (Linhas 1 a 12)
 
 ```java
  1 | public class Car {
@@ -102,7 +102,7 @@ Vamos analisar os dois arquivos criados nesta aula inicial:
 
 ---
 
-### 4.2 Arquivo: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Linhas 1 a 13)
+### 4.2 Arquivo: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Linhas 1 a 13)
 
 ```java
  1 | 
@@ -145,7 +145,7 @@ Vamos analisar os dois arquivos criados nesta aula inicial:
 
 ## 5. O Que Aparece no Console? (Resultado da Execução)
 
-Ao clicar no botão verde de execução `▷` ao lado da Linha 2 ou Linha 3 de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Ao clicar no botão verde de execução `▷` ao lado da Linha 2 ou Linha 3 de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```text
 Yellow Charger 10000
@@ -168,11 +168,11 @@ Process finished with exit code 0
 
 O professor Bro Code acabou de nos mostrar o código funcionando no modo **"sem cadeado"**.  
 Nos próximos minutos da aula:
-1. Ele vai entrar em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) e colocar a palavra **`private`** na frente de `model`, `color` e `price`:
+1. Ele vai entrar em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) e colocar a palavra **`private`** na frente de `model`, `color` e `price`:
    ```java
    private String model;
    private String color;
    private int price;
    ```
-2. No mesmo milissegundo, a Linha 11 de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) **vai explodir em erros vermelhos**! O Java vai dizer: *"Ei, você não pode acessar esses campos diretamente porque eles são privados!"*.
+2. No mesmo milissegundo, a Linha 11 de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) **vai explodir em erros vermelhos**! O Java vai dizer: *"Ei, você não pode acessar esses campos diretamente porque eles são privados!"*.
 3. E para resolver isso com elegância, o professor vai nos ensinar a criar os métodos **Getters** (`getColor()`, `getModel()`, `getPrice()`) e **Setters** (`setColor()`, `setModel()`, `setPrice()`).

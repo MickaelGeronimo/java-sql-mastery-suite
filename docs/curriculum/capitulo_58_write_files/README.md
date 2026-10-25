@@ -21,10 +21,14 @@ Este capítulo aborda de ponta a ponta a teoria, sintaxe, boas práticas e armad
 Todos os documentos detalhados de estudo e transcrição didática deste capítulo estão catalogados abaixo:
 
 | Parte | Arquivo | Tema Principal |
-| :---: | :--- | :--- |\n| **01** | [**01_write_files_as_4_opcoes_filewriter_e_checked_exception_ioexception.md**](./01_write_files_as_4_opcoes_filewriter_e_checked_exception_ioexception.md) | âœ Java â€” CapÃ­tulo 58: `Write Files` (Parte 1) |
-| **02** | [**02_write_files_filewriter_write_pizza_e_import_ioexception.md**](./02_write_files_filewriter_write_pizza_e_import_ioexception.md) | âœï¸ Java â€” CapÃ­tulo 58: `Write Files` (Parte 2) |
-| **03** | [**03_write_files_caminho_relativo_vs_absoluto_desktop_properties.md**](./03_write_files_caminho_relativo_vs_absoluto_desktop_properties.md) | âœï¸ Java â€” CapÃ­tulo 58: `Write Files` (Parte 3) |
-| **04** | [**04_write_files_caminho_absoluto_desktop_e_erro_deskto_catch.md**](./04_write_files_caminho_absoluto_desktop_e_erro_deskto_catch.md) | âœï¸ Java â€” CapÃ­tulo 58: `Write Files` (Parte 4) |
-| **05** | [**05_write_files_execucao_deskto_could_not_write_file_catch.md**](./05_write_files_execucao_deskto_could_not_write_file_catch.md) | âœï¸ Java â€” CapÃ­tulo 58: `Write Files` (Parte 5) |
-| **06** | [**06_write_files_filenotfoundexception_quebra_de_linha_e_refatoracao.md**](./06_write_files_filenotfoundexception_quebra_de_linha_e_refatoracao.md) | âœï¸ Java â€” CapÃ­tulo 58: `Write Files` (Parte 6) |
-| **07** | [**07_write_files_text_blocks_poema_e_leitura_bufferedreader.md**](./07_write_files_text_blocks_poema_e_leitura_bufferedreader.md) | âœï¸ðŸ“– Java â€” CapÃ­tulo 58 & 59: `Write Files` & `Read Files` |\n\n---\n\n> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.\n
+| :---: | :--- | :--- |\n| **01** | [**01_write_files_as_4_opcoes_filewriter_e_checked_exception_ioexception.md**](./01_write_files_as_4_opcoes_filewriter_e_checked_exception_ioexception.md) | ✍ Java — Capítulo 58: `Write Files` (Parte 1) |
+| **02** | [**02_write_files_filewriter_write_pizza_e_import_ioexception.md**](./02_write_files_filewriter_write_pizza_e_import_ioexception.md) | ✍️ Java — Capítulo 58: `Write Files` (Parte 2) |
+| **03** | [**03_write_files_caminho_relativo_vs_absoluto_desktop_properties.md**](./03_write_files_caminho_relativo_vs_absoluto_desktop_properties.md) | ✍️ Java — Capítulo 58: `Write Files` (Parte 3) |
+| **04** | [**04_write_files_caminho_absoluto_desktop_e_erro_deskto_catch.md**](./04_write_files_caminho_absoluto_desktop_e_erro_deskto_catch.md) | ✍️ Java — Capítulo 58: `Write Files` (Parte 4) |
+| **05** | [**05_write_files_execucao_deskto_could_not_write_file_catch.md**](./05_write_files_execucao_deskto_could_not_write_file_catch.md) | ✍️ Java — Capítulo 58: `Write Files` (Parte 5) |
+| **06** | [**06_write_files_filenotfoundexception_quebra_de_linha_e_refatoracao.md**](./06_write_files_filenotfoundexception_quebra_de_linha_e_refatoracao.md) | ✍️ Java — Capítulo 58: `Write Files` (Parte 6) |
+| **07** | [**07_write_files_text_blocks_poema_e_leitura_bufferedreader.md**](./07_write_files_text_blocks_poema_e_leitura_bufferedreader.md) | ✍️📖 Java — Capítulo 58 & 59: `Write Files` & `Read Files` |
+
+---
+
+> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.

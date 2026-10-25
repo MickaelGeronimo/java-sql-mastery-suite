@@ -365,7 +365,7 @@ Veja o que acontece na prática quando executamos o programa agora:
 ## 7. Conclusão Desta Aula
 
 Com esta aula, você completou o ciclo de ouro do aprendizado de Enums:
-1. **Modelagem**: Criou o Enum [`Day`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Day.java).
-2. **Expansão**: Adicionou uma nova constante [`PIZZADAY(8)`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Day.java#L3).
-3. **Consumo no Switch**: Usou a constante no [`switch`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L13) com sintaxe moderna e alinhamento profissional.
+1. **Modelagem**: Criou o Enum [`Day`](../../../src/main/java/com/mickaelgeronimo/mastery/core/models/Day.java).
+2. **Expansão**: Adicionou uma nova constante [`PIZZADAY(8)`](../../../src/main/java/com/mickaelgeronimo/mastery/core/models/Day.java#L3).
+3. **Consumo no Switch**: Usou a constante no [`switch`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L13) com sintaxe moderna e alinhamento profissional.
 4. **Proteção**: Manteve o `try / catch` ativo para blindar o sistema contra qualquer outra palavra que não seja um dia válido.

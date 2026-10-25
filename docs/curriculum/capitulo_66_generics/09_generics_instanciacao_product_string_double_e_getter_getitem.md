@@ -182,7 +182,7 @@ INTELLIJ IDEA - [MyFirstProject] - 10:50:18 / 12:00:00 - Chapter: 66.generics
 
 Aqui estão os códigos exatos sincronizados com a sua máquina local:
 
-### [`Product.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Product.java)
+### [`Product.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Product.java)
 ```java
 public class Product<T, U> {
 
@@ -200,7 +200,7 @@ public class Product<T, U> {
 }
 ```
 
-### [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -241,7 +241,7 @@ Isso causou **dois problemas graves**:
 
 ---
 
-### Dissecando a Instanciação Correta em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Dissecando a Instanciação Correta em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
 Product<String, Double> product = new Product<>("apple", 0.50);
@@ -269,7 +269,7 @@ Product<String, Double> product = new Product<>("apple", 0.50);
 
 ---
 
-### Dissecando o Método `getItem()` em [`Product.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Product.java)
+### Dissecando o Método `getItem()` em [`Product.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Product.java)
 
 ```java
 11:     public T getItem(){
@@ -331,8 +331,8 @@ Com o retorno `T`, o compilador já sabe de antemão qual é o tipo exato, garan
 
 | Arquivo | Status de Compilação | Saída no Console | Explicação Técnica |
 | :--- | :---: | :---: | :--- |
-| **[`Product.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Product.java)** | ✅ Compila com Sucesso (`exit code 0`) | *(nenhuma)* | O método `getItem()` e o construtor `Product(T, U)` estão 100% corretos sintaticamente. |
-| **[`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)** | ✅ Compila com Sucesso (`exit code 0`) | *(nenhuma)* | O objeto `product` foi instanciado na memória com `"apple"` e `0.50`, mas o Bro Code ainda não digitou `System.out.println` nesta cena. Por isso, a saída do terminal permanece em silêncio. |
+| **[`Product.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Product.java)** | ✅ Compila com Sucesso (`exit code 0`) | *(nenhuma)* | O método `getItem()` e o construtor `Product(T, U)` estão 100% corretos sintaticamente. |
+| **[`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)** | ✅ Compila com Sucesso (`exit code 0`) | *(nenhuma)* | O objeto `product` foi instanciado na memória com `"apple"` e `0.50`, mas o Bro Code ainda não digitou `System.out.println` nesta cena. Por isso, a saída do terminal permanece em silêncio. |
 
 ---
 

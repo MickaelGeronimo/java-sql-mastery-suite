@@ -13,7 +13,7 @@ Nesta pausa reflexiva (`08:19:15` a `08:19:30`), o professor Bro Code prepara a 
 
 | Imagem | Timestamp / Arquivo | O que é mostrado na tela do IntelliJ IDEA? | Ação Realizada pelo Professor Bro Code |
 | :--- | :--- | :--- | :--- |
-| **🖼️ Imagem 1** | `08:19:18`<br>`media_1791401530519_187a82ec.png` | Editor aberto em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java). Na Linha 22, a instrução **`animal.speak();`** está selecionada em azul brilhante. Logo acima, na Linha 18, vê-se a exata mesma instrução duplicada dentro do bloco do cachorro. | O professor destaca a redundância visual: *"Reparem nisto: nós escrevemos `animal.speak();` aqui dentro do `if` do cão e repetimos exatamente a mesma coisa aqui dentro do `else if` do gato!"*. |
+| **🖼️ Imagem 1** | `08:19:18`<br>`media_1791401530519_187a82ec.png` | Editor aberto em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java). Na Linha 22, a instrução **`animal.speak();`** está selecionada em azul brilhante. Logo acima, na Linha 18, vê-se a exata mesma instrução duplicada dentro do bloco do cachorro. | O professor destaca a redundância visual: *"Reparem nisto: nós escrevemos `animal.speak();` aqui dentro do `if` do cão e repetimos exatamente a mesma coisa aqui dentro do `else if` do gato!"*. |
 | **🖼️ Imagem 2** | `08:19:26`<br>`media_1791401553112_4c35c47e.png` | No player do YouTube, o tempo marca `8:19:26 / 12:00:00`. O professor sobe o cursor e seleciona em azul a palavra **`runtime`** na Linha 7 do comentário: `...at runtime based on the actual type of the object.`. | O professor reconecta a prática à teoria: *"Se o método a ser executado é decidido em tempo de execução (`runtime`), por que diabos estamos chamando ele dentro de cada `if`? Nós podemos chamá-lo uma única vez depois!"*. |
 
 ---
@@ -76,7 +76,7 @@ Porque essa é a resposta definitiva para quem duvida do poder do Java:
 
 ---
 
-## 4. O Código de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) Linha por Linha (Linhas 1 a 26)
+## 4. O Código de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Linha por Linha (Linhas 1 a 26)
 
 Aqui está a visão anatômica do código no exato momento das duas capturas de tela:
 

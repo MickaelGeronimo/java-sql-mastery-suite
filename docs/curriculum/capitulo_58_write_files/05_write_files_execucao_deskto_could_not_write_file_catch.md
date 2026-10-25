@@ -7,7 +7,7 @@
 - **Curso:** *Java Full Course for free* (Canal: Bro Code)
 - **Capítulo Oficial:** `58. write files ✍️` *(Fechamento do primeiro grande bloco com FileWriter e Caminhos)*
 - **Intervalo de Tempo no Vídeo:** `09:18:11` até `09:18:15` (do total de 12:00:00)
-- **Arquivo Principal de Trabalho:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+- **Arquivo Principal de Trabalho:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 - **Ambiente de Desenvolvimento (IDE):** IntelliJ IDEA Community Edition rodando com JDK 23
 
 ---

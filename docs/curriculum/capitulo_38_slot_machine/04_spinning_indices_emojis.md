@@ -168,7 +168,7 @@ Nome:      Cereja  Melancia  Limão   Sino   Estrela
 
 ## 6. O Código Java Completo, Numerado e Atualizado
 
-Aqui está o arquivo [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) exatamente como está na tela do professor:
+Aqui está o arquivo [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) exatamente como está na tela do professor:
 
 ```java
 1:  import java.util.Random;

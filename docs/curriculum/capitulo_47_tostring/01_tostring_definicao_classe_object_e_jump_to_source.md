@@ -102,7 +102,7 @@ Vamos analisar linha por linha o que o professor escreveu no comentário:
 
 ### 4ª Linha: *"It can be overridden to provide meaningful details."*
 * **Tradução:** *"Ele pode ser sobrescrito (com `@Override`) para fornecer detalhes úteis e significativos."*
-* **A Conexão com o Capítulo Anterior:** Aqui está a mágica! Como você acabou de aprender no Capítulo 46 sobre **Method Overriding**, nós podemos usar a anotação `@Override` dentro da nossa classe (como [`Car`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)) para ensinar o Java a imprimir: `"Ford Mustang 2025 Vermelho"` em vez de imprimir aquele código esquisito `Car@7a8114c0`!
+* **A Conexão com o Capítulo Anterior:** Aqui está a mágica! Como você acabou de aprender no Capítulo 46 sobre **Method Overriding**, nós podemos usar a anotação `@Override` dentro da nossa classe (como [`Car`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)) para ensinar o Java a imprimir: `"Ford Mustang 2025 Vermelho"` em vez de imprimir aquele código esquisito `Car@7a8114c0`!
 
 ---
 
@@ -150,7 +150,7 @@ flowchart TD
 
 ---
 
-## 5. Análise Código por Código e Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 5. Análise Código por Código e Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Abaixo está o código exatamente como visto na tela do professor:
 
@@ -203,7 +203,7 @@ O professor Bro Code ensina uma técnica usada diariamente por desenvolvedores s
 
 ## 7. O Que Sai no Console nesta Etapa?
 
-Se você rodar o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) agora:
+Se você rodar o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) agora:
 
 ```text
 Process finished with exit code 0
@@ -220,4 +220,4 @@ Process finished with exit code 0
 2. **Herança invisível:** Você não precisa escrever `extends Object`. O Java faz isso automaticamente para toda classe que você cria.
 3. **O método `.toString()`:** É um método que toda classe herda de `Object`. O objetivo dele é transformar o objeto em texto legível.
 4. **O comportamento padrão:** Sem sobrescrita, ele imprime um código feio com o nome da classe e um hash hexadecimal (ex: `Objeto@4f023edb`).
-5. **O próximo passo do capítulo:** Aprenderemos a usar o `@Override` para customizar o `.toString()` do nosso próprio objeto ([`Car`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)), fazendo ele exibir dados úteis e bonitos!
+5. **O próximo passo do capítulo:** Aprenderemos a usar o `@Override` para customizar o `.toString()` do nosso próprio objeto ([`Car`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)), fazendo ele exibir dados úteis e bonitos!

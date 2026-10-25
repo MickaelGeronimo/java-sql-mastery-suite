@@ -3,7 +3,7 @@
 > **Contexto do Curso:** *Java Full Course for free* (Bro Code)  
 > **Capítulo:** 44 — `inheritance 👨‍👧‍👦`  
 > **Tempo do Vídeo:** `07:27:00` até `07:27:55` / `12:00:00`  
-> **Arquivos do Projeto:** [Organism.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Organism.java), [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java), [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java), [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java) e [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
+> **Arquivos do Projeto:** Organism.java, [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java), Dog.java, [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java) e [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
 > **Objetivo Deste Documento:** Material didático definitivo para iniciantes, projetado para cópia direta no **Google Docs**, recriando as 4 telas do IntelliJ IDEA, explicando o conceito de **Herança Multinível (em cadeia)**, a promoção de atributos para superclasses ancestrais e a árvore genealógica de 3 gerações em Java.
 
 ---
@@ -47,7 +47,7 @@ Nesta etapa, o autor eleva o entendimento de herança a um novo patamar, apresen
 ### Detalhamento Quadro a Quadro (As 4 Imagens Explicadas)
 
 #### 🖼️ Imagem 1: A Linha Genealógica Completa (*Child <- Parent <- Grandparent*)
-* **Arquivo ativo:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo ativo:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que mudou no comentário:**
   * Na linha 7, o autor expandiu a explicação:
     ```java
@@ -61,18 +61,18 @@ Nesta etapa, o autor eleva o entendimento de herança a um novo patamar, apresen
 ---
 
 #### 🖼️ Imagem 2 (`07:27:38`): Criando a Classe Ancestral `Organism`
-* **Arquivo ativo:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo ativo:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que acontece:**
   * O autor abre a janela do IntelliJ `New Java Class`.
   * Digita o nome: **`Organism`** (Organismo vivo).
   * No meio do vídeo surge um letreiro gigante cartunesco escrito:  
     # **Organism**
-  * O arquivo [Organism.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Organism.java) é criado dentro da pasta `src`.
+  * O arquivo Organism.java é criado dentro da pasta `src`.
 
 ---
 
 #### 🖼️ Imagem 3 (`07:27:48`): Conectando `Animal` a `Organism`
-* **Arquivo ativo:** [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java).
+* **Arquivo ativo:** [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java).
 * **O que o autor digita:**
   ```java
   public class Animal extends Organism{
@@ -82,7 +82,7 @@ Nesta etapa, o autor eleva o entendimento de herança a um novo patamar, apresen
 ---
 
 #### 🖼️ Imagem 4 (`07:27:55`): A Grande Refatoração em `Animal.java`
-* **Arquivo ativo:** [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java).
+* **Arquivo ativo:** [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java).
 * **O que sumiu da tela?**
   * As linhas `boolean isAlive;` e o construtor `Animal(){ isAlive = true; }` **foram removidos de `Animal.java`**!
   * O arquivo `Animal.java` ficou com apenas 6 linhas:
@@ -159,7 +159,7 @@ Pense na herança entre três gerações:
 
 ## 3. Dissecando os Códigos Linha por Linha Numerado
 
-### Arquivo 1: [Organism.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Organism.java) (O Avô / Grandparent)
+### Arquivo 1: Organism.java (O Avô / Grandparent)
 
 ```java
  1: public class Organism {
@@ -180,7 +180,7 @@ Pense na herança entre três gerações:
 
 ---
 
-### Arquivo 2: [Animal.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) (O Pai / Parent)
+### Arquivo 2: [Animal.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) (O Pai / Parent)
 
 ```java
  1: public class Animal extends Organism{
@@ -202,7 +202,7 @@ Pense na herança entre três gerações:
 
 ---
 
-### Arquivo 3: [Dog.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) e [Cat.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java) (Os Netos / Children)
+### Arquivo 3: Dog.java e [Cat.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java) (Os Netos / Children)
 
 ```java
 public class Dog extends Animal{
@@ -229,7 +229,7 @@ public class Cat extends Animal{
 
 ---
 
-### Arquivo 4: [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 4: [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: public class Main {
@@ -254,7 +254,7 @@ public class Cat extends Animal{
 
 ## 4. O Que Sai no Console?
 
-Ao executar o [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) com o método `speak()`:
+Ao executar o [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) com o método `speak()`:
 
 ```text
 The dog goes *woof*

@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal com o Loop: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe do Livro: [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java)
-* Classe da Biblioteca: [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte Anterior (Capítulo 53 - Parte 4: Refinamento de Strings e Testes Individuais): [`explicacao_agregacao_ajuste_de_formatacao_e_teste_individual_dos_tres_livros_capitulo53_parte4.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_agregacao_ajuste_de_formatacao_e_teste_individual_dos_tres_livros_capitulo53_parte4.md)
+* Arquivo Principal com o Loop: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe do Livro: `Book.java`
+* Classe da Biblioteca: `Library.java`
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte Anterior (Capítulo 53 - Parte 4: Refinamento de Strings e Testes Individuais): `explicacao_agregacao_ajuste_de_formatacao_e_teste_individual_dos_tres_livros_capitulo53_parte4.md`
 
 ---
 
@@ -128,7 +128,7 @@ sequenceDiagram
 
 ## 5. Código Completo de `Main.java` no seu Computador
 
-Aqui está o código exato que está salvo e funcionando no seu arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Aqui está o código exato que está salvo e funcionando no seu arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```java
 public class Main {
@@ -209,7 +209,7 @@ Você deve estar se perguntando:
 
 Aqui está o "pulo do gato" da didática do Bro Code:
 1. Primeiro, ele provou que os livros funcionam sozinhos e que o array funciona sozinho (existência independente).
-2. Agora que você já sabe como o loop `for-each` percorre os livros, o professor vai **PEGAR ESSE EXATO LOOP E COLOCAR DENTRO DA CLASSE [`Library`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)**!
+2. Agora que você já sabe como o loop `for-each` percorre os livros, o professor vai **PEGAR ESSE EXATO LOOP E COLOCAR DENTRO DA CLASSE `Library`**!
 3. A biblioteca receberá os livros e terá o seu próprio método para exibir o seu catálogo. Isso concretizará com perfeição o conceito de **Agregação**:
    * A Biblioteca tem livros (`Library has-a Book[]`).
    * A Biblioteca exibe os livros que foram agregados a ela!

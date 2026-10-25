@@ -2,7 +2,7 @@
 ## Parte 2: O Erro do `new Shape()`, as Classes Concretas e o Método Abstrato `area()`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `07:52:30` até `07:55:50` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a demonstração do erro didático ao tentar instanciar uma classe abstrata (`new Shape();`), a instanciação bem-sucedida das classes concretas ([`Circle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java), [`Triangle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java) e [`Rectangle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java)), e a declaração do primeiro **Método Abstrato** da história do curso: `abstract double area(); // ABSTRACT` dentro de [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java).  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a demonstração do erro didático ao tentar instanciar uma classe abstrata (`new Shape();`), a instanciação bem-sucedida das classes concretas ([`Circle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java), [`Triangle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java) e [`Rectangle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java)), e a declaração do primeiro **Método Abstrato** da história do curso: `abstract double area(); // ABSTRACT` dentro de [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java).  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (janelas de erro em pop-up, sublinhados vermelhos, seleções azuis com o mouse, abas e códigos) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -11,9 +11,9 @@
 
 Nesta sequência de 5 capturas de tela, o professor Bro Code nos leva por três momentos cruciais da Orientação a Objetos:
 
-1. **A Prova do Erro (`07:54:17`):** Ele digita `Shape shape = new Shape();` em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) para comprovar a Regra 3 dos comentários. A IDE bloqueia imediatamente com um erro vermelho: `'Shape' is abstract; cannot be instantiated`!
-2. **A Salvação com Classes Concretas (`07:55:13`):** Ele apaga o erro e cria instâncias reais de [`Circle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java), [`Triangle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java) e [`Rectangle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java). O Java aceita tudo com tranquilidade porque formas específicas são concretas!
-3. **A Chegada do Método Abstrato (`07:55:47`):** Ele volta para [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) e declara:
+1. **A Prova do Erro (`07:54:17`):** Ele digita `Shape shape = new Shape();` em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) para comprovar a Regra 3 dos comentários. A IDE bloqueia imediatamente com um erro vermelho: `'Shape' is abstract; cannot be instantiated`!
+2. **A Salvação com Classes Concretas (`07:55:13`):** Ele apaga o erro e cria instâncias reais de [`Circle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java), [`Triangle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java) e [`Rectangle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java). O Java aceita tudo com tranquilidade porque formas específicas são concretas!
+3. **A Chegada do Método Abstrato (`07:55:47`):** Ele volta para [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) e declara:
    ```java
    abstract double area(); // ABSTRACT
    ```
@@ -61,7 +61,7 @@ Para quem está estudando pelo Google Docs e não tem as imagens na tela:
 * O professor reforça verbalmente: *"Classes concretas podem ser instanciadas com `new`; classes abstratas NUNCA!"*.
 
 ### Imagem 5 (`media_1791359116335.png` — 07:55:47): O Método Abstrato em `Shape.java`
-* **Aba Ativa:** Volta para [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java).
+* **Aba Ativa:** Volta para [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java).
 * **Editor de Código:**
   ```java
   1 public abstract class Shape {
@@ -124,7 +124,7 @@ Pense como um matemático:
 * Um retângulo calcula área com $\text{largura} \cdot \text{altura}$.
 * Um triângulo calcula área com $\frac{\text{base} \cdot \text{altura}}{2}$.
 
-Como a classe mãe [`Shape`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) não tem como adivinhar qual será a fórmula de cada filho, ela simplesmente faz o papel de líder e dita uma **ordem contratual**:
+Como a classe mãe [`Shape`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) não tem como adivinhar qual será a fórmula de cada filho, ela simplesmente faz o papel de líder e dita uma **ordem contratual**:
 
 > *"Atenção, todas as minhas filhas (`Circle`, `Triangle`, `Rectangle`)! Eu sou a mãe `Shape`. Eu não sei qual é a fórmula de vocês, mas eu EXIJO que cada uma de vocês crie o seu próprio método `double area()`! Se alguma de vocês esquecer de criar, o compilador não vai deixar o programa rodar!"*.
 
@@ -132,9 +132,9 @@ Como a classe mãe [`Shape`](file:///c:/Users/mickel%201/Downloads/JAVA%20APREND
 
 ## 5. A Reação em Cadeia no Compilador
 
-Assim que você declara `abstract double area();` em [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java), acontece algo fascinante em todo o projeto:
+Assim que você declara `abstract double area();` em [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java), acontece algo fascinante em todo o projeto:
 
-Se a classe [`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java) colocar `extends Shape` e **não** implementar o método `area()`, o compilador Java imediatamente trava tudo com o seguinte erro:
+Se a classe [`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java) colocar `extends Shape` e **não** implementar o método `area()`, o compilador Java imediatamente trava tudo com o seguinte erro:
 
 ```text
 Circle.java:1: error: Circle is not abstract and does not override abstract method area() in Shape
@@ -151,7 +151,7 @@ Nas próximas etapas do vídeo, nós veremos o professor implementar a fórmula 
 
 ## 6. Análise Código por Código e Linha por Linha
 
-### A. O Arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Linhas 1 a 16)
+### A. O Arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Linhas 1 a 16)
 ```java
 1:  public class Main {
 2:      public static void main(String[] args) {
@@ -178,7 +178,7 @@ Nas próximas etapas do vídeo, nós veremos o professor implementar a fórmula 
 
 ---
 
-### B. O Arquivo [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) (Linhas 1 a 4)
+### B. O Arquivo [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) (Linhas 1 a 4)
 ```java
 1:  public abstract class Shape {
 2:  
@@ -200,8 +200,8 @@ Nas próximas etapas do vídeo, nós veremos o professor implementar a fórmula 
 
 | Conceito | Pode usar `new` para criar objeto? | Possui código real / corpo `{ }`? | Exemplo no Nosso Projeto |
 | :--- | :---: | :---: | :--- |
-| **Classe Abstrata** | ❌ **NUNCA!** | Pode ter métodos com ou sem corpo. | [`Shape`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) |
-| **Classe Concreta** | ✅ **SIM!** | Todos os métodos devem ter corpo. | [`Circle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java), [`Triangle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java), [`Rectangle`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java) |
+| **Classe Abstrata** | ❌ **NUNCA!** | Pode ter métodos com ou sem corpo. | [`Shape`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) |
+| **Classe Concreta** | ✅ **SIM!** | Todos os métodos devem ter corpo. | [`Circle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java), [`Triangle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java), [`Rectangle`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java) |
 | **Método Concreto** | *(Executado via objeto)* | ✅ **SIM** `{ ... código ... }` | `void move()`, `.toString()` |
 | **Método Abstrato** | *(Não executado diretamente)* | ❌ **NÃO** (Termina com `;`) | `abstract double area();` |
 

@@ -3,7 +3,7 @@
 > **Contexto do Curso:** *Java Full Course for free* (Bro Code)  
 > **Capítulo:** 43 — `static 🤝`  
 > **Tempo do Vídeo:** `07:20:25` até `07:21:25` / `12:00:00`  
-> **Arquivos Analisados:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e o código-fonte oficial do JDK: `java.lang.Math.java`  
+> **Arquivos Analisados:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e o código-fonte oficial do JDK: `java.lang.Math.java`  
 > **Objetivo Deste Documento:** Guia didático definitivo, pronto para copiar e colar no **Google Docs**, recriando detalhadamente as telas do IntelliJ IDEA, desmistificando o código-fonte interno do próprio Java e mostrando como os desenvolvedores da linguagem usam `static` na prática.
 
 ---
@@ -33,7 +33,7 @@ Nesta sequência histórica da aula, o autor fecha o exemplo do clube dos amigos
 ### Detalhamento Quadro a Quadro (As 5 Imagens Explicadas)
 
 #### 🖼️ Imagem 1 (`07:20:25`): O Fechamento do Exemplo dos Amigos
-* **Arquivo ativo:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo ativo:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que aparece na tela:**
   * No código, temos a criação dos 5 amigos (*Spongebob*, *Patrick*, *Squidward*, *Sandy* e *Gary*) e a chamada `Friend.showFriends();`.
   * No painel inferior **Run**, a saída em verde confirma o sucesso:
@@ -46,7 +46,7 @@ Nesta sequência histórica da aula, o autor fecha o exemplo do clube dos amigos
 ---
 
 #### 🖼️ Imagem 2 (`07:20:45`): Limpando o `Main.java`
-* **Arquivo ativo:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo ativo:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que aparece na tela:**
   * O autor apaga todas as linhas de criação dos amigos.
   * O cursor fica piscando na linha 9, vazia.
@@ -55,7 +55,7 @@ Nesta sequência histórica da aula, o autor fecha o exemplo do clube dos amigos
 ---
 
 #### 🖼️ Imagem 3 (`07:21:11`): Escrevendo `Math.round(3.99);`
-* **Arquivo ativo:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo ativo:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que o autor digita:**
   ```java
   Math.round(3.99);
@@ -162,7 +162,7 @@ Vamos traduzir palavra por palavra:
 
 ## 3. Dissecando os Códigos Linha por Linha
 
-### Código 1: [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Código 1: [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: public class Main {
@@ -179,7 +179,7 @@ Vamos traduzir palavra por palavra:
 12: }
 ```
 
-#### Explicação de [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+#### Explicação de [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 * **Linha 1:** Declara a classe pública `Main`.
 * **Linha 2 (`public static void main(String[] args) {`):** O método principal de inicialização da JVM.

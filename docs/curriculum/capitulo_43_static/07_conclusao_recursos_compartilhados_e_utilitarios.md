@@ -3,7 +3,7 @@
 > **Contexto do Curso:** *Java Full Course for free* (Bro Code)  
 > **Capítulo:** 43 — `static 🤝`  
 > **Tempo do Vídeo:** `07:21:57` / `12:00:00` (Último minuto do Capítulo 43)  
-> **Arquivo Analisado:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
+> **Arquivo Analisado:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
 > **Objetivo Deste Documento:** Material didático consolidado, pronto para copiar e colar diretamente no **Google Docs**, recriando com perfeição a tela do IntelliJ IDEA, explicando por que o autor destacou a frase `"shared resources."` e fechando com maestria todo o entendimento sobre o modificador `static` em Java.
 
 ---
@@ -11,7 +11,7 @@
 ## 1. Reconstituição Visual da Tela (Para Visualização sem as Imagens)
 
 No instante `07:21:57`, a barra vermelha do player do YouTube chega ao final da seção demarcada do capítulo `43.static >`.  
-O autor fechou a aba `Math.java` que havíamos explorado no passo anterior e voltou para o arquivo [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+O autor fechou a aba `Math.java` que havíamos explorado no passo anterior e voltou para o arquivo [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 
 ```
 +-----------------------------------------------------------------------------------------------+
@@ -36,7 +36,7 @@ O autor fechou a aba `Math.java` que havíamos explorado no passo anterior e vol
 ---
 
 ### Detalhes Visuais da Captura de Tela:
-* **Arquivo ativo:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo ativo:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Onde está a atenção do autor?**  
   Na linha 6/7, o autor arrastou o cursor do mouse e **selecionou com fundo azul brilhante** o texto:
   ```text
@@ -100,7 +100,7 @@ Porque o modificador `static` no Java só serve para **duas grandes coisas na vi
 
 ## 3. Dissecando o Código Linha por Linha Numerado
 
-### Arquivo: [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo: [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: public class Main {
@@ -146,7 +146,7 @@ Porque o modificador `static` no Java só serve para **duas grandes coisas na vi
 
 ## 4. O Que Deve Sair no Console?
 
-Se você executar o código de [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) exatamente como está na tela:
+Se você executar o código de [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) exatamente como está na tela:
 
 ```text
 (Nenhuma saída é impressa)

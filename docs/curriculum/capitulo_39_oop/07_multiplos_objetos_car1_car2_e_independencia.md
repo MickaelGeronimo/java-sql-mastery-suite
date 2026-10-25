@@ -197,7 +197,7 @@ Cada variável na Stack aponta para um galpão independente no Heap!
 
 ## 🔍 Análise Linha por Linha de Todo o Código
 
-### Arquivo: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: public class Main {
@@ -240,7 +240,7 @@ Cada variável na Stack aponta para um galpão independente no Heap!
 
 ## 📜 Código-Fonte Completo e Atualizado dos Arquivos
 
-### Arquivo 1: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### Arquivo 1: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 ```java
 public class Car {
 
@@ -270,7 +270,7 @@ public class Car {
 }
 ```
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {

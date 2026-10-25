@@ -135,7 +135,7 @@ Na programação limpa, dividimos responsabilidades:
 ```java
 static String getHangmanArt(int wrongGuesses)
 ```
-* **`static`**: Como estamos chamando este método a partir do `main` (que é `static`), o método também precisa ser `static`. Métodos estáticos pertencem à classe [`Main`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e não precisam de `new Main()` para rodar.
+* **`static`**: Como estamos chamando este método a partir do `main` (que é `static`), o método também precisa ser `static`. Métodos estáticos pertencem à classe [`Main`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e não precisam de `new Main()` para rodar.
 * **`String`**: É o tipo de retorno. Quando chamamos `getHangmanArt(3)`, ele nos "devolve" um texto (`String`) com o boneco correspondente.
 * **`getHangmanArt`**: Nome do método ("obter arte da forca").
 * **`(int wrongGuesses)`**: É o parâmetro de entrada. Ele recebe um número inteiro (quantos palpites errados o jogador tem no momento: 0, 1, 2, 3, 4, 5 ou 6).
@@ -224,7 +224,7 @@ Veja como o boneco evolui a cada palpite errado:
 
 ---
 
-## 📜 Código-Fonte Atualizado do Projeto ([`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java))
+## 📜 Código-Fonte Atualizado do Projeto ([`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java))
 
 ```java
 import java.util.ArrayList;
@@ -394,7 +394,7 @@ public class Main {
 
 ## 🖥️ Saída Exata Obtida no Terminal Nesta Etapa
 
-Ao compilar e rodar a classe [`Main`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) agora:
+Ao compilar e rodar a classe [`Main`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) agora:
 
 ```text
 ************************

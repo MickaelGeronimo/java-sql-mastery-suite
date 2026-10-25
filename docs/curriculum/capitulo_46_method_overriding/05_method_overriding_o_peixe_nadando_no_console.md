@@ -9,7 +9,7 @@
 
 ## 1. Visão Geral da Cena: O Triunfo da Sobrescrita de Métodos
 
-Nesta captura de tela (`media_1791357222551.png`), o professor Bro Code executa o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) após termos adicionado a anotação `@Override` e o método personalizado dentro de [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java).
+Nesta captura de tela (`media_1791357222551.png`), o professor Bro Code executa o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) após termos adicionado a anotação `@Override` e o método personalizado dentro de [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java).
 
 O terminal abre na parte inferior e exibe a prova definitiva de que a programação orientada a objetos é mágica:
 
@@ -99,7 +99,7 @@ Para um iniciante amador em Java entender como o computador pensou ao executar e
 
 ---
 
-## 4. Análise Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 4. Análise Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
 1:  public class Main {
@@ -152,15 +152,15 @@ Para um iniciante amador em Java entender como o computador pensou ao executar e
 
 | Objeto | Classe | Herda de quem? | Sobrescreveu `move()`? | De onde veio a ação executada? | Texto Impresso no Console |
 | :--- | :--- | :--- | :---: | :--- | :--- |
-| **`dog`** | [`Dog`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) | [`Animal`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) | ❌ Não | Superclasse [`Animal`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) | `"This animal is running"` |
-| **`cat`** | [`Cat`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java) | [`Animal`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) | ❌ Não | Superclasse [`Animal`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) | `"This animal is running"` |
-| **`fish`** | [`Fish`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java) | [`Animal`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) | ✅ **Sim (`@Override`)** | Subclasse [`Fish`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java) | `"This animal is swimming"` |
+| **`dog`** | `Dog` | [`Animal`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) | ❌ Não | Superclasse [`Animal`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) | `"This animal is running"` |
+| **`cat`** | [`Cat`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java) | [`Animal`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) | ❌ Não | Superclasse [`Animal`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) | `"This animal is running"` |
+| **`fish`** | [`Fish`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java) | [`Animal`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) | ✅ **Sim (`@Override`)** | Subclasse [`Fish`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java) | `"This animal is swimming"` |
 
 ---
 
 ## 6. Saída Real e Fiel do Console nesta Etapa
 
-Ao executar o [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Ao executar o [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```text
 This animal is running

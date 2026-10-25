@@ -190,7 +190,7 @@ Ele diz na aula:
 
 ## 🔍 Explicação Linha por Linha do Código
 
-### Arquivo 1: [`TalkingDog.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/TalkingDog.java) *(Criado na Imagem 2 e Deletado na Imagem 5)*
+### Arquivo 1: `TalkingDog.java` *(Criado na Imagem 2 e Deletado na Imagem 5)*
 
 ```java
  1: public class TalkingDog extends Dog{
@@ -220,7 +220,7 @@ Ele diz na aula:
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) *(Imagem 3)*
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) *(Imagem 3)*
 
 ```java
  1: public class Main {

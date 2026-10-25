@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal Executado: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe do Carro (Objeto Complexo): [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
-* Classe do Motor (Objeto Menor Componente): [`Engine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Engine.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte Anterior (Capítulo 54 - Parte 4: O Teste de Erro sem o Carro): [`explicacao_composicao_execucao_bem_sucedida_o_teste_de_inexistencia_do_car_e_o_erro_cannot_find_symbol_capitulo54_parte4.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_composicao_execucao_bem_sucedida_o_teste_de_inexistencia_do_car_e_o_erro_cannot_find_symbol_capitulo54_parte4.md)
+* Arquivo Principal Executado: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe do Carro (Objeto Complexo): [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
+* Classe do Motor (Objeto Menor Componente): `Engine.java`
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte Anterior (Capítulo 54 - Parte 4: O Teste de Erro sem o Carro): `explicacao_composicao_execucao_bem_sucedida_o_teste_de_inexistencia_do_car_e_o_erro_cannot_find_symbol_capitulo54_parte4.md`
 
 ---
 
@@ -110,7 +110,7 @@ Existe uma frase famosa no livro mais importante da história da programação (
 
 ## 4. Código-Fonte Completo e Definitivo dos Três Arquivos
 
-### Arquivo 1: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 1: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
 public class Main {
@@ -134,7 +134,7 @@ public class Main {
 
 ---
 
-### Arquivo 2: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### Arquivo 2: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 
 ```java
 public class Car {
@@ -159,7 +159,7 @@ public class Car {
 
 ---
 
-### Arquivo 3: [`Engine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Engine.java)
+### Arquivo 3: `Engine.java`
 
 ```java
 public class Engine {

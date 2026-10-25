@@ -14,9 +14,9 @@
 Nas etapas anteriores, vimos como criar usuários com **1 dado** (`user1` - só nome) e com **2 dados** (`user2` - nome e e-mail). Mas e quando o usuário fornece **todos os dados** (nome, e-mail e idade)?
 
 Nesta nova sequência de 3 imagens do vídeo:
-1. **Imagem 1 (`media_1791324330070.png`):** O autor revisa a aba [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) onde `user1` e `user2` já estão criados e impressos. O cursor está piscando no final da linha 6.
-2. **Imagem 2 (`media_1791324363252.png` - Timestamp `7:05:59`):** O autor volta para a aba [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) e digita o **terceiro construtor sobrecarregado**, que aceita 3 parâmetros: `User(String username, String email, int age)`.
-3. **Imagem 3 (`media_1791324457645.png`):** O autor volta ao [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), cria o objeto `user3` passando `"Sandy"`, `"SCheeks@gmail.com"` e `27`, manda imprimir na tela e clica em Play! O console exibe **9 linhas verdes**, e o autor seleciona as últimas 3 linhas com o mouse (faixa azul) para comemorar o sucesso da Sandy!
+1. **Imagem 1 (`media_1791324330070.png`):** O autor revisa a aba [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) onde `user1` e `user2` já estão criados e impressos. O cursor está piscando no final da linha 6.
+2. **Imagem 2 (`media_1791324363252.png` - Timestamp `7:05:59`):** O autor volta para a aba `User.java` e digita o **terceiro construtor sobrecarregado**, que aceita 3 parâmetros: `User(String username, String email, int age)`.
+3. **Imagem 3 (`media_1791324457645.png`):** O autor volta ao [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), cria o objeto `user3` passando `"Sandy"`, `"SCheeks@gmail.com"` e `27`, manda imprimir na tela e clica em Play! O console exibe **9 linhas verdes**, e o autor seleciona as últimas 3 linhas com o mouse (faixa azul) para comemorar o sucesso da Sandy!
 
 ---
 
@@ -66,7 +66,7 @@ Nesta nova sequência de 3 imagens do vídeo:
 
 ## 3. O "Cardápio de Construtores" Atualizado de `User.java`
 
-Agora a nossa classe [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) é um molde superpoderoso com 3 opções de nascimento:
+Agora a nossa classe `User.java` é um molde superpoderoso com 3 opções de nascimento:
 
 | Construtor | Parâmetros Recebidos | O que faz com o que falta? | Quem usou? |
 | :--- | :--- | :--- | :--- |
@@ -78,7 +78,7 @@ Agora a nossa classe [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20
 
 ## 4. Código Completo de `User.java` Linha por Linha
 
-Aqui está o arquivo [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) completo:
+Aqui está o arquivo `User.java` completo:
 
 ```java
  1: public class User {
@@ -130,7 +130,7 @@ Aqui está o arquivo [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20
 
 ## 5. Código Completo de `Main.java` Linha por Linha
 
-Aqui está o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) completo:
+Aqui está o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) completo:
 
 ```java
  1: public class Main {

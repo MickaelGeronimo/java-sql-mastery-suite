@@ -325,6 +325,6 @@ O autor selecionou `Enums` na Tela 2 para explicar este texto sagrado:
 ## 7. Conclusão Final do Capítulo 68 (`enums 📅`)
 
 Com esta explicação da Parte 11, você tem em mãos a visão mais completa, didática e profunda que existe sobre Enums em Java:
-1. Conhece o molde em [`Day.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Day.java).
-2. Domina a proteção de exceções e a leitura em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+1. Conhece o molde em [`Day.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/models/Day.java).
+2. Domina a proteção de exceções e a leitura em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 3. Entende cada linha de código e cada detalhe visual exibido no curso do Bro Code.

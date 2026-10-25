@@ -13,7 +13,7 @@ Nesta sequência consagradora (`08:18:42` a `08:19:15`), vemos o programa tomar 
 
 | Imagem | Timestamp / Arquivo | O que é mostrado na tela do IntelliJ IDEA? | Ação Realizada pelo Professor Bro Code |
 | :--- | :--- | :--- | :--- |
-| **🖼️ Imagem 1** | `08:18:42`<br>`media_1791401399716_03123799.png` | Editor aberto em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java). Linhas 20 a 23 adicionadas: `else if(choice == 2){ animal = new Cat(); animal.speak(); }`. O cursor pisca logo após a chave de fechamento `}` na Linha 23. | O professor finaliza a segunda opção do questionário, permitindo que a variável `animal` receba uma instância de `Cat`. |
+| **🖼️ Imagem 1** | `08:18:42`<br>`media_1791401399716_03123799.png` | Editor aberto em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java). Linhas 20 a 23 adicionadas: `else if(choice == 2){ animal = new Cat(); animal.speak(); }`. O cursor pisca logo após a chave de fechamento `}` na Linha 23. | O professor finaliza a segunda opção do questionário, permitindo que a variável `animal` receba uma instância de `Cat`. |
 | **🖼️ Imagem 2** | `08:18:53`<br>`media_1791401419675_e763ce8b.png` | O professor dá um duplo clique sobre o nome da variável **`animal`** na Linha 11. O IntelliJ ilumina automaticamente as **5 ocorrências** de `animal` no código com um fundo cinza/rosado. | O professor explica visualmente o núcleo do Polimorfismo: *"Vejam: declaramos uma única variável `animal` do tipo pai. Ela assume a forma de `Dog` na Linha 17 ou a forma de `Cat` na Linha 21!"*. |
 | **🖼️ Imagem 3** | `08:19:03`<br>`media_1791401430217_64a348ff.png` | **1º Teste no Console:** O painel inferior `Run` abre. Pergunta: `Would you like a dog or a cat? (1 = dog, 2 = cat): `. O professor digita **`1`** e pressiona Enter. | O console imprime em verde neon: `The dog goes *woof*`, confirmando o caminho do cachorro! |
 | **🖼️ Imagem 4** | `08:19:06`<br>`media_1791401442035_82376c2b.png` | **2º Teste no Console:** O professor roda o programa novamente. Pergunta repetida. Desta vez, ele digita **`2`** e pressiona Enter. | O console imprime em verde neon: `The cat goes *meow*`, confirmando o caminho do gato! |
@@ -44,7 +44,7 @@ Na Imagem 2 (`media_1791401419675_e763ce8b.png`), o professor dá um duplo cliqu
 
 ---
 
-## 3. Dissecação Linha por Linha de Todo o [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Linhas 1 a 26)
+## 3. Dissecação Linha por Linha de Todo o [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Linhas 1 a 26)
 
 Aqui está o código completo transcrito exatamente como aparece no editor:
 

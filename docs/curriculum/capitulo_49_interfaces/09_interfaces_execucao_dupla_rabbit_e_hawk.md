@@ -2,7 +2,7 @@
 ## Parte 9: O Confronto no Terminal — A Execução de `Rabbit` e `Hawk`, o Destaque em Azul e a Segurança de Tipos
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:05:00` até `08:05:30` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a primeira execução combinada de dois objetos implementando interfaces diferentes no arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java): a criação da instância do gavião (`Hawk hawk = new Hawk();`), o disparo das ações opostas da natureza (`rabbit.flee();` e `hawk.hunt();`), a saída dupla impressa no console, o gesto do professor selecionando em azul com o mouse a primeira linha do terminal para contrastar a presa com o predador, e a grande regra de **Segurança de Tipos** do Java (por que chamar `rabbit.hunt()` ou `hawk.flee()` causaria um erro fatal de compilação).  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a primeira execução combinada de dois objetos implementando interfaces diferentes no arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java): a criação da instância do gavião (`Hawk hawk = new Hawk();`), o disparo das ações opostas da natureza (`rabbit.flee();` e `hawk.hunt();`), a saída dupla impressa no console, o gesto do professor selecionando em azul com o mouse a primeira linha do terminal para contrastar a presa com o predador, e a grande regra de **Segurança de Tipos** do Java (por que chamar `rabbit.hunt()` ou `hawk.flee()` causaria um erro fatal de compilação).  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (linhas digitadas em `Main.java`, abertura do terminal inferior, texto com fundo de seleção azul, linhas em verde neon e botões de execução) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -10,12 +10,12 @@
 ## 1. Visão Geral da Demonstração: O Ecossistema em Movimento!
 
 Nas partes anteriores, preparamos os dois primeiros atores do nosso ecossistema:
-* O coelho ([`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java)) implementou a interface [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java) e sabe fugir (`flee()`).
-* O gavião ([`Hawk.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Hawk.java)) implementou a interface [`Predator.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Predator.java) e sabe caçar (`hunt()`).
+* O coelho ([`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java)) implementou a interface [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java) e sabe fugir (`flee()`).
+* O gavião ([`Hawk.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Hawk.java)) implementou a interface [`Predator.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Predator.java) e sabe caçar (`hunt()`).
 
 Nesta sequência de 2 capturas de tela, o professor Bro Code coloca os dois animais para atuar lado a lado:
 
-1. **A Adição do Gavião em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Imagem 1):**  
+1. **A Adição do Gavião em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Imagem 1):**  
    Ele adiciona `Hawk hawk = new Hawk();` e chama `hawk.hunt();` logo abaixo da fuga do coelho.
 2. **A Execução Dupla no Terminal (Imagem 2):**  
    O console roda e imprime duas frases sucessivas:
@@ -95,7 +95,7 @@ Preste muita atenção neste detalhe que muitos iniciantes deixam passar:
 
 ---
 
-## 4. Análise Código por Código e Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 4. Análise Código por Código e Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Abaixo está o código completo do arquivo principal exatamente como visto na Imagem 1:
 
@@ -127,13 +127,13 @@ Abaixo está o código completo do arquivo principal exatamente como visto na Im
 * **Linha 10 (`Hawk hawk = new Hawk();`):** Instancia o objeto gavião na memória Heap. *(Nada no console).*
 * **Linha 11:** Linha em branco para separação visual.
 * **Linha 12 (`rabbit.flee();`):**
-  * Invoca o método `flee()` programado dentro de [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java).
+  * Invoca o método `flee()` programado dentro de [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java).
   * **Saída no Console:**
     ```text
     *The rabbit is running away*
     ```
 * **Linha 13 (`hawk.hunt();`):**
-  * Invoca o método `hunt()` programado dentro de [`Hawk.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Hawk.java).
+  * Invoca o método `hunt()` programado dentro de [`Hawk.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Hawk.java).
   * **Saída no Console:**
     ```text
     *The hawk is hunting*

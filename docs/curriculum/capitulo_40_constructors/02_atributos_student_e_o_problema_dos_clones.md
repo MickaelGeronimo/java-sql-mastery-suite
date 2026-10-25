@@ -77,7 +77,7 @@ Se você estiver lendo este material no Google Docs ou impresso, aqui está a de
 
 ### 1. Os Quatro Atributos de um Estudante
 
-Abra o arquivo [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java) e observe a ficha cadastral que estamos criando:
+Abra o arquivo `Student.java` e observe a ficha cadastral que estamos criando:
 
 ```java
 public class Student {
@@ -198,7 +198,7 @@ Ambos os objetos são independentes no Heap, mas possuem os mesmos dados genéri
 
 ## 🔍 Análise Linha por Linha de Todo o Código
 
-### Arquivo 1: [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java)
+### Arquivo 1: `Student.java`
 
 ```java
 1: public class Student {
@@ -224,7 +224,7 @@ Ambos os objetos são independentes no Heap, mas possuem os mesmos dados genéri
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: public class Main {
@@ -253,7 +253,7 @@ Ambos os objetos são independentes no Heap, mas possuem os mesmos dados genéri
 
 ## 📜 Código-Fonte Completo e Atualizado dos Arquivos
 
-### Arquivo 1: [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java)
+### Arquivo 1: `Student.java`
 ```java
 public class Student {
 
@@ -264,7 +264,7 @@ public class Student {
 }
 ```
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {

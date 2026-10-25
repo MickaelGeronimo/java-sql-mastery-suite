@@ -11,16 +11,16 @@
 
 ## 1. O Que Aconteceu Nesta Sequência de 2 Imagens? (Visão Geral)
 
-Após ter construído passo a passo os 4 construtores da classe [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) e testado cada um deles com sucesso, o professor Bro Code faz o momento mais importante de qualquer aula de programação: **a amarração teórica final**!
+Após ter construído passo a passo os 4 construtores da classe `User.java` e testado cada um deles com sucesso, o professor Bro Code faz o momento mais importante de qualquer aula de programação: **a amarração teórica final**!
 
-Ele volta ao arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e reintroduz no topo do método `main` o comentário com a **definição técnica formal de Overloaded Constructors**, mostrando ao aluno como cada linha de código que digitamos traduz exatamente aquela definição teórica para o mundo real.
+Ele volta ao arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e reintroduz no topo do método `main` o comentário com a **definição técnica formal de Overloaded Constructors**, mostrando ao aluno como cada linha de código que digitamos traduz exatamente aquela definição teórica para o mundo real.
 
 1. **Imagem 1 (`media_1791324937056.png` - Timestamp `7:07:53`):**
-   * O autor está na aba [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java).
+   * O autor está na aba `User.java`.
    * A tela mostra os atributos e os primeiros construtores (`User()` e `User(String username)`).
-   * O ponteiro do mouse clica de volta na aba [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) no topo esquerdo do editor.
+   * O ponteiro do mouse clica de volta na aba [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) no topo esquerdo do editor.
 2. **Imagem 2 (`media_1791324947423.png`):**
-   * O autor está agora na aba [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+   * O autor está agora na aba [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
    * Nas linhas 5, 6 e 7, ele insere o comentário explicativo oficial:
      ```java
      // overloaded constructors = Allow a class to have multiple constructors
@@ -96,7 +96,7 @@ O Bro Code escreveu 3 frases em inglês como comentário. Vamos traduzir e disse
 
 ---
 
-## 4. Código Completo de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) Linha por Linha
+## 4. Código Completo de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Linha por Linha
 
 Aqui está o código exato presente no editor da Imagem 2:
 

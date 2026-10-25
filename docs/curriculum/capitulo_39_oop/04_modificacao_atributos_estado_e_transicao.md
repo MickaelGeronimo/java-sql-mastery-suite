@@ -138,7 +138,7 @@ Estado do Carro (Mudou!):
 > *"Professor, quando eu escrevi `car.isRunning = true;` no `Main.java`, isso mudou o texto lá dentro do arquivo `Car.java`?"*
 
 **RESPOSTA ENFÁTICA: NÃO! De jeito nenhum!**  
-* O arquivo [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) continua intacto com `boolean isRunning = false;`.
+* O arquivo [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) continua intacto com `boolean isRunning = false;`.
 * Lembre-se da analogia da **Planta Técnica**: se você comprar um carro e pintar o capô de amarelo, o papel da planta baixa original na fábrica da Ford não se pinta de amarelo sozinho!
 * Você alterou **apenas aquela cópia física específica (aquela instância)** que mora na memória RAM naquele momento. Se você criar um segundo carro com `Car car2 = new Car();`, o `car2` nascerá com `isRunning = false` original de fábrica!
 
@@ -187,7 +187,7 @@ println(car.isRunning) --> Lê a gaveta atualizada e imprime: true
 
 ## 🔍 Análise Linha por Linha de Todo o Código Atualizado
 
-### Arquivo: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: public class Main {
@@ -241,7 +241,7 @@ println(car.isRunning) --> Lê a gaveta atualizada e imprime: true
 
 ## 📜 Código-Fonte Completo e Atualizado dos Arquivos
 
-### Arquivo 1: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### Arquivo 1: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 ```java
 public class Car {
 
@@ -253,7 +253,7 @@ public class Car {
 }
 ```
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {

@@ -9,12 +9,12 @@
 
 ## 1. Visão Geral da Cena: O Choque de Realidade no Construtor da Subclasse
 
-Até a Parte 2, tínhamos a nossa superclasse [`Person.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java) funcionando perfeitamente, com `first`, `last`, construtor parametrizado e o método `showName()`.
+Até a Parte 2, tínhamos a nossa superclasse `Person.java` funcionando perfeitamente, com `first`, `last`, construtor parametrizado e o método `showName()`.
 
 Neste conjunto de 5 imagens, o professor Bro Code nos leva ao momento pedagógico mais importante do capítulo:
 
 1. **Criação da Classe Filha (Imagem 1):**  
-   Abre a janela modal do IntelliJ e cria a classe [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java).
+   Abre a janela modal do IntelliJ e cria a classe `Student.java`.
 2. **O Primeiro Aviso da IDE (Imagem 2):**  
    Ao digitar `public class Student extends Person{`, a linha inteira fica sublinhada em vermelho! O Java já começa a reclamar antes mesmo de escrevermos o corpo da classe.
 3. **A Pausa Didática em `Person.java` (Imagem 3):**  
@@ -125,7 +125,7 @@ Imagine a seguinte história da vida real:
 > Você não pode construir o telhado de uma casa antes de levantar os alicerces.
 
 Em Java, a regra é exatamente a mesma:
-1. Sempre que você cria um objeto da classe filha (`Student`), a Máquina Virtual Java (JVM) é obrigada por lei a rodar o construtor da classe pai ([`Person`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java)) **antes** de qualquer outra coisa!
+1. Sempre que você cria um objeto da classe filha (`Student`), a Máquina Virtual Java (JVM) é obrigada por lei a rodar o construtor da classe pai (`Person`) **antes** de qualquer outra coisa!
 2. Quando você escreve o construtor do `Student` assim:
    ```java
    Student(String first, String last, double gpa){
@@ -143,7 +143,7 @@ Em Java, a regra é exatamente a mesma:
        this.gpa = gpa;
    }
    ```
-3. Só que tem um problema gigantesco: a classe [`Person`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java) **NÃO tem** nenhum construtor vazio `Person()`!  
+3. Só que tem um problema gigantesco: a classe `Person` **NÃO tem** nenhum construtor vazio `Person()`!  
    Em `Person.java`, o único construtor que existe exige dois textos:
    ```java
    Person(String first, String last) { ... }
@@ -155,7 +155,7 @@ Em Java, a regra é exatamente a mesma:
 
 ---
 
-## 4. Análise Linha por Linha de [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java) (Com o Erro Proposital)
+## 4. Análise Linha por Linha de `Student.java` (Com o Erro Proposital)
 
 ```java
 1:  public class Student extends Person{

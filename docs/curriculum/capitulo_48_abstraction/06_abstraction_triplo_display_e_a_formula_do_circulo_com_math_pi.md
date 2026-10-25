@@ -2,7 +2,7 @@
 ## Parte 6: O Triplo `display()`, o Atributo `radius` e a Fórmula do Círculo com `Math.PI`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `07:57:45` até `07:59:00` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a execução combinada do método concreto `display()` para as três formas geométricas simultâneas no console (`circle`, `triangle` e `rectangle`), a volta para a superclasse [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) para retomar o método abstrato `area()`, a adição do atributo `radius` e construtor na classe [`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java), e a substituição do stub `return 0;` pela fórmula matemática real da área de um círculo ($\pi \cdot r^2$) utilizando a constante nativa **`Math.PI`**.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a execução combinada do método concreto `display()` para as três formas geométricas simultâneas no console (`circle`, `triangle` e `rectangle`), a volta para a superclasse [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) para retomar o método abstrato `area()`, a adição do atributo `radius` e construtor na classe [`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java), e a substituição do stub `return 0;` pela fórmula matemática real da área de um círculo ($\pi \cdot r^2$) utilizando a constante nativa **`Math.PI`**.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (múltiplas linhas no terminal, cursores de edição, realces roxos de variáveis e seleções azuis com o mouse) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -18,7 +18,7 @@ Nesta sequência de 5 capturas de tela, o professor Bro Code fecha com perfeiç�
    This is a shape
    ```
    Isso comprova que todas as subclasses herdaram o mesmo comportamento da mãe `Shape` sem precisar escrever nada!
-2. **A Hora da Especialização (Imagens 2 e 3):** O professor volta a atenção para o método abstrato: `abstract double area();`. Agora, cada forma geométrica precisa da sua própria identidade matemática! No arquivo [`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java), ele cria o atributo de raio (`double radius;`) e o construtor.
+2. **A Hora da Especialização (Imagens 2 e 3):** O professor volta a atenção para o método abstrato: `abstract double area();`. Agora, cada forma geométrica precisa da sua própria identidade matemática! No arquivo [`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java), ele cria o atributo de raio (`double radius;`) e o construtor.
 3. **A Fórmula Científica com `Math.PI` (Imagens 4 e 5):** Ele substitui o tapa-buraco `return 0;` pela fórmula mundialmente famosa da área do círculo:
    ```java
    return Math.PI * radius * radius;
@@ -51,12 +51,12 @@ Para quem está estudando pelo Google Docs e não tem as imagens na tela:
 * **Cursor de Texto:** Pisca no final da linha 18 (`rectangle.display();|`).
 
 ### Imagem 2 (`media_1791359317523.png` — 07:58:09): O Foco no Método Abstrato
-* **Aba Ativa:** Muda para [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java).
+* **Aba Ativa:** Muda para [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java).
 * **Editor de Código:** O cursor pisca na linha 3 dentro da palavra `abstract` em `abstract double area(); // ABSTRACT`.
 * **Mensagem do Professor:** *"Agora que vimos o método concreto funcionando para todo mundo, vamos implementar a área real para cada forma!"*.
 
 ### Imagem 3 (`media_1791359352102.png` — 07:58:37): Adicionando o Raio e Construtor no Círculo
-* **Aba Ativa:** Muda para [`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java).
+* **Aba Ativa:** Muda para [`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java).
 * **O que foi adicionado:**
   * Linha 3: `double radius;` (declara o raio).
   * Linhas 5 a 7: O construtor recebendo o raio e guardando com `this.radius = radius;`.
@@ -108,7 +108,7 @@ Como traduzimos isso para o Java?
 
 ---
 
-## 4. Análise Código por Código e Linha por Linha de [`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java)
+## 4. Análise Código por Código e Linha por Linha de [`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java)
 
 Abaixo está o código completo da classe `Circle` como vista na Imagem 5:
 
@@ -146,7 +146,7 @@ Abaixo está o código completo da classe `Circle` como vista na Imagem 5:
 
 ---
 
-## 5. Análise Código por Código de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) na Imagem 1
+## 5. Análise Código por Código de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) na Imagem 1
 
 ```java
 1:  public class Main {

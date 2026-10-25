@@ -2,7 +2,7 @@
 
 > **Curso:** Java Full Course (Bro Code) — Capítulo 60: `music player`  
 > **Timestamp do Vídeo:** `[9:30:13 - 9:30:37]`  
-> **Arquivo do Workspace:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
+> **Arquivo do Workspace:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
 > **Objetivo:** Aprender como apontar corretamente para o arquivo de áudio no código Java, entender a diferença crucial entre **Caminho Absoluto** (*Absolute Path*) e **Caminho Relativo** (*Path From Content Root*), desmistificar o menu secreto do IntelliJ IDEA (`Copy Path/Reference...`) e analisar a criação da variável `filePath` linha por linha.
 
 ---

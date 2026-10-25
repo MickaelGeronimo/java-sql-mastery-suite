@@ -25,13 +25,13 @@ Este módulo ensina a transição da primeira para a segunda dimensão da comput
 
 | Arquivo | Título / Tema Principal |
 | :--- | :--- |
-| [01_introducao_matriz_lacos_aninhados.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_35_2d_arrays/01_introducao_matriz_lacos_aninhados.md) | Introdução à matriz 2D, sintaxe `String[][]` e primeiro experimento com laços aninhados. |
-| [02_quebra_de_linha_formatacao_grade.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_35_2d_arrays/02_quebra_de_linha_formatacao_grade.md) | Formatação em grade visual retangular com quebra de linha `System.out.println()`. |
-| [03_sintaxe_literal_modificando_elementos.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_35_2d_arrays/03_sintaxe_literal_modificando_elementos.md) | Declaração literal compacta `{{...}, {...}}` e mutação de elementos pontuais. |
-| [04_pratica_coordenadas_celery_eggs.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_35_2d_arrays/04_pratica_coordenadas_celery_eggs.md) | Exercícios práticos de indexação por linha e coluna (`[row][col]`). |
-| [05_teclado_telefone_char_nomenclatura_row.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_35_2d_arrays/05_teclado_telefone_char_nomenclatura_row.md) | Modelagem do teclado numérico telefônico com matriz de caracteres `char[][]`. |
-| [06_teclado_formatacao_grade_4x3.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_35_2d_arrays/06_teclado_formatacao_grade_4x3.md) | Renderização da grade telefônica $4 \times 3$ com espaçamento perfeito. |
-| [README.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_35_2d_arrays/README.md) | Guia curricular e sumário do módulo. |
+| [01_introducao_matriz_lacos_aninhados.md](01_introducao_matriz_lacos_aninhados.md) | Introdução à matriz 2D, sintaxe `String[][]` e primeiro experimento com laços aninhados. |
+| [02_quebra_de_linha_formatacao_grade.md](02_quebra_de_linha_formatacao_grade.md) | Formatação em grade visual retangular com quebra de linha `System.out.println()`. |
+| [03_sintaxe_literal_modificando_elementos.md](03_sintaxe_literal_modificando_elementos.md) | Declaração literal compacta `{{...}, {...}}` e mutação de elementos pontuais. |
+| [04_pratica_coordenadas_celery_eggs.md](04_pratica_coordenadas_celery_eggs.md) | Exercícios práticos de indexação por linha e coluna (`[row][col]`). |
+| [05_teclado_telefone_char_nomenclatura_row.md](05_teclado_telefone_char_nomenclatura_row.md) | Modelagem do teclado numérico telefônico com matriz de caracteres `char[][]`. |
+| [06_teclado_formatacao_grade_4x3.md](06_teclado_formatacao_grade_4x3.md) | Renderização da grade telefônica $4 \times 3$ com espaçamento perfeito. |
+| [README.md](README.md) | Guia curricular e sumário do módulo. |
 
 ---
 
@@ -48,5 +48,5 @@ Row 3:   *       0       #
 ---
 
 ## 💻 Código-Fonte e Testes no Projeto
-- Utilitário e Motor de Matrizes: [`Matrix2DMasteryDemo.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/arrays/Matrix2DMasteryDemo.java)
-- Suíte de Testes Automatizados: [`Matrix2DTest.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/test/java/com/mickaelgeronimo/mastery/core/Matrix2DTest.java)
+- Utilitário e Motor de Matrizes: [`Matrix2DMasteryDemo.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/arrays/Matrix2DMasteryDemo.java)
+- Suíte de Testes Automatizados: [`Matrix2DTest.java`](../../../src/test/java/com/mickaelgeronimo/mastery/core/Matrix2DTest.java)

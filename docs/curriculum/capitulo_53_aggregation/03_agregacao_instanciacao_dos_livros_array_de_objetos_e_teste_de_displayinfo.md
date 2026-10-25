@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal Executado: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe do Livro Atualizada: [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java)
-* Classe da Biblioteca (Pronta para os próximos passos): [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte Anterior (Capítulo 53 - Parte 2: Criação da Classe Book): [`explicacao_agregacao_criacao_da_classe_book_atributos_construtor_e_displayinfo_capitulo53_parte2.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_agregacao_criacao_da_classe_book_atributos_construtor_e_displayinfo_capitulo53_parte2.md)
+* Arquivo Principal Executado: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe do Livro Atualizada: `Book.java`
+* Classe da Biblioteca (Pronta para os próximos passos): `Library.java`
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte Anterior (Capítulo 53 - Parte 2: Criação da Classe Book): `explicacao_agregacao_criacao_da_classe_book_atributos_construtor_e_displayinfo_capitulo53_parte2.md`
 
 ---
 
@@ -178,7 +178,7 @@ The Fellow of the Ring (423) pages
 ```
 
 ### Como a Frase Foi Montada?
-Para o texto sair exatamente no formato `The Fellow of the Ring (423) pages`, a linha 12 dentro de [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java) junta as peças com parênteses em volta do número:
+Para o texto sair exatamente no formato `The Fellow of the Ring (423) pages`, a linha 12 dentro de `Book.java` junta as peças com parênteses em volta do número:
 
 ```java
 String displayInfo(){
@@ -198,7 +198,7 @@ Vamos acompanhar a matemática dos textos (concatenação):
 
 ## 6. O Código Completo dos Arquivos Atualizados no seu Computador
 
-### Arquivo 1: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 1: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
 public class Main {
@@ -222,7 +222,7 @@ public class Main {
 
 ---
 
-### Arquivo 2: [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java)
+### Arquivo 2: `Book.java`
 
 ```java
 public class Book {
@@ -282,6 +282,6 @@ The Fellow of the Ring (423) pages
 ```
 
 ### Por Que Saiu Apenas Uma Linha?
-Porque na linha 15 de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), o autor chamou apenas `System.out.println(book1.displayInfo())`.
+Porque na linha 15 de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), o autor chamou apenas `System.out.println(book1.displayInfo())`.
 * Os livros `book2` e `book3` foram criados na memória e colocados no array `books`, mas ainda não mandamos imprimi-los!
-* O array `books` já está pronto na memória aguardando a classe [`Library`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java), que entrará em ação nos próximos passos do capítulo para agregar todos os livros juntos!
+* O array `books` já está pronto na memória aguardando a classe `Library`, que entrará em ação nos próximos passos do capítulo para agregar todos os livros juntos!

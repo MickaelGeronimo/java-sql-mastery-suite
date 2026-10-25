@@ -162,7 +162,7 @@ Se o jogador venceu:
 
 ---
 
-## 📜 Código-Fonte Completo e Atualizado ([`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java))
+## 📜 Código-Fonte Completo e Atualizado ([`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java))
 
 ```java
 import java.util.ArrayList;

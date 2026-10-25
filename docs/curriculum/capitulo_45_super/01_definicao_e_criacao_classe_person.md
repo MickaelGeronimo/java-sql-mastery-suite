@@ -15,9 +15,9 @@ Após dominar o conceito de **Herança** (`inheritance`) no Capítulo 44, o prof
 A resposta do Java para essa pergunta é a palavra-chave reservada **`super`**!
 
 Neste início de capítulo (Imagens 1 e 2):
-1. O professor limpa o projeto no IntelliJ, mantendo apenas o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) na pasta `src`.
+1. O professor limpa o projeto no IntelliJ, mantendo apenas o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) na pasta `src`.
 2. Dentro do método `main`, ele escreve 3 linhas de comentários que formam a definição de ouro do `super`.
-3. Em seguida, ele abre o menu para criar a superclasse que servirá de mãe para todas as outras neste capítulo: a classe [`Person.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java) (Pessoa).
+3. Em seguida, ele abre o menu para criar a superclasse que servirá de mãe para todas as outras neste capítulo: a classe `Person.java` (Pessoa).
 
 ---
 
@@ -60,7 +60,7 @@ Para quem está lendo este documento no Google Docs sem as imagens originais, aq
   * Marcação de tempo exata: `7:31:51 / 12:00:00`.
   * Nome do capítulo no índice do vídeo: `45.super 🔝`.
   * A barra vermelha do player indica o início da nova seção.
-* **Ação do Autor:** O professor vai pressionar `Enter` para criar o arquivo [`Person.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java).
+* **Ação do Autor:** O professor vai pressionar `Enter` para criar o arquivo `Person.java`.
 
 ---
 
@@ -91,7 +91,7 @@ Com a palavra-chave **`super(...)`**, o filho diz:
 
 ## 4. Dissecando os 3 Pontos do Comentário do Bro Code
 
-Vamos analisar linha por linha os comentários deixados pelo professor em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Vamos analisar linha por linha os comentários deixados pelo professor em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```java
 // super = Refers to the parent class (subclass <- superclass)
@@ -116,7 +116,7 @@ Vamos analisar linha por linha os comentários deixados pelo professor em [`Main
 
 ---
 
-## 5. Análise Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 5. Análise Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
 1:  public class Main {
@@ -141,7 +141,7 @@ Vamos analisar linha por linha os comentários deixados pelo professor em [`Main
 
 ---
 
-## 6. O Arquivo Recém-Criado: [`Person.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java)
+## 6. O Arquivo Recém-Criado: `Person.java`
 
 Após pressionar Enter na janela modal da Imagem 2, o IntelliJ cria o esqueleto da nova classe:
 

@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Classe Agregadora Atualizada: [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)
-* Arquivo Principal Executado: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe do Livro Independente: [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte Anterior (Capítulo 53 - Parte 7: Erro de Argumentos e Início de displayInfo): [`explicacao_agregacao_erros_de_argumentos_conexao_do_array_books_e_displayinfo_da_library_capitulo53_parte7.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_agregacao_erros_de_argumentos_conexao_do_array_books_e_displayinfo_da_library_capitulo53_parte7.md)
+* Classe Agregadora Atualizada: `Library.java`
+* Arquivo Principal Executado: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe do Livro Independente: `Book.java`
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte Anterior (Capítulo 53 - Parte 7: Erro de Argumentos e Início de displayInfo): `explicacao_agregacao_erros_de_argumentos_conexao_do_array_books_e_displayinfo_da_library_capitulo53_parte7.md`
 
 ---
 
@@ -50,7 +50,7 @@ Abaixo está o registro cronológico exato do que aconteceu na tela do professor
 
 ## 2. A Primeira Vitória da Agregação (Imagem 1)
 
-Na **Imagem 1**, o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) chamou:
+Na **Imagem 1**, o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) chamou:
 
 ```java
 Library library = new Library("NYC Public Library", 1897, books);
@@ -77,7 +77,7 @@ Embora o cabeçalho tenha sido impresso com sucesso, você percebeu que **os liv
 * A biblioteca recebeu os livros na linha 15 do `main`.
 * Mas o método `displayInfo()` da biblioteca só sabia imprimir o nome e o ano! Ele ainda não fazia nada com a gaveta `this.books`.
 
-Para resolver isso, o professor abriu [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java) e fez três mudanças fundamentais:
+Para resolver isso, o professor abriu `Library.java` e fez três mudanças fundamentais:
 
 ```mermaid
 flowchart TD
@@ -164,7 +164,7 @@ Linha 17: [💡!]     book.displayInfo|
 
 ## 5. Código Completo dos Arquivos no Seu Computador
 
-### Arquivo 1: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 1: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
 public class Main {
@@ -190,7 +190,7 @@ public class Main {
 
 ---
 
-### Arquivo 2: [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)
+### Arquivo 2: `Library.java`
 
 ```java
 public class Library {

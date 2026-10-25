@@ -3,7 +3,7 @@
 > **Contexto do Curso:** *Java Full Course for free* (Bro Code)  
 > **Capítulo:** 43 — `static 🤝`  
 > **Tempo do Vídeo:** `07:18:00` até `07:19:58` / `12:00:00`  
-> **Arquivos do Projeto:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e [Friend.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java)  
+> **Arquivos do Projeto:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e [Friend.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java)  
 > **Objetivo Deste Documento:** Material didático completo para iniciantes, projetado para cópia direta no **Google Docs**, recriando detalhadamente as 5 telas do IntelliJ IDEA, explicando o acesso estático oficial, a introdução de **métodos estáticos**, o clássico erro de compilação do `this` em contexto estático e a análise minuciosa de cada linha de código.
 
 ---
@@ -13,7 +13,7 @@
 Nesta etapa, o autor realiza uma das transições conceituais mais importantes do curso:
 1. Elimina as linhas repetidas e os avisos amarelos acessando a variável diretamente pela classe: `Friend.numOfFriends`.
 2. Adiciona a 4ª amiga (*Sandy*) e comprova que a contagem vai para `4`.
-3. Abre o arquivo [Friend.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java) e cria um **método estático** (`static void showFriends()`).
+3. Abre o arquivo [Friend.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java) e cria um **método estático** (`static void showFriends()`).
 4. Mostra ao vivo o compilador do Java acusando **erro vermelho ❗** ao tentar usar a palavra-chave `this` dentro de um método estático, e depois conserta o código.
 
 ---
@@ -21,7 +21,7 @@ Nesta etapa, o autor realiza uma das transições conceituais mais importantes d
 ### Detalhamento Quadro a Quadro (As 5 Imagens Explicadas)
 
 #### 🖼️ Imagem 1: Acesso Oficial pela Classe e Fim dos Avisos Amarelos
-* **Arquivo ativo:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo ativo:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que mudou no código:**
   * Bro Code apagou os três comandos `System.out.println(friend1.numOfFriends)`, `friend2` e `friend3`.
   * No lugar, escreveu apenas **uma única linha**:
@@ -38,7 +38,7 @@ Nesta etapa, o autor realiza uma das transições conceituais mais importantes d
 ---
 
 #### 🖼️ Imagem 2: Adicionando a 4ª Amiga (*Sandy*)
-* **Arquivo ativo:** [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Arquivo ativo:** [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que mudou no código:**
   * O autor adiciona uma nova linha instanciando mais um objeto:
     ```java
@@ -50,8 +50,8 @@ Nesta etapa, o autor realiza uma das transições conceituais mais importantes d
 
 ---
 
-#### 🖼️ Imagem 3 (`07:18:53`): Voltando para a Classe [Friend.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java)
-* **Arquivo ativo:** [Friend.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java).
+#### 🖼️ Imagem 3 (`07:18:53`): Voltando para a Classe [Friend.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java)
+* **Arquivo ativo:** [Friend.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java).
 * **O que aparece na tela:**
   * O autor clica na aba `Friend.java` no topo do editor.
   * Ele clica duas vezes sobre a palavra `numOfFriends` na linha 3 (`static int numOfFriends;`), deixando-a selecionada com fundo azul.
@@ -61,7 +61,7 @@ Nesta etapa, o autor realiza uma das transições conceituais mais importantes d
 ---
 
 #### 🖼️ Imagem 4 (`07:19:33`): A Armadilha do `this` e o Erro Vermelho ❗
-* **Arquivo ativo:** [Friend.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java).
+* **Arquivo ativo:** [Friend.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java).
 * **O que o autor digitou:**
   ```java
   static void showFriends(){
@@ -78,7 +78,7 @@ Nesta etapa, o autor realiza uma das transições conceituais mais importantes d
 ---
 
 #### 🖼️ Imagem 5 (`07:19:58`): A Correção Definitiva
-* **Arquivo ativo:** [Friend.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java).
+* **Arquivo ativo:** [Friend.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java).
 * **O que o autor corrigiu:**
   * Bro Code apagou o `this.` e finalizou a mensagem concatenando `" total friends"`:
     ```java
@@ -164,7 +164,7 @@ Este é um dos conceitos mais cobrados em provas e entrevistas de Java:
 
 ## 3. Dissecação do Código Linha por Linha
 
-### Arquivo 1: [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 1: [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: public class Main {
@@ -184,7 +184,7 @@ Este é um dos conceitos mais cobrados em provas e entrevistas de Java:
 15: }
 ```
 
-#### Explicação Linha por Linha de [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+#### Explicação Linha por Linha de [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 * **Linha 1 (`public class Main {`):** Declara a classe executável do projeto.
 * **Linha 2 (`public static void main(String[] args) {`):** O método de entrada que a JVM executa.
@@ -208,7 +208,7 @@ Este é um dos conceitos mais cobrados em provas e entrevistas de Java:
 
 ---
 
-### Arquivo 2: [Friend.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java)
+### Arquivo 2: [Friend.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java)
 
 ```java
  1: public class Friend {
@@ -228,7 +228,7 @@ Este é um dos conceitos mais cobrados em provas e entrevistas de Java:
 15: }
 ```
 
-#### Explicação Linha por Linha de [Friend.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Friend.java):
+#### Explicação Linha por Linha de [Friend.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java):
 
 * **Linha 1 (`public class Friend {`):** Declaração da classe `Friend`.
 * **Linha 3 (`static int numOfFriends;`):** Variável estática. Um único contador inteiro compartilhado na memória da classe, iniciado com `0`.

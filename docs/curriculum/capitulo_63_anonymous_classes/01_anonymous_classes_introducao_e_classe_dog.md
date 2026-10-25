@@ -193,7 +193,7 @@ Para entender o que o autor está ensinando, imagine a seguinte situação do mu
 
 ## 🔍 Explicação Linha por Linha do Código
 
-### Arquivo 1: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 1: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
  1: public class Main {
@@ -222,7 +222,7 @@ Para entender o que o autor está ensinando, imagine a seguinte situação do mu
 
 ---
 
-### Arquivo 2: [`Dog.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java)
+### Arquivo 2: `Dog.java`
 
 ```java
  1: public class Dog {

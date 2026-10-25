@@ -27,16 +27,16 @@ O projeto **Rock Paper Scissors** aborda o desenvolvimento de um jogo interativo
 
 | Arquivo | Título / Tema Principal |
 | :--- | :--- |
-| [01_blueprint_variaveis_e_validacao.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_37_rock_paper_scissors/01_blueprint_variaveis_e_validacao.md) | O esqueleto de 6 passos, classes `Scanner` e `Random`, e a blindagem de entrada com `!`, `.equals()` e `&&`. |
-| [02_teste_invalido_gun.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_37_rock_paper_scissors/02_teste_invalido_gun.md) | O teste prático com jogada proibida (`"gun"`) e a comprovação da mensagem `"Invalid choice"`. |
-| [03_jogada_computador_random.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_37_rock_paper_scissors/03_jogada_computador_random.md) | Sorteio aleatório da jogada da CPU mapeado no vetor `choices = {"rock", "paper", "scissors"}`. |
-| [04_testes_aleatorios_e_empate.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_37_rock_paper_scissors/04_testes_aleatorios_e_empate.md) | Testes ao vivo de empates e primeiras saídas no console. |
-| [05_estrutura_condicional_juiz.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_37_rock_paper_scissors/05_estrutura_condicional_juiz.md) | A estrutura condicional do juiz para determinar o vencedor de cada rodada. |
-| [06_condicoes_vitoria_e_derrota.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_37_rock_paper_scissors/06_condicoes_vitoria_e_derrota.md) | Mapeamento explícito das 3 regras canônicas de vitória do jogo. |
-| [07_refatoracao_operador_or_testes.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_37_rock_paper_scissors/07_refatoracao_operador_or_testes.md) | Refatoração profissional com operador `||` agrupando as vitórias em um único bloco. |
-| [08_loop_do_while_e_despedida.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_37_rock_paper_scissors/08_loop_do_while_e_despedida.md) | Envolvimento do jogo no laço `do-while` para partidas consecutivas e mensagem de despedida. |
-| [09_sessao_ao_vivo_e_conclusao.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_37_rock_paper_scissors/09_sessao_ao_vivo_e_conclusao.md) | Homologação final ao vivo com múltiplas rodadas e encerramento limpo. |
-| [README.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_37_rock_paper_scissors/README.md) | Guia curricular e mapa conceitual. |
+| [01_blueprint_variaveis_e_validacao.md](01_blueprint_variaveis_e_validacao.md) | O esqueleto de 6 passos, classes `Scanner` e `Random`, e a blindagem de entrada com `!`, `.equals()` e `&&`. |
+| [02_teste_invalido_gun.md](02_teste_invalido_gun.md) | O teste prático com jogada proibida (`"gun"`) e a comprovação da mensagem `"Invalid choice"`. |
+| [03_jogada_computador_random.md](03_jogada_computador_random.md) | Sorteio aleatório da jogada da CPU mapeado no vetor `choices = {"rock", "paper", "scissors"}`. |
+| [04_testes_aleatorios_e_empate.md](04_testes_aleatorios_e_empate.md) | Testes ao vivo de empates e primeiras saídas no console. |
+| [05_estrutura_condicional_juiz.md](05_estrutura_condicional_juiz.md) | A estrutura condicional do juiz para determinar o vencedor de cada rodada. |
+| [06_condicoes_vitoria_e_derrota.md](06_condicoes_vitoria_e_derrota.md) | Mapeamento explícito das 3 regras canônicas de vitória do jogo. |
+| [07_refatoracao_operador_or_testes.md](07_refatoracao_operador_or_testes.md) | Refatoração profissional com operador `||` agrupando as vitórias em um único bloco. |
+| [08_loop_do_while_e_despedida.md](08_loop_do_while_e_despedida.md) | Envolvimento do jogo no laço `do-while` para partidas consecutivas e mensagem de despedida. |
+| [09_sessao_ao_vivo_e_conclusao.md](09_sessao_ao_vivo_e_conclusao.md) | Homologação final ao vivo com múltiplas rodadas e encerramento limpo. |
+| [README.md](README.md) | Guia curricular e mapa conceitual. |
 
 ---
 
@@ -53,6 +53,6 @@ O projeto **Rock Paper Scissors** aborda o desenvolvimento de um jogo interativo
 ---
 
 ## 💻 Código-Fonte e Testes no Projeto
-- Motor de Regras e Juiz: [`RockPaperScissorsEngine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/games/RockPaperScissorsEngine.java)
-- CLI Interativa: [`RockPaperScissorsCLI.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/games/RockPaperScissorsCLI.java)
-- Suíte de Testes Automatizados: [`RockPaperScissorsTest.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/test/java/com/mickaelgeronimo/mastery/core/RockPaperScissorsTest.java)
+- Motor de Regras e Juiz: [`RockPaperScissorsEngine.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/games/RockPaperScissorsEngine.java)
+- CLI Interativa: [`RockPaperScissorsCLI.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/games/RockPaperScissorsCLI.java)
+- Suíte de Testes Automatizados: [`RockPaperScissorsTest.java`](../../../src/test/java/com/mickaelgeronimo/mastery/core/RockPaperScissorsTest.java)

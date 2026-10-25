@@ -2,7 +2,7 @@
 ## Parte 10: O Erro de Propósito! — A Inversão de Papéis (`rabbit.hunt()`, `hawk.flee()`), o Alerta `cannot find symbol` e a Limpeza de `Main.java`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:05:35` até `08:05:50` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a demonstração de erro proposital realizada pelo professor Bro Code: o momento em que ele inverte deliberadamente as ações biológicas dos animais em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) mandando o coelho caçar (`rabbit.hunt();`) e o gavião fugir (`hawk.flee();`), a explosão de sublinhados vermelhos na IDE, a abertura da janela vermelha de compilação com o erro clássico **`java: cannot find symbol`**, a explicação de como o sistema de tipos estáticos do Java impede que o programador cometa disparates no código, e a subsequente deleção dessas linhas para deixar o arquivo pronto para o grande clímax com a classe [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java).  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a demonstração de erro proposital realizada pelo professor Bro Code: o momento em que ele inverte deliberadamente as ações biológicas dos animais em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) mandando o coelho caçar (`rabbit.hunt();`) e o gavião fugir (`hawk.flee();`), a explosão de sublinhados vermelhos na IDE, a abertura da janela vermelha de compilação com o erro clássico **`java: cannot find symbol`**, a explicação de como o sistema de tipos estáticos do Java impede que o programador cometa disparates no código, e a subsequente deleção dessas linhas para deixar o arquivo pronto para o grande clímax com a classe [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java).  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (linhas com sublinhados vermelhos, badges de erro `● 1` no topo, painel inferior `Build Output` com caminhos de arquivo, mensagens em vermelho e o código limpo após a deleção) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -14,7 +14,7 @@ Após mostrar que cada animal cumpriu perfeitamente o seu papel, o professor Bro
 
 Nesta sequência de 3 capturas de tela, vemos o compilador do Java agir como um cão de guarda implacável:
 
-1. **A Provocação em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Imagem 1):**  
+1. **A Provocação em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Imagem 1):**  
    O professor digita nas linhas 12 e 13:
    ```java
    rabbit.hunt(); // Coelhos não caçam!
@@ -106,7 +106,7 @@ No Java (linguagem de tipagem estática e segura):
 
 ---
 
-## 4. Análise Código por Código e Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 4. Análise Código por Código e Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ### Cenário A: Com o Erro Didático (Imagens 1 e 2)
 
@@ -204,7 +204,7 @@ Esta demonstração de erro foi cirúrgica por parte do professor Bro Code. Ele 
 E agora a pergunta inevitável que introduz a próxima etapa:
 > *"Se nem o coelho pode caçar e nem o gavião pode fugir... qual animal no nosso projeto tem permissão para fazer as duas coisas ao mesmo tempo?"*
 
-👉 **O PEIXE ([`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java))!**  
+👉 **O PEIXE ([`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java))!**  
 Porque o peixe implementará **AMBAS** as interfaces:
 ```java
 public class Fish implements Prey, Predator { ... }

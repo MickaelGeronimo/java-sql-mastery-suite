@@ -2,8 +2,8 @@
 
 > **Curso:** Java Full Course (Bro Code) — Capítulo 60: `music player`  
 > **Timestamp do Vídeo:** `[9:40:46 - 9:43:10]`  
-> **Arquivo do Workspace:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
-> **Objetivo:** Compreender a conclusão triunfal do projeto do tocador de música: como criar o menu de opções dentro do loop [`while`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L24), ler o teclado sem se preocupar com maiúsculas/minúsculas usando [`.toUpperCase()`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L36), controlar o áudio em tempo real com o moderno [`switch`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L38) (*Play*, *Stop*, *Reset*, *Quit*), e analisar todo o código linha por linha com suas saídas no console.
+> **Arquivo do Workspace:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
+> **Objetivo:** Compreender a conclusão triunfal do projeto do tocador de música: como criar o menu de opções dentro do loop [`while`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L24), ler o teclado sem se preocupar com maiúsculas/minúsculas usando [`.toUpperCase()`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L36), controlar o áudio em tempo real com o moderno [`switch`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L38) (*Play*, *Stop*, *Reset*, *Quit*), e analisar todo o código linha por linha com suas saídas no console.
 
 ---
 

@@ -92,7 +92,7 @@ Porém, quando cada um se manifesta, cada um usa a sua própria voz e o seu pró
 
 ## 3. O Código Completo e Enumerado de `Student.java`
 
-Vejamos como ficou o arquivo [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java) completo:
+Vejamos como ficou o arquivo `Student.java` completo:
 
 ```java
 1:  public class Student {
@@ -136,7 +136,7 @@ Vejamos como ficou o arquivo [`Student.java`](file:///c:/Users/mickel%201/Downlo
 
 ## 4. O Código Completo e Enumerado de `Main.java`
 
-Vejamos como ficou o arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) completo:
+Vejamos como ficou o arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) completo:
 
 ```java
 1:  public class Main {

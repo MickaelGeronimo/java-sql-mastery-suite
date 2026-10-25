@@ -21,8 +21,12 @@ Este capítulo aborda de ponta a ponta a teoria, sintaxe, boas práticas e armad
 Todos os documentos detalhados de estudo e transcrição didática deste capítulo estão catalogados abaixo:
 
 | Parte | Arquivo | Tema Principal |
-| :---: | :--- | :--- |\n| **01** | [**01_nested_if.md**](./01_nested_if.md) | ðŸŽŸï¸ CapÃ­tulo 12: `nested if statements` (Estruturas `if` Aninhadas) â€” Parte 1 |
-| **02** | [**02_nested_if.md**](./02_nested_if.md) | ðŸŽŸï¸ CapÃ­tulo 12: `nested if statements` â€” Parte 2 (A Ãrvore Completa de Descontos) |
-| **03** | [**03_validacao_idade_estudante.md**](./03_validacao_idade_estudante.md) | ðŸ•µï¸â€â™‚ï¸ Resolvendo o Bug do BebÃª Estudante: Como Bloquear Idades ImpossÃ­veis! |
-| **04** | [**04_teste_crianca_10_anos.md**](./04_teste_crianca_10_anos.md) | ðŸ§’ Testando com Idade 10: Como o Java Cai no `else` |
-| **05** | [**05_nested_if_tabela_completa_testes.md**](./05_nested_if_tabela_completa_testes.md) | ðŸŽŸï¸ CapÃ­tulo 12: `nested if statements` â€” Parte 3 (ExplicaÃ§Ã£o Linha por Linha e os 4 Testes Reais) |\n\n---\n\n> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.\n
+| :---: | :--- | :--- |\n| **01** | [**01_nested_if.md**](./01_nested_if.md) | 🎟️ Capítulo 12: `nested if statements` (Estruturas `if` Aninhadas) — Parte 1 |
+| **02** | [**02_nested_if.md**](./02_nested_if.md) | 🎟️ Capítulo 12: `nested if statements` — Parte 2 (A Árvore Completa de Descontos) |
+| **03** | [**03_validacao_idade_estudante.md**](./03_validacao_idade_estudante.md) | 🕵️‍♂️ Resolvendo o Bug do Bebê Estudante: Como Bloquear Idades Impossíveis! |
+| **04** | [**04_teste_crianca_10_anos.md**](./04_teste_crianca_10_anos.md) | 🧒 Testando com Idade 10: Como o Java Cai no `else` |
+| **05** | [**05_nested_if_tabela_completa_testes.md**](./05_nested_if_tabela_completa_testes.md) | 🎟️ Capítulo 12: `nested if statements` — Parte 3 (Explicação Linha por Linha e os 4 Testes Reais) |
+
+---
+
+> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.

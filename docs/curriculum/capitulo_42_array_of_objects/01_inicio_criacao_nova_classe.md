@@ -14,7 +14,7 @@
 Bem-vindo ao **Capítulo 42 do curso do Bro Code: `array of objects 🗃️` (Array de Objetos)**! O relógio do vídeo marca **7:08:33 de 12:00:00**.
 
 Nas imagens desta sequência:
-1. **Imagem 1 (`media_1791325918083.png`):** O professor Bro Code fecha a aba anterior [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) e **apaga todo o código de dentro do método `main`** em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java). Ele deixa o arquivo limpo como uma folha em branco, pronto para o novo assunto.
+1. **Imagem 1 (`media_1791325918083.png`):** O professor Bro Code fecha a aba anterior `User.java` e **apaga todo o código de dentro do método `main`** em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java). Ele deixa o arquivo limpo como uma folha em branco, pronto para o novo assunto.
 2. **Imagem 3 (`media_1791325948659.png` - Timestamp `7:08:33`):** Para trabalhar com "Array de Objetos", nós precisamos de objetos! E para ter objetos, precisamos de uma nova classe (um novo molde). O autor vai até o menu superior do IntelliJ IDEA: clica em **`File`** ➔ posiciona o mouse sobre **`New`** ➔ e clica em **`Java Class`**.
 3. **Imagem 2 (`media_1791325930143.png` - Timestamp `7:08:33`):** Uma janela flutuante (modal) chamada **`New Java Class`** se abre no meio da tela, com o campo `Name` esperando o nome da nova classe e a opção `Class` selecionada em azul.
 
@@ -100,7 +100,7 @@ Mas atenção: para podermos criar carros (ou comidas, ou produtos), **nós prec
 
 ---
 
-## 4. Código Atual de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) Linha por Linha
+## 4. Código Atual de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Linha por Linha
 
 Aqui está o código limpo como aparece na Imagem 1:
 

@@ -2,7 +2,7 @@
 ## Parte 7: O Contrato Cumprido! — A Implementação de `flee()` em `Rabbit`, o Modificador Obrigatório `public` e a Chamada em `Main.java`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:03:27` até `08:04:35` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a resolução do erro de compilação da interface: a escrita da anotação `@Override` dentro de [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java), a implementação do método `public void flee()` exibindo o texto `"*The rabbit is running away*"`, a regra sagrada e inegociável de visibilidade do Java (por que a palavra `public` é **obrigatória** na classe e não pode ser omitida), o surgimento do ícone verde de implementação `I↑` na margem da IDE, a volta para [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) para instanciar o coelho (`new Rabbit()`) e a preparação para o clique no botão verde de execução `▶`.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a resolução do erro de compilação da interface: a escrita da anotação `@Override` dentro de [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java), a implementação do método `public void flee()` exibindo o texto `"*The rabbit is running away*"`, a regra sagrada e inegociável de visibilidade do Java (por que a palavra `public` é **obrigatória** na classe e não pode ser omitida), o surgimento do ícone verde de implementação `I↑` na margem da IDE, a volta para [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) para instanciar o coelho (`new Rabbit()`) e a preparação para o clique no botão verde de execução `▶`.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (balões de assistência, sumiço de linhas vermelhas de erro, ícones `I↑` no gutter, cursores de edição e a setinha do mouse repousando sobre o botão Run) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -22,7 +22,7 @@ Nesta sequência de 4 imagens, o professor Bro Code resolve a situação passo a
    }
    ```
    Imediatamente, todos os erros vermelhos desaparecem e surge o ícone verde `I↑` na margem!
-4. **O Teste em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Imagem 4):** Ele volta ao arquivo principal, cria o objeto com `Rabbit rabbit = new Rabbit();`, chama `rabbit.flee();` e move o mouse para o botão verde de execução `▶`!
+4. **O Teste em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Imagem 4):** Ele volta ao arquivo principal, cria o objeto com `Rabbit rabbit = new Rabbit();`, chama `rabbit.flee();` e move o mouse para o botão verde de execução `▶`!
 
 ---
 
@@ -81,7 +81,7 @@ Para quem está estudando pelo Google Docs e não tem as imagens na tela:
 
 ## 3. Alerta Técnico de Ouro: Por Que a Palavra `public` É OBRIGATÓRIA Aqui?
 
-Observe a linha 4 de [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java):
+Observe a linha 4 de [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java):
 
 ```java
 public void flee(){
@@ -99,13 +99,13 @@ E o compilador do Java dá o seguinte erro assustador:
 > *(Tentando atribuir privilégios de acesso mais fracos; era public)*
 
 ### Por Que Isso Acontece?
-1. Na interface [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java), o método `void flee();` é **implicitamente `public`** (aberto para o mundo inteiro).
+1. Na interface [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java), o método `void flee();` é **implicitamente `public`** (aberto para o mundo inteiro).
 2. Se na classe `Rabbit` você não escrever a palavra `public`, o Java assume a visibilidade padrão (*package-private*), que é mais restrita que `public`.
 3. **Regra de Ouro do Java:** Você **NUNCA** pode diminuir a visibilidade de um método que você herdou ou implementou! Se a mãe/interface disse que era `public`, a classe filha é **obrigada** a declarar `public` explicitamente!
 
 ---
 
-## 4. Análise Código por Código e Linha por Linha de [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java)
+## 4. Análise Código por Código e Linha por Linha de [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java)
 
 Abaixo está o código final do coelho na Imagem 3:
 
@@ -131,7 +131,7 @@ Abaixo está o código final do coelho na Imagem 3:
 
 ---
 
-## 5. Análise Código por Código e Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 5. Análise Código por Código e Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Abaixo está o código do arquivo principal na Imagem 4:
 

@@ -18,12 +18,12 @@ Este módulo organiza de forma progressiva o entendimento entre **Escopo Local (
 
 | Arquivo | Título / Tema Principal |
 | :--- | :--- |
-| [01_escopo_local_e_erro_already_defined.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_28_variable_scope/01_escopo_local_e_erro_already_defined.md) | Ciclo de vida na Stack e erro `variable x is already defined in method main`. |
-| [02_introducao_local_vs_class.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_28_variable_scope/02_introducao_local_vs_class.md) | A metáfora dos quartos privados vs. a sala de estar da casa. |
-| [03_variaveis_de_classe_e_shadowing.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_28_variable_scope/03_variaveis_de_classe_e_shadowing.md) | Declaração fora dos métodos (`static`) e a precedência da variável local sobre a global. |
-| [04_main_acessando_variavel_de_classe.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_28_variable_scope/04_main_acessando_variavel_de_classe.md) | Como acessar a variável de classe quando não há sobreposição local. |
-| [05_o_grande_teste_local_vs_classe.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_28_variable_scope/05_o_grande_teste_local_vs_classe.md) | A matriz de 4 cenários de teste, sobreposição mútua e acesso explícito via `ClassName.var`. |
-| [apostila_completa_variable_scope_capitulo28.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_28_variable_scope/apostila_completa_variable_scope_capitulo28.md) | Apostila unificada completa com todos os diagramas ASCII, tabelas de memória e código-fonte consolidado. |
+| [01_escopo_local_e_erro_already_defined.md](01_escopo_local_e_erro_already_defined.md) | Ciclo de vida na Stack e erro `variable x is already defined in method main`. |
+| [02_introducao_local_vs_class.md](02_introducao_local_vs_class.md) | A metáfora dos quartos privados vs. a sala de estar da casa. |
+| [03_variaveis_de_classe_e_shadowing.md](03_variaveis_de_classe_e_shadowing.md) | Declaração fora dos métodos (`static`) e a precedência da variável local sobre a global. |
+| [04_main_acessando_variavel_de_classe.md](04_main_acessando_variavel_de_classe.md) | Como acessar a variável de classe quando não há sobreposição local. |
+| [05_o_grande_teste_local_vs_classe.md](05_o_grande_teste_local_vs_classe.md) | A matriz de 4 cenários de teste, sobreposição mútua e acesso explícito via `ClassName.var`. |
+| [apostila_completa_variable_scope_capitulo28.md](apostila_completa_variable_scope_capitulo28.md) | Apostila unificada completa com todos os diagramas ASCII, tabelas de memória e código-fonte consolidado. |
 
 ---
 
@@ -46,5 +46,5 @@ Este módulo organiza de forma progressiva o entendimento entre **Escopo Local (
 ---
 
 ## 💻 Código-Fonte e Testes no Projeto
-- Classe Didática de Demonstração: [`VariableScopeDemo.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/methods/VariableScopeDemo.java)
-- Suíte de Testes Unitários: [`VariableScopeTest.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/test/java/com/mickaelgeronimo/mastery/core/VariableScopeTest.java)
+- Classe Didática de Demonstração: [`VariableScopeDemo.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/methods/VariableScopeDemo.java)
+- Suíte de Testes Unitários: [`VariableScopeTest.java`](../../../src/test/java/com/mickaelgeronimo/mastery/core/VariableScopeTest.java)

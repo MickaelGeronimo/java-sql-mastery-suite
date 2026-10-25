@@ -11,7 +11,7 @@
 
 ## 1. O Que Aconteceu Nesta Sequência de 2 Imagens? (Visão Geral)
 
-Nas imagens anteriores, o professor Bro Code havia criado o quarto construtor `User()` (sem parâmetros) dentro de [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) e instanciado `User user4 = new User();` no [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+Nas imagens anteriores, o professor Bro Code havia criado o quarto construtor `User()` (sem parâmetros) dentro de `User.java` e instanciado `User user4 = new User();` no [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 
 Nesta nova sequência de 2 capturas de tela:
 1. **Imagem 1 (`media_1791324880432.png` - Timestamp `7:07:40`):**
@@ -59,7 +59,7 @@ Nesta nova sequência de 2 capturas de tela:
 
 ---
 
-## 3. Código Completo de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) Linha por Linha
+## 3. Código Completo de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Linha por Linha
 
 Aqui está o código exato presente no arquivo:
 

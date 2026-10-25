@@ -2,7 +2,7 @@
 ## Parte 10: Recriando `Vehicle` como Interface e o Clássico Erro de Visibilidade em `Car.java` (`attempting to assign weaker access privileges`)
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:13:00` até `08:14:00` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo, como para quem nunca programou) a transição arquitetural do Polimorfismo: o professor deleta a classe abstrata `Vehicle.java`, clica em **Delete Anyway**, recria `Vehicle` como uma **Interface**, e ao tentar fazer a classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) implementar a nova interface (`implements Vehicle`), o IntelliJ IDEA sublinha a linha inteira de vermelho com **2 erros**! Vamos desvendar o maior mistério que confunde todo programador iniciante em Java: **o erro de privilégios de acesso enfraquecidos** (*"attempting to assign weaker access privileges; was public"*).  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo, como para quem nunca programou) a transição arquitetural do Polimorfismo: o professor deleta a classe abstrata `Vehicle.java`, clica em **Delete Anyway**, recria `Vehicle` como uma **Interface**, e ao tentar fazer a classe [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) implementar a nova interface (`implements Vehicle`), o IntelliJ IDEA sublinha a linha inteira de vermelho com **2 erros**! Vamos desvendar o maior mistério que confunde todo programador iniciante em Java: **o erro de privilégios de acesso enfraquecidos** (*"attempting to assign weaker access privileges; was public"*).  
 > **Formato para Google Docs:** Todo o contexto visual do IntelliJ IDEA (janelas modais, seleção do tipo `Interface`, ícone verde `(I)`, sublinhados vermelhos de erro e o código de cada arquivo) foi minuciosamente convertido em texto, diagramas ASCII/Mermaid e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -14,10 +14,10 @@ Nesta sequência fundamental (`08:13:00` a `08:14:00`), o professor Bro Code pro
 | Imagem | Timestamp / Arquivo | O que é mostrado na tela do IntelliJ IDEA? | Ação Realizada pelo Professor Bro Code |
 | :--- | :--- | :--- | :--- |
 | **🖼️ Imagem 1** | `08:13:10`<br>`media_1791400365210_25c84da2.png` | Janela modal flutuante **"Usages Detected"** alertando que `Vehicle` tem 5 dependências no projeto. | O mouse clica no botão escuro **`Delete Anyway`** (Deletar Mesmo Assim), destruindo a classe abstrata antiga. |
-| **🖼️ Imagem 2** | `08:13:34`<br>`media_1791400397665_e3ba1e8b.png` | O editor [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) fica em vermelho no fundo (`Cannot resolve symbol 'Vehicle'`). Abre o menu **"New Java Class"**. | O cursor do mouse desce da opção `Class` e aponta para a opção **`Interface`** (com ícone verde `(I)`). |
+| **🖼️ Imagem 2** | `08:13:34`<br>`media_1791400397665_e3ba1e8b.png` | O editor [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) fica em vermelho no fundo (`Cannot resolve symbol 'Vehicle'`). Abre o menu **"New Java Class"**. | O cursor do mouse desce da opção `Class` e aponta para a opção **`Interface`** (com ícone verde `(I)`). |
 | **🖼️ Imagem 3** | `08:13:38`<br>`media_1791400405881_0d34d914.png` | O menu foca na linha **`Interface`**, que ganha destaque azul escuro. | O ícone ao lado do campo de digitação muda para um círculo verde com a letra **I**. |
-| **🖼️ Imagem 4** | `08:13:42`<br>`media_1791400413983_0334965f.png` | O professor digita o nome **`Vehicle`** no campo de texto da nova Interface. Legenda inferior: `"Vehicle"`. | Ele pressiona `Enter`, criando instantaneamente o arquivo [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java) do tipo Interface! |
-| **🖼️ Imagem 5** | `08:14:00`<br>`media_1791400425811_08ea96ce.png` | Editor aberto em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java). Linha 1: `public class Car implements Vehicle{` com **sublinhado ondulado vermelho** e **2 erros** no canto superior direito! | O professor troca `extends Vehicle` por `implements Vehicle`, e a IDE acusa erro imediato porque o método `go()` não tem a palavra `public`! |
+| **🖼️ Imagem 4** | `08:13:42`<br>`media_1791400413983_0334965f.png` | O professor digita o nome **`Vehicle`** no campo de texto da nova Interface. Legenda inferior: `"Vehicle"`. | Ele pressiona `Enter`, criando instantaneamente o arquivo `Vehicle.java` do tipo Interface! |
+| **🖼️ Imagem 5** | `08:14:00`<br>`media_1791400425811_08ea96ce.png` | Editor aberto em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java). Linha 1: `public class Car implements Vehicle{` com **sublinhado ondulado vermelho** e **2 erros** no canto superior direito! | O professor troca `extends Vehicle` por `implements Vehicle`, e a IDE acusa erro imediato porque o método `go()` não tem a palavra `public`! |
 
 ---
 
@@ -43,7 +43,7 @@ Na janela modal do IntelliJ IDEA:
 ---
 
 ### 2.2 Imagens 2, 3 e 4: O Nascimento da Interface `Vehicle`
-Como `Vehicle` foi deletado, a linha 13 de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) ficou em pânico:
+Como `Vehicle` foi deletado, a linha 13 de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) ficou em pânico:
 $$\colorbox{#782626}{\textbf{Vehicle}}\texttt{[] vehicles = \{car, bike, boat\};}$$
 O Java não sabe mais o que diabos é um `Vehicle`!
 
@@ -61,7 +61,7 @@ Aparece a caixinha mágica do IntelliJ:
 |  (4) Exception                     |
 +------------------------------------+
 ```
-Ao apertar `Enter`, o IntelliJ gera o novo arquivo [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java):
+Ao apertar `Enter`, o IntelliJ gera o novo arquivo `Vehicle.java`:
 ```java
 public interface Vehicle {
     void go();
@@ -74,7 +74,7 @@ public interface Vehicle {
 
 ### 2.3 Imagem 5: O Enigma do Sublinhado Vermelho em `Car.java`
 
-O professor abre o arquivo [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) e altera a linha 1:
+O professor abre o arquivo [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) e altera a linha 1:
 * **Antes (com classe abstrata):** `public class Car extends Vehicle{`
 * **Agora (com interface):** `public class Car implements Vehicle{`
 
@@ -166,7 +166,7 @@ E por que o IntelliJ marcou **2 erros**?
 
 Vamos analisar cada arquivo presente neste momento crítico.
 
-### 4.1 [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java) — A Nova Interface (Perfeita, Sem Erros)
+### 4.1 `Vehicle.java` — A Nova Interface (Perfeita, Sem Erros)
 ```java
 1 | public interface Vehicle {
 2 |     void go();
@@ -187,7 +187,7 @@ Vamos analisar cada arquivo presente neste momento crítico.
 
 ---
 
-### 4.2 [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) — O Estado com Erro (Como Está no Vídeo na Imagem 5)
+### 4.2 [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) — O Estado com Erro (Como Está no Vídeo na Imagem 5)
 ```java
 1 | public class Car implements Vehicle{
 2 | 
@@ -254,7 +254,7 @@ Nesta etapa exata (Imagem 5):
   java: go() in Car cannot implement go() in Vehicle
     attempting to assign weaker access privileges; was public
   ```
-* Assim que o professor adicionar `public` nos métodos `go()` de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java), [`Bike.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java) e [`Boat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java), o projeto voltará a compilar com 0 erros e o console exibirá as mesmas 3 frases perfeitas!
+* Assim que o professor adicionar `public` nos métodos `go()` de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), `Bike.java` e `Boat.java`, o projeto voltará a compilar com 0 erros e o console exibirá as mesmas 3 frases perfeitas!
 
 ---
 

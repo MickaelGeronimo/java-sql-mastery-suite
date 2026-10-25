@@ -2,8 +2,8 @@
 
 > **Curso:** Java Full Course (Bro Code) — Capítulo 60: `music player`  
 > **Timestamp do Vídeo:** `[9:31:59 - 9:32:45]`  
-> **Arquivo do Workspace:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
-> **Objetivo:** Entender como o Java conecta o arquivo no disco à placa de som através de [`File`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L4), [`AudioSystem`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L2) e [`AudioInputStream`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L1), por que o compilador trava e exige a captura de [`UnsupportedAudioFileException`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L3), e analisar detalhadamente o código linha a linha com suas saídas no console.
+> **Arquivo do Workspace:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
+> **Objetivo:** Entender como o Java conecta o arquivo no disco à placa de som através de [`File`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L4), [`AudioSystem`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L2) e [`AudioInputStream`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L1), por que o compilador trava e exige a captura de [`UnsupportedAudioFileException`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L3), e analisar detalhadamente o código linha a linha com suas saídas no console.
 
 ---
 

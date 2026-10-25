@@ -10,13 +10,13 @@
 ## 1. Visão Geral da Cena: O Filho que Conhece as Suas Próprias Coisas e as Coisas do Pai
 
 Nas partes anteriores deste capítulo:
-* Criamos a superclasse [`Person.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java) com `first`, `last`, construtor e `showName()`.
-* Criamos a subclasse [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java) com `double gpa;` e usamos `super(first, last);` para acionar o construtor do pai sem duplicar código.
+* Criamos a superclasse `Person.java` com `first`, `last`, construtor e `showName()`.
+* Criamos a subclasse `Student.java` com `double gpa;` e usamos `super(first, last);` para acionar o construtor do pai sem duplicar código.
 
 Nesta sequência de 5 imagens, o professor Bro Code avança na prática:
 
 1. **Acesso Direto à Variável `student.gpa` (Imagem 1):**  
-   Em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), ele executa `System.out.println(student.gpa);`.  
+   Em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), ele executa `System.out.println(student.gpa);`.  
    O console imprime `3.25`. Isso prova que o valor passado para o construtor do filho foi armazenado com sucesso na memória!
 2. **Criação do Método `showGPA()` em `Student.java` (Imagem 2):**  
    Em vez de ficar dando `println` solto no `main`, o professor cria um método dentro de `Student`:
@@ -114,7 +114,7 @@ Para quem está estudando no Google Docs sem as imagens originais, aqui está a 
 
 ## 3. A Grande Harmonia: Como o Filho Usa Coisas do Pai e Suas Próprias Coisas
 
-Observe com atenção a linha 11 de [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java):
+Observe com atenção a linha 11 de `Student.java`:
 
 ```java
 System.out.println(this.first + "'s gpa is: " + this.gpa);
@@ -124,14 +124,14 @@ Vamos dissecar a origem de cada pedacinho dessa frase:
 
 1. **`this.first`:**  
    * Essa variável foi declarada dentro de `Student.java`? **Não!**  
-   * Ela foi declarada em [`Person.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java).  
+   * Ela foi declarada em `Person.java`.  
    * Mas como `Student extends Person`, o estudante **herda** esse atributo como se fosse dele próprio.  
    * Valor retornado: `"Harry"`.
 2. **`"'s gpa is: "`:**  
    * É um texto literal fixo (String) usado para formar a frase em inglês (*"o gpa de Harry é: "*).
 3. **`this.gpa`:**  
    * Essa variável foi declarada em `Person.java`? **Não!**  
-   * Ela foi declarada especificamente dentro de [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java).  
+   * Ela foi declarada especificamente dentro de `Student.java`.  
    * Valor retornado: `3.25`.
 
 ### O Poder da Concatenação:
@@ -144,7 +144,7 @@ Isso ilustra a verdadeira beleza da Herança com a palavra-chave `super`: **a cl
 
 ## 4. Análise Linha por Linha de Todo o Código
 
-### Arquivo 1: [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java) (Imagem 2)
+### Arquivo 1: `Student.java` (Imagem 2)
 
 ```java
 1:  public class Student extends Person{
@@ -163,10 +163,10 @@ Isso ilustra a verdadeira beleza da Herança com a palavra-chave `super`: **a cl
 ```
 
 #### Explicação Detalhada:
-* **Linha 1:** Declara a classe pública [`Student`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java) herdando de [`Person`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java).
+* **Linha 1:** Declara a classe pública `Student` herdando de `Person`.
 * **Linha 3 (`double gpa;`):** Atributo numérico de ponto flutuante exclusivo do estudante.
 * **Linha 5 (`Student(...)`):** Construtor que recebe nome, sobrenome e nota.
-* **Linha 6 (`super(first, last);`):** Envia o nome e o sobrenome para o construtor do pai [`Person`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java).
+* **Linha 6 (`super(first, last);`):** Envia o nome e o sobrenome para o construtor do pai `Person`.
 * **Linha 7 (`this.gpa = gpa;`):** Armazena a nota na gaveta própria do estudante.
 * **Linha 8 (`}`):** Encerra o construtor.
 * **Linha 10 (`void showGPA(){`):**  
@@ -178,7 +178,7 @@ Isso ilustra a verdadeira beleza da Herança com a palavra-chave `super`: **a cl
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Imagens 4 e 5)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Imagens 4 e 5)
 
 ```java
 1:  public class Main {

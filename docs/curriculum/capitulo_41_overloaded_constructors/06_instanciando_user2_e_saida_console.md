@@ -11,11 +11,11 @@
 
 ## 1. O Que Aconteceu Nesta Sequência de 2 Imagens? (Visão Geral)
 
-Nas etapas anteriores, criamos a classe [`User.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/User.java) contendo **dois construtores sobrecarregados** diferentes:
+Nas etapas anteriores, criamos a classe `User.java` contendo **dois construtores sobrecarregados** diferentes:
 * **Construtor 1:** Aceita apenas 1 dado (`username`).
 * **Construtor 2:** Aceita 2 dados (`username` e `email`).
 
-Agora, o professor Bro Code volta para o arquivo principal [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) para colocar esses dois construtores para trabalhar juntos!
+Agora, o professor Bro Code volta para o arquivo principal [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) para colocar esses dois construtores para trabalhar juntos!
 
 1. **Imagem 1 (`media_1791324081771.png` - Timestamp `7:05:31`):**
    * O autor escreve o código para criar o segundo usuário: `User user2 = new User("Patrick", "PStar@aol.com");`.
@@ -79,7 +79,7 @@ O Java olha para os parênteses na hora de rodar:
 
 ---
 
-## 4. Código Completo de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) Linha por Linha
+## 4. Código Completo de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Linha por Linha
 
 Aqui está o código exato presente no arquivo:
 

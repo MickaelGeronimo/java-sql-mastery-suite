@@ -9,15 +9,15 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Arquivo Principal de Execução: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe do Carro com os Setters: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Guia da Parte 1 (Conceito e Falha de Acesso Aberto): [`explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md)
-* Guia da Parte 2 (Demonstração da Adulteração e Blindagem `private`): [`explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md)
-* Guia da Parte 3 (Os 3 Erros de Compilação e Criação dos Getters): [`explicacao_getters_and_setters_os_3_erros_de_acesso_privado_e_criacao_dos_getters_capitulo52_parte3.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_os_3_erros_de_acesso_privado_e_criacao_dos_getters_capitulo52_parte3.md)
-* Guia da Parte 4 (Substituição no Main e Erro de Tipos): [`explicacao_getters_and_setters_substituicao_pelos_getters_execucao_com_sucesso_e_incompatibilidade_de_tipos_capitulo52_parte4.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_substituicao_pelos_getters_execucao_com_sucesso_e_incompatibilidade_de_tipos_capitulo52_parte4.md)
-* Guia da Parte 5 (Formatação com Cifrão no Preço): [`explicacao_getters_and_setters_formatacao_com_cifrao_e_retorno_string_capitulo52_parte5.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_formatacao_com_cifrao_e_retorno_string_capitulo52_parte5.md)
-* Guia da Parte 6 (Introdução aos Setters `setColor` e `setPrice`): [`explicacao_getters_and_setters_introducao_aos_setters_setcolor_e_setprice_capitulo52_parte6.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_getters_and_setters_introducao_aos_setters_setcolor_e_setprice_capitulo52_parte6.md)
+* Arquivo Principal de Execução: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe do Carro com os Setters: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Guia da Parte 1 (Conceito e Falha de Acesso Aberto): `explicacao_getters_and_setters_definicao_e_exemplo_sem_encapsulamento_capitulo52_parte1.md`
+* Guia da Parte 2 (Demonstração da Adulteração e Blindagem `private`): `explicacao_getters_and_setters_vulnerabilidade_de_acesso_direto_e_blindagem_com_private_capitulo52_parte2.md`
+* Guia da Parte 3 (Os 3 Erros de Compilação e Criação dos Getters): `explicacao_getters_and_setters_os_3_erros_de_acesso_privado_e_criacao_dos_getters_capitulo52_parte3.md`
+* Guia da Parte 4 (Substituição no Main e Erro de Tipos): `explicacao_getters_and_setters_substituicao_pelos_getters_execucao_com_sucesso_e_incompatibilidade_de_tipos_capitulo52_parte4.md`
+* Guia da Parte 5 (Formatação com Cifrão no Preço): `explicacao_getters_and_setters_formatacao_com_cifrao_e_retorno_string_capitulo52_parte5.md`
+* Guia da Parte 6 (Introdução aos Setters `setColor` e `setPrice`): `explicacao_getters_and_setters_introducao_aos_setters_setcolor_e_setprice_capitulo52_parte6.md`
 
 ---
 
@@ -28,8 +28,8 @@ Nas partes anteriores, construímos as portas de entrada e saída da nossa class
 * **Setters:** Para alterar com segurança (`setColor(String color)`, `setPrice(int price)`).
 
 Nesta sequência de 5 imagens, o professor Bro Code faz duas demonstrações didáticas brilhantes sobre **COMO NÃO USAR** e **COMO A CABEÇA DO INICIANTE SE CONFUNDE**:
-1. **A Finalização dos Setters (Imagem 1):** Ele conclui o método `setPrice(int price)` em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
-2. **A Volta ao Main (Imagem 2):** Ele se posiciona em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) para demonstrar como mudar a cor e o preço do carro.
+1. **A Finalização dos Setters (Imagem 1):** Ele conclui o método `setPrice(int price)` em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
+2. **A Volta ao Main (Imagem 2):** Ele se posiciona em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) para demonstrar como mudar a cor e o preço do carro.
 3. **O Erro Recorrente (Imagem 3):** O autor digita propositalmente:
    ```java
    car.color = "Blue";
@@ -78,10 +78,10 @@ Imagine que você quer enviar uma carta com o endereço `"Blue"`:
 
 ---
 
-### 📸 Imagem 1: Concluindo o Setter `setPrice` em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (`media_1791403030277_215e8420.png`)
+### 📸 Imagem 1: Concluindo o Setter `setPrice` em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (`media_1791403030277_215e8420.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
-* **Aba Ativa:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba Ativa:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **Trecho Completo de `setPrice` (Linhas 26 a 28):**
   ```java
   26    void setPrice(int price){
@@ -98,10 +98,10 @@ Imagine que você quer enviar uma carta com o endereço `"Blue"`:
 
 ---
 
-### 📸 Imagem 2: Retornando ao [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (`media_1791403040660_197f7a39.png`)
+### 📸 Imagem 2: Retornando ao [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (`media_1791403040660_197f7a39.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
-* **Aba Ativa:** Muda para [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba Ativa:** Muda para [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Trecho de Código no Editor:**
   ```java
    8    Car car = new Car("Charger", "Yellow", 10000);
@@ -119,7 +119,7 @@ Imagine que você quer enviar uma carta com o endereço `"Blue"`:
 
 #### O que se vê na interface do IntelliJ IDEA:
 * **Barra de Vídeo do YouTube:** Timestamp `8:26:39 / 12:00:00`.
-* **Aba Ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba Ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Canto Superior Direito:** Badge de erro: **`🔴 2 v`** (2 erros detectados).
 * **Novas Linhas Digitadas (Linhas 11 e 12):**
   ```java
@@ -155,7 +155,7 @@ Imagine que você quer enviar uma carta com o endereço `"Blue"`:
 ### 📸 Imagem 5: O Erro Clássico de Sintaxe no Setter (`media_1791403080215_7b48c3b1.png`)
 
 #### O que se vê na interface do IntelliJ IDEA:
-* **Aba Ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba Ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **Trecho Modificado no Editor (Linha 11):**
   ```java
   11    car.setColor() = "Blue";
@@ -175,7 +175,7 @@ Imagine que você quer enviar uma carta com o endereço `"Blue"`:
 
 ## 4. Análise Linha por Linha dos Códigos
 
-### Arquivo 1: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (Código Completo com Getters e Setters)
+### Arquivo 1: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (Código Completo com Getters e Setters)
 
 ```java
  1 public class Car {
@@ -225,7 +225,7 @@ Imagine que você quer enviar uma carta com o endereço `"Blue"`:
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (O Arquivo com as Tentativas Didáticas)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (O Arquivo com as Tentativas Didáticas)
 
 ```java
  1 public class Main {

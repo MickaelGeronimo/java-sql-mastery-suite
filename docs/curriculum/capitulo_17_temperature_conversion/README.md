@@ -21,6 +21,10 @@ Este capítulo aborda de ponta a ponta a teoria, sintaxe, boas práticas e armad
 Todos os documentos detalhados de estudo e transcrição didática deste capítulo estão catalogados abaixo:
 
 | Parte | Arquivo | Tema Principal |
-| :---: | :--- | :--- |\n| **01** | [**01_conversor_temperatura.md**](./01_conversor_temperatura.md) | ðŸŒ¡ï¸ CapÃ­tulo 17: Conversor de Temperatura (Temperature Converter) â€” Parte 1: Estrutura, Entradas e o Truque do `.toUpperCase()` |
-| **02** | [**02_conversor_temperatura.md**](./02_conversor_temperatura.md) | ðŸŒ¡ï¸ CapÃ­tulo 17: Conversor de Temperatura (Temperature Converter) â€” Parte 2: O Operador TernÃ¡rio MatemÃ¡tico e o SÃ­mbolo de Grau (`Â°`) |
-| **03** | [**03_conversor_temperatura_printf.md**](./03_conversor_temperatura_printf.md) | ðŸŒ¡ï¸ CapÃ­tulo 17: Conversor de Temperatura (Temperature Converter) â€” Parte 3: A FormataÃ§Ã£o Perfeita com `printf("%.1fÂ°%s")` |\n\n---\n\n> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.\n
+| :---: | :--- | :--- |\n| **01** | [**01_conversor_temperatura.md**](./01_conversor_temperatura.md) | 🌡️ Capítulo 17: Conversor de Temperatura (Temperature Converter) — Parte 1: Estrutura, Entradas e o Truque do `.toUpperCase()` |
+| **02** | [**02_conversor_temperatura.md**](./02_conversor_temperatura.md) | 🌡️ Capítulo 17: Conversor de Temperatura (Temperature Converter) — Parte 2: O Operador Ternário Matemático e o Símbolo de Grau (`°`) |
+| **03** | [**03_conversor_temperatura_printf.md**](./03_conversor_temperatura_printf.md) | 🌡️ Capítulo 17: Conversor de Temperatura (Temperature Converter) — Parte 3: A Formatação Perfeita com `printf("%.1f°%s")` |
+
+---
+
+> 💡 **Dica de Estudo:** Siga as partes em ordem sequencial para uma progressão pedagógica natural do conceito à maestria prática.

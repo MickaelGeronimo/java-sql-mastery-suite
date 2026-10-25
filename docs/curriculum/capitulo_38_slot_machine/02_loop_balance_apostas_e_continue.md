@@ -186,7 +186,7 @@ $$\text{balance} \ -= \ \text{bet} \quad \iff \quad \text{balance} = \text{balan
 
 ## 6. O Código Java Completo, Numerado e Atualizado
 
-Aqui está o arquivo [Main.java](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) com todo o código até a Imagem 3:
+Aqui está o arquivo [Main.java](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) com todo o código até a Imagem 3:
 
 ```java
 1:  import java.util.Scanner;

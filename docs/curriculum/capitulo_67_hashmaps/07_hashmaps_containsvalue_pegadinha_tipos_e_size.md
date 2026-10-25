@@ -123,7 +123,7 @@
 
 ## 2. O Código Completo do Arquivo `Main.java`
 
-Aqui está o código exato presente no arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Aqui está o código exato presente no arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```java
 import java.util.HashMap;

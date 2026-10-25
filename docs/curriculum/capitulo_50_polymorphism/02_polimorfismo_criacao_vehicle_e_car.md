@@ -2,7 +2,7 @@
 ## Parte 2: A Construção do Molde dos Veículos — A Criação da Classe Abstrata `Vehicle.java` e da Primeira Subclasse Concreta `Car.java`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:08:27` até `08:09:21` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a criação prática da base necessária para demonstrar o Polimorfismo. Nesta sequência de 5 capturas de tela, o professor Bro Code cria a superclasse mãe genérica [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java), define o método abstrato `abstract void go();`, cria a primeira classe filha concreta [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) herdando com `extends Vehicle`, e sobrescreve o método `go()` para exibir `"You drive the car"`.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a criação prática da base necessária para demonstrar o Polimorfismo. Nesta sequência de 5 capturas de tela, o professor Bro Code cria a superclasse mãe genérica `Vehicle.java`, define o método abstrato `abstract void go();`, cria a primeira classe filha concreta [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) herdando com `extends Vehicle`, e sobrescreve o método `go()` para exibir `"You drive the car"`.  
 > **Formato para Google Docs:** Todo o contexto visual do IntelliJ IDEA (janelas modais "New Java Class", abas abertas, ícones de sarjeta `(O)↓` e `(I)↑`, e legendas em estilo desenho animado) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -12,7 +12,7 @@
 Nesta sequência (`08:08:27` a `08:09:21`), o professor começa a montar a hierarquia de herança que servirá de palco para o Polimorfismo:
 
 ### 🖼️ Imagem 1 (`media_1791399765081_4b5c0377.png` — 08:08:27): Criando o Pai — `Vehicle`
-* **Aba ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java).
+* **Aba ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java).
 * **O que acontece no IntelliJ:** O professor clica com o botão direito na pasta `src` e escolhe `New` $\rightarrow$ `Java Class`.
 * **Janela Modal "New Java Class":**
   * Campo de texto: `Vehicle`
@@ -22,7 +22,7 @@ Nesta sequência (`08:08:27` a `08:09:21`), o professor começa a montar a hiera
 ---
 
 ### 🖼️ Imagem 2 (`media_1791399787800_cada5200.png` — 08:08:45): Definindo `Vehicle.java` como Abstrato
-* **Aba ativa:** [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java).
+* **Aba ativa:** `Vehicle.java`.
 * **Abas abertas:** `Main.java`, `Vehicle.java` (ativa).
 * **Árvore do Projeto (à esquerda em `src`):**
   * `Main` (ícone azul `(C)`)
@@ -39,7 +39,7 @@ Nesta sequência (`08:08:27` a `08:09:21`), o professor começa a montar a hiera
 ---
 
 ### 🖼️ Imagem 3 (`media_1791399802212_0de79e9b.png` — 08:08:50): Criando o Primeiro Filho — `Car`
-* **Aba ativa:** [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java).
+* **Aba ativa:** `Vehicle.java`.
 * **O que acontece:** O professor abre novamente o menu de criação de classes.
 * **Janela Modal "New Java Class":**
   * Campo de texto: `Car`
@@ -61,7 +61,7 @@ Nesta sequência (`08:08:27` a `08:09:21`), o professor começa a montar a hiera
 ---
 
 ### 🖼️ Imagem 5 (`media_1791399832085_fad9660f.png` — 08:09:21): Implementando `Car.java`
-* **Aba ativa:** [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+* **Aba ativa:** [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 * **Código completo digitado em `Car.java`:**
   ```java
   public class Car extends Vehicle{
@@ -113,7 +113,7 @@ Pense na seguinte situação do mundo real:
 
 ## 3. Dissecação Linha por Linha: `Vehicle.java`
 
-Vejamos o código completo de [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java):
+Vejamos o código completo de `Vehicle.java`:
 
 ```java
 1:  public abstract class Vehicle {
@@ -153,7 +153,7 @@ Vejamos o código completo de [`Vehicle.java`](file:///c:/Users/mickel%201/Downl
 
 ## 4. Dissecação Linha por Linha: `Car.java`
 
-Vejamos o código completo de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java):
+Vejamos o código completo de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java):
 
 ```java
 1:  public class Car extends Vehicle{
@@ -187,7 +187,7 @@ Vejamos o código completo de [`Car.java`](file:///c:/Users/mickel%201/Downloads
 * **Linha 4 (`    void go(){`):**
   * A assinatura do método que agora recebe um corpo real com chaves `{}`.
   * **Por que não tem `public` antes de `void`?**  
-    Porque na classe mãe [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java), o método foi declarado como `abstract void go();` (visibilidade de pacote padrão, ou *package-private*). Em Java, uma classe filha pode manter o mesmo nível de acesso do pai.
+    Porque na classe mãe `Vehicle.java`, o método foi declarado como `abstract void go();` (visibilidade de pacote padrão, ou *package-private*). Em Java, uma classe filha pode manter o mesmo nível de acesso do pai.
   * Na sarjeta à esquerda, o IntelliJ coloca o ícone verde `(I)↑` confirmando a implementação do método abstrato.
   * **Saída no Console:** Nenhuma na declaração.
 
@@ -212,7 +212,7 @@ Vejamos o código completo de [`Car.java`](file:///c:/Users/mickel%201/Downloads
 
 ## 5. Dissecação Linha por Linha: `Main.java`
 
-O arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) continua exatamente como preparado na Parte 1, guardando as definições conceituais de polimorfismo:
+O arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) continua exatamente como preparado na Parte 1, guardando as definições conceituais de polimorfismo:
 
 ```java
 1:  
@@ -243,8 +243,8 @@ Process finished with exit code 0
 ```
 
 * **Por que o console ainda não exibiu `"You drive the car"`?**  
-  Porque nós apenas criamos o molde do carro em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java), mas ainda não instanciamos nenhum carro dentro do método `main`! O Java só executa aquilo que for explicitamente invocado no `main`.
-* **Código de saída `0`:** Confirma que tanto [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java), quanto [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) e [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) compilaram perfeitamente sem nenhum erro de sintaxe!
+  Porque nós apenas criamos o molde do carro em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), mas ainda não instanciamos nenhum carro dentro do método `main`! O Java só executa aquilo que for explicitamente invocado no `main`.
+* **Código de saída `0`:** Confirma que tanto `Vehicle.java`, quanto [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) e [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) compilaram perfeitamente sem nenhum erro de sintaxe!
 
 ---
 

@@ -144,9 +144,9 @@ java: cannot find symbol
 
 ### O Rastreamento que a JVM fez na Memória:
 Quando você mandou `dog.photosynthesize();`, a JVM fez a seguinte investigação:
-1. Ela abriu a classe [`Dog.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java). Procurou `photosynthesize()`. **Não achou** (lá só tem `lives = 1` e `speak()`).
-2. Ela subiu para a classe pai [`Animal.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java). Procurou `photosynthesize()`. **Não achou** (lá só tem `eat()`).
-3. Ela subiu para a classe avô [`Organism.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Organism.java). Procurou `photosynthesize()`. **Não achou** (lá só tem `isAlive`).
+1. Ela abriu a classe `Dog.java`. Procurou `photosynthesize()`. **Não achou** (lá só tem `lives = 1` e `speak()`).
+2. Ela subiu para a classe pai [`Animal.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java). Procurou `photosynthesize()`. **Não achou** (lá só tem `eat()`).
+3. Ela subiu para a classe avô `Organism.java`. Procurou `photosynthesize()`. **Não achou** (lá só tem `isAlive`).
 4. Como `Organism` não herda de ninguém (além da classe mãe `Object` do próprio Java), a árvore genealógica do cachorro **acabou**.
 5. O Java **NÃO** vai olhar para a classe `Plant.java`! Por quê? Porque `Plant` não é pai nem avô de `Dog`. Na programação orientada a objetos, **herança não pula de galho para galho lateralmente**.
 6. Resultado: Erro fatal de compilação! O programa nem sequer começa a rodar.
@@ -155,7 +155,7 @@ Quando você mandou `dog.photosynthesize();`, a JVM fez a seguinte investigaçã
 
 ## 5. Código por Código, Linha por Linha
 
-### Versão com Erro Proposital ([`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) — Imagens 3 e 4)
+### Versão com Erro Proposital ([`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) — Imagens 3 e 4)
 
 ```java
 1:  public class Main {
@@ -189,7 +189,7 @@ Quando você mandou `dog.photosynthesize();`, a JVM fez a seguinte investigaçã
 
 ---
 
-### Versão Final Consolidada e Limpa ([`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) — Imagem 5)
+### Versão Final Consolidada e Limpa ([`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) — Imagem 5)
 
 ```java
 1:  public class Main {

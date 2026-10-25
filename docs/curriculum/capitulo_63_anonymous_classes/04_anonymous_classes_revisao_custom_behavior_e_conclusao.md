@@ -125,7 +125,7 @@ Para um programador profissional, essa é a essência das **Classes Anônimas**:
 
 ## 🔍 Explicação Linha por Linha de Todo o Código
 
-### Arquivo 1: [`Dog.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java) *(A Classe Base Permanente)*
+### Arquivo 1: `Dog.java` *(A Classe Base Permanente)*
 
 ```java
 1: public class Dog {
@@ -144,7 +144,7 @@ Para um programador profissional, essa é a essência das **Classes Anônimas**:
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) *(O Arquivo Executável)*
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) *(O Arquivo Executável)*
 
 ```java
  1: public class Main {

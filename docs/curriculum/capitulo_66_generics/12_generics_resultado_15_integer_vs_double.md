@@ -75,7 +75,7 @@ INTELLIJ IDEA - [MyFirstProject] - 10:51:42 / 12:00:00 - Chapter: 66.generics
 
 Aqui estão os códigos exatos dos arquivos sincronizados com a máquina local:
 
-### [`Product.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Product.java)
+### [`Product.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Product.java)
 ```java
 public class Product<T, U> {
 
@@ -97,7 +97,7 @@ public class Product<T, U> {
 }
 ```
 
-### [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -125,7 +125,7 @@ Vamos focar no que acontece quando a linha de impressão é executada.
 
 ---
 
-### Dissecando as Linhas Cruciais em [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Dissecando as Linhas Cruciais em [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
 12:         Product<String, Integer> product2 = new Product<>("ticket", 15);

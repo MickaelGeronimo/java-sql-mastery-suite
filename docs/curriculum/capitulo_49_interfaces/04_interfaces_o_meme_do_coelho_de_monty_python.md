@@ -2,14 +2,14 @@
 ## Parte 4: O Momento Humor — O Lendário Coelho Assassino de Monty Python e a Ironia da Presa
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:03:15` até `08:03:25` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a interrupção cômica e pedagógica inserida pelo professor Bro Code exatamente na marca de `08:03:17`: a sobreposição de um clipe do clássico filme de comédia britânico *"Monty Python em Busca do Cálice Sagrado"* (1975), mostrando a caverna de Caerbannog repleta de ossos e crânios de cavaleiros destruídos pelo terrível "Coelho Assassino". Explicamos a referência cultural geek, por que o autor usa essa piada para contrastar com a nossa classe [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java) e a interface [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java), e qual é o estado exato dos códigos nos bastidores.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a interrupção cômica e pedagógica inserida pelo professor Bro Code exatamente na marca de `08:03:17`: a sobreposição de um clipe do clássico filme de comédia britânico *"Monty Python em Busca do Cálice Sagrado"* (1975), mostrando a caverna de Caerbannog repleta de ossos e crânios de cavaleiros destruídos pelo terrível "Coelho Assassino". Explicamos a referência cultural geek, por que o autor usa essa piada para contrastar com a nossa classe [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java) e a interface [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java), e qual é o estado exato dos códigos nos bastidores.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (as abas por trás do vídeo, a imagem cinematográfica sobreposta com a caverna rochosa, cavaleiro em túnica branca com sangue e pilhas de esqueletos) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender da imagem original.
 
 ---
 
 ## 1. Visão Geral da Cena: Uma Explosão de Humor Nerd no Meio da Aula!
 
-Enquanto estamos montando a lógica de que o coelho ([`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java)) é uma presa indefesa que só sabe fugir (`void flee();`), o professor Bro Code surpreende a todos os alunos!
+Enquanto estamos montando a lógica de que o coelho ([`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java)) é uma presa indefesa que só sabe fugir (`void flee();`), o professor Bro Code surpreende a todos os alunos!
 
 Exatamente na marca de `08:03:17`, a tela do IntelliJ IDEA é parcialmente coberta por um **videoclipe cinematográfico**:
 
@@ -74,7 +74,7 @@ Para quem está estudando pelo Google Docs e não tem a imagem na tela:
 
 Por trás do vídeo divertido, o código em Java está exatamente no seguinte estado:
 
-### 1. Interface [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java)
+### 1. Interface [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java)
 ```java
 1: public interface Prey {
 2: 
@@ -83,7 +83,7 @@ Por trás do vídeo divertido, o código em Java está exatamente no seguinte es
 ```
 * Define o contrato de fuga (`flee()`).
 
-### 2. Interface [`Predator.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Predator.java)
+### 2. Interface [`Predator.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Predator.java)
 ```java
 1: public interface Predator {
 2: 
@@ -92,7 +92,7 @@ Por trás do vídeo divertido, o código em Java está exatamente no seguinte es
 ```
 * Define o contrato de caça (`hunt()`).
 
-### 3. Classe Concreta [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java)
+### 3. Classe Concreta [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java)
 ```java
 1: public class Rabbit {
 2: 
@@ -118,4 +118,4 @@ Process finished with exit code 0
 
 1. **Humor na Programação:** Referências da cultura pop e do cinema britânico (como Monty Python) são tradicionais na computação para descontrair e ajudar na memorização de conceitos abstratos.
 2. **A Ironia da POO:** Na nossa modelagem padrão de Orientação a Objetos, o coelho (`Rabbit`) será programado para ser estritamente uma presa (`Prey`), implementando o método `void flee();` para correr do perigo!
-3. **O Que Vem a Seguir:** A introdução prática da palavra-chave reservada **`implements`** em [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java)!
+3. **O Que Vem a Seguir:** A introdução prática da palavra-chave reservada **`implements`** em [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java)!

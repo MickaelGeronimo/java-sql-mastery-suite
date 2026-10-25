@@ -209,7 +209,7 @@ Isso transforma o script em um utilitário real: o usuário escolhe se quer cont
 
 ---
 
-## 🔍 Explicação Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 🔍 Explicação Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 Abaixo está o código integral compilado e testado do projeto final:
 

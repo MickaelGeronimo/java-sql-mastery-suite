@@ -176,7 +176,7 @@ INTELLIJ IDEA - [MyFirstProject] - ~10:50:55 / 12:00:00 - Chapter: 66.generics
 
 Aqui estão os códigos exatos sincronizados com a máquina local, testados e validados:
 
-### [`Product.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Product.java)
+### [`Product.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Product.java)
 ```java
 public class Product<T, U> {
 
@@ -198,7 +198,7 @@ public class Product<T, U> {
 }
 ```
 
-### [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -225,7 +225,7 @@ Vamos examinar tudo com palavras bem simples e fáceis de memorizar.
 
 ---
 
-### Dissecando [`Product.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Product.java) (O Método `getPrice()`)
+### Dissecando [`Product.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/generics/Product.java) (O Método `getPrice()`)
 
 ```java
 15:     public U getPrice(){
@@ -256,7 +256,7 @@ Vamos examinar tudo com palavras bem simples e fáceis de memorizar.
 
 ---
 
-### Dissecando [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (A Leitura e Impressão)
+### Dissecando [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (A Leitura e Impressão)
 
 ```java
 9:         Product<String, Double> product = new Product<>("apple", 0.50);

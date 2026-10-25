@@ -9,7 +9,7 @@
 
 O **Capítulo 43** desmistifica uma das palavras-chave mais emblemáticas e essenciais da linguagem Java: o modificador **`static`**.
 
-Desde o primeiro dia de aprendizado em Java, nos deparamos com o `static` na declaração do método de entrada `public static void main(String[] args)`. Neste módulo, aprendemos detalhadamente o seu propósito arquitetural através da modelagem da classe [`Friend.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java) e de uma análise comparativa profunda com a classe [`java.lang.Math`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/MathUtilityDemo.java).
+Desde o primeiro dia de aprendizado em Java, nos deparamos com o `static` na declaração do método de entrada `public static void main(String[] args)`. Neste módulo, aprendemos detalhadamente o seu propósito arquitetural através da modelagem da classe [`Friend.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java) e de uma análise comparativa profunda com a classe [`java.lang.Math`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/MathUtilityDemo.java).
 
 ### 🌟 Pilares Fundamentais do Capítulo
 
@@ -38,14 +38,14 @@ Desde o primeiro dia de aprendizado em Java, nos deparamos com o `static` na dec
 
 | Arquivo | Título / Tema Principal |
 | :--- | :--- |
-| [01_definicao_e_criacao_classe_friend.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_43_static/01_definicao_e_criacao_classe_friend.md) | Definição do `static`, criação de `Friend.java` e instanciação do primeiro amigo (*Spongebob*). |
-| [02_o_problema_da_variavel_comum_vs_static.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_43_static/02_o_problema_da_variavel_comum_vs_static.md) | Demonstração intencional do bug da contagem isolada (`1` e `1`), conserto com `static int numOfFriends` e vitória no terminal (`2` e `2`). |
-| [03_adicionando_squidward_e_aviso_ide.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_43_static/03_adicionando_squidward_e_aviso_ide.md) | Chegada do 3º amigo (*Squidward*), a saída `3, 3, 3` e a explicação da ondinha amarela da IDE (*static member accessed via instance*). |
-| [04_acesso_pela_classe_e_metodo_showfriends.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_43_static/04_acesso_pela_classe_e_metodo_showfriends.md) | Acesso canônico `Friend.numOfFriends`, adição de *Sandy*, método `showFriends()` e o erro vermelho do `this`. |
-| [05_chamando_showfriends_com_gary.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_43_static/05_chamando_showfriends_com_gary.md) | Execução de `Friend.showFriends()`, adição de *Gary* e a saída oficial *"You have 5 total friends"*. |
-| [06_exemplo_real_classe_math_do_java.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_43_static/06_exemplo_real_classe_math_do_java.md) | Mergulho no código-fonte do JDK: inspeção de `java.lang.Math`, construtor privado e métodos/constantes estáticas. |
-| [07_conclusao_recursos_compartilhados_e_utilitarios.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_43_static/07_conclusao_recursos_compartilhados_e_utilitarios.md) | Fechamento do capítulo: revisão de *Shared Resources* vs *Utility Methods* e consolidação conceitual. |
-| [README.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_43_static/README.md) | Guia curricular geral e diagrama de memória estática vs dinâmica. |
+| [01_definicao_e_criacao_classe_friend.md](01_definicao_e_criacao_classe_friend.md) | Definição do `static`, criação de `Friend.java` e instanciação do primeiro amigo (*Spongebob*). |
+| [02_o_problema_da_variavel_comum_vs_static.md](02_o_problema_da_variavel_comum_vs_static.md) | Demonstração intencional do bug da contagem isolada (`1` e `1`), conserto com `static int numOfFriends` e vitória no terminal (`2` e `2`). |
+| [03_adicionando_squidward_e_aviso_ide.md](03_adicionando_squidward_e_aviso_ide.md) | Chegada do 3º amigo (*Squidward*), a saída `3, 3, 3` e a explicação da ondinha amarela da IDE (*static member accessed via instance*). |
+| [04_acesso_pela_classe_e_metodo_showfriends.md](04_acesso_pela_classe_e_metodo_showfriends.md) | Acesso canônico `Friend.numOfFriends`, adição de *Sandy*, método `showFriends()` e o erro vermelho do `this`. |
+| [05_chamando_showfriends_com_gary.md](05_chamando_showfriends_com_gary.md) | Execução de `Friend.showFriends()`, adição de *Gary* e a saída oficial *"You have 5 total friends"*. |
+| [06_exemplo_real_classe_math_do_java.md](06_exemplo_real_classe_math_do_java.md) | Mergulho no código-fonte do JDK: inspeção de `java.lang.Math`, construtor privado e métodos/constantes estáticas. |
+| [07_conclusao_recursos_compartilhados_e_utilitarios.md](07_conclusao_recursos_compartilhados_e_utilitarios.md) | Fechamento do capítulo: revisão de *Shared Resources* vs *Utility Methods* e consolidação conceitual. |
+| [README.md](README.md) | Guia curricular geral e diagrama de memória estática vs dinâmica. |
 
 ---
 
@@ -101,7 +101,7 @@ flowchart TD
 ---
 
 ## 💻 Código-Fonte e Testes no Projeto
-- Classe com Recursos Compartilhados: [`Friend.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java)
-- Utilitário Matemático no Padrão `java.lang.Math`: [`MathUtilityDemo.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/MathUtilityDemo.java)
-- Demonstração Executável: [`StaticDemo.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/StaticDemo.java)
-- Suíte de Testes Automatizados: [`StaticModifierTest.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/test/java/com/mickaelgeronimo/mastery/core/StaticModifierTest.java)
+- Classe com Recursos Compartilhados: [`Friend.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Friend.java)
+- Utilitário Matemático no Padrão `java.lang.Math`: [`MathUtilityDemo.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/MathUtilityDemo.java)
+- Demonstração Executável: [`StaticDemo.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/StaticDemo.java)
+- Suíte de Testes Automatizados: [`StaticModifierTest.java`](../../../src/test/java/com/mickaelgeronimo/mastery/core/StaticModifierTest.java)

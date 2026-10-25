@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Classe do Livro com Formatação Refinada: [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java)
-* Arquivo Principal de Testes: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Classe da Biblioteca (Pronta para agregação): [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Parte Anterior (Capítulo 53 - Parte 3: Construtor e Array de Livros): [`explicacao_agregacao_instanciacao_dos_livros_array_de_objetos_e_teste_de_displayinfo_capitulo53_parte3.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_agregacao_instanciacao_dos_livros_array_de_objetos_e_teste_de_displayinfo_capitulo53_parte3.md)
+* Classe do Livro com Formatação Refinada: `Book.java`
+* Arquivo Principal de Testes: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Classe da Biblioteca (Pronta para agregação): `Library.java`
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Parte Anterior (Capítulo 53 - Parte 3: Construtor e Array de Livros): `explicacao_agregacao_instanciacao_dos_livros_array_de_objetos_e_teste_de_displayinfo_capitulo53_parte3.md`
 
 ---
 
@@ -64,7 +64,7 @@ The Fellow of the Ring (423) pages   <-- Estava assim!
 ```
 
 Repare como a palavra `pages` ficava de fora dos parênteses, parecendo uma sobra solta.
-O professor Bro Code percebeu isso e, como todo bom desenvolvedor, voltou ao arquivo [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java) para deixar o texto mais bonito e natural:
+O professor Bro Code percebeu isso e, como todo bom desenvolvedor, voltou ao arquivo `Book.java` para deixar o texto mais bonito e natural:
 
 ```
 Antes:  return this.title + " (" + this.pages + ") pages";  ==> (423) pages
@@ -132,7 +132,7 @@ flowchart TD
     PRATELEIRA --> B3
 ```
 
-1. **Mesma Fôrma, Dados Diferentes:** Todos os três vieram da mesma classe [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java) e possuem exatamente o mesmo método `displayInfo()`.
+1. **Mesma Fôrma, Dados Diferentes:** Todos os três vieram da mesma classe `Book.java` e possuem exatamente o mesmo método `displayInfo()`.
 2. **O Segredo do `this`:** Quando você chama `book1.displayInfo()`, a palavra `this` dentro do método busca o título do livro 1. Quando chama `book2.displayInfo()`, o `this` busca o título do livro 2. Não há confusão ou mistura de dados entre eles!
 3. **Existência Prévia:** Os livros já existem, já funcionam perfeitamente e têm suas informações prontas **mesmo antes de criarmos a Biblioteca (`Library`)**! Isso é o coração da **Agregação**.
 
@@ -140,7 +140,7 @@ flowchart TD
 
 ## 5. Código-Fonte Atual dos Arquivos no Seu Computador
 
-### Arquivo 1: [`Book.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Book.java) (Com a Formatação Nova)
+### Arquivo 1: `Book.java` (Com a Formatação Nova)
 
 ```java
 public class Book {
@@ -162,7 +162,7 @@ public class Book {
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Com o Array e o Teste de Exibição)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Com o Array e o Teste de Exibição)
 
 ```java
 public class Main {
@@ -232,5 +232,5 @@ The Return of the King (416 pages)
 ## 8. O Que Esperar dos Próximos Passos?
 
 Agora que os 3 livros estão fabricados, testados e agrupados dentro do array `Book[] books`:
-* Chegou a hora do professor abrir a aba [`Library.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Library.java)!
+* Chegou a hora do professor abrir a aba `Library.java`!
 * Vamos definir a classe da Biblioteca, seus atributos (como nome da biblioteca e o array de livros que ela agrega), seu construtor e um método da biblioteca que consiga listar todos os seus livros de uma só vez!

@@ -2,7 +2,7 @@
 ## Parte 1: O Que é Abstração, a Analogia do Motor e a Classe Abstrata `Shape`
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `07:52:00` até `07:52:30` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a introdução de um dos 4 pilares fundamentais da Programação Orientada a Objetos: a **Abstração** (`abstraction 🌫️`), dissecando a metáfora do motor do carro, o significado da palavra-chave **`abstract`**, a regra de que classes abstratas não podem ser instanciadas com `new`, e a montagem da família de formas geométricas ([`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java), [`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java), [`Triangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java) e [`Rectangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java)).  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a introdução de um dos 4 pilares fundamentais da Programação Orientada a Objetos: a **Abstração** (`abstraction 🌫️`), dissecando a metáfora do motor do carro, o significado da palavra-chave **`abstract`**, a regra de que classes abstratas não podem ser instanciadas com `new`, e a montagem da família de formas geométricas ([`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java), [`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java), [`Triangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java) e [`Rectangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java)).  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (fotografia explicativa do motor, caixas de diálogo modais de novas classes, abas abertas e notas conceituais) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -137,7 +137,7 @@ Pense como um ser humano no mundo real:
 * Um **Retângulo** existe! Ele tem largura e altura (base $\cdot$ altura).
 * Um **Triângulo** existe! Ele tem base e altura ($\frac{\text{base} \cdot \text{altura}}{2}$).
 
-> **Conclusão de Ouro:** Por isso, no Java, nós declaramos que a classe pai [`Shape`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) é **`abstract`** (para impedir que alguém tente criar uma forma sem sentido com `new Shape()`), e as classes filhas serão **classes concretas** que herdam de `Shape`!
+> **Conclusão de Ouro:** Por isso, no Java, nós declaramos que a classe pai [`Shape`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) é **`abstract`** (para impedir que alguém tente criar uma forma sem sentido com `new Shape()`), e as classes filhas serão **classes concretas** que herdam de `Shape`!
 
 ---
 
@@ -173,7 +173,7 @@ classDiagram
 
 ## 6. Análise Código por Código e Linha por Linha das Classes Criadas
 
-### A. O Arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Linhas 1 a 13)
+### A. O Arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Linhas 1 a 13)
 ```java
 1:  public class Main {
 2:      public static void main(String[] args) {
@@ -194,7 +194,7 @@ classDiagram
 
 ---
 
-### B. O Arquivo [`Shape.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Shape.java) (Linhas 1 a 3)
+### B. O Arquivo [`Shape.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Shape.java) (Linhas 1 a 3)
 ```java
 1:  public abstract class Shape {
 2:  
@@ -209,17 +209,17 @@ classDiagram
 ---
 
 ### C. Os Arquivos das Formas Concretas
-1. **[`Circle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Circle.java):**
+1. **[`Circle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Circle.java):**
    ```java
    public class Circle {
    }
    ```
-2. **[`Triangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Triangle.java):**
+2. **[`Triangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Triangle.java):**
    ```java
    public class Triangle {
    }
    ```
-3. **[`Rectangle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rectangle.java):**
+3. **[`Rectangle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/geometry/Rectangle.java):**
    ```java
    public class Rectangle {
    }

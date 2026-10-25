@@ -10,15 +10,15 @@
 ## 1. Visão Geral da Cena: Preparando os Três Atores no Palco
 
 Nas etapas anteriores deste capítulo:
-* Criamos a superclasse [`Animal.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java) com o método padrão:
+* Criamos a superclasse [`Animal.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java) com o método padrão:
   ```java
   void move(){
       System.out.println("This animal is running");
   }
   ```
-* Criamos as subclasses filhas: [`Dog.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Dog.java), [`Cat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Cat.java) e [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java).
+* Criamos as subclasses filhas: `Dog.java`, [`Cat.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Cat.java) e [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java).
 
-Nesta captura de tela (`media_1791357103349.png`), o professor vai para [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) para colocar os três animais para se moverem:
+Nesta captura de tela (`media_1791357103349.png`), o professor vai para [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) para colocar os três animais para se moverem:
 
 1. **Instanciação dos Três Animais (Linhas 9, 10 e 11):**  
    * `Dog dog = new Dog();`
@@ -77,7 +77,7 @@ Para quem está estudando no Google Docs sem a imagem original, aqui está a des
 
 ---
 
-## 3. Análise Linha por Linha de [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+## 3. Análise Linha por Linha de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
 1:  public class Main {
@@ -136,7 +136,7 @@ Process finished with exit code 0
 
 ### E o que aconteceria se trocássemos agora para `cat.move()` e `fish.move()`?
 
-Como **nenhum dos filhos sobrescreveu o método ainda**, todos eles chamariam o método original herdado de [`Animal.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Animal.java)!
+Como **nenhum dos filhos sobrescreveu o método ainda**, todos eles chamariam o método original herdado de [`Animal.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/inheritance/Animal.java)!
 
 A saída no console seria **exatamente a mesma**:
 ```text

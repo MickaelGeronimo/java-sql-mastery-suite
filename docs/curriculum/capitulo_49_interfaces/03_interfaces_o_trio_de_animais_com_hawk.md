@@ -2,7 +2,7 @@
 ## Parte 3: O Trio da Natureza Está Completo — A Chegada de `Hawk` (Gavião) e a Visão Geral dos 6 Arquivos
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:03:05` até `08:03:20` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a criação da última peça do nosso ecossistema de Orientação a Objetos: a classe concreta [`Hawk.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Hawk.java) (o gavião/falcão, um predador dos céus), a configuração final da barra de abas do IntelliJ IDEA com os 6 arquivos do capítulo, a volta à aba [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java) para revisar o método `void flee();`, e a preparação imediata para o surgimento da palavra-chave **`implements`**.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a criação da última peça do nosso ecossistema de Orientação a Objetos: a classe concreta [`Hawk.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Hawk.java) (o gavião/falcão, um predador dos céus), a configuração final da barra de abas do IntelliJ IDEA com os 6 arquivos do capítulo, a volta à aba [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java) para revisar o método `void flee();`, e a preparação imediata para o surgimento da palavra-chave **`implements`**.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (as 6 abas abertas em linha, a árvore completa de classes e interfaces na pasta `src`, os contrastes entre as bolinhas verdes `(I)` e azuis `(C)` e o cursor piscando no método de fuga) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender da imagem original.
 
 ---
@@ -12,7 +12,7 @@
 Na captura de tela anterior (Parte 2), vimos a criação de `Rabbit` (coelho) e `Fish` (peixe). Mas faltava um caçador exclusivo para equilibrar o coelho!
 
 Nesta imagem (`media_1791399165674_49e00e0b.png`), o professor Bro Code fecha o time completo de personagens:
-1. **A Chegada do Gavião ([`Hawk.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Hawk.java)):** Ele cria a classe concreta `Hawk` (gavião/falcão). O gavião é o caçador aéreo por excelência, que caça coelhos e pequenos roedores. Ele será o predador puro que assinará a interface `Predator`.
+1. **A Chegada do Gavião ([`Hawk.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Hawk.java)):** Ele cria a classe concreta `Hawk` (gavião/falcão). O gavião é o caçador aéreo por excelência, que caça coelhos e pequenos roedores. Ele será o predador puro que assinará a interface `Predator`.
 2. **As 6 Abas em Linha:** A barra superior do editor de código agora exibe a coleção completa de 6 arquivos:
    * `Main.java`
    * `Prey.java`
@@ -20,7 +20,7 @@ Nesta imagem (`media_1791399165674_49e00e0b.png`), o professor Bro Code fecha o 
    * `Rabbit.java`
    * `Fish.java`
    * `Hawk.java`
-3. **A Volta para [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java):** O autor volta o foco para a interface `Prey` e seu método `void flee();` para iniciar a conexão prática entre as classes concretas e as interfaces!
+3. **A Volta para [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java):** O autor volta o foco para a interface `Prey` e seu método `void flee();` para iniciar a conexão prática entre as classes concretas e as interfaces!
 
 ---
 
@@ -102,7 +102,7 @@ Com a criação de `Hawk`, o design do nosso software ficou perfeito e didático
 
 ---
 
-## 4. Análise Código por Código e Linha por Linha de [`Hawk.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Hawk.java)
+## 4. Análise Código por Código e Linha por Linha de [`Hawk.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Hawk.java)
 
 ```java
 1: public class Hawk {
@@ -117,7 +117,7 @@ Com a criação de `Hawk`, o design do nosso software ficou perfeito e didático
 
 ---
 
-## 5. Análise Código por Código e Linha por Linha de [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java)
+## 5. Análise Código por Código e Linha por Linha de [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java)
 
 ```java
 1: public interface Prey {
@@ -149,12 +149,12 @@ Process finished with exit code 0
 
 | Arquivo | Tipo | Ícone no IntelliJ | Papel Arquitetural | O que deve conter? |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) | `class` | `(C)` azul | Ponto de partida | Método `main`, comentários conceituais |
-| [`Prey.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Prey.java) | `interface` | `(I)` verde | Contrato de Presa | `void flee();` |
-| [`Predator.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Predator.java) | `interface` | `(I)` verde | Contrato de Predador | `void hunt();` |
-| [`Rabbit.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Rabbit.java) | `class` | `(C)` azul | Animal Presa pura | Implementará `Prey` |
-| [`Hawk.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Hawk.java) | `class` | `(C)` azul | Animal Predador puro | Implementará `Predator` |
-| [`Fish.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Fish.java) | `class` | `(C)` azul | Animal Híbrido | Implementará `Prey, Predator` |
+| [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) | `class` | `(C)` azul | Ponto de partida | Método `main`, comentários conceituais |
+| [`Prey.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Prey.java) | `interface` | `(I)` verde | Contrato de Presa | `void flee();` |
+| [`Predator.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Predator.java) | `interface` | `(I)` verde | Contrato de Predador | `void hunt();` |
+| [`Rabbit.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Rabbit.java) | `class` | `(C)` azul | Animal Presa pura | Implementará `Prey` |
+| [`Hawk.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Hawk.java) | `class` | `(C)` azul | Animal Predador puro | Implementará `Predator` |
+| [`Fish.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/ecology/Fish.java) | `class` | `(C)` azul | Animal Híbrido | Implementará `Prey, Predator` |
 
 ---
 

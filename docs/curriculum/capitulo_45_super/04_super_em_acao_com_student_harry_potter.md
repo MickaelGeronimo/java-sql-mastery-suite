@@ -15,9 +15,9 @@ Na Parte 3, tínhamos presenciado o Java travar com o erro:
 Nesta sequência de 5 imagens, o professor Bro Code resolve o mistério e coloca a teoria em prática:
 
 1. **A Consulta ao Pai (Imagem 1):**  
-   O professor volta à classe [`Person.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Person.java) e mostra o construtor `Person(String first, String last)`. Ele diz: *"Vejam, o pai já sabe receber dois textos e guardá-los. Só precisamos acionar esse construtor a partir do filho!"*.
+   O professor volta à classe `Person.java` e mostra o construtor `Person(String first, String last)`. Ele diz: *"Vejam, o pai já sabe receber dois textos e guardá-los. Só precisamos acionar esse construtor a partir do filho!"*.
 2. **A Solução com `super(first, last)` (Imagem 2):**  
-   Em [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java), ele substitui as linhas duplicadas por:
+   Em `Student.java`, ele substitui as linhas duplicadas por:
    ```java
    super(first, last);
    ```
@@ -167,7 +167,7 @@ Muitos iniciantes perguntam:
 
 ## 5. Análise Linha por Linha de Todo o Código
 
-### Arquivo 1: [`Student.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Student.java) (Versão Final e Correta)
+### Arquivo 1: `Student.java` (Versão Final e Correta)
 
 ```java
 1:  public class Student extends Person{
@@ -194,7 +194,7 @@ Muitos iniciantes perguntam:
 
 ---
 
-### Arquivo 2: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Imagens 4 e 5)
+### Arquivo 2: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Imagens 4 e 5)
 
 ```java
 1:  public class Main {
@@ -227,7 +227,7 @@ Muitos iniciantes perguntam:
 
 ## 6. Saída Real e Fiel do Console nesta Etapa
 
-Ao executar o [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) com `student.showName()`:
+Ao executar o [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) com `student.showName()`:
 
 ```text
 Harry Potter

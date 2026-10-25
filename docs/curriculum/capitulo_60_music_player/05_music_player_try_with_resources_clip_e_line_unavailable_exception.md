@@ -2,8 +2,8 @@
 
 > **Curso:** Java Full Course (Bro Code) — Capítulo 60: `music player`  
 > **Timestamp do Vídeo:** `[9:33:30 - 9:34:50]`  
-> **Arquivo do Workspace:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)  
-> **Objetivo:** Compreender por que o autor moveu o `AudioInputStream` para dentro dos parênteses do `try` (*try-with-resources*), o que é a vitrola virtual em memória chamada [`Clip`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L3), como resolver o novo erro de hardware [`LineUnavailableException`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L4), e analisar linha a linha o código com as previsões de saída do console.
+> **Arquivo do Workspace:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)  
+> **Objetivo:** Compreender por que o autor moveu o `AudioInputStream` para dentro dos parênteses do `try` (*try-with-resources*), o que é a vitrola virtual em memória chamada [`Clip`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L3), como resolver o novo erro de hardware [`LineUnavailableException`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L4), e analisar linha a linha o código com as previsões de saída do console.
 
 ---
 
@@ -75,7 +75,7 @@ Pense no `AudioInputStream` como uma **torneira de água aberta** que puxa dados
 
 ### 2. O que é o `Clip`? (A Vitrola / Fita Cassete Virtual)
 Até agora nós tínhamos apenas o `AudioInputStream`. Mas o `AudioInputStream` é apenas o fluxo de bytes lidos do disco; você não consegue dizer para ele "pausa aí", "volta pro início" ou "toca de novo".
-* É aqui que entra o **[`Clip`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java#L3)**!
+* É aqui que entra o **[`Clip`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java#L3)**!
 * Um `Clip` é como colocar a fita cassete dentro do toca-fitas: ele pega os dados de som e **carrega a música inteira para a memória RAM**.
 * Como a música está na memória RAM, você ganha superpoderes de controle:
   * `clip.start()` $\rightarrow$ Aperta o Play.

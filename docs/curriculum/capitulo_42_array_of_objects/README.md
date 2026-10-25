@@ -9,7 +9,7 @@
 
 O **Capítulo 42** une dois pilares previamente estudados de forma independente: **Arrays (Capítulo 31)** e **Orientação a Objetos (Capítulos 39, 40 e 41)**, demonstrando como gerenciar frotas e coleções de objetos na memória do computador.
 
-Neste módulo, gerenciamos uma concessionária com carros esportivos ([`GarageVehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/GarageVehicle.java)), explorando a criação de arrays de referências, objetos anônimos, iteração com `for-each` e operações de mutação em lote.
+Neste módulo, gerenciamos uma concessionária com carros esportivos ([`GarageVehicle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/GarageVehicle.java)), explorando a criação de arrays de referências, objetos anônimos, iteração com `for-each` e operações de mutação em lote.
 
 ### 🌟 Pilares Fundamentais do Capítulo
 
@@ -54,12 +54,12 @@ Neste módulo, gerenciamos uma concessionária com carros esportivos ([`GarageVe
 
 | Arquivo | Título / Tema Principal |
 | :--- | :--- |
-| [01_inicio_criacao_nova_classe.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_42_array_of_objects/01_inicio_criacao_nova_classe.md) | Limpeza do `Main.java` e passo a passo no menu do IntelliJ IDEA (`File -> New -> Java Class`). |
-| [02_classe_car_instanciacao_e_loop_drive.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_42_array_of_objects/02_classe_car_instanciacao_e_loop_drive.md) | Criação da classe `Car(model, color)`, instanciação dos 3 carros e a primeira versão do array com `for`. |
-| [03_execucao_loop_for_e_saida_console.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_42_array_of_objects/03_execucao_loop_for_e_saida_console.md) | Execução do loop no console, análise das 3 saídas e a dica da lâmpada amarela do IntelliJ. |
-| [04_for_each_e_objetos_anonimos.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_42_array_of_objects/04_for_each_e_objetos_anonimos.md) | A revolução do código limpo: adoção do `for-each` e instanciação direta com objetos anônimos no array. |
-| [05_modificando_atributos_em_lote_black.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_42_array_of_objects/05_modificando_atributos_em_lote_black.md) | Modificação de atributos em lote: pintando toda a garagem de preto (`car.color = "black"`) e execução final. |
-| [README.md](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/docs/curriculum/capitulo_42_array_of_objects/README.md) | Guia curricular geral e topologia de memória do array de objetos. |
+| [01_inicio_criacao_nova_classe.md](01_inicio_criacao_nova_classe.md) | Limpeza do `Main.java` e passo a passo no menu do IntelliJ IDEA (`File -> New -> Java Class`). |
+| [02_classe_car_instanciacao_e_loop_drive.md](02_classe_car_instanciacao_e_loop_drive.md) | Criação da classe `Car(model, color)`, instanciação dos 3 carros e a primeira versão do array com `for`. |
+| [03_execucao_loop_for_e_saida_console.md](03_execucao_loop_for_e_saida_console.md) | Execução do loop no console, análise das 3 saídas e a dica da lâmpada amarela do IntelliJ. |
+| [04_for_each_e_objetos_anonimos.md](04_for_each_e_objetos_anonimos.md) | A revolução do código limpo: adoção do `for-each` e instanciação direta com objetos anônimos no array. |
+| [05_modificando_atributos_em_lote_black.md](05_modificando_atributos_em_lote_black.md) | Modificação de atributos em lote: pintando toda a garagem de preto (`car.color = "black"`) e execução final. |
+| [README.md](README.md) | Guia curricular geral e topologia de memória do array de objetos. |
 
 ---
 
@@ -103,7 +103,7 @@ flowchart LR
 ---
 
 ## 💻 Código-Fonte e Testes no Projeto
-- Entidade Veículo para Coleções: [`GarageVehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/GarageVehicle.java)
-- Gerenciador de Frota / Coleção de Objetos: [`GarageFleetManager.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/GarageFleetManager.java)
-- Demonstração Executável: [`ArrayOfObjectsDemo.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/main/java/com/mickaelgeronimo/mastery/core/oop/ArrayOfObjectsDemo.java)
-- Suíte de Testes Automatizados: [`ArrayOfObjectsTest.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/src/test/java/com/mickaelgeronimo/mastery/core/ArrayOfObjectsTest.java)
+- Entidade Veículo para Coleções: [`GarageVehicle.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/GarageVehicle.java)
+- Gerenciador de Frota / Coleção de Objetos: [`GarageFleetManager.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/GarageFleetManager.java)
+- Demonstração Executável: [`ArrayOfObjectsDemo.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/ArrayOfObjectsDemo.java)
+- Suíte de Testes Automatizados: [`ArrayOfObjectsTest.java`](../../../src/test/java/com/mickaelgeronimo/mastery/core/ArrayOfObjectsTest.java)

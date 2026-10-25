@@ -2,7 +2,7 @@
 ## Parte 12: A Revisão Final e o Resumo Definitivo no `Main.java` — Conectando a Teoria das Linhas de Comentário à Prática Suprema do Polimorfismo
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `08:14:05` até `08:14:20` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo, como para quem nunca programou na vida) o grandioso fechamento do Capítulo 50 de Polimorfismo: o professor Bro Code retorna para a aba [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), posiciona o cursor do mouse e o destaque de linha exatamente sobre o comentário da **Linha 7** (*"Objects can identify as other objects"*), e faz a síntese definitiva conectando a teoria das definições com tudo o que foi construído na prática com Classes Abstratas e Interfaces.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo, como para quem nunca programou na vida) o grandioso fechamento do Capítulo 50 de Polimorfismo: o professor Bro Code retorna para a aba [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), posiciona o cursor do mouse e o destaque de linha exatamente sobre o comentário da **Linha 7** (*"Objects can identify as other objects"*), e faz a síntese definitiva conectando a teoria das definições com tudo o que foi construído na prática com Classes Abstratas e Interfaces.  
 > **Formato para Google Docs:** Todo o contexto visual do IntelliJ IDEA (a árvore de arquivos com ícones de Classe `(C)` e Interface `(I)`, as 5 abas abertas, o cursor piscando na Linha 7, a numeração exata de 1 a 21 e a saída no terminal) foi integralmente convertido em texto, diagramas visuais e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -42,8 +42,8 @@ Nesta captura de tela conclusiva (`media_1791400605612_7b25bd12.png` — timesta
 ```
 
 ### Elementos Visuais Chave da Tela:
-1. **Aba Ativa:** [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (sublinhada em azul, com ícone azul `(C)` de Classe).
-2. **As outras abas preservadas:** [`Vehicle.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Vehicle.java) (com ícone verde `(I)` de Interface), [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java), [`Bike.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Bike.java) e [`Boat.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Boat.java).
+1. **Aba Ativa:** [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (sublinhada em azul, com ícone azul `(C)` de Classe).
+2. **As outras abas preservadas:** `Vehicle.java` (com ícone verde `(I)` de Interface), [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java), `Bike.java` e `Boat.java`.
 3. **A Linha 7 Destacada:** A linha inteira está com uma sutil faixa cinza de seleção ativa e o cursor piscando logo antes da letra `O`:  
    $$\texttt{//                |}\textbf{Objects can identify as other objects.}$$
 4. **Sem Nenhum Erro Vermelho:** Zero sublinhados vermelhos, zero avisos de compilação. O projeto está em perfeita harmonia.
@@ -81,7 +81,7 @@ Vamos confrontar cada linha de comentário com a linha de código real que a rea
 
 ---
 
-## 3. Dissecação Linha por Linha de Todo o [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (Linhas 1 a 21)
+## 3. Dissecação Linha por Linha de Todo o [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (Linhas 1 a 21)
 
 Aqui está a análise cirúrgica de cada linha, do jeito que um iniciante amador precisa entender para nunca mais esquecer:
 

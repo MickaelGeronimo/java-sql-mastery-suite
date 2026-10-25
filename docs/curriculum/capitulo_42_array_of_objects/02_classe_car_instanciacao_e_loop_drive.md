@@ -14,14 +14,14 @@
 Esta sequência de 5 capturas de tela é o coração do **Capítulo 42 (Array of Objects)**! Aqui, o professor Bro Code constrói todo o exemplo prático do zero:
 
 1. **Imagem 1 (`media_1791326036532.png` - Timestamp `7:08:37`):**
-   * O autor cria o arquivo [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java). A tela mostra apenas a casca vazia da classe (`public class Car { }`).
+   * O autor cria o arquivo [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java). A tela mostra apenas a casca vazia da classe (`public class Car { }`).
 2. **Imagem 2 (`media_1791326047229.png` - Timestamp `7:09:24`):**
-   * O autor programa a classe [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) inteira:
+   * O autor programa a classe [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) inteira:
      * Dois atributos: `model` (modelo) e `color` (cor).
      * O construtor `Car(String model, String color)` usando `this`.
      * Um método chamado `drive()` que imprime: `"You drive the <cor> <modelo>"`.
 3. **Imagem 3 (`media_1791326132275.png`):**
-   * O autor volta para [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e instancia 3 carros:
+   * O autor volta para [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e instancia 3 carros:
      * `car1`: Mustang Vermelho (`"Mustang"`, `"Red"`).
      * `car2`: Corvette Azul (`"Corvette"`, `"Blue"`).
      * `car3`: Charger Amarelo (`"Charger"`, `"Yellow"`).
@@ -143,7 +143,7 @@ O laço `for` visita cada gaveta da garagem uma por uma usando o índice `i`:
 
 ---
 
-## 4. Código Completo de [`Car.java`](file:///c:/Users/mickel 1/Downloads/JAVA APRENDER/Car.java) Linha por Linha
+## 4. Código Completo de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) Linha por Linha
 
 ```java
  1: public class Car {
@@ -180,7 +180,7 @@ O laço `for` visita cada gaveta da garagem uma por uma usando o índice `i`:
 
 ---
 
-## 5. Código Completo de [`Main.java`](file:///c:/Users/mickel 1/Downloads/JAVA APRENDER/Main.java) Linha por Linha
+## 5. Código Completo de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Linha por Linha
 
 ```java
  1: public class Main {

@@ -183,8 +183,8 @@ Esta é a dúvida mais comum de quem está começando a aprender OOP. Bro Code e
 * A **Classe** é a fôrma de metal em formato de coração. Você não come a fôrma de metal!
 * O **Objeto** é o bolo de chocolate quentinho que saiu de dentro daquela fôrma. Você pode usar a mesma fôrma para assar 50 bolos de sabores diferentes!
 * No nosso projeto Java:
-  * O arquivo [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) será a **Classe** (o molde do carro).
-  * No arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java), nós vamos usar a palavra-chave `new` para fabricar os **Carros Reais** (os objetos)!
+  * O arquivo [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) será a **Classe** (o molde do carro).
+  * No arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java), nós vamos usar a palavra-chave `new` para fabricar os **Carros Reais** (os objetos)!
 
 ---
 
@@ -252,7 +252,7 @@ flowchart TD
 
 ## 🔍 Análise Linha por Linha do Código Inicial
 
-Abaixo está a análise linha por linha do arquivo [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Abaixo está a análise linha por linha do arquivo [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 
 ```java
 1: public class Main {
@@ -313,7 +313,7 @@ Abaixo está a análise linha por linha do arquivo [`Main.java`](file:///c:/User
 
 ## 📜 Código-Fonte Atual dos Arquivos do Projeto
 
-### Arquivo 1: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 1: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -326,7 +326,7 @@ public class Main {
 }
 ```
 
-### Arquivo 2: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### Arquivo 2: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 ```java
 public class Car {
 

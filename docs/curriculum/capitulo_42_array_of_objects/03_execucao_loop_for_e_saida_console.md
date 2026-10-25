@@ -134,7 +134,7 @@ Nos próximos passos da aula, o Bro Code provavelmente mostrará essa alternativ
 
 ---
 
-## 5. Código Completo de [`Main.java`](file:///c:/Users/mickel 1/Downloads/JAVA APRENDER/Main.java) Linha por Linha
+## 5. Código Completo de [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) Linha por Linha
 
 ```java
  1: public class Main {

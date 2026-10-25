@@ -2,7 +2,7 @@
 ## Parte 7: Conclusão do Capítulo — O Sucesso do Mustang, a Chegada do Corvette e o Fechamento Geral
 
 > **Contexto de Estudo:** Este material é uma transcrição e dissecação pedagógica minuciosa baseada no curso *"Java Full Course for free"* do canal **Bro Code** (timestamp `07:50:35` até `07:51:40` / 12:00:00).  
-> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a consagração prática do método `.toString()` sobrescrito em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java): a execução do primeiro carro, a expansão do programa para dois carros simultâneos ([`car1`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) e [`car2`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)), como a palavra-chave `this` isola os dados de cada objeto na memória Heap e a recapitulação do card final com a fórmula padrão de `java.lang.Object`.  
+> **Objetivo:** Explicar para um iniciante absoluto ("do zero", passo a passo) a consagração prática do método `.toString()` sobrescrito em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java): a execução do primeiro carro, a expansão do programa para dois carros simultâneos ([`car1`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) e [`car2`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)), como a palavra-chave `this` isola os dados de cada objeto na memória Heap e a recapitulação do card final com a fórmula padrão de `java.lang.Object`.  
 > **Formato para Google Docs:** Todo o contexto visual da interface do IntelliJ IDEA (janelas de execução, botões de atalho, seleções com o mouse e cards com fundo desfocado) foi minuciosamente convertido em texto, diagramas e tabelas para estudo e cópia direta no Google Docs sem depender das imagens originais.
 
 ---
@@ -89,7 +89,7 @@ System.out.println(car1);
 System.out.println(car2);
 ```
 
-Ambos os objetos chamam o **mesmo método idêntico**: `public String toString()` dentro de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java).
+Ambos os objetos chamam o **mesmo método idêntico**: `public String toString()` dentro de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java).
 Como o método sabe qual cor e qual ano imprimir?
 
 A resposta mágica é a palavra-chave **`this`**:
@@ -134,7 +134,7 @@ Isso é a essência do **Encapsulamento** e da **Orientação a Objetos**!
 
 ## 4. Análise Código por Código e Linha por Linha
 
-### A. O Arquivo Final [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java) (16 Linhas)
+### A. O Arquivo Final [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java) (16 Linhas)
 ```java
 1:  public class Main {
 2:      public static void main(String[] args) {
@@ -161,13 +161,13 @@ Isso é a essência do **Encapsulamento** e da **Orientação a Objetos**!
   * Cria o segundo carro na memória com marca Chevrolet, modelo Corvette, ano 2026 e cor Blue. *(Nada sai no console).*
 * **Linha 11:** Linha em branco para organização visual.
 * **Linha 12 (`System.out.println(car1);`):**
-  * Chama implicitamente `car1.toString()`. Executa o método sobrescrito em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) referenciando os dados do `car1`.
+  * Chama implicitamente `car1.toString()`. Executa o método sobrescrito em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) referenciando os dados do `car1`.
   * **Saída no Console:**
     ```text
     Red 2025 Ford Mustang
     ```
 * **Linha 13 (`System.out.println(car2);`):**
-  * Chama implicitamente `car2.toString()`. Executa o método sobrescrito em [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) referenciando os dados do `car2`.
+  * Chama implicitamente `car2.toString()`. Executa o método sobrescrito em [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) referenciando os dados do `car2`.
   * **Saída no Console:**
     ```text
     Blue 2026 Chevrolet Corvette
@@ -176,7 +176,7 @@ Isso é a essência do **Encapsulamento** e da **Orientação a Objetos**!
 
 ---
 
-### B. O Arquivo Final [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java) (19 Linhas)
+### B. O Arquivo Final [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java) (19 Linhas)
 ```java
 1:  public class Car {
 2:  
@@ -227,7 +227,7 @@ Process finished with exit code 0
 
 | Característica | Como o Java Fazia Sozinho (Classe `Object`) | Como Fazemos Agora (Classe `Car` com `@Override`) |
 | :--- | :--- | :--- |
-| **Origem do Código:** | Linha 270 de [`Object.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Object.java). | Linha 17 de [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java). |
+| **Origem do Código:** | Linha 270 de `Object.java`. | Linha 17 de [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java). |
 | **Fórmula Usada:** | `getClass().getName() + "@" + Integer.toHexString(hashCode())` | `this.color + " " + this.year + " " + this.make + " " + this.model` |
 | **Texto de Saída:** | `Car@6acbcfc0` | `Red 2025 Ford Mustang` |
 | **Utilidade:** | Apenas para depuração interna de memória da JVM. | Excelente para interfaces com o usuário, logs e relatórios legíveis. |

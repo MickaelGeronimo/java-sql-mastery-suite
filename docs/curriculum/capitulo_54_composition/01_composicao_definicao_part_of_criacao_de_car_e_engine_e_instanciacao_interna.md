@@ -9,11 +9,11 @@
 ---
 
 ### Links Rápidos dos Arquivos do Projeto no seu Computador
-* Classe do Carro (Container): [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
-* Classe do Motor (Parte Integrante): [`Engine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Engine.java)
-* Arquivo Principal de Teoria: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
-* Pasta Raiz do Projeto: [`JAVA APRENDER`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER)
-* Conclusão do Capítulo Anterior (Capítulo 53 - Parte 10: Agregação): [`explicacao_agregacao_o_teste_supremo_da_exclusao_da_library_e_a_prova_da_existencia_independente_capitulo53_parte10.md`](file:///C:/Users/mickel%201/.gemini/antigravity/brain/d1dae54d-8acc-4142-bb62-6703a22b9afc/explicacao_agregacao_o_teste_supremo_da_exclusao_da_library_e_a_prova_da_existencia_independente_capitulo53_parte10.md)
+* Classe do Carro (Container): [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
+* Classe do Motor (Parte Integrante): `Engine.java`
+* Arquivo Principal de Teoria: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
+* Pasta Raiz do Projeto: `JAVA APRENDER`
+* Conclusão do Capítulo Anterior (Capítulo 53 - Parte 10: Agregação): `explicacao_agregacao_o_teste_supremo_da_exclusao_da_library_e_a_prova_da_existencia_independente_capitulo53_parte10.md`
 
 ---
 
@@ -164,7 +164,7 @@ Car.java:10: error: constructor Engine in class Engine cannot be applied to give
 ```
 
 ### A Explicação Amigável:
-* O Java olhou para o arquivo [`Engine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Engine.java) (visto na Imagem 5) e viu que a classe `Engine` só tinha a variável `String engineType;`, mas **ainda não tinha nenhum construtor**!
+* O Java olhou para o arquivo `Engine.java` (visto na Imagem 5) e viu que a classe `Engine` só tinha a variável `String engineType;`, mas **ainda não tinha nenhum construtor**!
 * Quando uma classe não tem construtor, o Java só conhece o construtor vazio `Engine()`.
 * Como o Carro tentou chamar `new Engine(engineType)` passando uma `String`, o compilador chiou:
   > *"Ei! A classe `Engine` não sabe o que fazer com essa palavra que você está passando! Ela não tem um construtor que aceita `String`!"*
@@ -174,7 +174,7 @@ Car.java:10: error: constructor Engine in class Engine cannot be applied to give
 
 ## 6. Código Atual dos Arquivos no Seu Computador
 
-### Arquivo 1: [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java)
+### Arquivo 1: [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java)
 
 ```java
 public class Main {
@@ -190,7 +190,7 @@ public class Main {
 
 ---
 
-### Arquivo 2: [`Car.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Car.java)
+### Arquivo 2: [`Car.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/oop/Car.java)
 
 ```java
 public class Car {
@@ -210,7 +210,7 @@ public class Car {
 
 ---
 
-### Arquivo 3: [`Engine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Engine.java)
+### Arquivo 3: `Engine.java`
 
 ```java
 public class Engine {
@@ -259,7 +259,7 @@ O programa é interrompido pelo compilador com exatamente 1 erro.
 ---
 
 ### Cenário 2: Executando Apenas o `Main.java`
-Se rodarmos o [`Main.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Main.java):
+Se rodarmos o [`Main.java`](../../../src/main/java/com/mickaelgeronimo/mastery/core/concurrency/Main.java):
 ```bash
 javac Main.java
 java Main
@@ -274,7 +274,7 @@ Como esperado, pois o arquivo `Main.java` contém apenas os comentários teóric
 
 ## 9. O Que Esperar do Próximo Passo?
 
-O professor acabou de abrir a aba [`Engine.java`](file:///c:/Users/mickel%201/Downloads/JAVA%20APRENDER/Engine.java) na Imagem 5:
+O professor acabou de abrir a aba `Engine.java` na Imagem 5:
 1. Ele criará o construtor `Engine(String engineType) { this.engineType = engineType; }` para eliminar o erro vermelho de `Car.java`.
 2. Provavelmente criará um método no motor (como `start()` que imprime *"You start the V8 engine"*).
 3. E em seguida, no `Main.java`, criará um objeto `Car` e testará o funcionamento conjunto do carro e do motor!
