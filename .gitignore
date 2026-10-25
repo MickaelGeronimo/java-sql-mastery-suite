@@ -65,3 +65,7 @@ replay_pid*
 *.tmp
 *.bak
 *~
+
+# Agent working files
+.agents/
+PROJECT.md

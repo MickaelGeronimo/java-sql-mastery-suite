@@ -1,6 +1,6 @@
 # 🚀 Java 17 LTS & Relational Database Enterprise Mastery Suite
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github-actions)](https://github.com/MickaelGeronimo)
+[![CI](https://github.com/MickaelGeronimo/java-sql-mastery-suite/actions/workflows/ci.yml/badge.svg)](https://github.com/MickaelGeronimo/java-sql-mastery-suite/actions/workflows/ci.yml)
 [![Java Version](https://img.shields.io/badge/Java-17%20LTS-orange?style=for-the-badge&logo=openjdk)](https://openjdk.org/projects/jdk/17/)
 [![Build Tool](https://img.shields.io/badge/Maven-3.9+-C71A36?style=for-the-badge&logo=apache-maven)](https://maven.apache.org/)
 [![Testing](https://img.shields.io/badge/Tested%20With-JUnit%205%20%7C%20AssertJ-25A162?style=for-the-badge&logo=junit5)](https://junit.org/junit5/)
